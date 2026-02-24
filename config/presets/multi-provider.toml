@@ -1,0 +1,161 @@
+# OpenCode Configuration Preset: Multi-Provider Setup
+# 
+# Usage: Copy this file to your project as `opencode.toml`
+# or merge with existing configuration.
+#
+# This preset configures multiple providers and allows easy switching.
+#
+# Requirements:
+#   - Set environment variables for providers you want to use:
+#     - ANTHROPIC_API_KEY for Claude
+#     - OPENAI_API_KEY for GPT
+#     - GOOGLE_API_KEY for Gemini
+#     - GROQ_API_KEY for Groq (fast inference)
+#     - Ollama running locally for local models
+#
+# Switching providers at runtime:
+#   > Switch to Claude
+#   > Use GPT-4o for this conversation
+#   > Use local model llama3.2
+
+[provider]
+# Default provider (change as needed)
+default = "anthropic"
+
+# ─────────────────────────────────────────────────────────────
+# Anthropic Claude Configuration
+# ─────────────────────────────────────────────────────────────
+[provider.anthropic]
+api_key_env = "ANTHROPIC_API_KEY"
+model = "claude-sonnet-4-20250514"
+max_tokens = 8192
+temperature = 0.7
+
+# ─────────────────────────────────────────────────────────────
+# OpenAI Configuration
+# ─────────────────────────────────────────────────────────────
+[provider.openai]
+api_key_env = "OPENAI_API_KEY"
+model = "gpt-4o"
+max_tokens = 4096
+temperature = 0.7
+
+# ─────────────────────────────────────────────────────────────
+# Google Gemini Configuration
+# ─────────────────────────────────────────────────────────────
+[provider.google]
+api_key_env = "GOOGLE_API_KEY"
+model = "gemini-2.0-flash"
+max_tokens = 8192
+temperature = 0.7
+
+# ─────────────────────────────────────────────────────────────
+# Groq Configuration (Fast Inference)
+# ─────────────────────────────────────────────────────────────
+[provider.groq]
+api_key_env = "GROQ_API_KEY"
+model = "llama-3.3-70b-versatile"
+max_tokens = 4096
+temperature = 0.7
+
+# ─────────────────────────────────────────────────────────────
+# Local Ollama Configuration
+# ─────────────────────────────────────────────────────────────
+[provider.ollama]
+base_url = "http://localhost:11434"
+model = "llama3.2"
+context_window = 8192
+temperature = 0.7
+
+# ─────────────────────────────────────────────────────────────
+# Mistral Configuration
+# ─────────────────────────────────────────────────────────────
+[provider.mistral]
+api_key_env = "MISTRAL_API_KEY"
+model = "mistral-large-latest"
+max_tokens = 4096
+temperature = 0.7
+
+# ─────────────────────────────────────────────────────────────
+# xAI (Grok) Configuration
+# ─────────────────────────────────────────────────────────────
+[provider.xai]
+api_key_env = "XAI_API_KEY"
+model = "grok-beta"
+max_tokens = 4096
+temperature = 0.7
+
+# ─────────────────────────────────────────────────────────────
+# Common Settings
+# ─────────────────────────────────────────────────────────────
+
+[tools]
+# Enable all standard tools
+bash = true
+read = true
+write = true
+edit = true
+glob = true
+grep = true
+ls = true
+rm = true
+lsp = true
+webfetch = true
+websearch = true
+
+[permissions]
+# Auto-approve safe commands
+bash_allow = [
+    "git status",
+    "git log",
+    "git diff",
+    "git branch",
+    "ls",
+    "cat",
+    "pwd",
+    "which",
+    "python --version",
+    "pip list",
+]
+
+[mcp]
+# MCP server configurations
+servers = []
+
+[ui]
+theme = "dark"
+language = "en"
+
+# Session settings
+[session]
+auto_save = true
+compaction_threshold = 0.8
+
+# ─────────────────────────────────────────────────────────────
+# Profile Definitions (for quick switching)
+# ─────────────────────────────────────────────────────────────
+
+# Use with: opencode --profile development
+[profiles.development]
+provider = "anthropic"
+model = "claude-sonnet-4-20250514"
+
+# Use with: opencode --profile production
+[profiles.production]
+provider = "openai"
+model = "gpt-4o"
+
+# Use with: opencode --profile fast
+[profiles.fast]
+provider = "groq"
+model = "llama-3.3-70b-versatile"
+
+# Use with: opencode --profile local
+[profiles.local]
+provider = "ollama"
+model = "llama3.2"
+
+# Use with: opencode --profile reasoning
+[profiles.reasoning]
+provider = "anthropic"
+model = "claude-opus-4-20250514"

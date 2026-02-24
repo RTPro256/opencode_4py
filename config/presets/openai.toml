@@ -1,0 +1,70 @@
+# OpenCode Configuration Preset: OpenAI GPT
+# 
+# Usage: Copy this file to your project as `opencode.toml`
+# or merge with existing configuration.
+#
+# Requirements:
+#   - OPENAI_API_KEY environment variable must be set
+#
+# Recommended Models:
+#   - gpt-4o (default, best balance)
+#   - gpt-4-turbo (high capability)
+#   - o1-preview (complex reasoning)
+#   - o3-mini (fast reasoning)
+
+[provider]
+default = "openai"
+
+[provider.openai]
+api_key_env = "OPENAI_API_KEY"
+model = "gpt-4o"
+max_tokens = 4096
+temperature = 0.7
+
+# Optional: Use different models for different tasks
+# [provider.openai.models]
+# code = "gpt-4o"
+# reasoning = "o1-preview"
+# fast = "gpt-4o-mini"
+
+[tools]
+# Enable all standard tools
+bash = true
+read = true
+write = true
+edit = true
+glob = true
+grep = true
+ls = true
+rm = true
+lsp = true
+webfetch = true
+websearch = true
+
+[permissions]
+# Auto-approve safe commands
+bash_allow = [
+    "git status",
+    "git log",
+    "git diff",
+    "git branch",
+    "ls",
+    "cat",
+    "pwd",
+    "which",
+    "python --version",
+    "pip list",
+]
+
+[mcp]
+# MCP server configurations
+servers = []
+
+[ui]
+theme = "dark"
+language = "en"
+
+# Session settings
+[session]
+auto_save = true
+compaction_threshold = 0.8

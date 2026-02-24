@@ -1,0 +1,68 @@
+# OpenCode Configuration Preset: Anthropic Claude
+# 
+# Usage: Copy this file to your project as `opencode.toml`
+# or merge with existing configuration.
+#
+# Requirements:
+#   - ANTHROPIC_API_KEY environment variable must be set
+#
+# Recommended Models:
+#   - claude-sonnet-4-20250514 (default, best balance)
+#   - claude-opus-4-20250514 (most capable)
+#   - claude-3-5-haiku-20241022 (fastest)
+
+[provider]
+default = "anthropic"
+
+[provider.anthropic]
+api_key_env = "ANTHROPIC_API_KEY"
+model = "claude-sonnet-4-20250514"
+max_tokens = 8192
+temperature = 0.7
+
+# Optional: Enable extended thinking for complex tasks
+# [provider.anthropic.thinking]
+# enabled = true
+# budget_tokens = 10000
+
+[tools]
+# Enable all standard tools
+bash = true
+read = true
+write = true
+edit = true
+glob = true
+grep = true
+ls = true
+rm = true
+lsp = true
+webfetch = true
+websearch = true
+
+[permissions]
+# Auto-approve safe commands
+bash_allow = [
+    "git status",
+    "git log",
+    "git diff",
+    "git branch",
+    "ls",
+    "cat",
+    "pwd",
+    "which",
+    "python --version",
+    "pip list",
+]
+
+[mcp]
+# MCP server configurations
+servers = []
+
+[ui]
+theme = "dark"
+language = "en"
+
+# Session settings
+[session]
+auto_save = true
+compaction_threshold = 0.8
