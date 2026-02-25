@@ -1,0 +1,46 @@
+# Projects - keep folders but ignore contents
+.env
+for_testing/*
+!for_testing/.gitkeep
+merge_projects/*
+!merge_projects/.gitkeep
+python_embeded/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Git rewrite state
+.git-rewrite/
+
+# Secrets and credentials - NEVER commit these
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+credentials.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Embedding cache
+.embedding_cache/
+*.embedding_cache/
+
+# pytest cache
+.pytest_cache/

@@ -1,0 +1,13 @@
+{
+  "plan": "merge",
+  "description": "RAG for MERGE_INTEGRATION_PLAN.md and related merge documentation",
+  "embedding_model": "nomic-embed-text",
+  "chunk_size": 512,
+  "top_k": 5,
+  "sources": [
+    "../plans/MERGE_INTEGRATION_PLAN.md",
+    "../plans/TARGET_PROJECT_SYNC_PLAN.md",
+    "../docs/DOCS_INDEX.md"
+  ],
+  "file_patterns": ["*.md"]
+}

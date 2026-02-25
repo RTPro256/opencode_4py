@@ -1,0 +1,26 @@
+{
+  "type": "bug_detected",
+  "description": "RAG for automatically detected bugs, errors, and failures",
+  "embedding_model": "nomic-embed-text",
+  "chunk_size": 256,
+  "top_k": 3,
+  "auto_create": true,
+  "sources": [],
+  "file_patterns": ["*.md", "*.log", "*.json"],
+  "detection_triggers": {
+    "test_failure": true,
+    "lint_error": true,
+    "runtime_exception": true,
+    "type_error": true,
+    "import_error": true,
+    "prompt_quality_issue": true
+  },
+  "prompt_quality_criteria": {
+    "incorrect_output": "Response is factually wrong or misleading",
+    "format_mismatch": "Output doesn't match expected structure",
+    "ambiguity": "Multiple interpretations lead to inconsistent results",
+    "missing_context": "Missing information causes poor responses",
+    "verbosity": "Unnecessary length reduces clarity",
+    "unclear_intent": "Users or agents struggle to understand the intent"
+  }
+}

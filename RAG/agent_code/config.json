@@ -1,0 +1,15 @@
+{
+  "agent": "code",
+  "description": "RAG for code generation agent",
+  "embedding_model": "nomic-embed-text",
+  "embedding_provider": "ollama",
+  "chunk_size": 512,
+  "chunk_overlap": 50,
+  "top_k": 5,
+  "min_similarity": 0.7,
+  "sources": [],
+  "file_patterns": ["*.py", "*.md", "*.txt"],
+  "created_at": null,
+  "updated_at": null,
+  "document_count": 0
+}

@@ -1,0 +1,9 @@
+{
+  "agent": "troubleshooting",
+  "embedding_model": "nomic-embed-text",
+  "vector_store": "file",
+  "sources": [
+    "../../RAG/troubleshooting"
+  ],
+  "total_documents": 23
+}

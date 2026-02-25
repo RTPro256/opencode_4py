@@ -1,0 +1,13 @@
+{
+  "plan": "testing",
+  "description": "RAG for TESTING_PLAN.md and related testing documentation",
+  "embedding_model": "nomic-embed-text",
+  "chunk_size": 512,
+  "top_k": 5,
+  "sources": [
+    "../plans/TESTING_PLAN.md",
+    "../plans/FOR_TESTING_PLAN.md",
+    "../docs/TESTING_STATUS.md"
+  ],
+  "file_patterns": ["*.md"]
+}

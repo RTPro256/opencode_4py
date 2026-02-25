@@ -1,0 +1,92 @@
+# OpenCode Configuration Preset: Local Ollama
+# 
+# Usage: Copy this file to your project as `opencode.toml`
+# or merge with existing configuration.
+#
+# Requirements:
+#   - Ollama installed and running (https://ollama.ai)
+#   - At least one model pulled (e.g., `ollama pull llama3.2`)
+#
+# Recommended Models:
+#   - llama3.2 (default, good balance)
+#   - llama3.1:70b (high capability, requires more RAM)
+#   - codellama (code-focused)
+#   - mistral (fast and capable)
+#   - deepseek-coder (code specialist)
+#
+# To start Ollama:
+#   ollama serve
+#
+# To pull a model:
+#   ollama pull llama3.2
+
+[provider]
+default = "ollama"
+
+[provider.ollama]
+base_url = "http://localhost:11434"
+model = "llama3.2"
+# Ollama doesn't use API keys
+# Adjust context window based on your model
+context_window = 8192
+temperature = 0.7
+
+# Optional: GPU settings
+# [provider.ollama.gpu]
+# enabled = true
+# layers = 35
+
+[tools]
+# Enable all standard tools
+bash = true
+read = true
+write = true
+edit = true
+glob = true
+grep = true
+ls = true
+rm = true
+lsp = true
+webfetch = true
+websearch = true
+
+[permissions]
+# Auto-approve safe commands
+bash_allow = [
+    "git status",
+    "git log",
+    "git diff",
+    "git branch",
+    "ls",
+    "cat",
+    "pwd",
+    "which",
+    "python --version",
+    "pip list",
+    "ollama list",
+    "ollama ps",
+]
+
+[mcp]
+# MCP server configurations
+servers = []
+
+[ui]
+theme = "dark"
+language = "en"
+
+# Session settings
+[session]
+auto_save = true
+# Local models may have smaller context windows
+compaction_threshold = 0.7
+
+# RAG settings for local embeddings
+[rag]
+enabled = true
+# Use local embeddings with Ollama
+embedding_provider = "ollama"
+embedding_model = "nomic-embed-text"
+# Vector store
+vector_store = "chroma"
+persist_directory = "./.opencode/vectors"

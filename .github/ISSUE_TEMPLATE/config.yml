@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/opencode-ai/opencode_4py/tree/main/docs
+    about: Check the documentation for usage guides and API references
+  - name: Discussions
+    url: https://github.com/opencode-ai/opencode_4py/discussions
+    about: Ask questions and discuss ideas with the community

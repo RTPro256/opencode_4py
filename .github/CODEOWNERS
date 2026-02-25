@@ -1,0 +1,45 @@
+# CODEOWNERS - OpenCode Python
+# This file defines the code owners for each part of the codebase.
+# Code owners are automatically requested for review when someone opens
+# a pull request that modifies code that they own.
+
+# Default owners for everything in the repo
+* @opencode-ai/core-team
+
+# Core infrastructure
+/src/opencode/src/opencode/core/ @opencode-ai/core-maintainers
+/src/opencode/src/opencode/core/config.py @opencode-ai/core-maintainers
+/src/opencode/src/opencode/core/session.py @opencode-ai/core-maintainers
+
+# Provider implementations
+/src/opencode/src/opencode/provider/ @opencode-ai/provider-maintainers
+
+# LLM Checker
+/src/opencode/src/opencode/llmchecker/ @opencode-ai/llm-maintainers
+
+# RAG system
+/src/opencode/src/opencode/core/rag/ @opencode-ai/rag-maintainers
+
+# MCP (Model Context Protocol)
+/src/opencode/src/opencode/mcp/ @opencode-ai/mcp-maintainers
+
+# CLI commands
+/src/opencode/src/opencode/cli/ @opencode-ai/cli-maintainers
+
+# Database
+/src/opencode/src/opencode/db/ @opencode-ai/db-maintainers
+
+# Internationalization
+/src/opencode/src/opencode/i18n/ @opencode-ai/i18n-maintainers
+
+# Tests
+/src/opencode/src/opencode/tests/ @opencode-ai/test-maintainers
+
+# Documentation
+/docs/ @opencode-ai/docs-maintainers
+/README.md @opencode-ai/docs-maintainers
+/CONTRIBUTING.md @opencode-ai/docs-maintainers
+
+# Build and CI configuration
+/.github/ @opencode-ai/ci-maintainers
+/src/opencode/pyproject.toml @opencode-ai/ci-maintainers
