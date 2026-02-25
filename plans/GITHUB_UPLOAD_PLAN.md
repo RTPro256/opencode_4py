@@ -135,7 +135,54 @@ The project includes a `.gitattributes` file that enforces consistent line endin
 
 ## Implementation Plan
 
-### Phase 1: Preparation
+### Phase 1: Check Repository List
+
+> **Reference:** See [GITHUB_REPOSITORIES.md](../docs/GITHUB_REPOSITORIES.md) for the complete list of repositories.
+
+Before starting any upload or update, check [GITHUB_REPOSITORIES.md](../docs/GITHUB_REPOSITORIES.md) to identify which repositories need to be updated.
+
+#### Repository Push Commands
+
+| Repository | Push Command | Status |
+|------------|--------------|--------|
+| `opencode_4py` | `git push origin main` | Active |
+| `opencode_comfyui` | `git push origin main` | Planned |
+| Future repositories | `git push origin main` | As created |
+
+#### Workflow
+
+1. **Check GITHUB_REPOSITORIES.md** for current repository list
+2. **Identify target repository** - which repo needs the update
+3. **Verify remote is configured** - `git remote -v`
+4. **Proceed to appropriate phase** for the update
+
+#### Completion Condition
+
+**If the repository has been successfully updated (both locally and remotely), the plan is considered COMPLETE.**
+
+- **YES (already done):** Plan complete - stop here
+- **NO (needs updating):** Proceed with phases 2-6
+
+To verify successful completion:
+
+```bash
+# Check local commit status
+git log --oneline -1
+
+# Verify remote push was successful
+git status
+
+# Confirm remote matches local
+git diff origin/main --stat
+```
+
+**Success criteria:**
+- [ ] Local repository has commits
+- [ ] Remote repository is accessible
+- [ ] `git push origin main` completes without errors
+- [ ] Files appear correctly on GitHub
+
+### Phase 2: Preparation
 
 1. **Backup existing `.git/` directory** (optional, for safety)
 2. **Remove existing git state**:
@@ -143,7 +190,7 @@ The project includes a `.gitattributes` file that enforces consistent line endin
    - Delete `.git-rewrite/` directory
 3. **Verify `.gitignore` is correct**
 
-### Phase 2: Repository Initialization
+### Phase 3: Repository Initialization
 
 1. **Initialize new git repository**
    ```bash
@@ -163,7 +210,7 @@ The project includes a `.gitattributes` file that enforces consistent line endin
    git config user.email "your-email@example.com"
    ```
 
-### Phase 3: Initial Commit
+### Phase 4: Initial Commit
 
 1. **Stage all files**
    ```bash
@@ -180,7 +227,7 @@ The project includes a `.gitattributes` file that enforces consistent line endin
    git count-objects -vH
    ```
 
-### Phase 4: GitHub Connection
+### Phase 5: GitHub Connection
 
 1. **Create repository on GitHub** (via web interface or CLI)
    - Repository: `opencode_4py`
@@ -198,7 +245,7 @@ The project includes a `.gitattributes` file that enforces consistent line endin
    git push -u origin main
    ```
 
-### Phase 5: Verification
+### Phase 6: Verification
 
 1. **Verify repository on GitHub**
    - Check all files are present

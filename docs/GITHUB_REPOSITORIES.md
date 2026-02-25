@@ -27,6 +27,23 @@ This document serves as the central reference for all GitHub repositories associ
 | **Visibility** | Public (recommended) / Private (user choice) |
 | **Git LFS** | Configured |
 | **Default Branch** | `main` |
+| **Push Command** | `git push origin main` |
+
+#### Future Updates
+
+To push future updates to this repository:
+
+```bash
+cd /path/to/opencode_4py
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
+Or use the CLI command:
+```bash
+opencode github push -m "Your commit message"
+``` |
 
 #### Repository Description (suggested)
 
@@ -62,8 +79,9 @@ These are repositories for projects in the `for_testing/` directory that may rec
 | **Upstream URL** | `https://github.com/comfyanonymous/ComfyUI` |
 | **Integration Type** | Dependency testing |
 | **Sync Status** | See [TARGET_PROJECT_SYNC_PLAN.md](../plans/TARGET_PROJECT_SYNC_PLAN.md) |
+| **Push Command** | N/A (external upstream) |
 
-> **Note:** ComfyUI is an external project used for testing integration capabilities. It is not owned by RTPro256.
+> **Note:** ComfyUI is an external project used for testing integration capabilities. It is not owned by RTPro256. Updates should be pushed to the local integration repository (`opencode_comfyui`) rather than the upstream ComfyUI project.
 
 ---
 
@@ -83,6 +101,18 @@ These are combined repositories that integrate opencode_4py with other projects.
 | **Git LFS** | Configured |
 | **Default Branch** | `main` |
 | **Status** | Planned |
+| **Push Command** | `git push origin main` |
+
+#### Future Updates
+
+Once the repository is created and initialized, future updates can be pushed using:
+
+```bash
+cd /path/to/opencode_comfyui
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
 
 #### Repository Description (suggested)
 
@@ -223,11 +253,11 @@ When creating a new repository:
 
 The following repositories may be created in the future:
 
-| Repository | Purpose | Priority |
-|------------|---------|----------|
-| `opencode_4py-docs` | Dedicated documentation site | Low |
-| `opencode_4py-examples` | Example projects and templates | Medium |
-| `opencode_4py-templates` | Project templates | Low |
+| Repository | Purpose | Priority | Push Command |
+|------------|---------|----------|--------------|
+| `opencode_4py-docs` | Dedicated documentation site | Low | `git push origin main` |
+| `opencode_4py-examples` | Example projects and templates | Medium | `git push origin main` |
+| `opencode_4py-templates` | Project templates | Low | `git push origin main` |
 
 ---
 
@@ -333,6 +363,7 @@ Would you like me to attempt automatic recovery? (y/n)
 
 | Date | Change |
 |------|--------|
+| 2026-02-25 | Added push command instructions to all repository sections |
 | 2026-02-25 | Added opencode_comfyui integration repository (planned) |
 | 2026-02-25 | Added interactive upload workflow section |
 | 2026-02-25 | Added failure recovery section |
