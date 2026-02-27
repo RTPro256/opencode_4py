@@ -28,6 +28,7 @@ This document serves as the central reference for all GitHub repositories associ
 | **Git LFS** | Configured |
 | **Default Branch** | `main` |
 | **Push Command** | `git push origin main` |
+| **Content** | Full project (src, docs, plans, RAG, scripts, etc.) |
 
 #### Future Updates
 
@@ -103,15 +104,18 @@ These are combined repositories that integrate opencode_4py with other projects.
 | **Status** | Active |
 | **Remote Name** | `comfyui` |
 | **Push Command** | `git push comfyui main --force` |
+| **Content** | Python package only (`src/opencode/`) - pip-installable for ComfyUI users |
+
+> **Important:** This repo should ONLY contain the Python package (`src/opencode/`), NOT the full project. It is meant to be installed via `pip install` by ComfyUI users.
 
 #### What's Being Updated
 
-This repository receives two types of updates:
+| Repository | Content | Description |
+|------------|---------|-------------|
+| `opencode_4py` | Full project | Complete project (src, docs, plans, RAG, scripts, etc.) |
+| `comfyui_portable_opencode-4py` | Python package only | Only `src/opencode/` - pip-installable for ComfyUI users |
 
-| Update Type | Source Path | Description |
-|-------------|-------------|-------------|
-| **Python Package** | `for_testing/as_dependency/ComfyUI_windows_portable/python_embeded/Lib/site-packages/opencode/` | The embedded opencode package (used with ComfyUI portable) |
-| **Integration Files** | `for_testing/as_dependency/ComfyUI_windows_portable/` | Opencode_4py-specific files in the ComfyUI portable directory (configs, batch files, docs, etc.) |
+> **Important:** These are NOT duplicates! `comfyui_portable_opencode-4py` should only contain the Python package, not the full project.
 
 > **Note:** This repository is the integration target for ComfyUI. The local path is `for_testing/as_dependency/ComfyUI_windows_portable/`.
 
@@ -345,14 +349,13 @@ These are repos that I am aware of and can update:
 
 1. opencode_4py (https://github.com/RTPro256/opencode_4py.git)
    - Primary project repository
+   - Content: Full project (src, docs, plans, RAG, scripts)
    - Status: Ready to push
 
 2. comfyui_portable_opencode-4py (https://github.com/RTPro256/comfyui_portable_opencode-4py.git)
    - ComfyUI + opencode_4py integration
+   - Content: Python package only (pip-installable)
    - Status: Active
-   - Updates include:
-     a) Python package (site-packages/opencode) - embedded
-     b) Integration files (ComfyUI portable directory)
 
 Is there a new repo you want me to update?
 > [Enter repository name or number, or 'new' to create a new one]

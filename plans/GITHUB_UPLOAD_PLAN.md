@@ -142,11 +142,12 @@ Before starting any upload or update, check [GITHUB_REPOSITORIES.md](../docs/GIT
 
 #### Repository Push Commands
 
-| Repository | Push Command | Status |
-|------------|--------------|--------|
-| `opencode_4py` | `git push origin main` | Active |
-| `comfyui_portable_opencode-4py` | `git push comfyui main --force` | Active |
-| Future repositories | `git push origin main` | As created |
+| Repository | Push Command | Content | Status |
+|------------|--------------|---------|--------|
+| `opencode_4py` | `git push origin main` | Full project (src, docs, plans, RAG, scripts) | Active |
+| `comfyui_portable_opencode-4py` | `git push comfyui main --force` | Python package only (`src/opencode/`) | Active |
+
+> **Important:** These are NOT duplicates! `comfyui_portable_opencode-4py` should only contain the Python package, not the full project.
 
 #### Manual Git Commands (without CLI)
 
