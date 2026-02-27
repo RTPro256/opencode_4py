@@ -5,7 +5,6 @@
 This document outlines the strategy for synchronizing changes made to the main opencode_4py project with target projects that have integrated opencode_4py.
 
 > **Navigation:**
-> - **Previous:** [GITHUB_UPLOAD_PLAN.md](GITHUB_UPLOAD_PLAN.md) - GitHub deployment
 > - **Next:** [FOR_TESTING_PLAN.md](FOR_TESTING_PLAN.md) - Testing framework
 
 > **Related Documents:**
@@ -415,7 +414,7 @@ opencode sync plans <target_project> --complete
 
 ## Integration with GitHub Upload Plan
 
-This plan integrates with [GITHUB_UPLOAD_PLAN.md](GITHUB_UPLOAD_PLAN.md) to ensure:
+This plan ensures:
 
 1. **Pre-Push Sync Check**: Before pushing to GitHub, verify all target projects are synchronized
 2. **Post-Push Sync**: After successful push, trigger synchronization for all target projects

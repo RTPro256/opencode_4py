@@ -104,7 +104,23 @@ These are combined repositories that integrate opencode_4py with other projects.
 | **Remote Name** | `comfyui` |
 | **Push Command** | `git push comfyui main --force` |
 
+#### What's Being Updated
+
+This repository receives two types of updates:
+
+| Update Type | Source Path | Description |
+|-------------|-------------|-------------|
+| **Python Package** | `for_testing/as_dependency/ComfyUI_windows_portable/python_embeded/Lib/site-packages/opencode/` | The embedded opencode package (used with ComfyUI portable) |
+| **Integration Files** | `for_testing/as_dependency/ComfyUI_windows_portable/` | Opencode_4py-specific files in the ComfyUI portable directory (configs, batch files, docs, etc.) |
+
 > **Note:** This repository is the integration target for ComfyUI. The local path is `for_testing/as_dependency/ComfyUI_windows_portable/`.
+
+#### Sync Command
+
+```bash
+# Sync both Python package and integration files to GitHub
+opencode github sync -t for_testing/as_dependency/ComfyUI_windows_portable -m "Update"
+```
 
 #### Adding the Remote
 
@@ -334,6 +350,9 @@ These are repos that I am aware of and can update:
 2. comfyui_portable_opencode-4py (https://github.com/RTPro256/comfyui_portable_opencode-4py.git)
    - ComfyUI + opencode_4py integration
    - Status: Active
+   - Updates include:
+     a) Python package (site-packages/opencode) - embedded
+     b) Integration files (ComfyUI portable directory)
 
 Is there a new repo you want me to update?
 > [Enter repository name or number, or 'new' to create a new one]

@@ -2,7 +2,6 @@
 
 > **Navigation:**
 > - **Previous:** [COMPREHENSIVE_PROJECT_REVIEW_PLAN.md](COMPREHENSIVE_PROJECT_REVIEW_PLAN.md) - Review plan
-> - **Next:** [TARGET_PROJECT_SYNC_PLAN.md](TARGET_PROJECT_SYNC_PLAN.md) - Target project synchronization
 
 > **Related Documents:**
 > - [README.md](../README.md) - Project overview and features
