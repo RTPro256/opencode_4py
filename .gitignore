@@ -1,24 +1,37 @@
-# Ignore embedded repositories
-ComfyUI/
+# ===========================================
+# IGNORED: Original Portable Distribution
+# ===========================================
+# These folders contain the original ComfyUI portable distribution
+# that should be obtained separately from https://github.com/Comfy-Org/ComfyUI
 
-# Ignore Python embedded distribution
+# Embedded Python distribution (~38,000 files, too large for git)
 python_embeded/
 
-# Ignore cache
+# ComfyUI application (should be cloned separately)
+ComfyUI/
+
+# ComfyUI manager and extra folders that come with portable
+extra/
+custom_nodes/
+models/
+output/
+temp/
+
+# Cache
 __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
 
-# Ignore IDE
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# Ignore OS files
+# OS files
 .DS_Store
 Thumbs.db
 
-# Ignore logs
+# Logs
 *.log
