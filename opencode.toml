@@ -1,0 +1,91 @@
+# OpenCode Configuration for ComfyUI Integration
+# Default model uses Ollama (local), with OpenRouter as alternative
+
+# Default model to use (local Ollama model - llama3.2:3b)
+default_model = "llama3.2:3b"
+
+# Provider configurations
+[providers.ollama]
+base_url = "http://localhost:11434"
+default_model = "llama3.2:3b"
+
+[providers.openrouter]
+api_key = "${OPENROUTER_API_KEY}"
+default_model = "meta-llama/llama-3.1-8b-instruct:free"
+
+# Ollama model configurations (local)
+[models."qwen3-coder:30b"]
+provider = "ollama"
+model_id = "qwen3-coder:30b"
+max_tokens = 32768
+temperature = 0.7
+supports_tools = true
+supports_vision = false
+supports_streaming = true
+
+[models."llama3.2:latest"]
+provider = "ollama"
+model_id = "llama3.2:latest"
+max_tokens = 4096
+temperature = 0.7
+supports_tools = true
+supports_vision = false
+supports_streaming = true
+
+[models."llama3.2:3b"]
+provider = "ollama"
+model_id = "llama3.2:3b"
+max_tokens = 4096
+temperature = 0.7
+supports_tools = true
+supports_vision = false
+supports_streaming = true
+
+[models."llama3.1:8b"]
+provider = "ollama"
+model_id = "llama3.1:8b"
+max_tokens = 8192
+temperature = 0.7
+supports_tools = true
+supports_vision = false
+supports_streaming = true
+
+# OpenRouter model configurations (cloud)
+[models."meta-llama/llama-3.1-8b-instruct:free"]
+provider = "openrouter"
+model_id = "meta-llama/llama-3.1-8b-instruct:free"
+max_tokens = 4096
+temperature = 0.7
+supports_tools = true
+supports_vision = false
+supports_streaming = true
+
+[models."anthropic/claude-3.5-sonnet"]
+provider = "openrouter"
+model_id = "anthropic/claude-3.5-sonnet"
+max_tokens = 8192
+temperature = 0.7
+supports_tools = true
+supports_vision = true
+supports_streaming = true
+
+[models."openai/gpt-4o"]
+provider = "openrouter"
+model_id = "openai/gpt-4o"
+max_tokens = 4096
+temperature = 0.7
+supports_tools = true
+supports_vision = true
+supports_streaming = true
+
+# TUI configuration
+[tui]
+theme = "dark"
+show_token_count = true
+show_cost = true
+compact_mode = false
+
+# Permission configuration
+[permissions]
+ask_before_bash = true
+ask_before_edit = true

@@ -1,0 +1,24 @@
+# Ignore embedded repositories
+ComfyUI/
+
+# Ignore Python embedded distribution
+python_embeded/
+
+# Ignore cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Ignore IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
