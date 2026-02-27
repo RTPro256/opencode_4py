@@ -30,6 +30,7 @@ from .model_manager import (
 )
 from .server import (
     LLMServer,
+    get_llm_server,
     ChatCompletionRequest,
     ChatCompletionResponse,
     ChatMessage,
