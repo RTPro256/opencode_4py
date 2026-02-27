@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 82
+# Video ID: UsfpzxZNsPo
+
+[175:05] and 2 pi and the labels are also in the
+[175:08] mathematical notations that you have
+[175:10] given here. Fine. So you can also
+[175:13] provide labels in this format. Let me
+[175:16] just copy this. Okay. If you want your
+[175:19] labels to have a scientific notation,
+[175:22] you can also do this. So you can use a
+[175:24] dollar sign $2 and then back slash write
+[175:28] pi and this would be same dollar sign
+[175:33] back slash 2 pi. Okay. Oh sorry I missed
+[175:38] the dollar sign closure. Okay that was
+[175:41] the error. Okay you can see don't forget
+[175:43] to close this dollar sign. So dollar
+[175:46] sign start and close again dollar sign
+[175:48] start and close and within that you can
+[175:50] provide the mathematical symbols. Okay.
+[175:53] So here I have provided the mathematical
+[175:54] symbol pi. So that is another way you
+[175:57] can actually do this. So you can see pi
+[176:00] written in mathematical notation. Okay.
+[176:02] You can provide any other mathematical
+[176:04] notation there. So if you want to go
+[176:06] with sigma, let's see how that sigma
+[176:09] appears and so on. You can go with
+[176:11] alpha, beta, gamma, delta. All sort of
+[176:13] mathematical symbols you can have in the
+[176:16] labels. That's exactly how. Okay. Now
+[176:20] let's see how we can work with multiple
+[176:22] plots that is by creating multiple
+[176:24] plots, multiple axes and even subplots.
+[176:27] Okay. So here I'm using the subplots
+[176:29] function from the PLT module. How many
+[176:32] rows? I have one row and two columns. So
+[176:34] it will come as side by side two plots.
+[176:37] The total size of the figure canvas is
+[176:39] 10 + 4. Okay. And in the first subplots,
+[176:43] so these are the index for the subplots.
+[176:45] So zero means the index for the first
+[176:46] subplot. And then this is the usual
+[176:48] plot. and then the title for that
+[176:50] particular subplot. Okay. Now this time
+[176:52] the function changes from plt.title to
+[176:56] axis0 that is the index for that
+[176:58] particular subplot and this will become
+[177:00] set title function that is the object-
+[177:02] oriented programming concept that we are
+[177:04] applying here. Same goes for the second
+[177:06] subplot. So first you reference to the
+[177:08] second subplot axis and then the usual
+[177:11] plotting functions and then same goes

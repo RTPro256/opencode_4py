@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 34
+# Video ID: UsfpzxZNsPo
+
+[73:09] functions used for simple tasks. Python
+[73:11] provides a number of built-in functions
+[73:13] that are incredibly useful. You don't
+[73:15] need to import anything to use them.
+[73:18] They are ready to go. Some common
+[73:20] examples include for input output
+[73:22] functions like input and print. For data
+[73:24] type conversions, functions like int,
+[73:27] float, string, these let you convert
+[73:30] between different data types.
+[73:32] Mathematical functions like sum, max,
+[73:35] abs. These help with basic calculations.
+[73:38] For example, if you want to find out the
+[73:40] largest number in a list, you can simply
+[73:42] use max and then it will return some
+[73:46] number. There are other very important
+[73:48] functions like length, range, and type.
+[73:50] Let's move on to userdefined functions.
+[73:53] These are functions you can create to
+[73:55] perform specific tasks in your own
+[73:57] programs. To create a userdefined
+[73:59] function, you use the dev keyword
+[74:02] followed by the function name,
+[74:04] parameters, and the code block. Let's
+[74:06] say you are creating a program to greet
+[74:08] a user. Just write a function and call
+[74:11] the function with the username. It's
+[74:13] that simple. Next, we have the lambda
+[74:15] functions. Lambda functions are small
+[74:18] anonymous functions that are typically
+[74:20] used for simple tasks. They are defined
+[74:23] using the lambda keyword and can contain
+[74:26] only a single expression. Lambda
+[74:28] functions are often used along with
+[74:30] functions like map, filter and sorted.
+[74:33] For instance, if you have a list of
+[74:35] numbers and you want to filter out only
+[74:37] the even ones, a lambda function can
+[74:40] make that very easy. It's time to put
+[74:43] what we have learned into practice.
+[74:45] Let's write some functions in Python.
+[74:47] Thank you for joining me in this session
+[74:48] on functions in Python. I hope you now
+[74:51] see how powerful and useful functions
+[74:53] are for making your code more efficient
+[74:56] and organized.
+[74:58] Now let's have a look how do we create
+[75:01] functions in Python. As already
+[75:03] discussed the purpose of functions is to
+[75:06] group a particular line of code or few

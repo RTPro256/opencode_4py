@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 149
+# Video ID: UsfpzxZNsPo
+
+[323:18] will come in a JSON format. So this part
+[323:20] of the code is same. Okay. Let me run
+[323:21] this and again to access this I'm going
+[323:24] to copy this code. So if you are
+[323:26] accessing this from the front end, it
+[323:28] will not be much different from here.
+[323:30] Let's see. Okay. So the JSON data that
+[323:33] I'm going to parse here is message. So
+[323:36] this this is important because this
+[323:38] field will be uh searched by the server.
+[323:41] Okay. To process your request. Okay. So
+[323:43] this is the URL which you are hitting
+[323:45] and this JSON data is parsed to the JSON
+[323:49] argument here. And now from the
+[323:51] response.json JSON you are able to fetch
+[323:54] your entire output. So response.json is
+[323:57] what you are interested in right
+[323:59] perfect. So let me stop this and finally
+[324:02] we are going to create a almost end
+[324:04] toend application with a front end and a
+[324:06] back end kind of. Okay. It's a pretty
+[324:08] advanced app with HTML templating and uh
+[324:11] supported by Ginga library and CSS
+[324:14] rendering. Okay. So can be a bit tricky
+[324:17] for a beginner to understand this entire
+[324:19] codebase. I would strongly suggest you
+[324:21] to copy this, paste it in Chad JPD and
+[324:24] ask Chad JPD to explain you line by line
+[324:26] that will be very easy. I'm assuming
+[324:28] that you are fairly comfortable with
+[324:30] Python coding and for that reason I'll
+[324:32] just explain in high level what is
+[324:34] happening. So this is very much the same
+[324:38] code which I used here. So which I had
+[324:41] used for the get method. Okay, just
+[324:43] converted that into a post method now.
+[324:46] Okay, just converted that into a post.
+[324:48] So the first difference is here I have
+[324:50] added a home route base route. Okay. So
+[324:55] which you can access. This is important.
+[324:57] Okay. Earlier we had not done that. So
+[324:59] this is a root route. So where this HTML
+[325:03] page will be rendered. So there are
+[325:05] three HTML pages which will be used in
+[325:07] this Flask app. So one is the homepage.
+[325:10] Second is the form page. So this is this
+[325:14] form uh that we were you know creating
+[325:18] this form on the fly using a Python
+[325:20] code. Instead of creating this form on
+[325:22] the fly, I have already created this

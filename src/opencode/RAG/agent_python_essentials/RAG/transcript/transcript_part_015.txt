@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 15
+# Video ID: UsfpzxZNsPo
+
+[31:18] So let's see some of these operators in
+[31:21] action. So I'm adding a and b. Uh now
+[31:25] I'm subtracting b from a. So I'm
+[31:28] dividing a by b. So a is we have seen is
+[31:33] 15 b is 8. So this is 15 divided by 8.
+[31:37] This is 15 * 8 120. And uh this is
+[31:42] exponentiation. So 2 to 2 to the^ of 3.
+[31:45] Similarly you can just change this
+[31:47] number. 2 ^ of 10 would be 1024. So this
+[31:50] is for exponential or powers. So this is
+[31:53] flow division. So this is 15 divided by
+[31:56] 8. Um and you are only looking for the
+[31:59] quotient part which is one and modulo
+[32:03] operator will give you the remainder. So
+[32:04] remainder should be seven. So when 15 is
+[32:06] divided by 8 you'll get one as the
+[32:08] quotient and seven as the remainder.
+[32:12] Let's have a look into some of the
+[32:13] comparison operators. So 2 * equality
+[32:16] sign will be used to check the equality
+[32:18] between two operants.
+[32:21] This is for not equal to for greater
+[32:23] than. This is for less than, less than
+[32:25] equal to and greater than equal to. So
+[32:29] I'm checking whether let's print the
+[32:31] value of a and b before we go ahead. So
+[32:33] a is 15 and b is 8. I'm checking whether
+[32:36] a is equal to b. It says false.
+[32:40] Certainly a is not equal to b because a
+[32:42] is 15 and b is 8. Now I'm checking
+[32:45] whether a is equal to 51 or not. So a is
+[32:48] not equal to 51 because a is actually
+[32:51] equal to 15. So here I am checking
+[32:55] whether a is equal to b or not and
+[32:58] checking the data type of the returned
+[33:01] output. Here the output will be a
+[33:02] boolean you can see. So for all these
+[33:05] comparison operators the returned output
+[33:08] will be boolean type. You can see true
+[33:10] false true false. So that true false is
+[33:13] basically a boolean data type. Now I'm
+[33:15] checking whether a is greater than b.
+[33:17] Yes indeed it is greater than b. A is
+[33:20] less than B. This should return false. A
+[33:23] is greater than 51. No, 15 is less than
+[33:27] 51. So it is false again. Now for
+[33:31] logical operators, uh and or and not. So
+[33:36] is 1 equal to 1? This will return me
+[33:38] true. Is 2 equal to two? Yes, this will
+[33:41] also return me true. So if this is true

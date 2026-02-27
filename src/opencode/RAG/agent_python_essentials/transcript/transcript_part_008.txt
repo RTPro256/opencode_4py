@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 8
+# Video ID: UsfpzxZNsPo
+
+[15:15] saved, you can go to file and locate in
+[15:20] drive. So this will go to the exact
+[15:24] collab notebooks folder in your Google
+[15:28] account.
+[15:30] So now as you can see all my collab
+[15:33] notebooks are located in the my drive
+[15:36] collab notebooks folder. Okay. So this
+[15:38] is the module one Jupyter notebook which
+[15:41] I created on uh collab and there are
+[15:45] some other notebooks which I had already
+[15:47] created. So this is present within my
+[15:49] drive collab notebooks. So this is how
+[15:51] you can actually also upload your collab
+[15:54] notebooks to this particular drive and
+[15:56] execute it from there. So let's say if
+[15:58] you want to execute it from here, you
+[16:00] can open any of the existing notebooks
+[16:03] by right-clicking on it and open with
+[16:06] Google Collab. This is how you can open
+[16:09] any Jupyter notebook. Once you have
+[16:11] uploaded it on Google Collab, right
+[16:13] click and open it on Google Collab. So
+[16:16] this will open it in another tab from
+[16:19] where you can again connect to a runtime
+[16:21] and start executing. So that's it for
+[16:24] this particular video. See you in the
+[16:26] next one. Thank you.
+[16:28] Hello and welcome back. In this video,
+[16:30] we'll dive into some foundational
+[16:32] concepts that are essential for coding
+[16:34] in Python. The variables, data types,
+[16:37] and operators.
+[16:38] By the end of this session, you will
+[16:40] understand how to declare variables, use
+[16:43] different types of data, and perform
+[16:45] operations on them. So, let's get
+[16:48] started. Let's get started with the
+[16:50] variables and data types. First, let's
+[16:53] talk about variables and data types in
+[16:55] Python. Think of variables as a
+[16:57] container that stores information like a
+[17:00] number, a word, or even a list of items.
+[17:03] Python makes working with variables very
+[17:06] easy. You don't need to declare them
+[17:08] explicitly unlike some other programming
+[17:11] languages. Just give them a name and
+[17:13] assign them a value and voila, you are
+[17:16] ready to use them. For instance, here we
+[17:19] see different data types like numbers,
+[17:21] strings, and even more complex data

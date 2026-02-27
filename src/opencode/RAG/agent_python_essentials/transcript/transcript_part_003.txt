@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 3
+# Video ID: UsfpzxZNsPo
+
+[04:19] tutorials, forums, and even solutions to
+[04:22] problems you might face, making the
+[04:25] learning curve much smoother. Secondly,
+[04:28] Python syntax is very easy to understand
+[04:31] which allows data scientists to focus on
+[04:33] solving complex problems rather than
+[04:35] spending too much time on intricacies of
+[04:38] coding. It is also open source which
+[04:40] means it is free to use and there's a
+[04:43] continuous stream of improvements for
+[04:45] developers from all over the world.
+[04:48] Another big advantage is Python's rich
+[04:51] collection of libraries like pandas,
+[04:54] numpy, mattplot lib and scikitlearn.
+[04:57] These libraries make tasks like data
+[05:00] manipulation, visualization and machine
+[05:02] learning easier and more efficient. The
+[05:05] widespread use of Python in data science
+[05:08] also translates into plenty of job
+[05:10] opportunities which is another huge
+[05:12] plus. Before we start coding, it's
+[05:15] important to set up your system
+[05:16] properly. For data science, many
+[05:19] developers prefer working in an
+[05:21] integrated environment like Jupyter Lab
+[05:24] or Jupyter Notebook.
+[05:26] Jupyter Lab allows you to write,
+[05:28] execute, and document Python code all in
+[05:32] one place, making it perfect for data
+[05:34] analysis and visualization.
+[05:37] We'll walk through the steps of
+[05:38] installing and setting up Jupyter Lab
+[05:41] which will ensure you have the right
+[05:43] environment for working with Python
+[05:45] throughout this course. Now let's go to
+[05:48] Google and search for Anaconda.
+[05:52] We'll click on the first link
+[05:54] and this is the web page from where you
+[05:56] can start downloading Anaconda
+[05:59] distribution for Python. On this page
+[06:01] you can find the link to download the
+[06:03] Anaconda distribution. So if you see
+[06:06] here below the submit button, there is a
+[06:08] skip registration uh link. Let's skip
+[06:11] the registration and straight away go to
+[06:13] the download page. So this is the
+[06:15] download page. Based on your operating
+[06:17] system, you can click on the links to
+[06:19] download the installer files. So here
+[06:22] I'm using a Windows system. I'll click

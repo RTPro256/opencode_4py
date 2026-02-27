@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 35
+# Video ID: UsfpzxZNsPo
+
+[75:09] lines of code that needs to be executed
+[75:12] multiple times. So we'll be using the
+[75:14] defaf keyword to create the function
+[75:16] definition that should be followed by
+[75:19] the function name. So here def is used
+[75:23] to create the function. The name of the
+[75:25] function here is welcome. So what does
+[75:27] this function do? This will print
+[75:30] welcome to the Python course. So let me
+[75:32] create the function here. Now calling
+[75:35] the function is simple. You just have to
+[75:38] take the name of the function followed
+[75:40] by the parenthesis. So let me call the
+[75:44] function here. So it prints welcome to
+[75:46] the Python course. Again I'm calling the
+[75:49] function. It again prints. So as many
+[75:51] times I keep calling the function. Okay,
+[75:53] this will execute all the lines of code
+[75:56] within the function definition and so
+[75:59] on. Now I'm creating another function
+[76:02] here which is going to add two numbers.
+[76:05] Okay, these two numbers are already set
+[76:08] as 3 and 4 and the total is 3 + 4 7 and
+[76:13] it will print the total. So let me
+[76:17] create the function and create another
+[76:20] function. We'll see what is the
+[76:22] difference between these two. So let me
+[76:25] execute the function. You can see the
+[76:27] print statement got executed from here
+[76:30] and the total is printed as seven. Okay,
+[76:33] you can change these numbers and see uh
+[76:36] this is 30 + 4 now. So this will become
+[76:39] 34. Okay, now I'm assigning the output
+[76:44] of this function to a variable here.
+[76:46] Okay, let me print the value of the
+[76:49] output. It doesn't print anything. Okay,
+[76:51] let me see the data type of this output.
+[76:57] It says none. So essenti it seems that
+[77:00] nothing was stored in the output one
+[77:02] that's why the output data type is none.
+[77:06] So nothing was stored here. It's a null
+[77:08] pointer. Essentially this is a null
+[77:10] pointer. Nothing was stored here. So I'm
+[77:12] slightly modifying the main function to
+[77:15] return the value of the total. So this
+[77:18] is the additional code. So till here it
+[77:21] was the same. This is the additional
+[77:23] code which returns the value of the
+[77:25] total. So when I save the output of the
+[77:30] function with that return into another

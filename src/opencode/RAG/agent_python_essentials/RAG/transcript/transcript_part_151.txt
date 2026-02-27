@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 151
+# Video ID: UsfpzxZNsPo
+
+[327:34] caching the CSS and the HTML uh files in
+[327:38] the server and the cached version is
+[327:40] actually rendered to the user. So 304
+[327:43] not modified is a HTTP status code
+[327:47] indicating that the requested resource.
+[327:49] What are resources are we requesting?
+[327:51] Three HTML files and one CSS file
+[327:53] cascading stylesheet CSS file we are
+[327:56] accessing. So these are not modified
+[327:59] since last time it was requested. So
+[328:01] that caching helps the server to load
+[328:03] these files very fast and also reduces
+[328:08] the server overload and the data
+[328:10] transfer is also reduced. One important
+[328:13] thing that you must note is the folder
+[328:15] organization of these HTML files that
+[328:20] you need to have in your local so that
+[328:24] the HTML files are correctly rendered
+[328:27] when you run the flask app. So this is
+[328:29] the Jupyter notebook which runs the
+[328:32] flask app. This could be a regular
+[328:34] Python file which you are using to run
+[328:37] your flask app. This is the one which
+[328:40] will render your flask server. Within
+[328:42] this folder itself, I have got two more
+[328:45] folders. One is called as templates. So
+[328:48] the templates folder has the HTML
+[328:50] templates. Uh the form and the results
+[328:53] of the form which will be displayed and
+[328:55] the home. So these are all HTML files
+[328:58] which we are using in our flask cap.
+[329:00] There is one more folder called a
+[329:01] static. This static folder contains the
+[329:03] CSS files the cascading stylesheet
+[329:06] files. Now this CSS file is attached or
+[329:10] linked to the all the HTML files here.
+[329:14] Okay. So when I open any of these HTML
+[329:17] file you can see
+[329:24] that this stylesheet has been you can
+[329:28] see that this stylesheet has been this
+[329:30] has been referenced within the static
+[329:33] folder. So that is the reason why you
+[329:35] need to place your CSS file within the
+[329:37] static folder. The CSS file is the file
+[329:40] which will style the front end of your
+[329:42] web page. Okay, it contains the styling
+[329:45] information. What color, what
+[329:47] background, what how should the buttons
+[329:50] look like? How should the text fields
+[329:52] look like? What should be the size, font

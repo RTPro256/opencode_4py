@@ -96,6 +96,7 @@ flowchart TD
 | **Testing** | Create, read, update test files | CRUD on test patterns |
 | **Debugging** | Analyze, fix, verify code | CRUD on error patterns |
 | **Documentation** | Create, update docs with humor | CRUD on doc patterns |
+| **Python Essentials** | Python best practices for AI agents | Query `RAG/agent_python_essentials/` |
 
 ---
 
@@ -167,6 +168,26 @@ Each agent maintains a RAG (Retrieval-Augmented Generation) system for:
     "created_from": "feature: rate limiter",
     "proven_correct": true
 }
+```
+
+#### Python Essentials RAG
+
+The Coding and Testing agents can query the **Python Essentials RAG** for best practices from the YouTube video "Python Essentials for AI Agents":
+
+| Agent | RAG Location | Query Use Case |
+|-------|--------------|----------------|
+| Coding | `RAG/agent_python_essentials/` | Python syntax, best practices, patterns |
+| Testing | `RAG/agent_python_essentials/` | Python testing patterns, pytest usage |
+
+```python
+# Example: Query Python Essentials RAG
+from opencode.core.rag.agent_rag_manager import AgentRAGManager
+
+manager = AgentRAGManager()
+results = await manager.query(
+    agent="python_essentials",
+    query="How to use async/await in Python?"
+)
 ```
 
 #### Testing Agent RAG

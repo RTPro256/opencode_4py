@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 42
+# Video ID: UsfpzxZNsPo
+
+[90:26] is py. To create a module, all you need
+[90:28] to do is create a new Python file. For
+[90:31] example, my_module
+[90:34] py. Write your Python code in this file
+[90:37] and then save it. It's ready to use.
+[90:40] Modules are like drawers in a cabinet.
+[90:42] They help keep related items grouped
+[90:45] together, making it easier to find and
+[90:48] reuse them when you need them. Imagine
+[90:51] Redford School has been tasked with
+[90:53] developing a school management system.
+[90:56] This system needs to handle student
+[90:58] management, teacher management, fee
+[91:01] calculation and grading. Initially, they
+[91:03] might put everything into a single file.
+[91:06] Let's call it as school management. py.
+[91:09] But as the number of features grows,
+[91:11] this single file becomes huge and
+[91:13] unmanageable. It becomes hard to find
+[91:15] specific pieces of code. And making
+[91:18] changes without breaking something else
+[91:20] is a nightmare. This is where modules
+[91:22] come in. Now, instead of one big file,
+[91:25] Redford School decides to break down the
+[91:27] school management system into smaller
+[91:29] logical modules. Student management. py
+[91:33] for student related functions.
+[91:35] Teacher_management.
+[91:37] py for teacher related functions, fee
+[91:40] calculation. py for handling all fee
+[91:43] related tasks, grading system. py for
+[91:46] managing grades. This way the code is
+[91:49] modular, easier to manage and much less
+[91:52] errorprone. If you need to make a change
+[91:54] to the grading system, you can just open
+[91:56] the grading system. py without worrying
+[91:59] about the student or teacher management
+[92:01] code. Now let's see how to use these
+[92:03] modules. All the different modules for
+[92:05] student, teacher, fee and grading can be
+[92:07] pulled together in a main script py. The
+[92:10] script coordinates between all the
+[92:13] modules making it the control center of
+[92:16] the application. Now imagine if the
+[92:18] school notices that the management
+[92:20] system keeps growing, they can further
+[92:22] modularize by breaking functionalities
+[92:24] into more modules. This flexibility
+[92:27] helps keep code organized as the project
+[92:30] evolves. When modules are not enough to

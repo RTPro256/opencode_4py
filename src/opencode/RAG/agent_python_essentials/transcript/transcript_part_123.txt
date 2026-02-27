@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 123
+# Video ID: UsfpzxZNsPo
+
+[266:15] next video we will see how to circumvent
+[266:18] this process. We'll create environment
+[266:22] variables for all these database
+[266:24] configurations and uh using user access
+[266:28] keys. But for now to keep things simple
+[266:32] let's go ahead. Okay. So let me execute
+[266:34] this. And now I'm going to use the
+[266:37] connect function from pi MySQL. Pass all
+[266:40] the details to that connect function and
+[266:44] uh start my connection. So if this
+[266:48] message is printed means I am already
+[266:50] connected. There is no error here. Just
+[266:54] as we did in the previous noteboard.
+[266:56] Okay. We are going to create a
+[266:58] connection cursor which is going to
+[267:00] execute my SQL queries. So once my
+[267:03] connection cursor is created, I'm
+[267:05] passing the same simple uh select star
+[267:08] from students. So my students database
+[267:10] currently is now on AWS RDS instance.
+[267:14] I've got I think eight records in that.
+[267:18] So I'm limiting to first five. Okay. So
+[267:21] I'm fetching the first five rows
+[267:22] essentially and then fetching all those
+[267:26] five rows and then printing row by row.
+[267:29] Once you are done, you can close the
+[267:32] connections. Okay. So this is how it
+[267:35] comes up. So you can see that each row
+[267:38] is fetched as a dictionary. Okay. Each
+[267:42] row is fetched as a dictionary. I have
+[267:44] student ID, the name of the student, the
+[267:46] age, statistics, Python, machine
+[267:48] learning and deep learning marks. Right
+[267:50] now let's see how can we use the MySQL
+[267:52] connector. So first uh you'll have to
+[267:55] install that. Once it is installed, I'm
+[267:57] importing that connector and also the
+[268:00] error class from that MySQL connector.
+[268:04] Now we'll try to establish a connection.
+[268:06] It's a good programming practice to uh
+[268:09] establish your connection within a try
+[268:11] accept block so that if there is any
+[268:15] issue or error which occurs while
+[268:18] connecting to your remote database. This
+[268:21] error could be because of the invalid
+[268:23] host name or the database name, the
+[268:26] username is not correct or the password
+[268:28] is invalid or the port name is wrong. It
+[268:30] could be any of these five reasons. You
+[268:33] will get an appropriate error. you will

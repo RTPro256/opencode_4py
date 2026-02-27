@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 73
+# Video ID: UsfpzxZNsPo
+
+[156:08] default there are no labels. Okay. So
+[156:10] label is none. So I have specified a
+[156:12] label and all the custom values. So this
+[156:15] will be the title of the plot. The title
+[156:17] which comes above the plot canvas. So
+[156:20] let me execute this. You can see this is
+[156:22] the title line plot of sine waves. This
+[156:25] is called as the y label. So what do you
+[156:27] want to write in the Y labels? Okay,
+[156:29] these are the Y-axis values. Similarly,
+[156:32] you see this as the X label. Okay, so
+[156:35] I'm providing the X labels and the Y
+[156:38] labels here. If you want to increase the
+[156:40] font size, you can do that by using the
+[156:42] font size argument. So let me have a
+[156:46] font size of maybe 12. And I'll increase
+[156:50] the font size for the title. Let's say I
+[156:52] want to go for 15. So you can now see
+[156:56] these are slightly bigger in size
+[156:58] compared to the the tick labels. These
+[157:02] are my tick labels and you can see these
+[157:04] are the ticks. So 0 1 2 3 4 5 6 these
+[157:06] are the tick labels. Similarly these
+[157:08] numbers that you see these are the Y
+[157:10] tick labels. Okay. So by default they
+[157:12] are in the font size of 10. So I made
+[157:14] the label as 12. This label is 12 and
+[157:17] you can see this line width is two and
+[157:20] this font size is 15. Okay. You can also
+[157:23] customize. So let's say I want to change
+[157:26] this color to dodger blue. D O D G E R.
+[157:29] Dodger blue. One of my favorite colors.
+[157:32] And you can see a very nice light bluish
+[157:34] color is there. So you can you know
+[157:36] create all sort of exotic colors. You
+[157:39] want to go with lime green. Okay. So
+[157:41] green is one color. Lime green is
+[157:43] another color. Okay. So let me just
+[157:46] delete. So this is the normal green
+[157:48] color. Uh this was the lime green color.
+[157:50] Okay. So where do you find these names?
+[157:52] Okay. So let's go to Google and search
+[157:55] for Matt plot lib named colors. Okay. So
+[158:03] click on the first link and here you go.
+[158:06] These are the names of the colors that
+[158:08] you can supply. Okay. So I was using
+[158:11] these color this dodger blue. Can you
+[158:13] see? And one of the green lime green is
+[158:18] present somewhere. Yeah. So this is lime
+[158:20] color and lime green should also be

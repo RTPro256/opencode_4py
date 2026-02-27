@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 138
+# Video ID: UsfpzxZNsPo
+
+[298:57] Flask provides the essential components
+[298:59] to build web applications and APIs such
+[299:02] as routing, request handling, and a
+[299:05] development server. Its simplicity and
+[299:08] flexibility makes it a popular choice
+[299:11] for developers who want more control
+[299:13] over their applications. Let's break
+[299:16] down the process of creating endpoints
+[299:18] with Flask. First, you need to import
+[299:20] Flask and create an instance of the
+[299:22] Flask application. This is typically
+[299:25] done with app equal to flask
+[299:28] named_.
+[299:30] Second step in flask we use decorators
+[299:34] to define routes. A decorator is a
+[299:37] special Python syntax that starts with
+[299:39] add the rate symbol. It's a way to
+[299:42] modify or enhance the Python functions.
+[299:46] The routes are the URLs of your API. For
+[299:49] example, /hello or slash users. The HTTP
+[299:54] methods like get and post define what
+[299:56] kind of operation we are performing. Get
+[300:00] is usually for retrieving data while
+[300:03] post is for sending data to be
+[300:05] processed. Finally, we can run the app
+[300:07] by using the command python app.py as
+[300:11] you see here in the terminal or the
+[300:13] command prompt. The endpoint we created
+[300:15] can be accessed from the browser window
+[300:17] as shown here. Now let's see the process
+[300:20] of creating endpoints which uses the get
+[300:22] method for user requests. The first step
+[300:25] we will import the modules request for
+[300:28] accessing the request data and JSON for
+[300:31] JSON responses. So then we would define
+[300:34] the routes by using the methods
+[300:37] parameter to specify the HTTP methods.
+[300:40] As you can see in the line number six we
+[300:42] are defining the route and methods equal
+[300:45] to get. Then in the line number eight,
+[300:48] we are accessing the data. You can also
+[300:51] do this by request.get JSON in case the
+[300:55] payload comes as a JSON format. And
+[300:57] finally, we are going to return the
+[300:59] response by using the JSON function in
+[301:02] the JSON format if you want. Once you
+[301:05] are done with the app creation, you can
+[301:07] run the app and we can access the app
+[301:10] from the browser window. We have to go
+[301:12] to the local host which can be accessed

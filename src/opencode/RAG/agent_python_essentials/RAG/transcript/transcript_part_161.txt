@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 161
+# Video ID: UsfpzxZNsPo
+
+[350:29] genetic VI is a technology that can so
+[350:32] and so. So this is the summarized
+[350:33] version of this entire text. Okay. And
+[350:36] if you want you can count this should
+[350:38] not be more than five lines. Similarly
+[350:40] for the Gemma model the only difference
+[350:42] is the Gemma tob it API URL is being
+[350:45] used instead of the Mistl model. Let's
+[350:47] see the response here. I've got only a
+[350:50] single line response in this case. Okay.
+[350:53] Not expected. This was supposed to be
+[350:55] five lines at least like this.
+[350:58] Anyway, let's take another example. I've
+[351:00] got a review here uh about
+[351:04] So here the review says, I recently
+[351:06] worked with real estate company to
+[351:08] purchase my first home and the
+[351:10] experience was outstanding. So the agent
+[351:13] was knowledgeable, patient, incredibly
+[351:15] responsive and so on. They guided me
+[351:17] through every step of the process
+[351:19] picking what could have been a stressful
+[351:21] experience. So basically this is a
+[351:24] review about a real estate company.
+[351:27] Fine. So act as a customer review
+[351:30] analyst and given the following customer
+[351:33] review text do the following tasks. So
+[351:35] first you'll have to first I'm asking
+[351:38] the model to find the sentiment either
+[351:41] positive, negative or neutral. And then
+[351:43] I'm asking the model to extract five key
+[351:45] topics or phrases from this review.
+[351:49] Okay. and then passing that entire
+[351:52] review text as a placeholder just the
+[351:54] way we did in the above case again using
+[351:58] the same query function this time I'm
+[352:00] using the Mistl model first let me fetch
+[352:03] the response from the Mistl model and
+[352:05] see okay so the overall sentiment uh the
+[352:08] model has figured out to be positive and
+[352:11] these are five key topics or phrases
+[352:13] this review is talking about so
+[352:15] outstanding experience knowledgeable
+[352:17] agent patient smooth and enjoyable
+[352:19] process process and guidance through
+[352:21] every step. Super. Let's see what the
+[352:24] Gemma model says. Again, the only
+[352:27] downside was the high price of the
+[352:29] property. Uh the overall I would rate my
+[352:32] experience with this four out of five

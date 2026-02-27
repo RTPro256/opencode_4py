@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 18
+# Video ID: UsfpzxZNsPo
+
+[38:01] pseudo code represents the thought
+[38:04] process behind the decision making.
+[38:06] Using such simple pseudo code helps us
+[38:08] think about the logic before jumping
+[38:10] into the actual Python code, making it
+[38:12] easier to plan out what we need our
+[38:15] program to do. Let's look at the actual
+[38:17] Python syntax. For a single condition,
+[38:19] we use the if keyword followed by a
+[38:22] colon. The code block that runs the if
+[38:25] condition is true is indented right
+[38:28] underneath. For example, if you have a
+[38:30] variable x and you want to check if it
+[38:33] is positive, you would write if x
+[38:36] greater than zero colon followed by a
+[38:38] indentation of four white spaces print
+[38:41] positive. So, Python syntax is very
+[38:44] simple and easy to follow. Just remember
+[38:46] indentation is the key. When we have
+[38:48] multiple conditions, you can use l if
+[38:50] and else. Here's a simple example. Let's
+[38:53] say you have a variable X. If X is
+[38:55] greater than zero, you would print
+[38:57] positive. If X equals to 0, you would
+[39:00] print zero. Otherwise, you would print
+[39:03] negative. Using if, L, if else helps us
+[39:06] make our code readable and logically
+[39:08] organized. It allows us to handle
+[39:10] multiple possibilities efficiently
+[39:13] rather than using lots of separate if
+[39:16] statements. Now, it's time for some
+[39:18] hands-on practice. Let's open up our
+[39:20] Python environment and try writing some
+[39:23] conditional statements. Before we wrap
+[39:25] up, let's talk about some best
+[39:27] practices. First, always try to write
+[39:29] clear conditions that are easy to
+[39:32] understand. Proper indentation is
+[39:34] critical in Python. It defines which
+[39:36] code belongs to which condition. Try to
+[39:38] avoid deep nesting of conditions
+[39:40] whenever possible as it can make your
+[39:43] code hard to read. Instead, use logical
+[39:46] operators or refactor the code. Lastly,
+[39:49] remember to use comments to explain any
+[39:53] complex condition. This will help anyone
+[39:55] reading your code, including your future
+[39:58] self. Following these best practices
+[40:00] will help make your code more
+[40:02] maintainable and easier for others to

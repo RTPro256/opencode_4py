@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 14
+# Video ID: UsfpzxZNsPo
+
+[29:03] the operator is applied. Python provides
+[29:06] several types of operators. The
+[29:08] arithmetic operators for basic math.
+[29:11] Comparison operators to compare values
+[29:14] like greater than or equal to. Logical
+[29:16] operators for combining multiple
+[29:19] conditions. Bitwise operators for
+[29:21] working with bits. Assignment operators
+[29:24] for assigning values. Identity operators
+[29:27] to check if two variables refer to the
+[29:29] same object. These operators allow us to
+[29:32] perform complex calculations and make
+[29:35] our code much more powerful. For
+[29:38] example, you could use a comparison
+[29:40] operator to check if a student score is
+[29:43] greater than 50 and then use a logical
+[29:45] operator to decide what to do next. It's
+[29:49] time to practice using operators. Let's
+[29:52] open our Python editor and try out some
+[29:55] arithmetic and comparison operations.
+[29:58] So, we have already learned the concept
+[30:00] of variables and data types. Now, we'll
+[30:02] proceed to operators in Python. I'll
+[30:04] double click this file and open it.
+[30:07] So as we have already seen there are uh
+[30:09] different types of operators in Python.
+[30:11] Arithmetic operators for mathematical
+[30:13] computations, comparison operators,
+[30:15] logical operators, bitwise operators and
+[30:17] so on. Let's experiment with some of
+[30:20] these operators. So here I'm creating
+[30:22] four variables. A with a value of 15
+[30:24] which is an integer. B with a value of 8
+[30:27] again an integer. C with a value of
+[30:28] 15.5. Uh C will be a float. And S is
+[30:33] hello with single quotes. It's a string.
+[30:36] So let me execute this. Okay. So these
+[30:39] are the most common arithmetic operators
+[30:41] available in Python. Plus is used for
+[30:44] addition, minus for subtraction. This is
+[30:47] asterisk uh used for multiplication of
+[30:50] two numbers. This is for division of two
+[30:52] numbers. This is the modulo operator. Uh
+[30:54] this will give you the remainder after
+[30:57] division. Uh for exponentiation you can
+[31:00] use two asterics. Okay. And this is for
+[31:04] flow division. Flow division typically
+[31:06] gives you the quotient part after
+[31:09] division. So let's see addition of a and
+[31:13] b. I'm subtracting a from b.

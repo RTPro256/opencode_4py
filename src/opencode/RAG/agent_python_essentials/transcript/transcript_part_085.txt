@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 85
+# Video ID: UsfpzxZNsPo
+
+[181:37] background has definitely changed. Okay.
+[181:40] So back to ggplot. Okay. And you can
+[181:44] revert to the default this way. What if
+[181:46] you want to save your plot? Then you can
+[181:48] use the function called as safe fig.
+[181:50] Okay. And provide the figure name. You
+[181:53] can provide the depth. DPI is your dots
+[181:57] per square in. So 300 dots per square
+[181:59] in. By default, it is 72. So if you
+[182:02] increase this value, you'll get a much
+[182:04] higher resolution image. Of course, that
+[182:06] will also take much more space. Okay.
+[182:10] The figure size that gets saved will
+[182:13] also be much larger in bytes, kilobytes
+[182:18] and again box inches that is the tight
+[182:21] layout that we are going to create.
+[182:23] Okay. So that ensures minimal white
+[182:26] space around the figure. Fine. So let's
+[182:30] create this plot here. I've created this
+[182:32] plot and this is not yet saved. You can
+[182:36] see this is not yet saved. But if I want
+[182:38] to save this, I'll uncomment this and
+[182:40] execute this once again. Okay. And we
+[182:43] can verify that this has got saved. So
+[182:47] let me just go back and you can see that
+[182:50] this was created 11 seconds ago. Okay.
+[182:54] So I'm running this on some cloud
+[182:57] platform. You can download this
+[182:58] otherwise this will be saved in your
+[183:00] local drive. If you are running this in
+[183:02] Anaconda, this will be saved in your
+[183:04] local drive. Okay. So this is the plot
+[183:06] which got saved. Perfect. So pretty high
+[183:10] resolution. You can see it's not
+[183:12] blurring. You can see even if I'm
+[183:14] zooming quite a lot, it's not blurring
+[183:17] because it's a very high resolution. 300
+[183:19] dpi is actually a lot. Okay. So the
+[183:22] default is I think 72.
+[183:24] Okay. So coming back
+[183:27] finally some quick tips. So you can use
+[183:29] the subplots for multiple visualizations
+[183:31] rather than stacking multiple plots.
+[183:33] Okay. One below the other. So you can
+[183:35] organize your plots in a grid 2 + 2,
+[183:37] grid 3 cross 2, 2 + 3 kind of grids.
+[183:40] Okay. Please label your axis properly
+[183:42] and put proper labels in the legend for
+[183:44] clarity. If you are having multiple
+[183:46] plots within the same canvas, use styles

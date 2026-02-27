@@ -75,7 +75,7 @@ The following detailed documentation has been extracted to the `docs/` folder fo
 | Document | Description |
 |----------|-------------|
 | [PROMPT_TESTING.md](../docs/PROMPT_TESTING.md) | Cross-model prompt comparison and accuracy benchmarks |
-| [OLLAMA_TESTING.md](../docs/OLLAMA_TESTING.md) | Ollama integration, accuracy, and troubleshooting tests |
+| [OLLAMA_TESTING.md](../docs/OLLAMA_TESTING.md) | Ollama integration, accuracy, and troubleshooting tests (including thinking mode tests) |
 | [TEST_DISCOVERY.md](../docs/TEST_DISCOVERY.md) | Test discovery commands for new code and features |
 
 ---

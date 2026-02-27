@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 169
+# Video ID: UsfpzxZNsPo
+
+[369:11] definitely this looks quite positive
+[369:14] response. The reviewer has expressed
+[369:17] satisfaction and these are the key
+[369:19] phrases. So can I prify it and display?
+[369:23] Perfect. So this is a prettyified
+[369:26] display. So that's all in this coding
+[369:29] hands-on tutorial on using the large
+[369:32] language models on your local machine by
+[369:35] downloading it from the hugging face
+[369:37] repository.
+[369:40] Hi and welcome back. As AI has evolved,
+[369:44] so have the frameworks and tools
+[369:46] designed to help us build more advanced
+[369:48] and autonomous systems. Now, instead of
+[369:51] starting from scratch, we have powerful
+[369:53] tools that make it easier to create,
+[369:55] manage, and deploy AI agents. I'll
+[369:58] introduce you to some of these tools in
+[369:59] this video. These tools will be used
+[370:02] more comprehensively later in the
+[370:04] further courses of this program. In this
+[370:06] session, we'll explore four key tools in
+[370:08] AI development. Langchain, Langraph,
+[370:10] Creai, and Autogen. We'll talk about
+[370:14] what each tool does the best, some
+[370:16] practical use cases, and a comparison to
+[370:19] help you decide which one might fit your
+[370:21] needs. Let's get started. But first, why
+[370:24] do we need specialized tools to build AI
+[370:26] agents? Well, let's consider some of the
+[370:29] challenges. First, building these agents
+[370:32] is complex. Second, integration can be a
+[370:35] real challenge. Each agent might need to
+[370:38] pull data from multiple sources, talk to
+[370:41] different systems, and work well with
+[370:43] other models. And third, scalability. As
+[370:46] your agent grows in capabilities, it
+[370:49] needs to handle more tasks, more users,
+[370:52] and often needs to perform consistently
+[370:55] as it scales. So what are the solutions?
+[370:58] We are talking about AI that can
+[371:00] understand language, make decisions, and
+[371:03] even take action. So it's a lot to
+[371:06] handle especially when you want to
+[371:08] develop something quickly and make it
+[371:11] flexible. These tools make the process
+[371:13] smoother and help integrate everything
+[371:16] into a single workflow. Tools like
+[371:18] langen and autogen simplify all these
+[371:20] tasks reducing development time and

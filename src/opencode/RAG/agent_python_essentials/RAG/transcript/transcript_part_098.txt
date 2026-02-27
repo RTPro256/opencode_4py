@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 98
+# Video ID: UsfpzxZNsPo
+
+[210:54] median value that you specify. So by
+[210:57] default access is zero which means the
+[210:59] entire row will be dropped. Okay,
+[211:01] whichever row contains a single missing
+[211:04] value that will be dropped. Okay, any
+[211:07] means any single row which contains a
+[211:10] missing value will be dropped. So if you
+[211:12] want to drop columns then make sure that
+[211:14] you keep axis equal to one. So let me
+[211:16] just drop and you can see that the row
+[211:18] number four and the row number seven
+[211:20] they got dropped. Yeah, row four and row
+[211:23] 7 are missing now. Good that we created
+[211:25] a copy. So my original data frame is
+[211:28] still the same unchanged. What if you
+[211:31] have duplicates in your data frame? So I
+[211:33] am creating a simple data frame with
+[211:35] duplicates here. So this entire record
+[211:38] is duplicated two times. You can see. So
+[211:41] I want to drop the duplicates. So you
+[211:44] can use the function drop duplicates. So
+[211:46] by default again it will drop the rows
+[211:49] and by default again it will have the in
+[211:52] place option which is set to false. So
+[211:54] again you can set in place equal to true
+[211:57] or type cast it back to the original
+[211:59] data frame. So after dropping replace
+[212:02] your df2. So that is another option or
+[212:05] you use the in place equal to true
+[212:06] either of. So I have dropped my uh
+[212:09] duplicate rows and uh you can also do
+[212:14] some operations on your strings. So for
+[212:16] example here the subject names I want to
+[212:20] convert them into lower case. So I'm
+[212:23] type casting the subject values into a
+[212:26] string and then converting that string
+[212:28] into a lower case and then replacing the
+[212:30] original column. So after converting the
+[212:33] string values into lower case, I'm
+[212:36] replacing my original column. So that's
+[212:39] how I get here. So the subject now is
+[212:42] becoming in lower case. So all these
+[212:45] operations you can do depending on your
+[212:46] use case. Now let's have a look how can
+[212:49] we merge and join data frames. I'm
+[212:51] creating a couple of dummy data frames
+[212:53] DF1 and DF2. I've got two names A and B
+[212:58] uh with mark set as 198 and 1817. In the
+[213:01] other one I've got age of these two
+[213:03] students A and C as 17 and 18. So I can

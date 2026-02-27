@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 30
+# Video ID: UsfpzxZNsPo
+
+[64:31] If the password doesn't match then uh
+[64:33] the else condition will be executed
+[64:36] which will notify the user that the
+[64:39] password entered is wrong and
+[64:41] automatically continue for the next
+[64:44] iteration. Yeah, make sense. So let me
+[64:47] execute this. So enter a password. So I
+[64:50] am writing 1 2 3 4 5 this.
+[64:55] So again this is wrong.
+[64:59] So I have to enter A B C D which is also
+[65:03] wrong. So now only one trial is left.
+[65:06] Okay. So
+[65:09] let me try hello. So in all the four
+[65:12] iterations I gave the wrong password.
+[65:14] Okay. So four iterations were set here.
+[65:17] So all the four iterations are done. It
+[65:20] just prints wrong passwords and the for
+[65:22] loop is finished. Now let me execute
+[65:26] this again with the correct password.
+[65:29] This time it tells me welcome to the
+[65:31] Python course. So here the password
+[65:33] entered is correct. So it breaks out of
+[65:35] the loop and no more iterations are
+[65:38] done. Okay. So two iterations were
+[65:40] remaining. The first iteration I gave
+[65:42] this. Second iteration I gave this. So
+[65:43] two more iterations were remaining but
+[65:45] it break out of the for loop. Now let's
+[65:48] see the continue statement. This gives
+[65:50] you an option to skip a part of the loop
+[65:53] when some condition is triggered. Okay,
+[65:55] let's see. So again, I have my numbers
+[65:59] initially set to zero. I'm going to have
+[66:01] 10 iterations from 0 to 9. And if the
+[66:04] number is five, skip that number. So
+[66:07] continue means skip this execution and
+[66:11] continue to the next iteration. Okay,
+[66:12] that's what it says. So as similar to
+[66:16] the break statement any statement which
+[66:20] comes below continue and the part of the
+[66:23] for loop or while loop will not be
+[66:25] executed. So the iterations will
+[66:27] continue from this point. The control
+[66:29] will go from here back to the first
+[66:32] line. Okay. So this line which comes
+[66:35] below continue will not get executed but
+[66:38] the iterations continue. Okay. That's
+[66:40] exactly what a continue statement says.
+[66:42] It says that continue to the next
+[66:44] iteration there itself. Okay, do not

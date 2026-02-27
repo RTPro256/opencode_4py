@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 124
+# Video ID: UsfpzxZNsPo
+
+[268:35] be able to catch that error and print
+[268:37] it. Okay, so that's exactly what I'm
+[268:40] doing here. So if there is an er error,
+[268:43] I'll catch that error and print this.
+[268:45] Okay, if everything goes well, this is
+[268:47] what will get printed connected to my
+[268:49] SQL database. Perfect. So it's connected
+[268:53] and uh this part is again the same. I'm
+[268:56] just creating a cursor to execute my SQL
+[268:59] query and then fetching all the five
+[269:00] rows and printing it one by one. So the
+[269:02] main difference here is you get the
+[269:05] output as a tpple. You directly get the
+[269:07] values. Okay. In the previous case you
+[269:10] are getting the key and the values. The
+[269:14] key names where the column names. So the
+[269:17] keys are the column names. Okay. Sorry.
+[269:20] This is the key. This is the key. This
+[269:22] is another key. So key names are
+[269:24] basically the columns names and the
+[269:27] values are there. So it's a key value
+[269:29] pairs which is a dictionary. So each row
+[269:31] comes up as a dictionary. However, in
+[269:34] this case, you'll get directly the
+[269:36] values present in each row as a tpple.
+[269:39] So one tpple represents one row. Okay?
+[269:41] So this is one difference. So you can
+[269:44] decide what suits your application
+[269:46] better. Okay? Uh okay. And this is a
+[269:50] more uh graceful way of closing your
+[269:52] connection. If it is already open, okay,
+[269:55] if it is connected, then close it. If it
+[269:57] is not connected then anyway these two
+[270:00] statements will not execute. Now let's
+[270:02] see how can we connect pandas to MySQL
+[270:07] database and execute direct queries
+[270:10] using pandas. Okay. So the first two
+[270:13] steps are already done. You can actually
+[270:15] use MySQL connector or py my SQL and SQL
+[270:21] alchemy. So you will need a SQL alchemy
+[270:23] engine to connect to Python pandas so
+[270:28] that you can fire the SQL commands. So
+[270:32] the SQL commands will be passed to the
+[270:34] reads SQL function once we have
+[270:37] established the connection using SQL
+[270:39] alchemy. So this will be needed. Okay.
+[270:42] Plus one of these two connectors will be
+[270:44] needed. So let's see uh you'll need to
+[270:47] unccommend this to install uh pi MySQL
+[270:51] or uh MySQL connector along with SQL

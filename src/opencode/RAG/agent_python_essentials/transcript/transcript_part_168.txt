@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 168
+# Video ID: UsfpzxZNsPo
+
+[366:55] proper format.
+[366:57] So I'm again using the markdown function
+[367:01] to display it in a markdown format. You
+[367:04] can see now it is very well formatted
+[367:06] and much easily readable. I have another
+[367:09] example here where I am going to share a
+[367:11] detailed report on generative AI and I'm
+[367:15] going to ask the model to summarize it.
+[367:18] Okay. So this is a kind of a prompt
+[367:20] template I'm creating. So in that prompt
+[367:23] template I'll be attaching this report.
+[367:25] This is the entire report which I'll
+[367:27] attach along with this prompt template.
+[367:29] Okay. So create jamma prompt. There's a
+[367:32] complete prompt text and that prompt
+[367:34] text is nothing but this entire prompt
+[367:36] template which I'll be passing it to the
+[367:40] pipeline. So let's see this time. So the
+[367:43] maximum tokens is 500. So I expect that
+[367:46] the summary is less than or equal to 500
+[367:51] tokens. So let me print it. Okay,
+[367:55] perfect. So I have exactly got five
+[367:57] lines. That is what exactly I had asked.
+[368:00] So give me a summary in exactly five
+[368:03] lines. So I have got the five line
+[368:05] summary of this entire text. Perfect.
+[368:07] Let me format it if you want. So this
+[368:11] dashes become bullet points here. One
+[368:14] last example. We'll take it for a basic
+[368:17] sentiment analysis. So here I've got
+[368:19] some review and I'll attach that review
+[368:22] on this prompt template. So what does
+[368:24] this prompt template do? It is asking
+[368:26] the model to act as a customer review
+[368:29] analyst and asking the model to do two
+[368:32] tasks. One is to find the sentiment for
+[368:35] this entire review and second to extract
+[368:38] five key topics. That entire prompt
+[368:40] template is being passed as a prompt
+[368:42] now. So this will give me a tokenized
+[368:45] prompt and that tokenized prompt is
+[368:47] going to the pipeline and finally the
+[368:50] output is generated.
+[368:54] Fine. So let me display that response.
+[368:57] So overall sentiment looks to be
+[368:59] positive. Let's read the review. I
+[369:01] recently worked with this real estate
+[369:03] company and so on. The experience was
+[369:06] outstanding, knowledgeable, patient,
+[369:09] guided me through every step. Yeah. So

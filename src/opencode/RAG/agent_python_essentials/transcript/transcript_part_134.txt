@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 134
+# Video ID: UsfpzxZNsPo
+
+[290:31] can check the status code to determine
+[290:33] if the request was successful. A status
+[290:36] code of 200 indicates success. The
+[290:39] headers attribute contain the response
+[290:42] headers and text gives you the raw
+[290:45] content as a string. If the response is
+[290:47] in JSON format, you can parse it using
+[290:49] the response.json function. Always check
+[290:52] the status code before processing the
+[290:54] response to handle errors appropriately.
+[290:58] Making post requests. Post requests are
+[291:01] used to send data to a server. For
+[291:03] example, while submitting forms or
+[291:05] uploading data to an API. You can
+[291:08] include data in the requests using the
+[291:10] data or JSON parameters. When sending
+[291:13] JSON data, it is common to set the
+[291:15] content type header to application/json.
+[291:18] The request library handles this for you
+[291:20] when you use this JSON parameter.
+[291:23] Interacting with LLMs via APIs typically
+[291:26] involves sending a prompt or input text
+[291:29] to the API which processes it using a
+[291:32] sophisticated language model and then
+[291:34] returns the generated response. For
+[291:36] example, using OpenAI API, you can send
+[291:39] a prompt and receive a completion. When
+[291:41] an API returns data in JSON format, you
+[291:44] can parse it using response.json JSON
+[291:47] function which converts it into a Python
+[291:49] dictionary. You can then access
+[291:51] individual data points using keys just
+[291:54] like with any dictionary. If the data is
+[291:57] nested, you might need to access
+[291:59] multiple levels of keys. Understanding
+[292:01] the structure of JSON response is
+[292:03] essential for correctly parsing and
+[292:05] using the data.
+[292:09] Let's start with the best practices for
+[292:10] working with APIs. Read the
+[292:12] documentation. Always make sure to
+[292:14] thoroughly read and understand the API
+[292:17] documentation. This will help you
+[292:18] understand the endpoints, parameters,
+[292:21] and authentication methods used by the
+[292:23] API. Handle errors gracefully. Implement
+[292:26] robust error handling to manage issues
+[292:29] such as connectivity problems, incorrect
+[292:32] inputs, or server errors. Respect the
+[292:34] rate limits. Most APIs have rate limits

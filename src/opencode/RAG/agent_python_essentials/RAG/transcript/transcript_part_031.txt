@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 31
+# Video ID: UsfpzxZNsPo
+
+[66:47] execute this and continue to the next
+[66:50] iteration. Okay, the moment the number
+[66:52] is five. Let's see. So number is 0 1 2 3
+[66:56] 4 and if you see here the number is five
+[66:58] is not printed because what happened?
+[67:01] The moment the number is equal to 5, we
+[67:03] continued the iteration instantly. So
+[67:06] this print statement was not triggered.
+[67:08] Okay, here is another example. Okay. Uh
+[67:11] the user will be asked to enter a
+[67:13] password which is set to be the OTP
+[67:16] value which is 1 2 32. And if the OTP is
+[67:19] correct then the user will be asked to
+[67:21] enter the name and the city. Okay. And
+[67:24] again as usual the user will get four
+[67:27] trials from 1 to four. Fine. So if there
+[67:30] are four trials the moment the trial
+[67:33] value is equal to four that is when the
+[67:35] user is left with the last trial this
+[67:38] will be displayed and every time the
+[67:40] user will be asked the OTP. Okay. So let
+[67:43] me enter some OTP. So it says try again
+[67:46] because the entered OTP is not equal to
+[67:48] the OTP which is set to be 1 2 32. So it
+[67:52] says the user that try again and
+[67:54] continue to the next iteration. So from
+[67:56] here itself the control goes to the main
+[67:59] for loop. Okay. From here itself the
+[68:02] control goes to the main for loop.
+[68:04] That's it. So no else condition is
+[68:05] checked. Okay. Else condition is not
+[68:08] checked. So let's say 1 2 3. And now you
+[68:12] see my entered OTP becomes equal to the
+[68:17] OTP. So in that case the control
+[68:19] automatically went to the else because
+[68:22] here the if will return false. And since
+[68:24] it returned false, the control went to
+[68:27] the else where it is now asking me to
+[68:29] enter my name. So I'm just entering my
+[68:32] name and city. Done. Perfect. So the
+[68:35] main difference between the continue
+[68:38] statement compared to the break
+[68:39] statement is that our code will continue
+[68:41] despite the disruption when the variable
+[68:44] is evaluated and equivalent to five.
+[68:47] Right? Okay. Finally, we come to the
+[68:49] pass statement. Pass is essentially a
+[68:51] null operation. It's a valid Python
+[68:53] statement which does not execute
+[68:55] anything. Okay, that's what it says. So

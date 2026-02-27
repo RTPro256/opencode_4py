@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 158
+# Video ID: UsfpzxZNsPo
+
+[343:46] module and then we are going to create a
+[343:48] payload and the model API URLs as the
+[343:52] inputs to the query function. So this uh
+[343:55] userdefined query function will take the
+[343:57] payload and the model API which we want
+[344:00] to hit. Okay. So we are making a post
+[344:04] request to this model API URL. So
+[344:08] different models will have different API
+[344:10] URLs and we'll also pass the uh headers
+[344:14] which will have my authentication uh
+[344:16] token and we'll define a JSON payload.
+[344:19] Finally, we'll get the response from the
+[344:22] server after the post request is made
+[344:24] and from there we'll access the JSON
+[344:26] part of the response. So let me create
+[344:30] this function. So there are a lot of
+[344:32] settings uh you can find the detailed
+[344:34] documentation by clicking on this link.
+[344:36] But uh the most common configurations
+[344:39] that we are going to need and you should
+[344:41] be knowing is uh we can restrict the
+[344:44] model to create some specific token
+[344:48] limits. So if you give some max new
+[344:51] tokens value here let's say 200 or 500.
+[344:55] So the model will create maximum that
+[344:59] many tokens. Okay, so this is the number
+[345:02] of tokens you want your model to create
+[345:04] in the response. Temperature again the
+[345:07] value typically lies between 0 to one.
+[345:10] So value closer to zero means more
+[345:12] deterministic response. The same
+[345:14] response will be obtained every time you
+[345:16] hit the model API. So there will be less
+[345:20] creativity and the model's response
+[345:23] would be more realistic, lesser
+[345:26] hallucinations.
+[345:28] However, if the temperature value is set
+[345:30] to be higher, closer to one, then the
+[345:32] model's response would be more creative
+[345:35] and you are allowing for more variation
+[345:37] in the responses. And uh here I am
+[345:40] creating the API URL. So this API URL
+[345:44] you can get it from the page. So so this
+[345:46] is the model card page. This is what we
+[345:49] call as the model card page. So there is
+[345:51] a button on the right side which says
+[345:53] use this model. So by using the
+[345:55] transformer API. So once you click on
+[345:58] that it will give you the a short code
+[346:01] which you can copy and start using. So

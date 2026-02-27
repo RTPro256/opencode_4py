@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 111
+# Video ID: UsfpzxZNsPo
+
+[239:52] more. There are mainly two types of
+[239:53] databases, relational and non-
+[239:56] relational. Relational databases
+[239:58] organize data into tables with rows and
+[240:01] columns much like spreadsheet and they
+[240:04] use SQL for quering and managing data.
+[240:07] Examples include MySQL, Postgrace SQL
+[240:10] and SQite. They are great for storing
+[240:12] data with fixed relationships. Think of
+[240:15] customer records linked to orders.
+[240:18] Non-reational databases, often referred
+[240:20] to as NoSQL databases, store data in
+[240:24] formats like documents, key value pairs,
+[240:27] or even graphs, allowing them more
+[240:29] flexible schema designs. Examples of
+[240:32] NoSQL databases include MongoDB, radius,
+[240:35] and Cassandra. These are often used when
+[240:37] data doesn't fit neatly into tables or
+[240:40] when scalability is crucial, such as in
+[240:43] social media applications. Databases
+[240:45] play a critical role in data management
+[240:48] by providing a centralized place to
+[240:50] store and organize data. They are
+[240:52] designed to handle large volumes of data
+[240:54] making them scalable solutions for
+[240:56] growing needs. Databases ensure data
+[240:59] integrity meaning that the data remains
+[241:02] accurate and consistent over time. They
+[241:04] also support concurrency allowing
+[241:06] multiple users to access and modify data
+[241:09] at the same time without conflicts. Most
+[241:12] importantly for us, databases serve as
+[241:14] the foundation for AI because data is
+[241:17] the fuel that powers AI algorithms. Now,
+[241:20] let's talk about SQL, the structured
+[241:22] query language. SQL is the standard
+[241:24] language used to communicate with
+[241:26] relational databases. It's used to
+[241:29] create tables, insert and retrieve data,
+[241:32] and perform updates and deletions. If
+[241:34] you think of database as a library, then
+[241:37] SQL is the librarian helping you find
+[241:40] the book you need, update information,
+[241:42] or even add new books to the shelves.
+[241:44] Understanding SQL gives you the power to
+[241:46] interact with databases effectively.
+[241:49] Retrieving the exact information you
+[241:51] need for your applications. Let's look
+[241:53] at some basic SQL commands. The create
+[241:55] table command is used to create a new

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 128
+# Video ID: UsfpzxZNsPo
+
+[277:15] and then finally commit and whatever the
+[277:18] results would be displayed. So
+[277:21] connection to Postgress database is
+[277:22] successful. This is the query which I'm
+[277:24] going to pass here and execute that
+[277:28] query. So this query was executed and
+[277:31] then you can close the connection. So
+[277:33] again if you want to use the pandas
+[277:37] read_sql function so that all the
+[277:39] results of the query are directly dumped
+[277:43] into a pandas data frame. Then you have
+[277:46] to again go back to SQL alchemy engine.
+[277:49] So again the same connection string. So
+[277:52] this is the only thing which is
+[277:53] different. So the name of the database
+[277:55] uh name means the type of database. So
+[277:58] earlier it was MySQL and then the name
+[278:00] of the connector. So here we had used
+[278:03] the MySQL connector in the previous
+[278:05] case. Here I'm using the psychopg2
+[278:08] connector and then this part remains the
+[278:10] same and the rest of the code also is
+[278:13] the same. You create a SQL alchemy
+[278:15] engine and then query define a query and
+[278:18] then execute that query with that
+[278:20] connection. Okay, let's see. Perfect. So
+[278:23] the same database I have been able to
+[278:26] connect and retrive all the records. Now
+[278:28] the advantage of psychopg2 over my SQL
+[278:32] connectors is that the psychopg2
+[278:34] directly also offers you a perpetual
+[278:38] connection with your database just like
+[278:41] your SQL alchemy engine. Okay, we use
+[278:44] the SQL alchemy engine within the reads
+[278:46] SQL function. The good thing about
+[278:48] psychopg2 is you can actually use that
+[278:52] connection that you are creating using
+[278:54] psychopg2 to fire SQL queries directly
+[278:58] to your database. Okay, although this is
+[279:00] not recommended and that is why this
+[279:03] warning comes up. So pandas only support
+[279:06] SQL alchemy connectable which is what we
+[279:08] did previously. Uh although it is
+[279:11] working but uh this is not safe neither
+[279:14] it is supported. So this just worked and
+[279:17] it is also giving us a recommendation to
+[279:20] use SQL alchemy instead. Okay, which is
+[279:24] what we did just before. So this is not
+[279:26] recommended. However, it works. Just in
+[279:28] case you want to experiment. Finally,

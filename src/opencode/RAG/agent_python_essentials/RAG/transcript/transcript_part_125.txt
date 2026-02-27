@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 125
+# Video ID: UsfpzxZNsPo
+
+[270:54] alchemy. If this is already installed,
+[270:56] you can delete this part and just
+[270:58] install the SQL alchemy part. So once
+[271:00] your SQL alchemy is installed, I'm just
+[271:03] importing the SQL alchemy create engine
+[271:05] function. Okay. So you are creating a
+[271:09] connection string first. You are passing
+[271:11] the username, password, host name and
+[271:13] the database uh name here. Right? So
+[271:17] this is your connection string which you
+[271:19] are passing it to the create engine. So
+[271:21] you are creating a SQL alchemy engine.
+[271:24] Let's see.
+[271:26] Done. So I'm going to use that
+[271:29] connection engine into the read SQL
+[271:31] function of pandas. Okay. So whatever
+[271:34] your query string as usual and your
+[271:36] connection engine. So these two things
+[271:38] will be needed to fire any SQL query and
+[271:41] directly fetch the results as a data
+[271:44] frame. So this is the biggest
+[271:45] difference. Here we were uh fetching the
+[271:48] details and row by row we were printing
+[271:51] it. Okay, we are not getting the data
+[271:53] frame here. Neither we are getting the
+[271:55] data frame here. So here we are going to
+[271:57] fetch all the details directly as a data
+[271:59] frame. So that is the main advantage
+[272:01] here. Perfect. So all my data is there
+[272:04] as a data frame. So let's execute some
+[272:06] SQL queries using the pandas read SQL
+[272:09] function. So first query is the same uh
+[272:12] reading all the data from the students
+[272:13] table. Now I'm going to filter records
+[272:16] by some condition. Let's say I want to
+[272:19] fetch only those students who scored
+[272:21] more than 85 in Python. So these are the
+[272:23] students who have scored more than 85 in
+[272:26] Python. You can just check their marks.
+[272:28] These are all greater than 85. So there
+[272:31] are 20 students uh with the index 0 to
+[272:34] 19. Out of 20 students, 16 students have
+[272:38] scored more than 85 in Python. Next, you
+[272:42] can also select specific columns for
+[272:44] example name and statistics in this
+[272:46] case. So select name, statistics marks
+[272:49] from all the students. So now I'm
+[272:51] getting the name and the statistics
+[272:53] marks for all the students in this case.
+[272:56] You can also order the records by

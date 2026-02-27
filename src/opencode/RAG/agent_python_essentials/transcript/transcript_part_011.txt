@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 11
+# Video ID: UsfpzxZNsPo
+
+[22:05] the first one which is implementing
+[22:08] variables and data types in Python. So
+[22:11] let's get started.
+[22:14] Okay. So you can execute all the codes
+[22:17] uh by using or by clicking on this
+[22:20] button which is the run button. Okay. or
+[22:23] a keyboard shortcut you can use that is
+[22:26] shift enter or control enter. So I'll
+[22:28] use this keyboard shortcut key uh shift
+[22:31] enter.
+[22:32] So let me define a variable name a and
+[22:35] assign a value equal to five.
+[22:38] So how do I know that the value has been
+[22:40] assigned? Let's print the value of the
+[22:42] variable. So when I executed this cell
+[22:45] by using shift enter this is the value
+[22:47] of five that I have got for this a. So
+[22:50] this way you can define any variable
+[22:53] name and using the equality operator you
+[22:56] can assign a value to it. Okay. You can
+[22:59] also use the print function to print the
+[23:02] value of the variable. You can see that
+[23:05] print a gives me five. Fine. So here I
+[23:09] am defining a equal to 7 and I am
+[23:12] creating another variable b and
+[23:14] assigning the value back to a and then
+[23:17] changing the value of a from 7 to 3.
+[23:20] Let's see what happens. So what will be
+[23:22] the value of a now? Since the value of a
+[23:24] has been changed from a equal to 7 to a=
+[23:27] 3, this should give me a equal to 3.
+[23:30] Perfect. And since B was assigned a
+[23:33] value equal to A when A was having a
+[23:36] value of seven, B should still point to
+[23:39] the original value of A which is seven.
+[23:42] Super. So this is how the variables work
+[23:46] in Python. Now we have already discussed
+[23:49] the variable name rules in the
+[23:54] presentation. So here is a quick recap
+[23:56] of those rules. Python variable names
+[24:00] are case sensitive which means small A
+[24:01] and capital A would be different. Um
+[24:05] identifiers or variable names can be a
+[24:07] combination of letters, lower case or
+[24:09] upper case and digits. You can even use
+[24:11] underscore. You can use the underscore
+[24:13] at the start or at the end. So these are
+[24:16] all valid variable names. You cannot use
+[24:20] a variable name which starts with a
+[24:22] digit.

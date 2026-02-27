@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 162
+# Video ID: UsfpzxZNsPo
+
+[352:34] stars. Yeah. Okay. The overall sentiment
+[352:38] is positive. That's the thing. And uh
+[352:40] the customer is expressing satisfaction
+[352:43] it seems. And these are the five key
+[352:45] topics. So this is a completion. And if
+[352:48] you notice this is the completion that
+[352:50] I'm getting from the Gemma model. Okay.
+[352:53] So JMA model thought that the previous
+[352:55] response is not uh complete. So it first
+[352:59] completed that response not the response
+[353:01] but the review. So the review first gets
+[353:04] completed although this was not expected
+[353:07] but yeah so the review gets completed
+[353:09] and then further the sentiment and the
+[353:12] key topics were extract. Okay perfect.
+[353:17] Hi, welcome back. So in this notebook we
+[353:19] will see how we can download the
+[353:22] opensource large language models using
+[353:25] the hugging face repository. So I
+[353:29] strongly suggest you run this model on a
+[353:32] machine which has access to GPU. If your
+[353:35] local laptop does not have access to
+[353:38] GPU, you can upload this notebook to
+[353:41] Google's collab and we can use the free
+[353:43] GPU provided by Google Collab. Okay. So
+[353:48] this is the model that we'll be using
+[353:50] once again. So how do you open this
+[353:53] notebook on Google Collab? So let's go
+[353:56] to Google Collab first. So
+[353:58] collab.ressearch.google.com.
+[354:02] You might need to sign in into your
+[354:05] Google account first. So I have already
+[354:07] signed in. And from here you can upload
+[354:10] this notebook. So I already have the
+[354:13] notebook in my local machine. So this is
+[354:16] the third notebook which I'm uploading
+[354:19] to Google Collab. So I want to run that
+[354:21] notebook on Google Collab. Okay. So this
+[354:24] is the model.
+[354:26] So here we have successfully uploaded
+[354:28] our Jupyter notebook to Google Collab.
+[354:31] We are again going to use the same Gemma
+[354:33] 2B in uh 2 billion parameter model which
+[354:36] is instruction fine-tuned on Google's
+[354:40] Gemma 2 billion LLM model. This is the
+[354:43] base model and this is the instruction
+[354:44] tune model. The recurrent gemma is a
+[354:47] family of open language models which is
+[354:50] built on top of the recurrent
+[354:52] architecture which has been developed by

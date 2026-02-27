@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 87
+# Video ID: UsfpzxZNsPo
+
+[185:48] this code demonstration on mattplot lib.
+[185:53] So what is pandas? You might be
+[185:54] wondering. Pandas is a popular
+[185:58] open-source library in Python used for
+[186:01] data manipulation and analysis. Pandas
+[186:03] provides powerful data structures which
+[186:06] we'll see as data frames and series and
+[186:09] these are used to store and manipulate
+[186:11] large data sets with ease.
+[186:16] Using pandas you can load data from
+[186:18] various sources like CSV, Excel or even
+[186:21] SQL databases.
+[186:23] You can also claim your data sets. You
+[186:26] can reshape them. You can also analyze
+[186:28] this data very quickly using wide range
+[186:31] of functions which are built in
+[186:33] available in pandas. So let's get
+[186:35] started. In case pandas is not
+[186:38] installed, you can just unccommend this
+[186:40] and uh install pandas. Most likely if
+[186:43] you are using Google collab or anaconda
+[186:46] environment, pandas would come
+[186:48] pre-installed.
+[186:50] So I have one uh code here which
+[186:53] instructs pandas to ignore any warnings.
+[186:57] Warnings are different from errors.
+[186:59] Okay. So first we'll see how to import a
+[187:03] data file which is present as a CSV. CSV
+[187:06] is commaepparated value file. So I have
+[187:09] got a churn prediction docsv file. I'm
+[187:11] going to import this in pandas. So we'll
+[187:13] be using the read csv function to do
+[187:16] this. Okay. And once we have read that
+[187:19] CSV file, I'm storing it in the form of
+[187:22] a data frame and I'm displaying the
+[187:25] first five rows of that data frame. So
+[187:27] this is how it appears. So data frame.
+[187:31] So data frame objects are basically
+[187:34] two-dimensional like you have few rows
+[187:37] and you have few columns. Okay. So that
+[187:40] is two-dimensional.
+[187:42] Whereas each column of the data frame is
+[187:46] essentially a series in Python. Okay. So
+[187:49] this is one series. This is another
+[187:51] series. This is another series. In fact,
+[187:55] every row of this data frame. So you can
+[187:59] take out any of the rows. Let's say this
+[188:01] row. This row would also be considered
+[188:04] as series. Any row or any single column
+[188:07] will be a series. So series is

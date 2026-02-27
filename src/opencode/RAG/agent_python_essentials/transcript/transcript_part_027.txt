@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 27
+# Video ID: UsfpzxZNsPo
+
+[57:55] loop. Okay. So if you see the
+[57:57] indentation, okay, so this entire loop
+[58:00] is indented within the outer loop. Okay.
+[58:03] And this statement is indented within
+[58:05] the inner loop. So this will be executed
+[58:08] for every iteration of the inner loop.
+[58:11] And for every iteration of the outer
+[58:12] loop, this entire thing will be
+[58:14] executed. Okay. So let's see what this
+[58:18] does. In the outer loop, I am iterating
+[58:21] from numbers 1 and two. It will stop
+[58:24] before three. So it will go from one and
+[58:26] stop at two. Now the inner loop uh is
+[58:30] going to fetch the characters in ABC.
+[58:33] Okay. So in the first iteration, the
+[58:35] inner loop character would be A. The
+[58:37] next iteration it would be B. In the
+[58:39] next iteration, it would be C. Okay. So
+[58:42] here in the first iteration of the outer
+[58:44] loop this will be one and then this will
+[58:46] be a then 1 b and then 1 c then it will
+[58:50] go from 2 a then 2 b to 2 c that's how
+[58:54] it will be let's see perfect so these
+[58:58] three ones are coming because of the
+[59:01] execution of the inner loop a b and c
+[59:03] and then the outer loop increments to
+[59:06] two automatically the default increment
+[59:08] is one we have already seen yeah perfect
+[59:10] now for a while loops. So here, let's
+[59:13] say you want to execute a block of code
+[59:16] without specifying initially how many
+[59:19] times you want to execute. You just keep
+[59:22] executing until some condition is met.
+[59:25] So the code in the while loop will keep
+[59:28] on executing as long as the while
+[59:31] condition is set to be true. Okay, let's
+[59:34] see. So in the below example we have
+[59:37] initialized a variable with a number of
+[59:38] zero and we want to increment its value
+[59:41] and u the loop will continue to run only
+[59:46] if the value is less than seven. Okay,
+[59:48] so here I have a number equal to zero
+[59:51] and every time before executing these
+[59:54] statements, okay, before entering into
+[59:57] the loop, I'm going to check whether
+[59:58] this number's value is less than seven.
+[60:01] Okay, so let's say I start with 10 and
+[60:03] execute this. This number is already 10
+[60:07] now. Okay, so what happens? The while
+[60:10] loop condition itself becomes false and

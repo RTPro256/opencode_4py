@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 24
+# Video ID: UsfpzxZNsPo
+
+[51:17] provide a valid answer. Next, we have
+[51:19] the for loop. This is used when we know
+[51:22] exactly how many times we want to repeat
+[51:25] something. It's great for iterating over
+[51:27] sequences like a list of numbers or a
+[51:29] set of items. It's predictable, making
+[51:32] it perfect for situations where we know
+[51:34] how many iterations are needed. Let's
+[51:37] talk a bit more about the while loop.
+[51:39] For instance, we want to keep asking a
+[51:41] user for their age until they provide a
+[51:43] valid number. A while loop is the way to
+[51:46] go. It repeats until the condition
+[51:48] becomes false, then it stops. It's
+[51:51] perfect when you need to repeat a task
+[51:53] an unknown number of times. The while
+[51:55] loop is like saying keep repeating this
+[51:58] block of code while the condition is
+[52:00] true. Now let's move on for the for
+[52:03] loop. The for loop is used for iterating
+[52:05] over sequences whether it's a list,
+[52:08] string, or even range of numbers. It's
+[52:10] great when we know exactly how many
+[52:13] times we need to repeat something. Think
+[52:15] of the for loop as going through a to-do
+[52:17] list one by one. You tackle each item
+[52:21] until you have completed them all.
+[52:22] Whether you are looping through the
+[52:24] numbers from 1 to 10 or printing each
+[52:26] item in a list, the for loop is the
+[52:28] perfect tool. We also have nested loops
+[52:31] which are loops inside other loops.
+[52:33] These are often used when we need to
+[52:35] work with multi-dimensional data.
+[52:38] Imagine you have a grid of values like
+[52:40] rows and columns in a table. You could
+[52:42] use a nested loop to go through each row
+[52:45] and within each row visit every column.
+[52:48] While powerful, nested loop can be a bit
+[52:50] tricky and it's important to be careful
+[52:52] when using them. Too many nested loops
+[52:55] can make your code harder to read. So,
+[52:57] use them wisely. All right, enough
+[52:59] theory. It's time for some hands-on
+[53:02] coding. Let's open our Python
+[53:04] environment and practice both the while
+[53:06] loop and the for loops. Thank you for
+[53:08] joining me in this video on looping
+[53:10] constructs. I hope you now feel more
+[53:12] comfortable with loops and how they can

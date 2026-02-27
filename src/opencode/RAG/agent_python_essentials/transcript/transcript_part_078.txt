@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 78
+# Video ID: UsfpzxZNsPo
+
+[166:46] written in the x-axis label, y-axis
+[166:48] label and the title. Okay. You can also
+[166:50] create a stacked bar charts as well.
+[166:53] Okay. So if you have multiple
+[166:54] categories, you want to create a you
+[166:56] know bariate two categorical data
+[166:58] simultaneously, you can go for stacked
+[167:00] bar charts as well. Okay. Again
+[167:02] histogram is for univariate data. Okay.
+[167:05] Especially if the data is numerical.
+[167:07] Okay, you want to provide or you want to
+[167:10] visualize the distribution of the data
+[167:12] across multiple bins of the values.
+[167:15] Okay, so you can provide how many bins
+[167:17] you want in the x-axis. The default
+[167:19] number of bins would be 10 I think and
+[167:22] then what should be the data used for
+[167:24] plotting the histogram and then what
+[167:26] should be the color of the bars in the
+[167:29] histogram and then the transparency
+[167:31] level and what should be the edge color.
+[167:33] So even in the previous plots you have
+[167:35] an option to provide the edge color and
+[167:37] so on. Okay. So I'm again creating
+[167:40] normal distribution of random 1,00
+[167:42] numbers with normal distribution. Rand n
+[167:45] this is a rand n function. N represents
+[167:49] a normal distribution. Okay. So randomly
+[167:51] distributed numbers coming from normal
+[167:54] distribution. Okay. So you can see the
+[167:56] purpose. The main difference between the
+[167:58] bar chart and the histogram is the bar
+[168:00] charts are discrete. There will always
+[168:03] be some spacing because these are
+[168:04] discrete values. Okay. A B C already.
+[168:08] Okay. This is categorical data. That's
+[168:10] why you will always have space in a bar
+[168:12] chart. This is for a continuous data. So
+[168:14] you will never have a space. Okay. And
+[168:16] this is for a continuous data. You
+[168:18] cannot mix and match. Okay? So you
+[168:20] cannot use a bar chart for you cannot
+[168:23] use a bar chart for continuous data or
+[168:25] you cannot use the histogram for
+[168:28] categorical data. That will not make
+[168:29] sense. Now let's have a look at the box
+[168:32] plots. We want to first create three
+[168:35] numpy arrays. Here I'm going to use the
+[168:37] normal function to create these numpy
+[168:40] arrays normally distributed values. So

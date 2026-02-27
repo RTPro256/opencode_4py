@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 26
+# Video ID: UsfpzxZNsPo
+
+[55:37] stop once the range value has reached
+[55:39] one before
+[55:41] the stop point. So it will go from 1 to
+[55:45] four this time. Okay? Because the
+[55:47] starting number is one ending number is
+[55:49] five. So it will end one before that.
+[55:52] You can also use steps.
+[55:54] So in this case I'm providing my
+[55:56] starting number, ending number and this
+[55:59] is my step size. So step size is by
+[56:02] default one. Here I have increased it to
+[56:04] two which says that give me all the
+[56:07] numbers from 1 to 9. It will stop one
+[56:09] before 10. So it will be 1 to 9. Give me
+[56:11] all the numbers from 1 to 9 by skipping
+[56:14] every alternate number. So every second
+[56:17] number is what you want. Okay. So let's
+[56:19] see. So 1 2 3 5 7 and 9. Yeah. So you
+[56:24] are printing the number at the end you
+[56:27] are printing a space a white space that
+[56:30] is the exact reason why it is not coming
+[56:33] one below the other it is here the
+[56:36] default end is back slashn which is
+[56:39] basically a new line feed that is the
+[56:41] default end you have changed it to a a
+[56:44] white space which is why the subsequent
+[56:46] iterations are printed one after the
+[56:50] other in the same line now here I want
+[56:52] to iterate over a string using a for
+[56:55] loop. If you remember in the first video
+[56:57] we had seen that string is essentially
+[57:00] also a collection. It's a collection of
+[57:02] characters. Okay, it's also a
+[57:05] collection.
+[57:06] So here what I'm saying is for character
+[57:09] in analytics with okay I want to fetch
+[57:12] each and every character and print them.
+[57:16] Perfect. So in the first iteration a was
+[57:18] fetched in the next iteration n was
+[57:20] fetched and so on. So one by one each
+[57:22] character is fetched and it is being
+[57:25] printed. Okay. And again if you want to
+[57:28] use the end here you can very well go
+[57:30] ahead and use end. So I'll just
+[57:36] rerun this and you can see
+[57:40] okay
+[57:44] now for the nested for loops. So nested
+[57:46] for loop is nothing but a loop within
+[57:50] another loop. Fine. So there will be an
+[57:53] outer loop and there will be an inner

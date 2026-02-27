@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 12
+# Video ID: UsfpzxZNsPo
+
+[24:24] So for example, one variable is not
+[24:26] valid but variable one is perfectly
+[24:29] fine. So let's see and then finally you
+[24:32] cannot also use keywords as variable
+[24:36] names because keywords are reserved. So
+[24:38] if you try to assign any value to any of
+[24:41] these keywords, Python will throw you an
+[24:43] error. So here I've defined uh let's say
+[24:46] a equal to 400 and small a as 400 and
+[24:52] capital a as four. Let's see what
+[24:54] happens. So you can see that small a
+[24:56] still points to 400 and capital a points
+[24:59] to four. So some of the rules let's
+[25:02] verify them quickly. So underscore a is
+[25:05] valid. Okay. But if you say a underscore
+[25:09] that is also valid. Okay. Because
+[25:11] underscores are acceptable. But if you
+[25:13] have any other special characters either
+[25:15] at the start or at the end that will be
+[25:17] invalid. Okay, you can see that's an
+[25:21] error message saying the syntax error.
+[25:23] Same syntax error you will get when you
+[25:25] try to define 1 a as five. If you try to
+[25:29] assign a1 as five or 500 whatever that
+[25:33] number is that is perfectly fine. So now
+[25:36] we'll move on to the section of uh data
+[25:39] types. Let's create some of the
+[25:41] variables from different data types.
+[25:43] Here I'm creating a as a integer. We can
+[25:46] check the data type by using the type
+[25:48] function. Type is a built-in Python
+[25:50] function which is used to check the data
+[25:52] type of any Python object. So you can
+[25:54] see that uh the data type assigned to A
+[25:56] is a integer.
+[26:01] Similarly, let me create a string data
+[26:03] type. So B is uh luxe. So you can very
+[26:08] well see that uh the strings are created
+[26:10] by using double quotes. You can also
+[26:12] create string by using single quotes. So
+[26:15] the data type of B is a string. For
+[26:18] floats you can uh assign the value
+[26:21] directly. Just make sure you have a
+[26:22] decimal point. So here the value
+[26:24] assigned to C is 5.55 and you can see
+[26:27] the data type is float and boolean you
+[26:30] can create either true or false. Okay.
+[26:33] So you can see the data type let's say E
+[26:37] s false. So D and E both are boolean.
+[26:46] And if you are interested to see what

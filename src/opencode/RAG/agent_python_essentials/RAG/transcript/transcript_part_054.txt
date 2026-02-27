@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 54
+# Video ID: UsfpzxZNsPo
+
+[116:00] you are dealing with currency or you
+[116:02] just want fewer decimal places and
+[116:04] that's where these rounding functions
+[116:06] come in handy. So you can use the
+[116:07] np.round function which will round off
+[116:10] your number to the nearest decimal
+[116:13] place. The np.f floor function will
+[116:15] round off to the lower integer. npal
+[116:19] function will round off to the higher
+[116:21] integer and so on. So you also have the
+[116:24] np. SIGN that is sign function which
+[116:28] returns the indication of whether a
+[116:30] number is negative or positive. If the
+[116:33] number is negative it will return minus
+[116:35] one. The number is positive it will
+[116:36] return + one. And if the number is zero
+[116:40] it will return zero. Now these
+[116:42] comparison and logical functions make it
+[116:44] very easy to generate boolean masks. So
+[116:47] for instance you have the function
+[116:49] nples.
+[116:51] So this returns an array of true or
+[116:54] false values depending on whether each
+[116:55] element is satisfying a condition maybe
+[116:59] less than some number. So you can use
+[117:01] these boolean functions and arrays to
+[117:03] filter data and apply conditional logic.
+[117:07] There are bitwise variants which are
+[117:09] very similar but act at the bit level
+[117:12] which can be very useful in certain
+[117:14] low-level and specialized tasks. No data
+[117:17] science project is complete without
+[117:18] computing summary statistics. So
+[117:20] numpai's built-in stats function are
+[117:22] very straightforward. You have the
+[117:24] np.std function which calculates the
+[117:26] standard deviation of the numpy array.
+[117:28] You can also specify an axis for these
+[117:31] functions to compute these statistics
+[117:33] whether you want it rowby row or column
+[117:36] by column making it really very flexible
+[117:39] for multi-dimensional data. Moving on to
+[117:41] the heart of numpy the core
+[117:43] functionality. This is where you learn
+[117:46] to create arrays using basic functions
+[117:48] like npray np.zeros ones and so forth.
+[117:53] When working with different shapes you
+[117:55] can use the np.shape reshape function to
+[117:57] change the shape of your vectors and
+[117:59] matrices. You can use the rival function

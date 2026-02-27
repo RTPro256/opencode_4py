@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 21
+# Video ID: UsfpzxZNsPo
+
+[44:39] else. If this is not true, the control
+[44:44] goes to else. Once again, I repeat, if
+[44:46] this is true, this will be executed. If
+[44:49] this condition is false, the control
+[44:51] automatically goes to the else block. So
+[44:54] the else block has this print and so the
+[44:56] next print will be executed. You can
+[44:58] also check multiple conditions. So here
+[45:00] a is 8, b is 10. I'm checking whether a
+[45:03] is greater than 10 as well as b is
+[45:06] greater than 10. So it's a you can say
+[45:08] compound condition. So two conditions
+[45:11] are being checked. So this if will be
+[45:14] true only and only if both these
+[45:17] statements are true because of the and
+[45:19] operator. Okay. So true and true will
+[45:23] give me if condition as true. L if here
+[45:27] I'm checking whether a is greater than
+[45:29] five and b is also greater than five. So
+[45:31] if this is true and this is also true
+[45:35] then this will be printed. Okay. Else if
+[45:38] none of these are executed then the
+[45:41] control automatically goes to else.
+[45:43] Let's see. Perfect. So here this
+[45:46] condition got satisfied. It seems that
+[45:48] this condition got satisfied. Now I'm
+[45:51] taking the user input by using the input
+[45:53] function. Okay. So the user input goes
+[45:56] to X as a string. I have to convert it
+[45:58] into a integer. Okay. So by default the
+[46:01] output of the input function will be a
+[46:03] string. I have to type cast it into a
+[46:05] integer. So now x is replaced.
+[46:09] Originally your x was a string. Now that
+[46:11] is replaced as a integer in the second
+[46:14] line. Now I'm dividing that by two and
+[46:17] checking the remainder. Is the remainder
+[46:20] equal to zero? Okay. This is a modulo
+[46:22] operator. So modulo operator will return
+[46:24] you the remainder after division. Okay.
+[46:27] So the remainder after division is
+[46:30] checked whether it is zero. If the
+[46:32] remainder after division with two is
+[46:35] zero that means the number is even. So
+[46:38] I'm checking here whether the number
+[46:40] given by the user input is even or odd.
+[46:44] Simple. So let me give some number here.
+[46:46] Let's say 15. So 15 divided by two. You
+[46:49] can just manually check 15 modulo 2 will
+[46:54] not give you zero. So one is not same as

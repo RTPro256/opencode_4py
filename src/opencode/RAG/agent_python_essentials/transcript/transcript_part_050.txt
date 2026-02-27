@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 50
+# Video ID: UsfpzxZNsPo
+
+[107:33] using underscores. Okay. So this is a
+[107:35] camel case. P is capital. D is capital.
+[107:38] So avoid using underscores. Although
+[107:40] this is not wrong, Python will not throw
+[107:43] an error in this case, but it is against
+[107:46] the PEP 8 style guidelines. Next
+[107:49] example, uh we should be adding a single
+[107:51] space around the operators for better
+[107:53] readability. If you see here, uh there
+[107:55] are three operators being used. Okay,
+[107:57] one is the equality sign. The other is
+[108:00] the plus sign, then the last is the
+[108:03] multiplication sign. So these three
+[108:05] operators, but there are no spaces. So
+[108:07] ideally we should be using spaces enough
+[108:10] spaces enough means just one not too
+[108:12] many. So you should be separating the
+[108:16] operators and the operents okay by a
+[108:19] single space at least on both sides.
+[108:22] Another example here is about the
+[108:24] indentation and the line length. So in
+[108:26] this case if you see we should be using
+[108:29] consistent indentations. So all the
+[108:32] indentation should be exactly four white
+[108:34] spaces and the total line length should
+[108:38] be less than 79 characters. So if your
+[108:42] line tends to including comments tends
+[108:44] to exceed 79 characters better break
+[108:47] that line even that means breaking the
+[108:50] comments that's perfectly fine and
+[108:52] acceptable. So functionality wise both
+[108:55] are same. Functionality wise both are
+[108:57] same but make sure that you are using
+[108:59] exactly four white spaces for the first
+[109:01] indent and then eight white spaces for
+[109:04] the next indent and so on. It cannot be
+[109:06] three white spaces and then four white
+[109:08] spaces uh you cannot randomly increase
+[109:11] or decrease the number of white spaces
+[109:13] here. So if you see if you try to run
+[109:16] this code with inconsistent number of
+[109:18] white spaces this might even give you an
+[109:21] error. So you should also use blank
+[109:24] lines while defining functions and
+[109:26] classes. At least two blank lines. Here
+[109:29] I've defined a function and a class but
+[109:31] there is no space between the class
+[109:33] definition and the function definition.
+[109:35] So here I've got two line breaks. Okay.
+[109:38] before I start defining my okay so again

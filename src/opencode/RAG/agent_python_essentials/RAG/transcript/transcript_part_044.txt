@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 44
+# Video ID: UsfpzxZNsPo
+
+[94:41] Python best coding practices. So, the
+[94:44] Python best coding practices are needed
+[94:46] to have good code readability,
+[94:49] maintainability, and the best efficiency
+[94:51] for the codes. So we'll be following
+[94:54] some guidelines especially the PEP 8 and
+[94:56] PEP 257 style guidelines that will help
+[94:59] us to write cleaner more Pythonic and AI
+[95:04] development friendly ready code. So
+[95:06] let's get started. So in this notebook
+[95:08] we are going to cover these four topics.
+[95:10] Uh how to write down clean codes in
+[95:12] Python, effective use of comments and
+[95:14] then how do you write Pythonic codes for
+[95:18] AI development. we'll take some uh 9 to
+[95:20] 10 examples and then we'll take some
+[95:22] examples of PEP 8 and PEP 257 style
+[95:25] guidelines.
+[95:27] So for the first one, how to write down
+[95:29] clean code in Python. I'm giving a
+[95:31] simple example where I'll be
+[95:33] demonstrating a bad code followed by a
+[95:36] good code. Okay, let's take the first
+[95:38] example here. So in this first example,
+[95:42] I am demonstrating how to write down
+[95:45] meaningful variable names and function
+[95:47] names. Okay, so in the bad code, can you
+[95:50] see that the function name is very short
+[95:54] and the variable names are just a and b.
+[95:56] So we should avoid single letter
+[95:58] variable names and uh the function names
+[96:01] also should be self-explanatory.
+[96:04] Okay. So although this is a working code
+[96:07] you can just check but a better version
+[96:09] of this code would be write down a
+[96:11] proper function name which is
+[96:12] self-explanatory illustrative and
+[96:15] whatever the inputs or variable names
+[96:16] that you are using that also has to be
+[96:19] slightly more descriptive semantic. Okay
+[96:22] so you are providing two numbers as the
+[96:25] input. So let the inputs be called as
+[96:27] first number and the second number and
+[96:29] then you can do any computation on these
+[96:31] two numbers and return them. So here
+[96:33] this function is more descriptive
+[96:35] compared to the cal function and the
+[96:37] parameter names are also more
+[96:38] descriptive. In the second example we
+[96:41] are demonstrating that a bad code would

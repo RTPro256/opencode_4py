@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 63
+# Video ID: UsfpzxZNsPo
+
+[135:03] conditions I'm applying. This is a and
+[135:06] condition. Okay. So again the same
+[135:08] boolean mask created and I'm able to
+[135:11] retrive the numbers greater than two and
+[135:13] less than 8. Make sense? Now let's see
+[135:15] how can we manipulate the shapes of the
+[135:19] numpy arrays. Okay. So let me create a
+[135:22] numpy array here. I'm using the arrange
+[135:24] function. So it will give me a
+[135:26] one-dimensional array with the numbers 1
+[135:28] to 12. Okay. And that one-dimensional
+[135:30] array I'm going to reshape it into
+[135:33] two-dimensional array by taking three
+[135:36] rows and four columns. Okay. So I'll re
+[135:39] reshape. So I'll reshape array of one
+[135:42] dimension into a two dimension. Let's
+[135:44] see. Yeah. So this is what I get. So if
+[135:46] you want to print this matrix here.
+[135:49] Yeah. So this is 1D and that got
+[135:52] reshaped into 2D. One thing you have to
+[135:54] note here is you cannot provide any
+[135:56] random number here. Okay. So the product
+[135:58] of these two numbers must be equal to
+[136:00] the total number of elements present in
+[136:02] the array that you want to reshape. So
+[136:05] here the array that I'm taking is a
+[136:06] matrix. Whether it is array or a matrix
+[136:08] doesn't matter. But the product of these
+[136:10] two numbers must be equal to the total
+[136:13] number of elements present in this
+[136:15] matrix. So this matrix already has 12
+[136:18] elements and 3 + 4 or 3 into 4 is
+[136:20] already 12. So that works. If I try this
+[136:23] by making it six, I'll get an error
+[136:26] because again the same error message 3
+[136:28] into 6 is 18 and that cannot be fit into
+[136:33] 12 positions. Super. Yeah. So you can
+[136:36] also reshape into 2 + 6. So two rows,
+[136:38] six columns. What does this do? This
+[136:40] will take a two-dimensional matrix and
+[136:43] flatten it. So flattening is exactly the
+[136:46] reverse operation that we did here. So
+[136:48] flattening means take all the elements
+[136:50] of the 2D array and put it in one
+[136:53] dimension. So you can see that this
+[136:55] matrix was reshaped to 2 + 6 that is two
+[136:58] rows and six columns and now it has been
+[137:00] flattened back to 1D. Okay. So this is
+[137:03] the original matrix and this is the
+[137:05] raveled matrix. Okay fine. So I'm just

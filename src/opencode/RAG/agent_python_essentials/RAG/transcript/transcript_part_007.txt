@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 7
+# Video ID: UsfpzxZNsPo
+
+[12:53] contents some standard uh collab
+[12:56] notebooks would be there. So what I'll
+[12:58] do is click on file new notebook in
+[13:03] drive. This will create a new Jupiter
+[13:06] notebook and that will be saved in your
+[13:09] Google drive.
+[13:13] Okay. So on the top you can double click
+[13:17] and provide a name to your Jupyter
+[13:20] notebook. Your Jupyter notebook will
+[13:22] have the extension IP NB that is
+[13:25] interactive Python notebook as the
+[13:27] default extension.
+[13:30] And again as usual this is your code
+[13:33] block. Okay, you can type your Python
+[13:36] code. So let's say this is my first
+[13:39] hello world program in Python. And again
+[13:42] you have three options to execute. But
+[13:44] before that on the top right
+[13:48] make sure that you have connected your
+[13:52] Jupyter notebook with a remote Python
+[13:55] kernel which will be running on Google's
+[13:58] server. Okay. So you have many options
+[14:02] but we'll go with the default option
+[14:04] right now. Click on the connect to a new
+[14:07] runtime. So make sure that your Jupiter
+[14:10] notebook is connected to a runtime. Once
+[14:13] it is connected, it will show a tick
+[14:14] mark. This might take 15 to 20 seconds
+[14:18] for it to connect. Uh please note that
+[14:20] in the free account of Google Collab,
+[14:24] you cannot run parallelly more than one
+[14:27] collab notebooks. If you try to run
+[14:29] another collab notebook, it will ask you
+[14:32] to shut down the previous notebook. So
+[14:34] this is one limitation with the free
+[14:36] account for Google Collab. So as you can
+[14:39] see uh there is a green tick which means
+[14:41] my collab notebook has already been
+[14:43] connected to the remote runtime. So now
+[14:46] I can go back to my code and again I can
+[14:49] execute this. So again execution has
+[14:51] three options. You can click on this
+[14:54] icon to execute the cell or you can do a
+[14:57] control enter or a shift enter. So I'll
+[15:00] click on this link and uh you can see
+[15:03] the output of this cell is below the
+[15:06] cell. Okay. So this is how you can
+[15:09] quickly create your codes in uh collab
+[15:12] notebook environment. And if you're
+[15:14] curious to know where is this notebook

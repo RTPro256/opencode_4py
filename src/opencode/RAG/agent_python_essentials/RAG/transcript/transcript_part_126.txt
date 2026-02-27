@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 126
+# Video ID: UsfpzxZNsPo
+
+[272:57] specific column. So in this case let me
+[272:59] retrive all the students
+[273:01] uh and order them by their marks in
+[273:04] machine learning subject. Select star
+[273:06] from students and then order by machine
+[273:09] learning marks in the descending order.
+[273:11] DC is for descending order. Let's see.
+[273:14] So machine learning marks and in the
+[273:16] descending order. Okay. So another SQL
+[273:20] query which will calculate the average
+[273:21] marks for all the students. Okay. In the
+[273:23] statistics course. So first it fetches
+[273:26] all the marks from statistics subject
+[273:29] and then using the average function it
+[273:32] calculates the average. So statistics is
+[273:35] fetched and then average function is
+[273:37] calculated. So 84.55 is the average
+[273:40] statistics marks for all the 20
+[273:42] students. Now another SQL query which
+[273:44] will count the total number of students
+[273:47] in the table. So this should be 20. You
+[273:50] can also group by the students by their
+[273:53] age and calculate the average marks. So,
+[273:56] so 84.75 is the marks obtained by all
+[273:59] the students who have a age 20 years.
+[274:01] 81.4 is the marks obtained by all the
+[274:04] students who have a age 21 years and so
+[274:07] on. So you can have a subject wise
+[274:09] average. You can also have a age- wise
+[274:11] average that you can decide what you
+[274:13] want to do. One final note um is
+[274:17] although SQL alchemy engine is quite
+[274:21] efficient because the correction is
+[274:24] automatically closed the moment the
+[274:26] query is executed. Here you have passed
+[274:28] the engine and once the query is
+[274:31] executed the engine closes the
+[274:33] connection from the database. But there
+[274:36] could be scenarios where the connection
+[274:40] may not be closed because there are
+[274:42] multiple such connections open and
+[274:44] multiple people are accessing the same
+[274:47] resource the same database. So in that
+[274:49] case it is a a good programming practice
+[274:52] to close the connection once you are
+[274:55] done completely. So if you're repeatedly
+[274:57] using this engine and you want to ensure
+[275:00] that all the connections are closed at
+[275:01] the end then you can use the engine.pose
+[275:04] dispose function. So this is typically

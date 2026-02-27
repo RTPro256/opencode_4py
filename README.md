@@ -35,8 +35,11 @@
 | `src/` | **Main project** - OpenCode Python source code |
 | `for_testing/` | **Testing subproject** - External projects used for testing this project's effectiveness |
 | `merge_projects/` | **Migration sources** - Projects being migrated/integrated into this project |
+| `aimodels/` | **Local AI models** - Sharded local models for distributed inference |
 | `docs/` | **Documentation** - Feature coverage, migration plans, and guides |
 | `plans/` | **Planning documents** - Integration plans and architectural decisions |
+
+> 📁 **[See PROJECT_INDEX.md](PROJECT_INDEX.md)** for detailed Python file structure and module purposes.
 
 ---
 
@@ -169,6 +172,7 @@ opencode web
 | [README.md](docs/README.md) | Complete documentation |
 | [FEATURE_COVERAGE.md](docs/FEATURE_COVERAGE.md) | Feature comparison with original |
 | [DOCS_INDEX.md](docs/DOCS_INDEX.md) | Documentation navigation |
+| [aimodels/README.md](aimodels/README.md) | Local model storage and sharding |
 
 ### Key Topics
 

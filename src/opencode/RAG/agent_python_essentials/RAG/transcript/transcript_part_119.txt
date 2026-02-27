@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 119
+# Video ID: UsfpzxZNsPo
+
+[256:49] from data.csv into a data frame. We can
+[256:52] then display the first few rows using
+[256:56] df.head function. After performing some
+[256:58] data manipulation such as calculating a
+[257:01] new total column, we can write the data
+[257:04] frame to a new CSV file using dataf
+[257:07] frame.2
+[257:09] CSV function. Settings index equal to
+[257:11] false prevents pandas from writing the
+[257:14] rows indices into the file. Reading and
+[257:16] writing JSON files with Python. The JSON
+[257:18] module is a part of Python's standard
+[257:20] library and provides methods for reading
+[257:23] and writing JSON data. The JSON objects
+[257:26] are similar to Python dictionaries
+[257:28] making it straightforward to work with
+[257:30] them. You can use JSON.load function to
+[257:33] read JSON data from a file into a Python
+[257:36] dictionary. Conversely, JSON.dump
+[257:39] function allows you to write a
+[257:42] dictionary into a JSON file. For
+[257:44] handling JSON data in string format, you
+[257:46] can use JSON.loads function and
+[257:49] JSON.dumps function. Working with JSON
+[257:52] files using JSON module. In this
+[257:54] example, we read data from data.json
+[257:57] using JSON.load function which loads the
+[258:00] JSON content into a Python dictionary.
+[258:02] We can then access elements of the data
+[258:04] structure using data employees. After
+[258:07] modifying the data, adding a new
+[258:09] employee in this case, we write the
+[258:11] updated dictionary back to the file
+[258:13] using JSON.dump. The index equal to 4
+[258:15] parameter formats the JSON file with
+[258:18] indentation for better readability. In
+[258:21] conclusion, handling files like CSV and
+[258:24] JSON in Python is straightforward with
+[258:26] the standard libraries and enhanced by
+[258:28] tools like pandas. I hope this session
+[258:31] has provided you with valuable insights
+[258:33] into working with files and databases in
+[258:35] Python.
+[258:37] So in this coding tutorial, we'll see
+[258:39] how to connect with SQL databases using
+[258:42] Python. First we'll start with in-memory
+[258:45] databases which are created using SQLite
+[258:49] package
+[258:50] and then we will connect with one MySQL
+[258:54] database and another one which is a

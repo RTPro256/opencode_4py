@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 83
+# Video ID: UsfpzxZNsPo
+
+[177:14] here reference to the second subplot and
+[177:16] then that's the title you are providing.
+[177:19] Okay, sup title is the super title.
+[177:22] Basically, that will be the title
+[177:23] provided at the top of both the
+[177:26] subplots. Okay, and tight layout will
+[177:29] trim any extra spaces that is on each of
+[177:33] the edges of the plots. If there are
+[177:35] extra spaces that will be trimmed,
+[177:37] that's the tight layout. Let's see. So,
+[177:39] this is how I get. If you want it to be
+[177:42] one below the other then you have to go
+[177:44] with the other notation that is let's
+[177:46] say I want to have two rows I will
+[177:49] change this to two and I want to have
+[177:52] one column so two rows and one column
+[177:54] will give you one below the other okay
+[177:56] so in this case I might want to go with
+[178:00] 6 by 14 let's see that's too big so 6 by
+[178:07] 10 that should be fine
+[178:10] Yeah. So you can see so height is 14 and
+[178:13] the width is six this time. Okay. So you
+[178:17] can customize this and then uh you can
+[178:19] also create multiple figures. Okay. So
+[178:21] this is one figure and then another
+[178:24] figure or if you want to place both the
+[178:26] codes in one box you'll get two figures
+[178:30] back to back. Okay you'll get two
+[178:32] figures back to back because we have
+[178:34] plt.show function two times. So both the
+[178:37] figures are created back to back in the
+[178:39] same canvas. So you have created the
+[178:42] canvas for each of the figures. Okay. So
+[178:45] this way also you can customize. You
+[178:47] want to have it side by side then it's
+[178:50] better to go with a subplot or if you
+[178:52] want to have one above one below the
+[178:54] other then you can go with this option
+[178:56] as well. Okay. And then we have the
+[178:58] styling. How you want to show the
+[179:00] background of the subplots that's the
+[179:01] style. So by default our language uses
+[179:04] the ggplot option. So you do have other
+[179:06] stylesheets like seabbond, bm and so on.
+[179:10] So let's use the default ggplot which is
+[179:14] available in our language. So ggplot
+[179:16] stylesheet. So again I'm creating my
+[179:18] figure the plots the x-axis values
+[179:21] y-axis values. I'm creating a scatter
+[179:23] plot and this is the new thing that we

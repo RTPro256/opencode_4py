@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 137
+# Video ID: UsfpzxZNsPo
+
+[296:55] user is redirected to an authorization
+[296:57] server to grant the access. Then, the
+[296:59] user authenticates and authorizes the
+[297:02] access. In the next step, the server
+[297:03] returns an authorization code which the
+[297:06] application can exchange for an access
+[297:08] token. And finally, this access token is
+[297:12] used to make API requests on behalf of
+[297:14] the user. OOTH is more complex to
+[297:17] implement but offers enhanced security
+[297:20] making it ideal for situations where
+[297:22] users need to grant access securely to
+[297:25] their data. Let's summarize the
+[297:27] learnings from this module. First, we
+[297:29] have learned that APIs are essential
+[297:30] tools for enabling communication between
+[297:33] different software systems.
+[297:34] Understanding the basics of restful APIs
+[297:36] and JSON data formats is crucial.
+[297:39] Python's request library provides a
+[297:41] straightforward way to interact with
+[297:42] APIs. Adhering to best practices ensures
+[297:45] that your applications are robust and
+[297:47] secure. APIs play a significant role in
+[297:49] working with LLMs and building agents.
+[297:52] Providing access to advanced
+[297:53] functionalities and data.
+[297:57] Hello and welcome to the video on
+[297:59] building APIs with Flask and fast API.
+[298:02] In this video, we'll explore how to
+[298:04] create restful APIs using two popular
+[298:07] Python frameworks, Flask and Fast API.
+[298:10] We'll cover the basics of setting up the
+[298:12] endpoints, handling get and post
+[298:15] requests and also testing our APIs using
+[298:18] tools like Postman.
+[298:20] We'll also compare Flask and fast API to
+[298:23] help you understand which might be
+[298:25] better choice for your projects. Flask
+[298:28] is a microwave framework written in
+[298:29] Python. It is called a micro framework
+[298:32] because it doesn't require exotic tools
+[298:35] or libraries making it lightweight and
+[298:38] easy to get started with. When we say
+[298:41] flask is used for building web
+[298:42] applications and APIs, we mean it can
+[298:46] handle both front end that is what we
+[298:48] see in our browsers as well as back end
+[298:51] which is the server side logic and data
+[298:53] processing part of the web development.

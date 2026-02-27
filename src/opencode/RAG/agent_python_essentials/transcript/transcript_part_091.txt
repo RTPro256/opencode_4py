@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 91
+# Video ID: UsfpzxZNsPo
+
+[195:00] a single column you don't have to go for
+[195:03] a list. But if you're but if you want to
+[195:05] pull out multiple columns from the data
+[195:08] frame, you need to pass it as a list of
+[195:10] column names. Now let's say you want to
+[195:12] only display those rows. This is your
+[195:15] complete data frame. Now you want to
+[195:17] display only those rows. Okay, where the
+[195:20] marks is greater than 80. So essentially
+[195:23] if you want to manually check where the
+[195:25] marks is greater than 80. So this is
+[195:29] greater than 80. This is greater than
+[195:30] 80. This one. Okay. So you should be
+[195:34] getting only three rows. Let's verify.
+[195:36] So yeah, these are the three students
+[195:38] who have secured marks greater than 80.
+[195:42] So this is how you can select rows based
+[195:45] on some column names. Okay. Or based on
+[195:49] some conditions applied on the columns.
+[195:52] How do we select some rows? So to select
+[195:55] rows, you need to use the function lock
+[195:58] and I lock. Okay, let's see. So but
+[196:01] before we understand the concept of lock
+[196:03] and eyelock let's understand labels. So
+[196:07] in a data frame these are my column
+[196:10] labels. These are my column labels and
+[196:13] these are my row labels.
+[196:16] So what you see in bold they are labels.
+[196:19] Also the data frame columns and rows
+[196:23] have indices by default. So the default
+[196:26] index starts from zero. So this is zero.
+[196:28] This is 1 2 3 and four. So the index of
+[196:33] subject is four. Index of age column is
+[196:36] two. Index of name column is zero.
+[196:38] Similarly these are my indices. Okay. So
+[196:42] by default the row labels and row
+[196:46] indices are same. These are my indices.
+[196:49] These are index. Remember that the one
+[196:51] in blue are index. Row index and column
+[196:54] index. Okay. So you can use the lock
+[196:57] method and fetch rows by providing
+[197:02] labels. You can use the eyelock method
+[197:05] and provide index and fetch the rows. So
+[197:09] you can fetch rows by using their labels
+[197:12] or by using their indices. Okay. If you
+[197:15] want to provide the labels of the rows,
+[197:18] you should use the lock method. If you
+[197:20] want to use index of the rows, use the
+[197:23] eyelock method. So is essentially index
+[197:28] based locations. So let's see the

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 140
+# Video ID: UsfpzxZNsPo
+
+[303:25] like Postman can also be used. These
+[303:27] provide a user-friendly interface for
+[303:29] sending various types of HTTP requests
+[303:32] and viewing the responses. So to test
+[303:34] our endpoint, we can simply open a web
+[303:36] browser and navigate to http localhost
+[303:39] col 5000 which is the typical port
+[303:43] accessed by flask applications and
+[303:46] followed by a slash and then the name of
+[303:48] the endpoint. The browser will display
+[303:50] the JSON response from the server and
+[303:53] alternatively we can use the curl
+[303:54] command in the terminal to make the same
+[303:57] get request. However, since browsers
+[304:01] don't natively allow us to send a post
+[304:04] request in a JSON body format from the
+[304:07] web browsers address bar, we can use
+[304:11] curl to send a post request with a JSON
+[304:14] payload or you can also access the post
+[304:17] endpoints via Python code. So this
+[304:20] command must include the headers to
+[304:22] specify the content type and then also
+[304:24] uses the hyphen d flag to includes that
+[304:27] to include the data. Testing APIs using
+[304:30] Postman. So Postman is a very widely
+[304:33] used tool for API development and
+[304:34] testing. It provides an intuitive
+[304:36] interface where you can configure
+[304:38] requests with different methods, headers
+[304:40] and bodies. To test our API, we can
+[304:43] create a new request in Postman. Specify
+[304:46] the endpoint URL and then select the
+[304:48] appropriate HTTP method. You can
+[304:50] download the Postman for free from this
+[304:52] URL. To test our API in Postman, we can
+[304:56] create a new request in Postman. Specify
+[305:00] the endpoint URL here and select the
+[305:03] appropriate HTTP method from this pulld
+[305:05] down get post and so on. For post
+[305:08] request, we need to include a JSON
+[305:11] payload in the body of the request. And
+[305:14] then we finally click send. Then Postman
+[305:17] will display the response from the
+[305:18] server allowing us to verify that our
+[305:21] API is working as expected. Uh Postman
+[305:24] makes it very easy to test different
+[305:25] scenarios and debug our APIs. Fast API
+[305:28] is another modern web framework for
+[305:30] building APIs with Python. It is
+[305:32] designed to be fast and very easy to

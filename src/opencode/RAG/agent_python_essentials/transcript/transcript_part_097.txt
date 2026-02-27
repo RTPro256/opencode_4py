@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 97
+# Video ID: UsfpzxZNsPo
+
+[208:47] code to get. So now you want to fill the
+[208:50] missing values with the average value of
+[208:54] that column. Let's say uh right now the
+[208:56] missing value is present in the age
+[208:59] column. So you can take the average age
+[209:02] and fill the missing values. So fill NA
+[209:04] function fill the nan values. That's
+[209:07] what this function does. Filling the nan
+[209:09] values. Okay, fill na is fill the nan
+[209:12] values in that column. So again by
+[209:15] default that is false. So you'll have to
+[209:17] make it true so that the filling happens
+[209:19] permanently or replace the original
+[209:22] column either way. So after filling
+[209:25] replace the original column that is one
+[209:26] way or you use the in place option. So
+[209:30] now you can see this 23.5 and this 23.5
+[209:33] is coming because of the fill na
+[209:36] function. Earlier these were nans. So
+[209:38] you can check the info and if you want
+[209:40] you can convert it back into a integer
+[209:42] format. So you will lose some precision.
+[209:44] So these decimal points will be ignored
+[209:46] then. Okay. Or rounded to the nearest
+[209:49] whole number. So I have type casted it
+[209:51] back to a integer. So it depends on your
+[209:54] use case. You might want to do that. So
+[209:56] here the function used is as type. As
+[209:59] type changes the data type of a column
+[210:01] to a specified data type. So I am type
+[210:04] casting it back to a integer. So you can
+[210:06] type cast it to a integer 8 bit, 16 bit
+[210:10] or a 32-bit precision. So based on your
+[210:12] use case. Okay. So I'm creating a few
+[210:15] more missing values after creating a
+[210:18] copy of the data frame. So I'm creating
+[210:20] a copy and from that copy I am dropping
+[210:24] some more uh values. So creating some
+[210:27] more missing values in the updated
+[210:29] marks. This time you can see this is
+[210:31] one. This is one. Uh other thing that
+[210:34] you can do is instead of filling the
+[210:36] missing values, you might want to drop
+[210:39] the rows which have missing values. So
+[210:41] let's say I want to drop these two rows
+[210:44] which have the missing values. So that
+[210:46] can be done by using the drop NA
+[210:48] function. So the drop NA function
+[210:50] removes the missing values instead of
+[210:52] filling it with the average or the

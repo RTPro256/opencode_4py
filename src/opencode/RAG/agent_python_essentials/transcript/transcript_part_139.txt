@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 139
+# Video ID: UsfpzxZNsPo
+
+[301:14] at the port 5000/get
+[301:17] data. That's the name of the endpoint we
+[301:20] created here. Here is another endpoint
+[301:22] which uses the get method for requesting
+[301:24] inputs from the user. So the at the rate
+[301:27] app route / square that is the name of
+[301:30] the endpoint and the methods is equal to
+[301:32] get again. So here this app endpoint
+[301:36] needs a number from the user and by
+[301:38] default that number is given to be zero.
+[301:41] In case the user is not providing any
+[301:43] input we'll be using zero. So what we
+[301:45] are returning is the square of that
+[301:48] number. So this is a dictionary mostly
+[301:51] this is the same format as of your JSON.
+[301:54] Finally we can run this app and access
+[301:56] it from the browser window. You can see
+[301:58] uh we have the local host colon the port
+[302:01] number 5000/ square. So / square is your
+[302:05] endpoint and question mark and beyond
+[302:07] that we have the name of the parameter
+[302:10] which is the number which the user has
+[302:12] to provide equal to this is the actual
+[302:14] number which the user has to provide 5
+[302:16] 10 15 500 whatever that number is for
+[302:19] which we want to calculate the square.
+[302:21] Now in this example we have two
+[302:22] endpoints one for the get and another
+[302:26] for handling the post request. The slash
+[302:28] get data uh route responds to the get
+[302:31] request by returning a simple JSON
+[302:34] message. The post data route handles the
+[302:37] post requests. It retrieves the JSON
+[302:40] data sent in the request body using the
+[302:43] request dot get JSON function and
+[302:47] returns a response that includes the
+[302:50] received data. So by specifying the
+[302:52] methods parameter in the app route
+[302:54] decorator, we define which HTTP methods
+[302:58] each endpoint accepts. Now there are
+[303:00] several ways to access and test your API
+[303:03] endpoints. First method is the browser
+[303:06] address bar. This works only for the get
+[303:08] requests. Simply type the full URL of
+[303:11] your endpoint and press enter. The
+[303:13] second method is using command line
+[303:15] tools. You can use curl which is a
+[303:18] command line tool for transferring data
+[303:20] or you can use wget which is another
+[303:22] command line tool. API testing tools

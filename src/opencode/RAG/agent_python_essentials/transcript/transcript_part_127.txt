@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 127
+# Video ID: UsfpzxZNsPo
+
+[275:06] not needed on a single usage but if
+[275:10] there are multiple users connected to
+[275:13] the same database and repeatedly doing
+[275:15] lot of SQL operations then this might be
+[275:18] needed once everything is done. Okay. So
+[275:21] in the last part of this notebook we are
+[275:23] going to connect a posgress database
+[275:26] using Python. So as discussed in the
+[275:29] presentation in the previous video, I'm
+[275:32] going to use the psychopg2 package. So
+[275:35] first try to install psychopg2
+[275:38] using this. So first try to install
+[275:40] psychopg2 using this command. So just
+[275:43] unccommend this and execute. If there is
+[275:46] any error in the installation then try
+[275:49] the next one. So depends on the machine
+[275:52] and the server. Okay, the
+[275:53] configurations. So sometimes the first
+[275:56] one would work or else the next line
+[275:59] would work but try in that sequence. So
+[276:02] I have already installed the psychoppg2
+[276:04] library
+[276:05] and then as usual you have your database
+[276:08] configurations. So this is the posgress
+[276:10] SQL database which is again hosted on my
+[276:13] RDS instance on AWS. So this is the
+[276:15] endpoint. Uh Postgress database
+[276:17] connections uh typically use port 5432
+[276:21] by default. This is the name of my
+[276:23] database. The admin username for my
+[276:26] database and the password. So with these
+[276:30] let me start connection. So importing
+[276:33] the psychopg2 library and then uh also
+[276:36] importing the error. It's a good
+[276:38] programming practice to use try except
+[276:40] blocks again as we did in the previous
+[276:42] case. So here I'm creating a function to
+[276:45] create a connection. So the advantage of
+[276:48] doing this is I can directly call this
+[276:50] function which will create the
+[276:52] connection directly and it will return
+[276:54] that connection. So I can use this
+[276:56] connection in my pandas directly. So the
+[276:59] other things are pretty uh
+[277:01] self-explanatory. We have been doing
+[277:03] this and to execute the SQL queries
+[277:05] again I'm creating a function. So it
+[277:07] will need that connection and the query.
+[277:09] After establishing a cursor to that
+[277:13] connection, it will execute that query

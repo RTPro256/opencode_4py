@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 156
+# Video ID: UsfpzxZNsPo
+
+[339:21] will only use the inference APIs for
+[339:24] these models which are already hosted
+[339:26] and running on the hugging face server.
+[339:28] In the next notebook we will actually
+[339:31] download these models using the hugging
+[339:33] face repository and then use those
+[339:35] models locally. Right. So in this
+[339:38] notebook we'll learn how to run any open
+[339:40] source model via hugging phase inference
+[339:42] API and you can run this entire notebook
+[339:45] on Google collab as well. Right now I'm
+[339:47] running it on my local machine. So
+[339:50] hugging phase has made something called
+[339:51] as inference API free to use with some
+[339:55] basic rate limits. So under the fair
+[339:58] usage policy if you are not exceeding
+[340:00] the rate limits uh you can directly
+[340:02] access these models hosted on the
+[340:04] hugging face server and directly get the
+[340:06] response. Okay. So don't try to access
+[340:10] this API just too often and reach the
+[340:13] rate limits otherwise you will end up
+[340:15] making uh you know blocked out by the uh
+[340:19] hugging face. Okay. So we are going to
+[340:22] experiment two models in this uh
+[340:25] notebook. One is the Mistl 7B instruct
+[340:27] model which is a 7 billion parameter
+[340:30] model and this transformer model has
+[340:32] been built by the French company called
+[340:36] as Mistral AI and it's a instruct
+[340:39] fine-tune model. Uh and you can just
+[340:41] follow this link. This is the base model
+[340:44] which has been used to instruct
+[340:47] fine-tune. So this is what we call as
+[340:49] the model card. So if you have never
+[340:52] created an account on hugging face, you
+[340:55] will have to first create an account.
+[340:56] And I have already logged in. You can
+[340:58] see I've already logged in into my
+[341:00] hugging face account. Okay. And the
+[341:03] second model we are going to use is the
+[341:06] Gemma 2B IT model. It is for instruction
+[341:09] tuned again. So this is again a
+[341:11] open-source model by Google. It's a two
+[341:14] billion parameter model and it is
+[341:16] fine-tuned for instruction following
+[341:18] tasks and that enables us to handle a
+[341:21] different wide variety of complex
+[341:24] natural language processing tasks. Okay.
+[341:26] So of course you will need internet

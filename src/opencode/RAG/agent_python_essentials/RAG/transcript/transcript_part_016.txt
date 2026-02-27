@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 16
+# Video ID: UsfpzxZNsPo
+
+[33:44] and this is true, the net thing will
+[33:47] give me true. So true and true will give
+[33:50] me true. This is true. This is false. So
+[33:54] true or false will give me again true.
+[33:57] That is how the truth table for the or
+[33:59] operator works. So and operator will
+[34:02] give you true only when both of them are
+[34:04] true. If either of them are false. Okay,
+[34:08] let me make it clear. So let's make it
+[34:11] 20 here. So this is true but this is
+[34:14] false. Right? So this will give me
+[34:17] false.
+[34:18] So and operator will return true only if
+[34:21] both of these conditions are actually
+[34:24] returned to be true. Okay.
+[34:25] Simultaneously if either or both of them
+[34:28] are false then the net returned output
+[34:31] would be false. You can see here. Okay.
+[34:34] So this will go back to true. But in the
+[34:36] case of R operation there are two
+[34:39] conditions again which I'm checking. So
+[34:41] if either of them are true, it will give
+[34:43] me true. So this is true. This is false
+[34:45] and still it gives me true. Okay. But if
+[34:48] both are false, let's say this is 10
+[34:51] now. Okay. So one is not equal to 10. So
+[34:53] this is false. Three is not equal to
+[34:56] four. This is also false. So false or
+[34:59] false will return me false. If either of
+[35:01] them is true, then it will give me true.
+[35:03] You can see that. Okay. Now you can go
+[35:06] for more compound operations. Okay. So
+[35:09] you can uh focus on the bracket here. So
+[35:13] first I'm checking this condition within
+[35:16] this bracket and then I am compounding
+[35:20] it with the or operation with this
+[35:22] condition. Okay. So first we check
+[35:24] whether two is greater than three. This
+[35:26] will give me false. This will give me
+[35:28] true. So false or true will give me
+[35:33] true. So the output from here to here
+[35:35] will be true. Now this is true and this
+[35:38] is already true. So the net thing should
+[35:40] return to be true. That's it for this
+[35:43] coding exercise. I'll see you in the
+[35:45] next part. Hello and welcome back. In
+[35:48] this video, we'll explore conditional
+[35:51] statements, a fundamental concept in
+[35:53] Python that helps us to make decisions
+[35:56] in our code. If you have ever wondered

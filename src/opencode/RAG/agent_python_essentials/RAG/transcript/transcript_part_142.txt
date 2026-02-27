@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 142
+# Video ID: UsfpzxZNsPo
+
+[307:40] this is the flask app I'm creating and
+[307:42] uh this is how we initialize the flask
+[307:44] app. app equal to flask un_ame
+[307:49] fine. This is the place where we are
+[307:50] creating the endpoint. So this is my
+[307:53] root endpoint. Uh against each endpoint
+[307:56] we have to define a function. So
+[307:57] basically it tells the user when the
+[307:59] user accesses this endpoint what should
+[308:02] be performed, what activity should be
+[308:04] performed that is defined within this
+[308:06] function. Okay. So this is the decorator
+[308:09] which is decorating this function
+[308:11] essentially. Okay. So whenever I'm going
+[308:13] to access this endpoint, this is the
+[308:15] function which will get triggered and
+[308:17] this function is doing nothing but
+[308:20] simply returning uh hello world back to
+[308:23] the user. Okay. So from this code uh I'm
+[308:26] just going to run the flask app. So
+[308:29] ideally this entire code should be run
+[308:31] using a py file. This is not a good
+[308:34] practice to run flask applications or
+[308:36] endpoints from uh Jupiter notebook.
+[308:40] Okay. But for the sake of simplicity and
+[308:43] learning, we are doing it here. But
+[308:45] ideally, this should be wrapped into a
+[308:47] python.py file or app.py file. And that
+[308:50] app.py file should be run using your
+[308:53] terminal. Okay. So, let me run this. It
+[308:56] says that I'm serving this flask app uh
+[308:59] with a debug mode off. And this is the
+[309:02] URL where it is running. So, let me
+[309:03] click on this URL. And there you go. You
+[309:07] can see that the flask app has returned
+[309:10] me hello world. Okay. So this is being
+[309:12] served whenever I'm accessing that
+[309:14] endpoint. This was very easy. You can
+[309:17] also access this URL by using curl
+[309:20] command. So I'll just copy this. So curl
+[309:22] commands can be accessed from your
+[309:24] command prompt. So I'm running my
+[309:26] command prompt cmd. Here I can directly
+[309:29] paste my curl command and enter. You can
+[309:31] see the output here as hello world.
+[309:34] Right? Okay. So I'll have to stop this.
+[309:37] And how do I stop this? There is a
+[309:39] interrupt terminal or interrupt kernel
+[309:42] button over there. So I'll click on this
+[309:44] interrupt the kernel to interrupt the or

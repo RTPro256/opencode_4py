@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 71
+# Video ID: UsfpzxZNsPo
+
+[152:07] operations. We have done logarithmic
+[152:09] trigonometry functions. Along with that,
+[152:10] rounding functions, comparison and
+[152:12] logical operations. I've also
+[152:14] demonstrated broadcasting and linear
+[152:16] algebra functions. Finally, we also saw
+[152:18] some of the random generator functions.
+[152:21] Thank you. Hello everyone and welcome to
+[152:24] this session on the mattplot lab basics
+[152:27] hands-on. So in this notebook I will
+[152:29] demonstrate the most commonly used
+[152:31] plotting functions in mattplot liib and
+[152:33] how to customize these plots. So let's
+[152:36] get started. So first we need to install
+[152:39] mattplot liib if it is not there by
+[152:41] using pipe install mattplot liib. Most
+[152:43] of the Anaconda installations come with
+[152:45] Mattplot liib pre-installed and also
+[152:48] your collab comes with Mattplot lib
+[152:51] pre-installed.
+[152:53] So let me see what is the version of
+[152:56] Mattplot liib in my machine that comes
+[152:58] to 3.1.
+[153:00] Okay. So now let's import the piplot
+[153:03] module from mattplot liib and assign it
+[153:06] as an alias of plt. So piplot is
+[153:10] basically used for one-dimensional
+[153:11] plotting. If you want to go for
+[153:13] two-dimensional or 3D plots, you have
+[153:16] different modules for that. I'm also
+[153:18] importing numpy as np to create some
+[153:21] arrays which will be actually plotting
+[153:23] in mattplot lab. Now in the earlier
+[153:25] versions of jupyter notebook, you will
+[153:28] have to unccommend this line and run
+[153:31] this mattplot li in line so that the
+[153:33] plots appear within the jupyter
+[153:36] notebooks. But it is actually no longer
+[153:38] needed if you are running the most
+[153:40] recent versions of the Jupyter notebooks
+[153:42] or even using Google's collab. Okay. So
+[153:45] I'll just keep it for now for backwards
+[153:47] compatibility let's say. So let me
+[153:49] create a sample data here by using the
+[153:51] numpy function lin space that is
+[153:53] linearly spaced numbers starting from
+[153:55] zero ending at 2 pi and both inclusive.
+[153:59] I'm going to create 98 numbers in
+[154:01] between. So the starting and the ending
+[154:04] numbers are anyway included. So total

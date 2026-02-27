@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 132
+# Video ID: UsfpzxZNsPo
+
+[286:07] indicates that the resource was not
+[286:09] found and 500 represents a server error.
+[286:13] These codes help you understand whether
+[286:15] your requests have been processed
+[286:18] successfully or if there were any
+[286:21] issues. Restful APIs. Most modern APIs
+[286:24] are designed according to the rest
+[286:26] architecture. Representational state
+[286:29] transfer. REST is an architectural style
+[286:32] used for designing applications. It
+[286:35] relies on few core principles.
+[286:38] Statelessness. The server doesn't store
+[286:40] any client state. Meaning each request
+[286:43] from the client contains all the
+[286:45] information that the server needs to
+[286:47] fulfill that request. Client server
+[286:50] architecture. This separates the user
+[286:52] interface from data storage simplifying
+[286:55] how applications interact with APIs.
+[286:58] Uniform interface. All API endpoints use
+[287:01] standard methods and formats making it
+[287:03] easier to use and understand.
+[287:06] Cachability.
+[287:07] Responses can be cached for improved
+[287:10] performance. Restful APIs use HTTP
+[287:13] methods like get, post, put, and delete
+[287:17] for crude operations which include
+[287:20] create, read, update, and delete
+[287:24] operations. This makes them
+[287:26] straightforward to work once you
+[287:28] understand these principles. A restful
+[287:30] API interaction involves several
+[287:33] components. The endpoint or resource URL
+[287:37] specifies where the resource is located.
+[287:40] The HTTP method indicates what action
+[287:42] you want to perform on the resource.
+[287:44] Headers carry metadata information like
+[287:47] content type or authentication tokens.
+[287:50] This helps the server understand how to
+[287:53] process the request or who is making the
+[287:55] request. The body or payload contains
+[287:58] data you are sending to the server
+[288:00] commonly in the JSON format. Finally,
+[288:03] after pre-processing your request, the
+[288:05] server sends a response in JSON format,
+[288:08] which also includes headers and the
+[288:10] requested data. Understanding these
+[288:12] components is essential for effectively
+[288:14] working with APIs. JSON is the most
+[288:16] commonly used data format for APIs. It's

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 13
+# Video ID: UsfpzxZNsPo
+
+[26:49] all variables are present in your
+[26:51] current name space just type whose and
+[26:55] you can see that all these variables are
+[26:57] existing in the current name space. Okay
+[26:59] you can use all these variables for
+[27:01] calculations.
+[27:04] So let's do some quick data type
+[27:06] conversions. Let me convert a float into
+[27:08] integer. So my age is 26.3333
+[27:12] something. I am converting that age into
+[27:14] an integer by using the int function.
+[27:17] int is used for type casting uh float to
+[27:20] a integer. Okay. So you can see 26.333
+[27:24] has been type casted into integer. So
+[27:27] what this function does is it simply
+[27:29] ignores the decimal point and anything
+[27:32] beyond the decimal point. It only takes
+[27:34] the integer part of that float.
+[27:36] Similarly, I can convert a string into
+[27:38] integer also. So if I'm trying to add a
+[27:41] string to a uh integer, this will give
+[27:44] me an error. So this is a string in
+[27:46] single quotes and this is an integer. So
+[27:49] you cannot add a string to integer. This
+[27:51] operation will give me a error. You can
+[27:54] see. But if I type cast this two from
+[27:59] string to an integer this I'm converting
+[28:02] this two from string two to a integer
+[28:05] two I can still add with this integer
+[28:09] six okay so let's do that perfect so
+[28:12] this is how it works okay here the two
+[28:14] string two was type casted into a
+[28:17] integer and then this becomes integer
+[28:19] this is already integer so integer
+[28:21] addition happens and finally returned is
+[28:24] also an integer you can check that the
+[28:26] data type of my int is also an integer.
+[28:30] I'll see you back in the presentation
+[28:33] and we'll continue with the operators in
+[28:35] Python. In Python, operators are symbols
+[28:38] that perform operations on variables and
+[28:40] values. These include arithmetic
+[28:43] operations like addition,
+[28:44] multiplication, division, and more.
+[28:47] Think of operators as tools in a
+[28:50] toolbox. They help you manipulate the
+[28:52] data stored in your variables. For
+[28:54] example, if you want to add two numbers,
+[28:57] you would use the plus operator. Easy,
+[28:59] right? And operand is the value on which

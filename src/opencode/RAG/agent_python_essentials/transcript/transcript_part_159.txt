@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 159
+# Video ID: UsfpzxZNsPo
+
+[346:04] here you can see this is the model link.
+[346:07] However for now we'll directly use the
+[346:10] model API URL. Okay. So let's execute
+[346:14] this. Similarly this is the API URL for
+[346:16] the GMA 2B it model that we are going to
+[346:19] use. So there are some standard
+[346:21] parameters. For example, wait for the
+[346:23] model's response. Yes. and um we don't
+[346:27] want to return the full text. The
+[346:29] maximum tokens we want to return is only
+[346:31] 1,000 and so on. So let's start uh
+[346:34] prompting our models. Uh first we'll
+[346:36] take a basic Q&A uh question and
+[346:38] answering. This is zero short prompting
+[346:40] to the model. So here the prompt that I
+[346:44] am passing to the model is can you
+[346:45] explain what is quantum computing to a
+[346:48] fifth grader. So this is the complete
+[346:50] prompt. Uh let me print the prompt and
+[346:53] this is the model's API URL. Okay. And
+[346:57] uh when you run this code you'll get the
+[347:00] response from the model. So here I'm
+[347:03] passing the parameters for the Mistl
+[347:06] model and the model API URL I'm using is
+[347:09] for the Mistl. So basically this
+[347:11] response was obtained from Mistl model.
+[347:15] Now there might be a possibility that
+[347:17] you may get an error. So if you are
+[347:20] getting an error, most likely reason is
+[347:22] you will have to go ahead and accept the
+[347:25] uh license. So click on this link. This
+[347:28] will take you to the model card page.
+[347:31] And uh you might get a window here to
+[347:34] accept. So since I have already
+[347:37] accepted, I have been granted access to
+[347:40] this model. So this is a gated model. So
+[347:42] you will have to accept the license
+[347:46] agreement for this model. Yeah. So for
+[347:49] example if I click on Gemma 2B it okay
+[347:53] so this is the kind of window you will
+[347:55] get even for the Mistl model the first
+[347:57] time you try to access it. So the moment
+[348:00] I acknowledge the license I will be
+[348:03] granted access to this model. So let me
+[348:06] authorize this model. So this is a
+[348:08] one-time activity. So this model will be
+[348:10] now accessible to your account. So again
+[348:14] the message says you have been granted
+[348:16] access to this model. So this is one
+[348:18] time activity you might have to do for

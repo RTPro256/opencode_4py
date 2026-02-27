@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 62
+# Video ID: UsfpzxZNsPo
+
+[132:58] column side this colon means take all
+[133:01] the columns. So give me the indices 02
+[133:04] for the rows and all the columns. So
+[133:06] let's see what I get since I asked for
+[133:08] all the columns. So you can see that I'm
+[133:11] able to get all the three columns and
+[133:13] the first two rows. Okay. So what
+[133:16] happens if I make this 2,
+[133:20] zero? So the good thing is I'll get the
+[133:23] last row and then the first row. So just
+[133:26] watch the first row actually becomes the
+[133:28] last row now. Okay. So you can see that
+[133:31] these two rows actually flipped because
+[133:33] the indices got flipped. So you can
+[133:36] actually retrieve the rows and columns
+[133:39] based on handpicked indices that you
+[133:41] want. And that's the fancy indexing I'm
+[133:44] talking about. Okay. Let's see how does
+[133:46] the boolean indexing work. Here you'll
+[133:48] provide a condition. So here what am I
+[133:51] saying is give me all the elements of
+[133:53] this two-dimensional array which are
+[133:55] greater than four. So that will create a
+[133:58] kind of a boolean mask. Boolean mask is
+[134:00] nothing but an array of the same shape
+[134:03] as this which has only trus and false.
+[134:06] So trs at those position where this
+[134:09] condition is met and false at all those
+[134:11] positions where the elements are less
+[134:14] than four. Okay, where this condition is
+[134:16] not met essentially. So let me first
+[134:18] print the boolean mask. You can see at
+[134:20] these places I have a number which is
+[134:23] greater than four. That's the exact
+[134:25] meaning of the mask. And when you pass
+[134:27] that mask, that mask becomes a boolean
+[134:30] index. Essentially it's a boolean index.
+[134:32] When you are passing that boolean index
+[134:34] to that two-dimensional array, you will
+[134:36] be able to fetch the elements which or
+[134:39] against which you've got true here.
+[134:43] Okay. All the elements which gave you
+[134:45] true by using this boolean mask those
+[134:48] elements will be fetched out okay by
+[134:51] providing that boolean mask you can
+[134:52] provide multiple conditions combined
+[134:54] together. So in this case I'm asking to
+[134:56] give me all the numbers which are
+[134:58] greater than two and the same numbers
+[135:00] must also be less than eight. So two

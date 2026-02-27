@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 5
+# Video ID: UsfpzxZNsPo
+
+[08:44] this course. So let's click on the
+[08:45] Jupiter lab launch again. It will take a
+[08:49] couple of minutes for this to launch.
+[08:51] Remember that the Jupiter lab will
+[08:53] launch in the browser window.
+[08:56] So I've got my Jupiter lab up and
+[08:58] running in the browser window. There is
+[09:00] one small warning. Do not close the
+[09:03] Anaconda Navigator window as long as you
+[09:05] are running the Jupiter lab from here.
+[09:08] Okay. So the default installation
+[09:11] directory is shown on the left side.
+[09:14] This is the file browser window you can
+[09:16] see and from here you can actually
+[09:18] launch Jupiter notebook. You can have
+[09:20] access to the Python console or a
+[09:23] terminal. You can also create u uh
+[09:26] requirement.txt file from here and you
+[09:28] can also create markdown f files with an
+[09:31] extension md. You can create standard
+[09:33] python files with an extension py and
+[09:36] you can also access the other
+[09:38] applications from anaconda. Okay. So uh
+[09:42] first we will learn how to create a
+[09:44] folder within Jupyter lab and then we'll
+[09:48] learn how to create a new file a new
+[09:51] Jupyter notebook from Anaconda
+[09:53] environment and see okay so first you
+[09:56] need to decide where you want to keep
+[09:58] your code files let's say I want to keep
+[10:00] my code files within this is your C and
+[10:04] users directory okay from here uh I am
+[10:07] just browsing to desktop so just Right
+[10:10] click and create a new folder from here.
+[10:14] Okay. Specify a folder name.
+[10:19] So my folder name is coding essentials
+[10:22] for AI. Double click on that. So the
+[10:26] folder appears to be empty as of now.
+[10:29] And again if you want to create a
+[10:30] subfolder you can go ahead and do that.
+[10:33] Let's say I create module one. And
+[10:36] within module one double click. So to
+[10:38] create a new Jupyter notebook, right
+[10:40] click and click on the new notebook
+[10:43] option. This is the window that will
+[10:45] appear. This will ask you to select the
+[10:47] Python kernel to associate with the
+[10:50] notebook. So you can see that I have no
+[10:53] other kernel apart from this basic
+[10:55] Python 3. So I'll go ahead and take

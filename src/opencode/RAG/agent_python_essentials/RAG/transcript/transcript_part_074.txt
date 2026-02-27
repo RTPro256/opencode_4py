@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 74
+# Video ID: UsfpzxZNsPo
+
+[158:23] there somewhere. Okay. And then you have
+[158:24] multiple shades of pink and red. Okay.
+[158:29] Crimson, deep pink, hot pink, magenta
+[158:32] and so on. Purple, dark magenta. You can
+[158:35] provide any of these names. So coming
+[158:37] back. So this is how you can change the
+[158:39] name of the color. Now line styles. Now
+[158:42] instead of dash, let me give double dash
+[158:45] and that will give me a dotted line.
+[158:47] Okay, you can see sorry a dashed line.
+[158:50] This is a dashed line. Okay, so to get
+[158:53] the dotted line you can go for colon. So
+[158:56] this gives me dotted line. You can see
+[158:58] very well this is a dotted line and you
+[159:00] can go for a dot dash as well. So dot
+[159:03] dash should also be there.
+[159:10] Okay.
+[159:12] So that is dash dot. Okay. So the dash
+[159:16] and dot. So where do we search for these
+[159:19] line styles? So again go to Google and
+[159:21] search for mattplot line styles. Click
+[159:24] on the first link and you can see all
+[159:27] the line styles available in mattplot.
+[159:29] So these are the most common ones. Again
+[159:31] if you want to have more exotic line
+[159:34] styles you can experiment with these
+[159:35] advanced options but these are the most
+[159:38] common ones. Dash is a solid line. You
+[159:40] can get a dotted line, dash dash line
+[159:43] and a dash dot line. Okay. So you can
+[159:46] see how these lines look like. Perfect.
+[159:49] So coming back again. So I have taught
+[159:53] you how you can customize the font
+[159:55] sizes, the colors, the line styles and
+[159:57] even you can change the line width. So
+[159:59] if you want you can make it three that
+[160:01] will become thicker line. You can see
+[160:03] the line thickness has increased. Okay.
+[160:05] So you can customize this as you want.
+[160:08] Fine. And then this legend function will
+[160:10] actually
+[160:12] place this legend in the plot. So if you
+[160:14] forget to provide the legend here you
+[160:17] can see what this plot represents that
+[160:20] is what is given by the legend. Okay. So
+[160:22] that legend is gone because I commented
+[160:24] that and you can also provide the
+[160:27] location where you want to place the
+[160:29] legend. So the value in the legend is
+[160:31] populated automatically by the label. So

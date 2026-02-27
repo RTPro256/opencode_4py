@@ -552,6 +552,17 @@ opencode rag add --agent troubleshooting ./errors/ERR-018-new-error.md
 opencode rag rebuild --agent troubleshooting
 ```
 
+### Python Essentials RAG
+
+The testing workflow can also leverage the **Python Essentials RAG** for Python best practices during test generation:
+
+**Location:** [`RAG/agent_python_essentials/`](../src/opencode/RAG/agent_python_essentials/)
+
+```bash
+# Query Python Essentials RAG for testing patterns
+opencode rag query --agent python_essentials "How to write pytest fixtures?"
+```
+
 ### Required Pre-Integration Steps
 
 Before any integration, opencode_4py should:

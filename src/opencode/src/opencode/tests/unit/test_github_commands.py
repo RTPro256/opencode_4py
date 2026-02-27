@@ -41,7 +41,7 @@ class TestRunCommand:
 
             assert result.returncode == 0
             mock_run.assert_called_once_with(
-                ["git", "status"], capture_output=True, text=True, check=False
+                ["git", "status"], capture_output=True, text=True, check=False, cwd=None
             )
 
     def test_run_command_failure_with_check(self):

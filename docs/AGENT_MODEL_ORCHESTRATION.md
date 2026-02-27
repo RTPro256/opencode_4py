@@ -782,6 +782,7 @@ Each agent's RAG has a `config.json`:
 | `ask` | `RAG/agent_ask/` | General knowledge, documentation |
 | `review` | `RAG/agent_review/` | Review standards, quality criteria |
 | `orchestrator` | `RAG/agent_orchestrator/` | Workflow patterns, coordination |
+| `python_essentials` | `RAG/agent_python_essentials/` | Python best practices for AI agents |
 
 ---
 

@@ -1,0 +1,27 @@
+# Python Essentials for AI Agents - Part 173
+# Video ID: UsfpzxZNsPo
+
+[377:43] operations and asynchronous messaging
+[377:46] which is ideal if you are building a
+[377:48] distributed system with agents that need
+[377:50] to operate independently and communicate
+[377:53] as needed. Autogen has advanced
+[377:56] capabilities too. It supports
+[377:58] containerized code execution, meaning
+[378:01] agents can write and run code in
+[378:03] isolated environments. This is great for
+[378:06] security and flexibility. It also works
+[378:08] with multiple programming languages
+[378:10] currently supporting Python and .NET
+[378:12] with more languages in a pipeline. And
+[378:15] if you're working on a large project,
+[378:17] asynchronous messaging lets agents
+[378:20] communicate without waiting, which is
+[378:22] ideal for scalable distributed systems.
+[378:24] To wrap things, Langchain, Langraph,
+[378:27] Creai, and Autogen each offer different
+[378:29] features and capabilities that fit
+[378:32] different types of projects. Thank you
+[378:34] for joining, and I hope this session has
+[378:36] given you a clear understanding of
+[378:38] what's possible with these tools.

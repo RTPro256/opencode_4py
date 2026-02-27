@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 48
+# Video ID: UsfpzxZNsPo
+
+[103:17] directly. So it generates two thing. It
+[103:20] is also a generator function like range
+[103:22] but range function only generates
+[103:24] numbers. The enumerate function
+[103:26] generates two things. One is the index
+[103:29] which is numbers and then the values are
+[103:31] fetched from the data itself. So when
+[103:33] you run this, so let me just run this.
+[103:37] So the outputs are same but this is much
+[103:39] more Pythonic. Okay, this is much easier
+[103:41] to comprehend. So the enumerate function
+[103:44] actually returns you a tuple. The first
+[103:45] element of the tuple would be index. The
+[103:47] second element of the tuple would be the
+[103:49] item. You are directly able to access
+[103:51] the item as well as the index of that
+[103:53] item. Now some more examples of pep 8
+[103:57] and pep 257 style guidelines. So let's
+[104:00] start with the pep 8 first. So Pepe
+[104:02] talks about how to write down better
+[104:06] Python codes in terms of nomomenclature
+[104:08] of the variables of the functions of the
+[104:11] classes. How many spaces you should be
+[104:13] using? Where should you be using those
+[104:16] spaces? How many spaces you should be
+[104:19] using for indentation? Where should the
+[104:21] indentation should be be provided? How
+[104:23] nesting or how deep nesting indentation
+[104:27] are done and so on. Okay. PEP is a
+[104:30] Python enhancement program. So you can
+[104:34] check the PEP 8 guidelines in detail by
+[104:37] following this link
+[104:41] and this has been written by none other
+[104:43] than Gaidoan Rasum. He is the creator of
+[104:46] Python language. Okay. So you can get
+[104:48] the details about the pepaid guidelines
+[104:51] from this documentation page. So here
+[104:54] I'll be talking about the most important
+[104:56] style guidelines. So first is about the
+[104:59] variable naming conventions. So again I
+[105:02] have already repeated but once again I
+[105:05] repeat here. So do not provide variable
+[105:07] names which are just single letter
+[105:09] variables. So they are unclear and very
+[105:12] difficult to make out what they signify,
+[105:15] what kind of data it holds and so on.
+[105:18] Okay. Write your variable names which
+[105:20] are more descriptive and semantic. So
+[105:24] that is what we call as the snake case.
+[105:26] uh basically separating multiple words

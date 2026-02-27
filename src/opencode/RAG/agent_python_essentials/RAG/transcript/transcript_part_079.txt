@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 79
+# Video ID: UsfpzxZNsPo
+
+[168:42] zero is the location which is the
+[168:44] location of the mean. So the data one
+[168:47] will have a mean at zero, standard
+[168:48] deviation at one. I'll have 100 data
+[168:51] points. The second data array has got
+[168:53] mean at five and the standard deviation
+[168:56] as two. and the third one will have a
+[168:58] mean at minus3 and a standard deviation
+[169:01] of 1.5. Okay, all three will have 100
+[169:04] values. Again, a figure created and a
+[169:07] box plot. So, I'm just clubbing all
+[169:09] these three and providing some tick
+[169:12] labels here. Let's see how the box plot
+[169:15] comes up. Okay, so you can see these
+[169:18] lines represent the median value. Okay,
+[169:22] these orange lines, they represent the
+[169:25] median value. You have the lower whisker
+[169:27] and the upper whisker. This is the edge
+[169:30] of the box. Lower edge which represents
+[169:32] the first quartile. This is the second
+[169:35] quartile. The median value. This is the
+[169:37] third quartile. Okay. For any box plot.
+[169:40] So the total height of the box will be
+[169:42] given by the interquartile range Q3
+[169:44] minus Q1. Okay. Same goes for all the
+[169:46] other two plots. Okay. So once again
+[169:49] this is my Q1 value, Q2 value and Q3
+[169:52] value. And you have the total length of
+[169:55] this whisker as 1 and a half times of
+[169:57] the interquartile range. That is the
+[169:59] length of the box times 1.5 is the total
+[170:03] height here. And some of the outliers
+[170:05] you can see which is going beyond the
+[170:07] upper limit. Okay. So otherwise if there
+[170:10] are no circles above and below then
+[170:12] these horizontal lines would represent
+[170:15] the maximum value and the minimum value.
+[170:17] So here it represents the minimum value.
+[170:19] Again this is the minimum value and the
+[170:21] maximum value in that distribution. But
+[170:23] here the minimum value is represented by
+[170:25] the circles and not this because we have
+[170:27] values below the horizontal line. So the
+[170:30] horizontal line cannot be the minimum
+[170:31] value. Right? So this is the minimum
+[170:33] value and this is again the maximum
+[170:36] value. So you get all the information
+[170:38] about the distribution in terms of the
+[170:40] box plot. Okay. We can also go with pie
+[170:43] charts. So I have created some slices

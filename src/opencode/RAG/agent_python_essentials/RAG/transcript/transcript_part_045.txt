@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 45
+# Video ID: UsfpzxZNsPo
+
+[96:44] have hardcoded values of the constants
+[96:49] which can make it difficult if you want
+[96:52] to reuse the code or if you want to
+[96:54] debug the code. Okay. So for example
+[96:56] here you want to return the discounted
+[96:58] price. So the function name is good
+[97:01] calculate the discount and it takes the
+[97:03] input as the price and the 10% of that
+[97:07] price will be the total discount. But
+[97:09] the problem here is that 10% discount is
+[97:12] hardcoded. So later on if you want to
+[97:14] change that discount rate you might want
+[97:17] to dig down where that function is
+[97:19] present and then back to this variable.
+[97:21] So not a good idea. uh can we provide
+[97:24] that discount rate as a more like a
+[97:26] global variable and then use that
+[97:28] because functions by default can access
+[97:30] all the global variables. So you are
+[97:32] accessing that discount rate which is
+[97:34] set to be a constant in this notebook
+[97:37] let's say and that uses the discount
+[97:39] rate to calculate the total discount. So
+[97:41] that is more readable and uh easier to
+[97:44] change because now you just have to
+[97:46] change the value present in this
+[97:48] variable. Now I'll demonstrate how to
+[97:52] write down proper comments and commented
+[97:54] blocks of code. So even before going to
+[97:58] that there is one bad code example which
+[98:02] tries to comment every single line of
+[98:04] code even though the code might be quite
+[98:07] obvious. This is also not a good idea.
+[98:10] So for example if you see in this case
+[98:12] x= 10, y= 20 and z= x + y. So these are
+[98:18] the comments assign 10 to x assign 20 to
+[98:22] y and then add x and y. So it's very
+[98:24] clear that I'm assigning x as 10 y as
+[98:28] 20. So there was no need of these
+[98:29] comments actually and this operation is
+[98:32] also quite self-explanatory right. So in
+[98:34] a good code you don't need to actually
+[98:36] uh so this is again a constant birth
+[98:38] year current year and I am trying to get
+[98:41] the difference between the current year
+[98:42] and the birth year to calculate the age.
+[98:44] So this calculation may not be very
+[98:47] intuitive. So that's the reason I have
+[98:50] uh provided a comment here. But I
+[98:52] skipped providing the comments in these

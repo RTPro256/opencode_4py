@@ -244,6 +244,218 @@ class TestOllamaTroubleshooting:
         
         # Memory shouldn't grow excessively (allow 100MB increase)
         assert memory_increase < 100, f"Memory increased by {memory_increase:.1f}MB"
+
+
+---
+
+## Thinking Mode Tests (Qwen3 Models)
+
+Tests for thinking mode functionality in Qwen3-based models.
+
+```python
+# tests/ollama/test_thinking_modes.py
+"""
+Thinking mode tests for Qwen3 models.
+
+Tests the /think and /no_think toggle functionality.
+"""
+
+import pytest
+from opencode.provider.ollama import OllamaProvider
+from opencode.provider.base import Message
+
+
+class TestThinkingModes:
+    """Test thinking mode toggling in Qwen3 models."""
+    
+    @pytest.fixture
+    async def provider(self) -> OllamaProvider:
+        provider = OllamaProvider()
+        if not await provider.is_available():
+            pytest.skip("Ollama not available")
+        return provider
+    
+    @pytest.mark.asyncio
+    async def test_thinking_mode_enabled(self, provider: OllamaProvider):
+        """Test thinking mode with /think command."""
+        response = await provider.complete(
+            messages=[Message(
+                role="user",
+                content="Solve: If a train travels 60km in 45 minutes, what is its speed in km/h? /think"
+            )],
+            model="qwen3:32b",
+        )
+        
+        # With thinking mode, response should contain reasoning
+        assert response.content is not None
+        assert len(response.content) > 0
+    
+    @pytest.mark.asyncio
+    async def test_thinking_mode_disabled(self, provider: OllamaProvider):
+        """Test non-thinking mode with /no_think command."""
+        response = await provider.complete(
+            messages=[Message(
+                role="user", 
+                content="What is 2+2? /no_think"
+            )],
+            model="qwen3:32b",
+        )
+        
+        # Without thinking, should be shorter/faster
+        assert response.content is not None
+        assert len(response.content) > 0
+    
+    @pytest.mark.asyncio
+    async def test_thinking_mode_complex_task(self, provider: OllamaProvider):
+        """Test thinking mode on complex coding task."""
+        response = await provider.complete(
+            messages=[Message(
+                role="user",
+                content="""
+Write a Python function to find the longest palindromic substring.
+Explain your approach with time complexity analysis. /think
+"""
+            )],
+            model="qwen3:32b",
+        )
+        
+        assert response.content is not None
+        # Should contain detailed reasoning
+        assert len(response.content) > 100
+    
+    @pytest.mark.asyncio
+    async def test_thinking_mode_coder_variant(self, provider: OllamaProvider):
+        """Test thinking mode on qwen3-coder model."""
+        response = await provider.complete(
+            messages=[Message(
+                role="user",
+                content="Explain what this code does: def foo(x): return x * 2 /no_think"
+            )],
+            model="qwen3-coder:30b",
+        )
+        
+        assert response.content is not None
+
+    @pytest.mark.asyncio
+    async def test_thinking_parameter_settings(self, provider: OllamaProvider):
+        """Test recommended parameter settings for thinking modes."""
+        # Test thinking mode with recommended settings
+        response_thinking = await provider.complete(
+            messages=[Message(role="user", content="Prove that the square root of 2 is irrational /think")],
+            model="qwen3:32b",
+            temperature=0.6,
+            top_p=0.95,
+        )
+        
+        # Test non-thinking mode with recommended settings
+        response_fast = await provider.complete(
+            messages=[Message(role="user", content="Hi /no_think")],
+            model="qwen3:32b",
+            temperature=0.7,
+            top_p=0.8,
+        )
+        
+        assert response_thinking.content is not None
+        assert response_fast.content is not None
+
+
+class TestDeepSeekR1Thinking:
+    """Test DeepSeek-R1 always-on thinking."""
+    
+    @pytest.fixture
+    async def provider(self) -> OllamaProvider:
+        provider = OllamaProvider()
+        if not await provider.is_available():
+            pytest.skip("Ollama not available")
+        return provider
+    
+    @pytest.mark.asyncio
+    async def test_r1_thinking_output(self, provider: OllamaProvider):
+        """Test that DeepSeek-R1 outputs thinking in <thought> tags."""
+        response = await provider.complete(
+            messages=[Message(
+                role="user",
+                content="What is 5 + 7?"
+            )],
+            model="deepseek-r1:32b",
+        )
+        
+        # DeepSeek-R1 should include reasoning
+        assert response.content is not None
+        # The response may contain <thought> tags
+        content_lower = response.content.lower()
+        assert "12" in content_lower
+
+
+class TestGPTOssReasoningLevels:
+    """Test GPT-Oss configurable reasoning."""
+    
+    @pytest.fixture
+    async def provider(self) -> OllamaProvider:
+        provider = OllamaProvider()
+        if not await provider.is_available():
+            pytest.skip("Ollama not available")
+        return provider
+    
+    @pytest.mark.asyncio
+    async def test_reasoning_effort_low(self, provider: OllamaProvider):
+        """Test low reasoning effort."""
+        response = await provider.complete(
+            messages=[Message(role="user", content="Hello")],
+            model="gpt-oss:20b",
+            options={"reasoning_effort": "low"},
+        )
+        
+        assert response.content is not None
+    
+    @pytest.mark.asyncio
+    async def test_reasoning_effort_high(self, provider: OllamaProvider):
+        """Test high reasoning effort."""
+        response = await provider.complete(
+            messages=[Message(
+                role="user", 
+                content="Explain the proof of Fermat's Last Theorem /think"
+            )],
+            model="gpt-oss:20b",
+            options={"reasoning_effort": "high"},
+        )
+        
+        assert response.content is not None
+        assert len(response.content) > 50
+```
+
+
+class TestOllamaTroubleshooting:
+    """Troubleshooting tests for common Ollama issues."""
+    
+    @pytest.fixture
+    async def provider(self) -> OllamaProvider:
+        provider = OllamaProvider()
+        if not await provider.is_available():
+            pytest.skip("Ollama not available")
+        return provider
+    
+    @pytest.mark.asyncio
+    async def test_memory_usage(self, provider: OllamaProvider):
+        """Monitor memory usage during generation."""
+        import psutil
+        import os
+        
+        process = psutil.Process(os.getpid())
+        initial_memory = process.memory_info().rss / 1024 / 1024  # MB
+        
+        # Generate multiple responses
+        for _ in range(5):
+            await provider.complete(
+                messages=[Message(role="user", content="Hello")],
+                model="llama3.2:3b",
+            )
+        
+        final_memory = process.memory_info().rss / 1024 / 1024
+        memory_increase = final_memory - initial_memory
+        
+        # Memory shouldn't grow excessively (allow 100MB increase)
+        assert memory_increase < 100, f"Memory increased by {memory_increase:.1f}MB"
     
     @pytest.mark.asyncio
     async def test_concurrent_requests(self, provider: OllamaProvider):

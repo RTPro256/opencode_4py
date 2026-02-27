@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 19
+# Video ID: UsfpzxZNsPo
+
+[40:04] understand.
+[40:07] So before we start with conditional
+[40:09] statements, let's have a quick look into
+[40:11] the indentation and comments in Python.
+[40:14] So indentation means providing spaces
+[40:16] and tabs which are used at the beginning
+[40:17] of any statement. So these statements
+[40:20] with the same indentation will belong to
+[40:22] the same group. So here in this code I
+[40:25] am defining a five and then bs6 but here
+[40:30] I have got a indentation of one tab. Uh
+[40:33] one tab is equivalent to four white
+[40:35] spaces. Typically you can see this in
+[40:38] your settings text editor indentation
+[40:40] and the default is four white spaces. So
+[40:43] you can actually count there are four
+[40:45] white spaces here 1 2 3 and four. Okay,
+[40:49] here the indentation is not expected and
+[40:52] this will give me an error. Why is it
+[40:54] not expected? Because indentations are
+[40:56] typically expected in control structures
+[41:00] like if else statements, try catch
+[41:02] statements, for and while loops,
+[41:05] function and class definitions and so
+[41:07] on. Here you have the if else statement
+[41:09] here. So I'm checking whether 2 is equal
+[41:12] to 20 or not. So this will give me
+[41:15] false. So I can change this to two. So
+[41:19] now I'm checking whether two is equal to
+[41:21] two. So this will make it true. So if
+[41:24] true that means I'm entering the if
+[41:26] condition. This print statement will be
+[41:28] printed. Correct. But if I just forgot
+[41:33] to give this indentation. Let's see what
+[41:35] happens.
+[41:37] It says that indentation error expected
+[41:40] an indented block after the if
+[41:42] statement. So remember that whenever you
+[41:44] are using the if statement or any of the
+[41:48] loops and function definitions the first
+[41:51] line onwards everything have to be
+[41:54] indented. Okay. So here indentation is
+[41:56] mandatory. This helps Python to know
+[41:59] that this statement has to execute
+[42:02] whenever this condition is true. Okay.
+[42:06] Now you can write down comments in
+[42:08] Python by using hash mark before the
+[42:12] place where you want to place your
+[42:14] comments. Okay. So you can start your
+[42:20] comments at the end of the lines code

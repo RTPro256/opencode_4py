@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 67
+# Video ID: UsfpzxZNsPo
+
+[143:51] Nearest integer to this should be two.
+[143:54] And the nearest integer to this should
+[143:56] be three. Let's see. Yeah correct. So
+[143:58] floor will round off the values to the
+[144:01] lower integer. Okay. So and seal will
+[144:04] round to the higher integer. Okay.
+[144:06] Truncate will simply exclude the decimal
+[144:10] points the values after the decimal
+[144:12] point. So simply 75 will be incl uh
+[144:16] ignored. 22 would be ignored.
+[144:19] 58 would be ignored and so on. Okay. So
+[144:21] that's how you get these numbers. The
+[144:23] signs will be retained. However, now
+[144:25] let's see some of the comparison and
+[144:27] logical universal functions. Again, I've
+[144:29] got my arrays here 1 2 3 4 and 22 222.
+[144:32] So, I can actually compare whether each
+[144:35] element of A is less than each element
+[144:38] of B. This again works element wise.
+[144:41] Here you are checking for each element
+[144:43] of A. Is it greater than each element of
+[144:45] B? Again, you are checking for the
+[144:47] equality of the corresponding elements
+[144:49] in A and B and not equality. Okay, let
+[144:52] me see. Okay. Now these can be made
+[144:54] simpler by also saying a less than b.
+[144:57] That also works. You can see that the
+[145:00] result is very similar. Okay. To this
+[145:04] for equality you can go with 2 *
+[145:07] equality sign. So you are checking for
+[145:09] the equality. This result should be same
+[145:11] as this. Okay. And for none equality
+[145:15] this should be written as this
+[145:18] exclamation equal to. So this is not
+[145:20] equal to b. You can see the result and
+[145:23] greater than equal to can be written as
+[145:25] greater than equal to B. So this result
+[145:28] would be again same as this. The same
+[145:30] thing in the logical format. Okay. Okay.
+[145:33] Now statistical and aggregation
+[145:35] functions. I'm creating a simple array 1
+[145:37] to9 numbers in a two dimensional format.
+[145:40] So I want to calculate the sum of all
+[145:42] the elements. So np dots sum function
+[145:45] all the elements sum from 1 to 9. Okay.
+[145:48] here the mean of all the elements the
+[145:51] standard deviation of all the elements
+[145:52] and the variance of all the elements
+[145:54] okay that entire array so sum is 45 mean
+[145:58] is five standard deviation 2.58 and the

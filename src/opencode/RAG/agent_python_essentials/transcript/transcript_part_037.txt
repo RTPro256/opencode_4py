@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 37
+# Video ID: UsfpzxZNsPo
+
+[79:54] So I'm just changing this function so
+[79:56] that the default value is removed. And
+[79:58] now you can see this one works because
+[80:01] anyway it is taking some input argument
+[80:03] which is mapped to name. But here this
+[80:05] will throw an error. One required
+[80:08] positional argument is missing. Okay.
+[80:10] And that required positional argument is
+[80:13] name. And since the value of the name is
+[80:15] missing, this is the error you are
+[80:17] getting. Okay. So to encounter such
+[80:20] scenarios you can provide some default
+[80:23] values that can be used if the required
+[80:26] value of a particular input parameter is
+[80:29] not provided at the time of the function
+[80:32] call. Okay. If you made changes to the
+[80:34] function do not forget to execute that
+[80:38] block of code again so that the updated
+[80:41] function goes to the memory and then you
+[80:44] recall it. So just now we saw the
+[80:46] concept of positional argument. Now
+[80:48] there are two types of input argument.
+[80:51] One is positional arguments and one is
+[80:52] the keyword arguments. Okay. So what is
+[80:55] the positional argument? Let's have a
+[80:57] look into more details. So this is one u
+[81:01] function which I'm creating math
+[81:02] functions and this takes two numbers a
+[81:05] smaller number and a larger number. So
+[81:07] what does it return? It returns the
+[81:09] difference between the larger number and
+[81:11] the smaller number. Very simple
+[81:12] function. So 4 and 16 and 16 and four.
+[81:16] If you can see clearly the order in
+[81:20] which you provide the values matter a
+[81:23] lot. Okay. Because the difference
+[81:24] between four and 16 is basically so if
+[81:28] you see this four gets mapped to the
+[81:30] smaller number and here 16 gets mapped
+[81:32] to the larger number. But in this case
+[81:34] what is happening? 16 is mapped to the
+[81:37] smaller number and four is mapped to the
+[81:40] larger number. So the same sequence is
+[81:42] followed as it was declared in the
+[81:45] function definition. Okay, that is
+[81:47] exactly the concept of positional
+[81:50] arguments. So the position of the input
+[81:51] arguments matters. Okay, in which
+[81:55] position you are giving the numbers, the
+[81:57] same positions are followed here. Okay,

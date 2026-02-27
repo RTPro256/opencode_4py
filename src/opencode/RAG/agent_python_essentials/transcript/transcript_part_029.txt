@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 29
+# Video ID: UsfpzxZNsPo
+
+[62:18] the loop before continuing and ignore.
+[62:22] So let's see the break statement first.
+[62:25] So break statement provides an
+[62:27] opportunity to exit out of the loop when
+[62:29] some condition is met. Okay, let's see.
+[62:32] So in this case I've got the number
+[62:34] again set to zero initially. I'm going
+[62:37] to increment this number one by one
+[62:39] until 9. The range starts from zero goes
+[62:42] until 9. So range value will
+[62:44] automatically increment because of the
+[62:45] range generator function. The moment
+[62:49] this number is equal to five, I want to
+[62:51] break out of the loop here. So the for
+[62:54] loop is being forcefully broken. Okay.
+[62:58] So let me execute this. You can see the
+[63:00] number is 0 1 2 3 4. In the next
+[63:03] iteration, okay, the number is five. The
+[63:06] moment it is five, okay, this condition
+[63:10] becomes true. So, it breaks out of the
+[63:12] loop. Okay, and the moment it breaks out
+[63:15] of the loop, this is not executed. So,
+[63:18] anything please remember this. Any
+[63:20] Python statement which comes below the
+[63:23] break will never get executed. Okay,
+[63:26] below the break and part of the loop.
+[63:28] Okay, now this print is not a part of
+[63:30] the for loop. So this gets executed. So
+[63:34] any statement below the break and part
+[63:36] of the main loop will not get executed.
+[63:39] This print is out of the for loop. So
+[63:41] gets executed. Let's take another
+[63:43] example.
+[63:44] So here the user will be asked to enter
+[63:47] a password which is already set to be
+[63:48] data and if the password matches it will
+[63:52] print welcome to the Python course
+[63:53] otherwise it will print wrong password.
+[63:56] Okay. So the user will get four trials.
+[64:00] Okay. So uh the trial number 1 2 3 and
+[64:04] four. Okay. The moment the trial four is
+[64:08] reached it will warn you that this is
+[64:10] your last trial. Okay. And uh as usual
+[64:13] it will keep on asking for entering the
+[64:15] password and if the password matches in
+[64:18] any of the iterations okay it will
+[64:21] simply print welcome to the course and
+[64:23] break out of the loop. So now this break
+[64:25] can get executed in the very first
+[64:27] iteration also if the password matches.

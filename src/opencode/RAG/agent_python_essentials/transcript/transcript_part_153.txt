@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 153
+# Video ID: UsfpzxZNsPo
+
+[332:25] clicking button on the top right. If you
+[332:27] want you can provide some name to this
+[332:29] key. Let's call it as AI agents. I'll
+[332:32] create the secret key. Please make sure
+[332:35] you copy this and uh you can open a
+[332:38] notepad and keep it safely. We'll be
+[332:41] needing this API key in the Jupyter
+[332:44] notebooks. So save this file and then we
+[332:47] are done. So let's get back. So execute
+[332:50] this cell. It will ask you for the API
+[332:52] key.
+[332:54] So the API key we just created and
+[332:57] copied. I'll just paste it here and
+[333:00] press enter. We'll add the open API key
+[333:03] to the environment variable here. In a
+[333:05] similar way, we'll have to create the
+[333:07] Germany API credentials. So there is a
+[333:10] link here. You can get the API key by
+[333:12] clicking here. So you will have to first
+[333:15] login into your Google account. And from
+[333:18] there on the top left you can see the
+[333:20] get API key button. Here also you can
+[333:22] see the get API key button. You can
+[333:24] click on this. uh if you have never
+[333:26] created a project you will have to
+[333:27] create a project first or else you can
+[333:30] select one of the existing projects and
+[333:32] then click API key in this existing
+[333:36] project. So similarly uh you can copy
+[333:39] this key and uh save it. So once we have
+[333:42] saved the Google Germany API key, we'll
+[333:45] have to enter it here and then press
+[333:48] enter. Let's execute this. So I have set
+[333:52] my Google API key in the environment
+[333:54] variable and we are good to go. So here
+[333:57] I'm defining a function which will take
+[334:00] the user prompt and the model. I'll be
+[334:03] experimenting with GPT4 model and
+[334:06] Germany pro models. Jiny pro model is
+[334:09] from Google and GPT40 model is from
+[334:11] OpenAI. So if the model is GPT40
+[334:16] uh this is how we would be making the
+[334:18] API call to the chat GPT API and this is
+[334:24] how we are going to make the API call to
+[334:26] the Google Germany API. Okay. So we need
+[334:30] to define the uh role and the prompt. So
+[334:34] prompt will be taken as the input from
+[334:35] the user and the actual function is
+[334:40] chat.comp completions.create.
+[334:42] So we are going to pass the model and

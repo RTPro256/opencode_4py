@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 135
+# Video ID: UsfpzxZNsPo
+
+[292:37] in place to prevent abuse. Exceeding
+[292:40] these limits can get your access
+[292:42] temporarily or even permanently blocked.
+[292:45] Secure your API keys. API keys are
+[292:47] sensitive information. Store them
+[292:49] securely. Use environment variables or a
+[292:52] secure storage mechanism. Validate
+[292:54] inputs and outputs. Ensure all your
+[292:58] inputs and outputs are properly
+[293:00] validated to maintain data integrity and
+[293:04] prevent security vulnerabilities. And
+[293:06] finally, use logging. Keep a log of API
+[293:09] requests and responses. This helps in
+[293:11] debugging issues and understanding what
+[293:14] went wrong during interactions.
+[293:16] Following these best practices will make
+[293:18] your API integration much more reliable
+[293:21] and secure. Error handling in API
+[293:24] requests. Error handling is a critical
+[293:26] part of interacting with APIs. Here are
+[293:29] some of the common HTTP status codes and
+[293:32] what they mean. 400 bad request. The
+[293:35] request was invalid possibly due to
+[293:38] incorrect syntax. 401 unauthorized
+[293:41] authentication is needed to access this
+[293:44] resource. 403 forbidden means the server
+[293:48] understood the request but is refusing
+[293:50] to authorize it. 404
+[293:53] not found error. This means the resource
+[293:55] you are trying to access doesn't exist.
+[293:58] 500 internal server error. This means
+[294:01] that something went wrong on the server
+[294:03] side itself. The best practices for
+[294:05] handling errors include number one,
+[294:07] always check the status code. This helps
+[294:10] you understand whether the request was
+[294:12] successful or if there's an issue. Use
+[294:15] raise for status method to raise
+[294:18] exceptions for error codes automatically
+[294:21] which ensures that errors are handled in
+[294:23] your Python script. Proper error
+[294:25] handling makes your application more
+[294:27] robust, ensuring that even if something
+[294:30] goes wrong, your users experience
+[294:33] minimal disruption. API rate limiting.
+[294:36] Now, let's talk about API rate limiting.
+[294:38] Rate limiting involves restricting the
+[294:40] number of requests a client can make to
+[294:43] an API in a given period. The purpose of
+[294:46] rate limiting is to prevent abuse and

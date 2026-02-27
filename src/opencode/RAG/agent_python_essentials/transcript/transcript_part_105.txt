@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 105
+# Video ID: UsfpzxZNsPo
+
+[226:25] by using the drop NA function. So the
+[226:28] drop any function removes the missing
+[226:30] values instead of filling it with the
+[226:33] average or the median value that you
+[226:34] specify. So by default access is zero
+[226:37] which means the entire row will be
+[226:39] dropped. Okay, whichever row contains a
+[226:42] single missing value that will be
+[226:45] dropped. Okay, any means any single row
+[226:48] which contains a missing value will be
+[226:50] dropped. So if you want to drop columns
+[226:52] then make sure that you keep access
+[226:54] equal to one. So let me just drop and
+[226:56] you can see that the row number four and
+[226:58] the row number seven they got dropped.
+[227:00] Yeah, row four and row seven are
+[227:02] missing. Now good that we created a
+[227:04] copy. So my original data frame is still
+[227:07] the same unchanged. What if you have
+[227:10] duplicates in your data frame? So I am
+[227:12] creating a simple data frame with
+[227:14] duplicates here. So this entire record
+[227:17] is duplicated two times. You can see. So
+[227:20] I want to drop the duplicates. So you
+[227:23] can use the function drop duplicates. So
+[227:25] by default again it will drop the rows
+[227:28] and by default again it will have the in
+[227:31] place option which is set to false. So
+[227:33] again you can set in place equal to true
+[227:36] or type cast it back to the original
+[227:38] data frame. So after dropping replace
+[227:41] your df2. So that is another option or
+[227:44] you use the in place equal to true
+[227:45] either of. So I have dropped my uh
+[227:48] duplicate rows and uh you can also do
+[227:53] some operations on your strings. So for
+[227:55] example here the subject names I want to
+[227:59] convert them into lower case. So I'm
+[228:02] type casting the subject values into a
+[228:05] string and then converting that string
+[228:07] into a lower case and then replacing the
+[228:09] original column. So after converting the
+[228:12] string values into lower case, I'm
+[228:15] replacing my original column. So that's
+[228:18] how I get here. So the subject now is
+[228:21] becoming in lower case. So all these
+[228:24] operations you can do depending on your
+[228:25] use case. Now let's have a look how can
+[228:28] we merge and join data frames. I'm
+[228:30] creating a couple of dummy data frames.

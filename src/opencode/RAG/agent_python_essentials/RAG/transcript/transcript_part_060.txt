@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 60
+# Video ID: UsfpzxZNsPo
+
+[128:36] using indexing and slicing you can
+[128:38] access the elements within the numpy
+[128:41] array. And if you want you can actually
+[128:43] even modify some of these elements.
+[128:45] Okay. So let me create a simple numpy
+[128:47] array 10 20 30 40 50. It's a simple
+[128:50] one-dimensional array and the array
+[128:52] elements are accessed by using square
+[128:55] brackets. So this is my indexing
+[128:57] bracket. If you see this is my indexing
+[128:59] bracket and the element that I want to
+[129:01] access is having an index of two. Now
+[129:05] here I have written that Python is zero
+[129:07] indexed which means the first element in
+[129:09] that array will have index zero. This
+[129:12] will have index one. This will have
+[129:14] index two and this will have index three
+[129:17] and this will have index four. So the
+[129:19] last index will always be the length of
+[129:21] the total array minus one. Okay. So in
+[129:25] this case I'm going to get 30 because
+[129:27] that is the second index basically. So 0
+[129:31] 1 and two. This is 0 1 and two. Okay. If
+[129:35] you want you can also specify the
+[129:38] starting and the stopping index and
+[129:41] optionally even the step size while
+[129:43] indexing as well. So in this case I have
+[129:45] given my start index as one the stop
+[129:48] index as four and again the stop index
+[129:53] will never be included in the slice. It
+[129:56] will always stop one before the stop
+[129:58] index again. So here I'm going to get
+[130:00] the numbers which has the index one
+[130:03] index two index three that's it. Okay.
+[130:06] So three numbers I'll get in the output.
+[130:08] Yeah. So that is 20 30 and 40. So 20 is
+[130:11] my index one. 30 is the index two and 40
+[130:14] is the index three. So in this case
+[130:17] colon so this colon means take the
+[130:19] entire array and give me every second
+[130:22] element of that. So since you have not
+[130:24] provided the starting index it will
+[130:26] start from zero. Since you have not
+[130:28] provided the stopping index which is
+[130:30] supposed to be placed in between these
+[130:32] two colons. So since you have not
+[130:33] provided that number it will go till the
+[130:35] end of the array. So from starting till
+[130:38] the end essentially selecting the entire
+[130:40] array. But now you want to pick up the

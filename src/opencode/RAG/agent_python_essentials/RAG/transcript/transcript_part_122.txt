@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 122
+# Video ID: UsfpzxZNsPo
+
+[263:44] database, you can close the connection.
+[263:46] It's a good programming practice to
+[263:49] close the connection. So that database
+[263:51] is released from the memory. Okay? And
+[263:54] also close the connection. So it's no
+[263:56] longer occupying any memory in your
+[263:59] Python. Perfect. So next we are going to
+[264:02] connect a MySQL database with Python. Uh
+[264:06] for this we'll be installing PI MySQL
+[264:09] and MySQL connector. So these are the
+[264:12] two connectors most popular connectors
+[264:14] available to connect a MySQL database to
+[264:17] Python. Okay. So once the installations
+[264:19] are done, let's first use the PI MySQL
+[264:23] connector and connect with Python. So
+[264:26] import the Py MySQL library. And here is
+[264:30] the database configuration. Right now my
+[264:32] database is present in AWS RDS. It's a
+[264:36] RDS instance. Uh this is the default
+[264:39] port used by the MySQL databases on AWS
+[264:43] RDS. RDS is relational database services
+[264:47] from AWS. There is a admin username for
+[264:52] each database. There is a password for
+[264:55] that admin user and there is a database
+[264:59] name. So make sure you have all the
+[265:01] details before proceeding. This can very
+[265:05] well be a database hosted on your local
+[265:08] machine. So if you install uh MySQL
+[265:12] studio, you will be able to create a
+[265:14] database in your local machine as well.
+[265:16] In that case, the host will be replaced
+[265:18] with your local machine's URL. So port
+[265:22] more or less would remain the same and
+[265:24] the other details just fill in as it is
+[265:28] needed. One strong suggestion here is we
+[265:33] should not be hard coding these details
+[265:36] in Python notebook. It is not a good
+[265:38] programming practice. Ideally, we should
+[265:41] be using environment variables to store
+[265:45] these sensitive information because if
+[265:48] you have or rather if you share this
+[265:51] Python notebook with anyone else with
+[265:54] all these details filled in, they would
+[265:57] be able to access your database and make
+[266:00] irreparable changes to your database.
+[266:03] They can literally add anything or
+[266:05] delete anything from your database.
+[266:07] Right? So this is not a good programming
+[266:09] practice to have these details right
+[266:11] inside your notebook. Okay. Later in the

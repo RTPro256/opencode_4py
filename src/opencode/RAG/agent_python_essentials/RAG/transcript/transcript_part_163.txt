@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 163
+# Video ID: UsfpzxZNsPo
+
+[354:54] Google and this particular model has
+[354:57] been pre-trained
+[354:59] and also later on instruction tuned to
+[355:02] follow natural language instructions in
+[355:07] English. First things first on the top
+[355:09] right side you will have to first select
+[355:12] a kernel. So I strongly suggest you to
+[355:15] select the uh kernel which is GPU one.
+[355:19] So connect to a hosted runtime. In this
+[355:22] case it is a T4. So you can see
+[355:26] all the runtime types available by
+[355:28] clicking on the change runtime type. Um
+[355:32] so you can take the hardware accelerator
+[355:34] to be T4 GPU. So, make sure you are
+[355:37] using the T4 GPU and click save. Once it
+[355:41] is saved, click on the connect button
+[355:43] and wait for few seconds until your
+[355:46] collab notebook is connecting to the
+[355:49] Google's GPU server. So, a server has
+[355:52] been allocated and now I have been
+[355:55] allocated the GPU. So, you can see
+[355:58] roughly 13 GB of RAM is available to us
+[356:02] and around 112 GB of disk space. So we
+[356:06] need at least 5GB of GPU memory. So that
+[356:09] should be sufficient to run the
+[356:11] inference with recurrent Gemma. Okay. So
+[356:14] this model which will be downloaded,
+[356:17] this will occupy roughly 5GB of GPU
+[356:21] memory. Okay. So let's go ahead. So if
+[356:26] you're running this on Google Collab or
+[356:27] any server or your local machine where
+[356:31] you have GPU, then only you run this
+[356:34] code. Otherwise this will throw you an
+[356:36] error. So since I have already connected
+[356:39] to GPU I can run this code. So what this
+[356:42] does is it will check the GPU memory
+[356:45] available. How much GPU memory is
+[356:48] available currently. So it says
+[356:50] currently there are no processes on my
+[356:52] GPU memory. So utilization is also 0%.
+[356:56] If you see currently what I have is the
+[356:59] Nvidia version number the driver version
+[357:03] installed within the GPU. The GPU will
+[357:07] support CUDA language. So this is the
+[357:09] version of CUDA
+[357:11] available on my GPU.
+[357:14] Some name which has been provided to the
+[357:16] GPU persistence and this and that. Okay.
+[357:19] So main thing is the memory usage here.
+[357:21] You can see this is almost zero MB as of

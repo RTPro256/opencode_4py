@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 22
+# Video ID: UsfpzxZNsPo
+
+[46:57] zero. So if condition was not satisfied.
+[47:00] So automatically the control went to the
+[47:02] else and so odd was printed. Now I
+[47:04] repeat this. Let me provide some big
+[47:07] number. However big that doesn't matter.
+[47:10] This number when divided by two leaves a
+[47:12] remainder of zero and hence the print
+[47:16] statement corresponding to E1 was
+[47:18] printed here. Now in the second problem,
+[47:20] I'm going to take the user input and u
+[47:23] assign it to another variable y. Okay,
+[47:26] by default again this y will be in the
+[47:29] string format. I have to type cast it
+[47:31] into a integer and then I have to print
+[47:34] the grade whether the grade is a, b or f
+[47:38] based on the score provided by the user.
+[47:42] So the grade is greater than 90. If the
+[47:45] number is greater than 90 then I'll
+[47:47] assign a grade a. If the number is
+[47:49] greater than 60, I'll assign it to be
+[47:51] grade B and else the student fails. So
+[47:56] let me provide some number. Let's say
+[47:58] 95.
+[48:00] Okay, fantastic. I got grade A. Let me
+[48:03] rerun this with another number. Let's
+[48:05] say 72. So what happened here? First Y
+[48:09] is checked to be greater than 90. So
+[48:11] right now your Y is 72. 72 is certainly
+[48:14] not greater than 90. So this condition
+[48:17] is not satisfied. So control
+[48:19] automatically went to the lf. So this
+[48:21] condition is checked now whether 72 is
+[48:23] greater than 60. Yes. So this print
+[48:26] statement got executed and the program
+[48:29] stops. Okay. So only one of these three
+[48:33] statements will always execute. Only one
+[48:36] of these three will execute. If this is
+[48:38] true, this will execute and stop. If
+[48:40] this is not true, then it will check
+[48:42] whether this is true. If this is true,
+[48:44] this will execute and stop. If both of
+[48:47] them are not true, then the control
+[48:49] automatically goes to the last else
+[48:51] statement and this is always printed. So
+[48:55] if you want, you can check it once again
+[48:57] with another number 45. Yes, 45 is a
+[49:00] failure grade.
+[49:03] I'm thrilled to welcome you to this
+[49:05] video on looping constructs in Python.
+[49:07] Loops are incredibly powerful. They

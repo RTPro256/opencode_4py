@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 94
+# Video ID: UsfpzxZNsPo
+
+[202:06] provide access it will take access equal
+[202:10] to zero in that case it will start
+[202:13] dropping the rows in place is basically
+[202:17] you want to drop the rows or columns
+[202:20] permanently that means in place equal to
+[202:22] true. So you can make it false if you
+[202:25] want to see whether you are dropping the
+[202:27] right row or the right column or not.
+[202:30] Anyway the in place option is by default
+[202:32] false. So you will have to explicitly
+[202:34] set it to true otherwise it will not be
+[202:37] dropped permanently. It will be dropped
+[202:39] from the view but not from the actual
+[202:42] data frame. Okay. So make sure that if
+[202:44] you want to drop it permanently you make
+[202:47] it in place equal to true. Now let's see
+[202:50] how can we index some particular values.
+[202:53] So right now if you see I want to fetch
+[202:56] the values present in the name column
+[202:59] and uh the first index. Okay. So this
+[203:02] will give me the entire name column and
+[203:05] now I am fetching the index zero. So
+[203:07] that index zero gives me RF patail.
+[203:11] That's exactly what I got here. So you
+[203:13] can also slice our data frames. So this
+[203:16] is getting the first two rows. You can
+[203:18] actually use the iO method as I taught
+[203:21] before or you can directly give the
+[203:25] index of the row labels. You can reset
+[203:29] your index also. Okay. So suppose uh
+[203:32] your original data frame has the index
+[203:35] as 0 1 2 3 4 5 6 7 8. These are your
+[203:39] index. How do you know that these are
+[203:41] the index? Uh you can check df do.index.
+[203:45] So your index starts with zero ends at
+[203:48] 8. So 0 to 8 in fact it will end at
+[203:51] seven with a step size of one. And if
+[203:53] you want to know what all columns are
+[203:55] present column names so df doc columns.
+[203:57] So these are the column names present in
+[203:59] your data set. Okay. So these are the
+[204:02] column names and these are the row names
+[204:04] basically labels. So you want to set a
+[204:07] new name to the row labels. So what I
+[204:11] want is this name should it so what I
+[204:14] want is this named column itself to be
+[204:17] set as the new index. I want to set this
+[204:20] as a new index. So that is exactly what
+[204:23] we are going to do by this code. So now
+[204:26] you can see the names of this DF. Yeah.

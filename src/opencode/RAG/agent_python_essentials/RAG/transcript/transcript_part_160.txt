@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 160
+# Video ID: UsfpzxZNsPo
+
+[348:20] few models which are gated models not
+[348:22] very freely publicly accessible. So
+[348:26] coming back now that we have been
+[348:28] granted access to the model we can go
+[348:32] ahead and start querying this model. So
+[348:34] I have got the model's response from
+[348:36] Mistl. Now let's see the similar
+[348:38] response from the Gemma model. So this
+[348:41] is the response code. 200 means
+[348:43] successfully retrived the model's
+[348:46] response. So this is no error. 200 is
+[348:50] success message basically. So the
+[348:54] prompt was again the same which is can
+[348:57] you explain what is quantum computing to
+[348:58] a fifth grader. So this time GMA model
+[349:01] has replied that imagine you have a coin
+[349:04] regular coin has got two sides head and
+[349:06] tail but this is a special type of a
+[349:08] coin which is called as a quantum coin
+[349:11] and this can have both heads and tails
+[349:13] at the same time I mean so on right so
+[349:16] if you want to pify your response you
+[349:19] can use the uh display and markdown
+[349:22] functions from IPython display so this
+[349:24] is slightly better okay let me take
+[349:27] another example here I've got some uh
+[349:30] big paragraph u you can say a report in
+[349:33] this case I'm carving a prompt template
+[349:36] in this case so the prompt template says
+[349:38] summarize the following report delimited
+[349:40] by triple back text on generative vi in
+[349:43] maximum five lines so basically uh I'm
+[349:46] passing this report as a placeholder so
+[349:48] this report will go along with this
+[349:50] prompt this report will go along with
+[349:53] this prompt okay and I am asking the
+[349:56] generative AI model to summarize in
+[349:58] maximum five lines. Okay. So let's first
+[350:00] print the prompt and you can see the
+[350:03] prompt the report went along with the
+[350:06] instruction. Okay. So this is the
+[350:07] complete prompt that you are passing to
+[350:09] the model. Now again the same function
+[350:12] I'm using. So the payload here is the
+[350:14] same prompt which I created this entire
+[350:16] thing and I'm going to use the mist
+[350:19] model this time and I'm retrieving the
+[350:22] generated text from that mistral model
+[350:24] response and now going to display that.
+[350:27] Okay. So my M myst model says that

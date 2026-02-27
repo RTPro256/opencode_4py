@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 32
+# Video ID: UsfpzxZNsPo
+
+[68:57] the number is again set to zero and this
+[68:59] number will have value from 0 to 9.
+[69:02] Okay, if the number is five, don't do
+[69:04] anything. Pass says don't do anything.
+[69:06] If you let's say comment this statement,
+[69:09] it will throw an error because under the
+[69:11] if condition, nothing, no valid Python
+[69:14] statement was executed. Okay. Now this
+[69:17] print is a part of the for loop. it is
+[69:20] not a part of the if condition because
+[69:22] it is indented in the same level. Now
+[69:26] this pass which is indented within the
+[69:28] if is actually a part of the if
+[69:30] condition. Okay, so that is exactly the
+[69:33] use case here. Okay, indentation error.
+[69:36] So if I do not have a valid Python
+[69:39] statement, it could be anything like a
+[69:41] simple print statement, this will work.
+[69:44] Okay, let me Yeah, this will work. But
+[69:48] let's say if I do not give any valid
+[69:51] Python statement, this will again give
+[69:53] me an error. Okay. So let's say I do not
+[69:57] want to execute anything if this
+[70:00] condition is met. Maybe I want to write
+[70:02] down the code tomorrow or maybe after
+[70:04] some discussion with my colleagues.
+[70:06] Okay. What exactly has to be done when
+[70:07] the number is equal to five? Right now I
+[70:09] do not have the answer to it. Let's say
+[70:13] in a simple example scenario. So you
+[70:15] have created a placeholder. Okay, that
+[70:18] if the number is five, do something. But
+[70:20] what exactly? You don't know, you don't
+[70:22] want to specify, you do not want to
+[70:24] write down the code immediately. So just
+[70:27] pass. Okay, so this becomes a valid
+[70:29] Python statement and the iterations
+[70:31] continue. That is exactly the purpose of
+[70:33] pass. You can use the pass statement
+[70:35] along with um loops, any of the loops,
+[70:38] if conditions. You can use it in the try
+[70:42] except blocks, function definitions,
+[70:44] class definitions. Everywhere you want
+[70:46] to create an empty Python construct
+[70:49] without specifying lines of code, you
+[70:51] can use pass.
+[70:53] Functions are one of the most powerful
+[70:55] tools you can use in your code, allowing
+[70:59] you to reuse blocks of code, making your
+[71:02] programs more organized and much easier

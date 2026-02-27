@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 120
+# Video ID: UsfpzxZNsPo
+
+[258:57] Postgress database both hosted on a AWS
+[259:00] server which is most likely going to be
+[259:03] a production environment in any uh real
+[259:06] life scenario for any enterprise. So
+[259:09] let's get started.
+[259:11] Okay. So you will need to install the
+[259:14] SQLite3 package if it is not present. So
+[259:18] you can do that by doing a pip install
+[259:23] sqite 3. I'm not running this because uh
+[259:28] this package is already installed in my
+[259:30] system. So and then pandas would be most
+[259:34] likely installed in your system u if you
+[259:36] are using anaconda or Google collab.
+[259:39] Here I'm creating a SQLite database
+[259:44] by connecting it to memory. So this
+[259:46] database will be created in your RAM
+[259:49] which is the memory I'm going to specify
+[259:51] here. And then once the connection has
+[259:53] been made to that database, I'm going to
+[259:55] create a cursor object. This cursor
+[259:58] object will be used to execute the SQL
+[260:00] commands. So that has been done. Uh now
+[260:03] I'm going to execute
+[260:06] a create table query which is going to
+[260:09] create a small table named as students.
+[260:13] And this students table will have
+[260:17] columns like ID, name, age and marks uh
+[260:23] for few subjects like statistics,
+[260:25] Python, machine learning and deep
+[260:26] learning. So these will be the columns
+[260:28] in my table. The name of the table is
+[260:31] students and this students table will be
+[260:34] created in your database. So I'm passing
+[260:37] that entire query string to execute and
+[260:41] who is going to execute the cursor.
+[260:43] Okay, let's see. Okay, so the students
+[260:46] table has been created. Now I'm going to
+[260:48] insert some data into that table. Okay,
+[260:51] so for that I'm using the insert into
+[260:53] command. So insert into students and
+[260:57] these are the column names and there are
+[261:01] some uh entries that I have specified.
+[261:04] So these are some names of the students
+[261:06] their age then marks in statistics then
+[261:09] the marks in Python marks in machine
+[261:12] learning and deep learning. Okay. So
+[261:14] these are pretty much standard SQL
+[261:16] commands. Uh if you are familiar you can
+[261:19] easily relate to it. And uh if SQL is a
+[261:23] bit new to you, I would strongly

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 56
+# Video ID: UsfpzxZNsPo
+
+[120:02] involve vectors and matrices. Think of
+[120:05] large data sets or transformations or
+[120:08] solving system of equations. Now with
+[120:11] Numpai's lin alg or the linear algebra
+[120:14] subm module you can multiply matrices
+[120:17] using the np dot function or a very
+[120:20] convenient operator which is add the
+[120:22] rate symbol. You can also solve system
+[120:25] of linear equations like ax equal to b
+[120:28] using the np.l
+[120:31] dotsolve function instead of just coding
+[120:33] up your own solver. And if you need to
+[120:36] find the inverse or a determinant of a
+[120:38] matrix, you have to choose those
+[120:41] functions which are readily available in
+[120:43] the linear algebra module. So for more
+[120:45] advanced use cases, you have the igon
+[120:48] values on vectors via the np.al
+[120:52] module. You can also do the singular
+[120:54] value decomposition by using the
+[120:56] np.al.svd
+[120:58] which is very critical in methods like
+[121:00] principal component analysis for
+[121:02] dimensionality reduction. You can also
+[121:04] find vector and matrix norms using the
+[121:07] linnom function. While numpy doesn't
+[121:10] have a separate stats subm module, it
+[121:12] does include quite a few statistical
+[121:15] functions right in its main name space.
+[121:17] So for example, np.m can calculate the
+[121:20] average value. You can specify an access
+[121:22] to do so for each row or for each column
+[121:25] in a two-dimensional array. Similarly,
+[121:27] you have the np domed median function,
+[121:29] np dot quantile function that helps you
+[121:33] understand the data distribution
+[121:35] and so on. While np std and np.tv these
+[121:41] functions calculate the standard
+[121:42] deviations and variance of the data that
+[121:46] helps you understand the spread of your
+[121:48] data. So this makes numpy a good first
+[121:51] off for exploratory data analysis before
+[121:54] you move on to more advanced tools. If
+[121:56] you need to understand the relationship
+[121:57] between the variables, for example,
+[121:59] calculating the correlation
+[122:01] coefficients, you have the np.t core of
+[122:03] function and you can also calculate the
+[122:05] co-variances between these matrices by
+[122:08] using the npoe function. You have the

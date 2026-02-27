@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 2
+# Video ID: UsfpzxZNsPo
+
+[02:11] hugging face.
+[02:13] We'll cover how to access prompt and
+[02:16] interact with LLMs, giving you a peak
+[02:20] into building intelligent systems.
+[02:23] Overall, by the end of this course, you
+[02:25] will not only understand Python
+[02:27] programming, but also have hands-on
+[02:29] experience working with data, connecting
+[02:32] with APIs, and interacting with
+[02:34] cuttingedge language models. I'm here to
+[02:37] guide you at every step of the way, and
+[02:40] I can't wait to see what you will
+[02:42] create. Also, in case you want to dive
+[02:45] deep into generative AI, machine
+[02:47] learning, and deep learning, feel free
+[02:49] to check out some free courses made by
+[02:51] my team.
+[02:54] Before we dive into the details of
+[02:56] Python and its relevance in data
+[02:58] science, I would like to give you a
+[03:00] quick overview of what Python is and why
+[03:03] it has become so crucial for today's
+[03:05] data professionals. Python as you may
+[03:08] know was created by Gaidoan Rasum in
+[03:11] 1991. Since then it has been developed
+[03:14] and maintained by Python software
+[03:16] foundation growing into one of the most
+[03:19] widely used programming languages
+[03:21] globally.
+[03:23] Now let's talk about the background of
+[03:25] Python. Python is known as a highlevel
+[03:28] generalpurpose programming language.
+[03:30] Python has become incredibly popular
+[03:33] because of its readability and
+[03:35] flexibility. It is used in various
+[03:38] fields such as scientific computing, web
+[03:41] development and artificial intelligence
+[03:43] amongst many others. One of its biggest
+[03:46] advantages is that it is an interpreted
+[03:49] language means it runs in a virtual
+[03:52] environment which makes it platform
+[03:54] independent.
+[03:56] This means that it can run on almost any
+[03:59] system like Windows, Mac OS or Linux
+[04:03] without much hassles. Now, why should we
+[04:07] use Python for data science? The short
+[04:09] answer is that it ticks all the boxes.
+[04:12] First, Python boasts a large and active
+[04:15] community. This is really helpful
+[04:17] because you have access to countless

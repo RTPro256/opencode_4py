@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 144
+# Video ID: UsfpzxZNsPo
+
+[312:07] see what happens if I forget the user
+[312:09] input. Okay. It says 404 not found. And
+[312:12] this error is primarily because the user
+[312:16] input was not provided. So I'm trying to
+[312:18] access the endpoint without providing
+[312:20] the user input. And this error message
+[312:22] is also logged in here. Okay. 404. Okay.
+[312:25] So 200 means the status okay means the
+[312:29] request was successful and the response
+[312:32] was generated successfully and served
+[312:34] back to the user. So 200 is good. 404 is
+[312:38] not good. Okay. Now there might happen
+[312:40] that you want to actually provide a
+[312:44] name. So for example, let me go back. Uh
+[312:47] my full name is Prashant Sahu. So if I
+[312:50] try to give a space, okay, if you see
+[312:53] here in the address bar, it
+[312:55] automatically appends an um percentage
+[312:59] sign. This is the URL encoding for the
+[313:03] whites space which I provided. Okay. So
+[313:05] percentage 20 that is the complete URL
+[313:08] encoding. So if you want to use some
+[313:11] special characters in the user input
+[313:14] make sure that the URL is properly
+[313:16] encoded. So you can actually check the
+[313:19] uh W3 schools um URL for a complete
+[313:23] reference on URL encoding. Also there is
+[313:26] a link which will help you to generate
+[313:28] the URL encodings freely online. So once
+[313:32] I type my name let's say Prashant space
+[313:35] Sahu you can see that automatically that
+[313:38] space was encoded with percentage 20. So
+[313:41] that should be the complete user input.
+[313:43] So let's say tomorrow I want to go for
+[313:45] another name um John Doe. So this is
+[313:49] what I get automatically. So this is to
+[313:52] be copied and now I can paste it where I
+[313:57] want to access the URL. So greet and uh
+[314:01] delete this. Paste it. Press enter.
+[314:04] Super. So this makes the API calls very
+[314:08] safe. Also you can uh use error handling
+[314:10] which I have done in other routes. So in
+[314:14] the third example I'm actually going to
+[314:16] do some error handling as just
+[314:19] mentioned. Okay. So in this I'm going to
+[314:21] actually use the gu get method
+[314:23] explicitly. In fact, if you noticed
+[314:25] behind the scenes in the first two you
+[314:27] in the first two endpoints also we were
+[314:30] able to access the endpoints using the

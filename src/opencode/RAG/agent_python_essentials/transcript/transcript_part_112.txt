@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 112
+# Video ID: UsfpzxZNsPo
+
+[241:57] table in the database and define the
+[241:59] structure of that table, including its
+[242:01] columns and data types. Insert into
+[242:04] allows us to add new records or rows to
+[242:08] a table. Update lets us modify existing
+[242:11] data. Delete allows us to remove data
+[242:14] from a table. And this select command is
+[242:17] used to retrieve data from the database.
+[242:20] It's one of the most commonly used
+[242:22] commands. Databases are vital in the
+[242:24] field of AI for several reasons. They
+[242:26] provide efficient storage solutions for
+[242:28] the massive data sets often required for
+[242:30] training AI models. Databases makes it
+[242:33] easier to access and pre-process data
+[242:36] which is crucial step in any AI project.
+[242:38] They offer a reliable and consistent
+[242:40] source of data ensuring that models are
+[242:43] trained on accurate information for AI
+[242:45] agents that need realtime data.
+[242:48] Databases can provide up-to-date
+[242:50] information enabling more dynamic and
+[242:53] responsive AI systems. To utilize
+[242:55] databases in AI applications, we need to
+[242:58] connect them to programming languages
+[242:59] like Python. This is done using
+[243:01] libraries and tools that allow us to
+[243:04] execute SQL queries and manipulate data
+[243:07] within our code. Python offers several
+[243:09] libraries such as SQLite 3 for SQLite
+[243:13] databases, PI MySQL for MySQL and
+[243:17] Psychopg2 for Postgrace SQL. OM
+[243:21] frameworks like SQL Alchemy can simplify
+[243:24] database interactions by allowing us to
+[243:26] work with databases as if they were
+[243:28] regular Python objects. Once connected,
+[243:30] we can extract data, pre-process it, and
+[243:33] feed it into AI algorithms for
+[243:36] processing and decision making. We have
+[243:38] already discussed connecting Python to
+[243:40] SQL databases in our previous module.
+[243:42] But let's recap briefly. Using Python,
+[243:45] we can connect to databases like SQLite
+[243:47] and Post SQL using libraries such as
+[243:50] SQLite 3, Psychopg2, and SQL Alchemy.
+[243:53] The benefit of doing this is that it
+[243:55] provides efficient data management
+[243:57] allowing Python scripts to read, update
+[243:59] and store structured data. This
+[244:02] capability is crucial for building

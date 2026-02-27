@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 150
+# Video ID: UsfpzxZNsPo
+
+[325:24] form and saved it separately as a HTML
+[325:27] file. Right? So that form HTML has been
+[325:30] separately created. So I'm not going to
+[325:32] go ahead and open that HTML code and
+[325:35] explain there. Please feel free yourself
+[325:38] and uh let me know if you have any
+[325:40] questions or doubts on that. you can
+[325:42] take help of uh charg to explain the
+[325:45] form uh HTML code because that is lot of
+[325:49] HTML in that okay so these two things
+[325:52] are clear one is the home HTML the form
+[325:56] html will create a form where the user
+[325:59] is expected to give two numbers as the
+[326:02] input and finally if everything goes
+[326:04] well the computation happens and the
+[326:07] result is displayed in another HTML
+[326:10] format okay so that result HTML is
+[326:13] rendered along with your actual
+[326:15] calculation result. If anything goes
+[326:17] wrong here, it goes into the accept
+[326:20] block and uh that is handled gracefully.
+[326:23] So let me execute this. Okay. So I'll
+[326:25] just click here simply. It goes to the
+[326:28] home.html page. So this is essentially
+[326:31] home.html.
+[326:32] Um I'm clicking on this to go to my
+[326:34] calculator app. I'll provide two numbers
+[326:36] here. So let's say 1 2 3 4 5 is the
+[326:38] first number. Second number is let's say
+[326:40] 25. So first thing that will be done is
+[326:44] this number will be divided by this
+[326:46] number and the resultant number is 493.8
+[326:49] and square root of that is 22.22. Right?
+[326:53] So click on this and it goes back to the
+[326:55] homepage. Right? So this entire thing
+[326:57] once again let me show you the homepage
+[326:59] was this the app root base. Click on
+[327:04] this. It goes to which endpoint? It goes
+[327:06] to the square root endpoint where the
+[327:08] form.html is rendered. And once I have
+[327:11] given some numbers, okay. And click on
+[327:12] the submit button. This is my submit
+[327:14] button. It goes to the results.html
+[327:17] actually. So this is coming from the
+[327:18] results HTML. Perfect. And if you notice
+[327:21] something, there is 304 304 which never
+[327:24] came before in any of the previous runs.
+[327:27] 304 never came here. So this is
+[327:29] something new. So 304 is not a error
+[327:31] here. It's actually telling you that I'm

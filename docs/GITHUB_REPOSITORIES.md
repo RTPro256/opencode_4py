@@ -89,7 +89,7 @@ These are repositories for projects in the `for_testing/` directory that may rec
 
 These are combined repositories that integrate opencode_4py with other projects.
 
-### opencode_comfyui (Planned)
+### opencode_comfyui (Active)
 
 | Property | Value |
 |----------|-------|
@@ -100,8 +100,34 @@ These are combined repositories that integrate opencode_4py with other projects.
 | **Visibility** | Public (recommended) |
 | **Git LFS** | Configured |
 | **Default Branch** | `main` |
-| **Status** | Planned |
+| **Status** | Active |
 | **Push Command** | `git push origin main` |
+
+> **Note:** This repository is the integration target for ComfyUI. The local path is `for_testing/as_dependency/ComfyUI_windows_portable/`.
+
+#### CLI Commands for Multi-Repo Push
+
+The opencode CLI now supports pushing to multiple repositories:
+
+```bash
+# List configured repositories
+opencode github repos
+
+# Push to all configured repositories (with verification)
+opencode github push-all -m "Your commit message"
+
+# Push to specific repositories
+opencode github push-all -r "opencode_4py,opencode_comfyui" -m "Update"
+
+# Dry run to see what would happen
+opencode github push-all --dry-run
+
+# Sync to local target directory (like ComfyUI portable)
+opencode github sync -t for_testing/as_dependency/ComfyUI_windows_portable -m "Sync update"
+
+# Add a new repository to the configuration
+opencode github add-repo my-project https://github.com/RTPro256/my-project.git
+``` |
 
 #### Future Updates
 

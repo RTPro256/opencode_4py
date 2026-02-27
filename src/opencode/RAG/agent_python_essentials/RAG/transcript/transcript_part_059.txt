@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 59
+# Video ID: UsfpzxZNsPo
+
+[126:23] argument for any numpy array to find the
+[126:26] dimensionality of that numpy array.
+[126:28] Okay. So now I want to create an array
+[126:30] with another function arrange. What this
+[126:33] function does is it takes a starting
+[126:36] number which is in this case five and
+[126:38] then there is a ending number which is
+[126:40] 15 and the step size of two. So it will
+[126:44] start giving you numbers or it will
+[126:46] create an array starting from the number
+[126:48] five and it will stop one before the
+[126:51] ending number. So 15 will not be
+[126:53] included in that array. Okay. So 5 6 7 8
+[126:57] 9 10 11 12 13 14 would be the last
+[127:00] number technically. But then you have
+[127:03] said give me a step size of two. So
+[127:06] which means it will skip every alternate
+[127:09] number. Let's see what we get after I
+[127:12] just delete that two. So that is exactly
+[127:14] expected from 5 to 14. But if I get that
+[127:18] two back, it will skip every second
+[127:20] number. So I'll get five and then I'll
+[127:22] get seven. I'll get 9. The alternate
+[127:26] numbers are skipped. Okay? So I'll get 5
+[127:28] 7 9 11 and 13. that will be the last
+[127:33] number. Perfect. Okay. So, step size you
+[127:37] can set to be 2 3 4 whatever that number
+[127:40] that many numbers would be skipped.
+[127:42] Okay. Lind space on the other hand will
+[127:45] always make sure that the starting
+[127:46] number and the ending number are always
+[127:49] included in the numpy array. So this
+[127:52] time I'm going to create a numpy array
+[127:54] which has both zero and one. And how
+[127:58] many numbers do I want in that array
+[128:00] specified by this five. Okay, instead of
+[128:02] specifying the spacing between the
+[128:04] number, you specify how many numbers do
+[128:07] you want in that array which includes 0
+[128:09] and one. Okay, so Python will back
+[128:13] calculate the spacing and you are
+[128:15] talking about the linear spacing between
+[128:17] these numbers. Okay, so let's see. So
+[128:19] you can see that 0 and one both are
+[128:21] included and Python back calculated
+[128:23] three more numbers such that the spacing
+[128:26] between all the five numbers is equal.
+[128:28] that is the linearly spaced numbers in
+[128:31] that array. Let's see the concept of
+[128:33] indexing and slicing now. So with or by

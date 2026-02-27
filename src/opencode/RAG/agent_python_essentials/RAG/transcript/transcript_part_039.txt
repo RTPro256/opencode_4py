@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 39
+# Video ID: UsfpzxZNsPo
+
+[84:05] the positional arguments have to be
+[84:06] defined. Okay. Before the keyword
+[84:09] arguments, correct? So this will again
+[84:12] work. Now let's have a look into the
+[84:14] scopes of the variables within the
+[84:16] functions and out of the functions. So
+[84:19] what do you mean by the scope of a
+[84:20] variable? So this is the part of the
+[84:23] program where we can access a particular
+[84:25] variable. Okay. So all these variables
+[84:28] that you have created in your notebook
+[84:30] right now can be accessed from the
+[84:32] global name space here. So you can see
+[84:34] the global name space has all the
+[84:36] functions in the memory. These are the
+[84:38] memory locations in which all your
+[84:40] functions are right now present. Okay,
+[84:42] along with that all the variables that
+[84:44] you have created is also present here.
+[84:46] Your name output 1 2 3 and welcome. So
+[84:49] all these are the functions and
+[84:51] variables that you have created in this
+[84:52] particular notebook. So this is the
+[84:55] scope the global scope of this notebook.
+[84:58] Okay. So this is where your all the
+[85:02] variables are stored. So global variable
+[85:05] and local variable. So each function has
+[85:09] its own local scope or name space where
+[85:14] it stores the variables and those
+[85:17] variables are called as the local
+[85:18] variables. So first let's see I have got
+[85:22] a variable called as name which is
+[85:25] defined outside the function. So by
+[85:27] default any variable which is defined
+[85:30] out of the functions they are in the
+[85:32] global namespace. Okay, they are in the
+[85:34] global namespace. Global namespace means
+[85:36] this is a global namespace because all
+[85:38] these variables were defined out of the
+[85:41] function. So this will go into the
+[85:43] global namespace. All the functions
+[85:47] which are present in the global
+[85:49] namespace. You can see that the there
+[85:50] are the functions which we created. So
+[85:52] these functions present in the global
+[85:54] namespace will have access to all the
+[85:57] variables present in the so these
+[85:59] functions will have access to all these
+[86:01] variables.
+[86:02] All these functions will have access to

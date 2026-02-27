@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 116
+# Video ID: UsfpzxZNsPo
+
+[250:17] and database name. We wrap this in a try
+[250:20] accept block to handle any connection
+[250:22] errors gracefully. If the connection is
+[250:25] successful, we print a confirmation
+[250:26] message. Connecting to a Postgress SQL
+[250:28] database using psychopg2 follows a
+[250:31] similar pattern. We import the psychopg2
+[250:34] library and then attempt to connect
+[250:37] using the psychopg2.connect function.
+[250:40] Again we provide the host user password
+[250:42] and database names. Wrapping the
+[250:44] connection attempt in a try accept block
+[250:46] helps us to catch and handle any errors
+[250:48] that may occur during this process. Once
+[250:51] we have established connection to the
+[250:53] database, we can execute SQL queries
+[250:56] directly from Python and fetch the
+[250:58] results into a pandas data frame. This
+[251:00] is done using the pandas reads SQL query
+[251:03] function which takes the SQL query and
+[251:06] the database connection as arguments.
+[251:08] After executing the query and storing
+[251:11] the results in a data frame, it is a
+[251:13] good practice to close the database
+[251:15] connection. The process is similar for
+[251:17] both MySQL and Postgres SQL with the
+[251:21] main difference being the library used
+[251:23] for the connection. Limitations of
+[251:24] direct SQL queries. While writing raw
+[251:27] SQL queries in Python, there are some
+[251:29] limitations we need to consider. First,
+[251:32] SQL queries can become complex and
+[251:34] difficult to manage especially for large
+[251:36] projects. Writing and debugging long
+[251:39] intricate SQL queries can be
+[251:40] timeconuming. Another issue is security.
+[251:43] Rock queries can be vulnerable to SQL
+[251:45] injection attacks if not handled
+[251:48] properly. Always ensure that user inputs
+[251:51] are sanitized and parameterized to avoid
+[251:54] these risks. Lastly, there's
+[251:56] maintainability. As your code
+[251:58] application grows, maintaining raw SQL
+[252:01] queries in Python code can become
+[252:03] cumbersome. It's harder to refactor and
+[252:06] keep the code clean when you have lots
+[252:08] of embedded SQL statements. To overcome
+[252:11] the limitations of raw SQL queries, you
+[252:14] can use object relational mapping OM
+[252:17] frameworks like SQL alchemy or SQL

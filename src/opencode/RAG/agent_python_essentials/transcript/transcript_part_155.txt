@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 155
+# Video ID: UsfpzxZNsPo
+
+[337:01] user prompt is exactly the same. Uh the
+[337:03] model name has been changed to Germany
+[337:05] pro. Let's see what story Google Germany
+[337:09] makes. So the persona identified by
+[337:13] Google Germany is about I think Emily
+[337:17] Carter here. So I think the story is
+[337:20] about Emily Carter in this case and you
+[337:24] can take your time reading this story.
+[337:27] Now let's try out uh zeroshot prompting
+[337:30] basically we'll ask some questions to
+[337:34] the model and we will expect the
+[337:37] replies. So this function display and
+[337:41] markdown is being imported to make a
+[337:44] prettier display of the model's
+[337:47] response.
+[337:49] So again using the get completion
+[337:51] function I'm passing the prompt as
+[337:53] explain generative AI in two bullet
+[337:54] points very short and crisp. So let's
+[337:58] fetch the response and display that
+[338:00] response in a nice manner. Okay. So
+[338:05] these are the two bullet points I have
+[338:06] received from the GPT4 model. Generative
+[338:09] VI refers to algorithms based on machine
+[338:11] learning models like neural networks
+[338:13] that can create new content such as
+[338:15] text, images, music or code and so on
+[338:17] and so on.
+[338:18] Let's see what is the response from
+[338:20] Germany model. I've changed the model
+[338:22] name here. So Germany model is giving me
+[338:24] even more crisp response. Genative vi is
+[338:28] a type of AI that can create new data or
+[338:30] content from scratch just such as
+[338:32] generating images, text or music. Super.
+[338:36] So we'll take more examples of uh
+[338:38] prompting or basically using the uh APIs
+[338:42] from different different models in the
+[338:44] next notebook. Okay.
+[338:48] Hi and welcome back. So in this hands-on
+[338:52] exercise, we will do some prompt
+[338:55] engineering with open-source large
+[338:57] language models. Uh you using hugging
+[339:00] face serverless APIs. Basically hugging
+[339:03] phase is a repository of various large
+[339:06] language models. We can either download
+[339:09] these models from hugging face
+[339:12] repository or we can directly call these
+[339:16] models which are hosted on the hugging
+[339:18] face servers. So in this notebook we

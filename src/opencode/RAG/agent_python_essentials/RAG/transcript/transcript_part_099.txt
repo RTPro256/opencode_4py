@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 99
+# Video ID: UsfpzxZNsPo
+
+[213:07] do merge operation. So this is my data
+[213:11] frame on the left side, data frame on
+[213:12] the right side. On on will use a key. On
+[213:17] will use a key. So you can specify the
+[213:22] column which is to be used as a key. So
+[213:26] this is the key. How? So if you are
+[213:29] familiar with SQL, you might be already
+[213:32] knowing inner join, outer join, left
+[213:35] join and right join. If you're not
+[213:38] familiar, uh you can go ahead and read
+[213:40] about these kind of joins um on our
+[213:43] website analyticsia.com.
+[213:45] the lot of blocks which explain the
+[213:47] concept of SQL joins. Okay. So here I'm
+[213:50] using the inner join which will match
+[213:52] the keys in both the data frames. So
+[213:56] here the keys are AB. Here the keys are
+[213:59] AC. So which keys common in both A. And
+[214:02] that is the reason I get only a here. So
+[214:05] the key which is common in both will
+[214:06] appear. That is the meaning of inner
+[214:08] join. Okay. Outer join will have the
+[214:10] keys from both the left and the right
+[214:12] data frames. So I'll get uh a b as well
+[214:15] as c.
+[214:21] Yep. So outer join will give you all
+[214:23] three. And if you notice here in the
+[214:26] case of B I don't have the age values
+[214:29] and in the case of C I don't have the uh
+[214:32] marks. Okay. Because in your marks data
+[214:34] frame there was no C and in your age
+[214:37] data frame there was no B. Okay. That is
+[214:40] why we have the missing values of marks
+[214:42] for C and missing value of age for B.
+[214:46] Right? A was present in both the data
+[214:49] frames. So both marks and age were
+[214:52] updated accordingly.
+[214:54] You can also do a simple concatenation
+[214:56] of your data frames back to back. Okay.
+[214:59] So in this case I created another data
+[215:02] frame uh DF3 and this is coming from
+[215:05] DF1. This is my DF1 and this is simply
+[215:09] F3. So concatenation means the data
+[215:12] frames will be just concatenated one
+[215:14] below the other. Why one below the
+[215:16] other? Because by default the axis is
+[215:18] again zero. If you change the axis to
+[215:21] one, then they will be concatenated side
+[215:24] by side. Okay, remember that. So if you
+[215:26] want this kind of concatenation, you

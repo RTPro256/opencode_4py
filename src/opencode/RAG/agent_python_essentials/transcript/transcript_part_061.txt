@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 61
+# Video ID: UsfpzxZNsPo
+
+[130:42] numbers with a step size of two. So
+[130:44] every second element will be picked up.
+[130:46] Okay. Now let's see how does indexing
+[130:48] and slicing work with multi-dimensional
+[130:51] arrays and matrices. So let me first
+[130:53] create a 2D matrix. So here I have got
+[130:56] the numbers 1 2 9 arranged in a 3 + 3
+[130:59] format. So three rows and three columns.
+[131:01] These are the rows 1 2 3 4 5 6 7 8 9.
+[131:04] These are the three rows and these are
+[131:06] the columns 1 47 28 and 369. Now here I
+[131:10] want to extract the elements with the
+[131:13] index one two. So this is my row index
+[131:16] and this is the column index. Now what
+[131:18] is the row index? So this is the first
+[131:21] row with an index of zero. The second
+[131:24] row will have a index of one and the
+[131:27] third row will have a index of two.
+[131:29] Okay. So I am asking it to fetch me the
+[131:33] first indexed row that means the second
+[131:36] row. So this row has got the index of
+[131:39] one. So second row and column index is
+[131:42] two. The first column will have a index
+[131:45] of zero. Second column index has one.
+[131:47] And the third column will have a index
+[131:49] of two. So essentially you are saying
+[131:51] give me the element present in the
+[131:53] second row and the third column. So here
+[131:56] you can see it intersects at six.
+[131:59] Perfect. You can also provide a range of
+[132:01] row indices and column indices. Okay. So
+[132:04] 0 col 2 means it will take rows 0 and 1
+[132:09] two will be excluded. So rows index 01
+[132:12] and column index 1 and two because again
+[132:15] three will be excluded. So row index 01
+[132:18] means the first two rows and column
+[132:20] index 1 2 will be the last two columns.
+[132:24] So first two rows and last two columns
+[132:27] essentially will give me 2 3 5 6. Let's
+[132:31] see. So this is exactly what we call as
+[132:33] two-dimensional slicing. Okay. You can
+[132:36] also provide handpicked row column
+[132:39] indices. So in this case let's say I
+[132:41] want to select the elements from the
+[132:43] first row and the last row. Last row
+[132:45] will have index two in this case. So
+[132:48] that is the indices you are providing
+[132:49] and colon means take all the columns. So
+[132:52] here you are providing the row indices
+[132:55] which is 02 and colon means here in the

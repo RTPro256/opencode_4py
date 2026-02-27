@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 20
+# Video ID: UsfpzxZNsPo
+
+[42:22] files or you can also start your
+[42:26] comments from the start of a line as
+[42:28] well. Okay. So when I execute this block
+[42:30] of code, this line is executed. This
+[42:35] line is commented. Okay. So let me
+[42:37] uncomment that. So I deleted this
+[42:40] hashtag. And let me re-execute. So when
+[42:43] I executed it again, you can see I get
+[42:46] the print statement from here as well as
+[42:48] this one. This was earlier commented. So
+[42:51] this second line was not appearing in
+[42:54] the output. Okay. Now I can repeat it.
+[42:57] So I am commenting the first line and
+[43:00] executing this block of code once again.
+[43:03] You can see that since the first line
+[43:04] got commented, this is not executed and
+[43:07] only this line got executed. Okay.
+[43:11] So this way you can write down multiple
+[43:13] lines of code within a code block and
+[43:15] select which line you want to comment
+[43:17] and uncomment. So the keyboard shortcuts
+[43:20] for commenting and uncommenting is you
+[43:22] can in Windows system you can click on
+[43:26] control ctrl and this backslash. Okay.
+[43:31] So whichever place your cursor in
+[43:33] whichever line you want to comment or
+[43:35] uncomment. Okay. And just press control
+[43:38] and slash this will be commented. And
+[43:41] again if you do the same control and
+[43:43] slash it will be uncommented.
+[43:46] Okay. Now let's check some conditional
+[43:48] statements. Okay, we have already seen.
+[43:52] So here I'm going for the if statement.
+[43:54] I'm assigning a value of 1 to x and
+[43:56] checking if x is equal to 1. Let's see.
+[43:59] Yes, indeed x is equal to 1. So it
+[44:02] entered within the if condition and this
+[44:05] print statement was executed. Now here
+[44:08] since already x is equal to 1, I'm
+[44:10] checking whether x is equal to three. So
+[44:14] you now know that this will return
+[44:15] false. Since it is returning false, this
+[44:18] print statement will not execute. So
+[44:21] nothing happens here. So now I'm having
+[44:24] a equal to 5 and b equal to 10. I'm
+[44:26] checking whether a is greater than b. So
+[44:28] is 5 greater than 10? No. So it goes to
+[44:32] the else. Okay? Because this is false.
+[44:35] So this statement is not executed. So
+[44:37] the condition automatically goes to

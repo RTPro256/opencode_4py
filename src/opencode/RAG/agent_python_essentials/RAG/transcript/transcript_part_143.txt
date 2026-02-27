@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 143
+# Video ID: UsfpzxZNsPo
+
+[309:48] to stop the flash server.
+[309:50] Done.
+[309:52] Now let's move on to the next uh route.
+[309:54] So here we are going to create an app
+[309:57] routt which takes a user input and does
+[310:00] some computation. So we'll have two app
+[310:02] roots here. One is to greet the user
+[310:04] with some name and this name will be
+[310:06] provided by the user. Okay. So if I'm
+[310:08] providing prashant, it will greet hello
+[310:11] prashant in H1 heading. So this is the
+[310:14] HTML code that I am wrapping it up with.
+[310:17] Okay. And secondly, there is another
+[310:20] endpoint created called as /square which
+[310:23] expects some integer as a number. Okay.
+[310:26] So when the user provides that number uh
+[310:29] I'm going to square that number and wrap
+[310:32] it up within this HTML string and
+[310:35] display it back on the browser window.
+[310:37] Let's see. So this flask uh app is
+[310:40] running. Okay. Now if I click on this,
+[310:44] it says URL not found because there is
+[310:46] nothing defined in the root URL or the
+[310:49] root app. Okay. The root endpoint. Okay.
+[310:53] The only endpoints defined in this flask
+[310:55] app is greet and square. Okay. So I
+[311:00] should be accessing the greet and the
+[311:03] square endpoints only. So what I'm going
+[311:05] to do is let me copy my greet URL. Okay.
+[311:10] I'll just copy and paste it here with my
+[311:13] name. So now you can see hello Prashant.
+[311:16] So if I just change the name in the URL
+[311:19] okay to ammy you can see the response
+[311:23] comes as hello ammy okay so greet/greet
+[311:27] is my endpoint and beyond that the user
+[311:30] input that's exactly what this endpoint
+[311:32] does it takes the user input as the name
+[311:34] and displays hello name the other one is
+[311:37] the square so you can access it here so
+[311:41] I'll just copy this and uh replace it so
+[311:44] I can provide some number here let's
+[311:46] Okay 100. So this is the number which
+[311:48] was provided and this is the square of
+[311:50] that number. Okay. If you want you can
+[311:52] also access this URL on or by using curl
+[311:56] command. So all you have to do is just
+[311:58] type curl and then the endpoint URL
+[312:02] along with the user input. This is very
+[312:04] important. If you forget the user input,
+[312:06] you'll get some error. Okay. So let's

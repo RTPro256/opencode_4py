@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 86
+# Video ID: UsfpzxZNsPo
+
+[183:50] and colors to create visually appealing
+[183:52] plots. Okay? And make sure that your
+[183:55] markers are clearly visible. If you have
+[183:57] the markers along with the lines, you
+[183:59] must have some sort of a contrast
+[184:00] between multiple plots and multiple
+[184:02] markers present within the same canvas.
+[184:04] Okay. So, keep a track of the figures
+[184:07] and axis using the interface. That is
+[184:09] basically the name numbering of the
+[184:12] subplots. Okay. So, we created the
+[184:16] subplots here. So, the numbering of the
+[184:18] subplots will be decided by this
+[184:20] function. Okay. And of course keep
+[184:22] checking for the advanced features in
+[184:24] the documentation as we have referred
+[184:26] for the list of named colors, mattplot
+[184:28] lib, line styles, markers and even
+[184:31] stylesheets. Okay. So here I have
+[184:33] combined few plot types. So here I have
+[184:36] got the scatter plot you can see and a
+[184:39] line plot. So I have just created some
+[184:41] synthetic data. So in one plot I have
+[184:43] the scatter values as well as the line
+[184:45] chart. And clearly by using the legend
+[184:49] in a proper way I am able to demonstrate
+[184:51] that this is a line. What does that line
+[184:53] represent? It represents a trend you can
+[184:56] say. And these are my observed data
+[184:58] points. So in your real world scenario
+[185:00] these would be your observations. And
+[185:02] this line will not be a synthetic line.
+[185:04] That would be a line that you get from a
+[185:06] regression model. Maybe a linear
+[185:08] regression or some some variant of that.
+[185:10] And then you have your usual title XL
+[185:13] valuable values. Okay. So just a quick
+[185:16] conclusion. So we have seen in this
+[185:18] notebook how basic plotting and mattplot
+[185:21] works. Different types of plot types we
+[185:23] have covered as line chart, scatter
+[185:26] plots, bar plots, histogram, box plots
+[185:28] and even pie charts. Different
+[185:29] customizations we did with the labels,
+[185:32] legends, styles and markers, colors,
+[185:34] marker styles and everything. Multiple
+[185:36] plots we have got. How do you save your
+[185:39] plots to the hard disk and we have even
+[185:42] seen combining multiple plot types in
+[185:44] the last example. Okay, so that's it in

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 75
+# Video ID: UsfpzxZNsPo
+
+[160:34] if you have multiple plots, make sure
+[160:35] that each of those plots have a label
+[160:38] because you are not explicitly providing
+[160:40] any text within the legend function
+[160:42] here. Okay. So it's advised that each of
+[160:44] the plot must have a corresponding label
+[160:47] so that mattplot li is able to recognize
+[160:50] what should be the labels for each of
+[160:52] these plots if you have multiple plots
+[160:54] in the same canvas. Okay. So let's say I
+[160:57] want to shift the lo uh location from
+[161:00] first quadrant, this is my first
+[161:01] quadrant to let's say the third
+[161:02] quadrant. This is the second quadrant.
+[161:04] This is the third quadrant. So what I'll
+[161:06] do is loc OC equal to 3. So that will
+[161:10] change the location to the third
+[161:11] quadrant. Now you can see the location
+[161:13] shifted from the default of first to
+[161:15] third. So mattplot li actually selects
+[161:18] the best location so that it does not
+[161:21] overlap with the plot. So that
+[161:23] intelligence is there with mattplot li.
+[161:25] Okay. So it already takes care of that.
+[161:28] But still in some case if you want to
+[161:30] specify what should be the location you
+[161:33] can go ahead and do that. Okay. You can
+[161:34] provide numbers or you can provide text
+[161:37] as well. Okay. So the location can be
+[161:40] provided as a text. You can see it
+[161:42] supports these strings upper left, upper
+[161:44] right, lower left and lower right. And
+[161:47] it is also supporting the center. So by
+[161:50] default it will take the best place.
+[161:52] Okay. So that it does not overlap with
+[161:55] your actual plots. Fine. So let's go
+[161:57] ahead. Now this time again I'm having a
+[161:59] biariate plot. Let me create two set of
+[162:02] random numbers here X and Y and again
+[162:05] creating the figure canvas providing the
+[162:08] X values and the Y values to the scatter
+[162:10] function. And then what should be the
+[162:13] color C equal to means the color. So
+[162:15] short form of color is C. So what should
+[162:18] be the color of the marker? What should
+[162:19] be the marker style? Okay. And what
+[162:22] should be the opacity level of these
+[162:25] markers? So let's see the plot first. So
+[162:27] you can see you have the red color
+[162:29] markers here. If I set alpha as one,

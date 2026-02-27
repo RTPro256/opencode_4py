@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 65
+# Video ID: UsfpzxZNsPo
+
+[139:13] gives you the same result. If you can
+[139:15] see x multiplied by y is also an array
+[139:19] is also an elementwise multiplication.
+[139:22] You can see this result matches with
+[139:23] this result. And similarly x divided by
+[139:27] y is also an element-wise operation. You
+[139:30] can see each element of the array 1 2 3
+[139:33] 4 was divided by the elements 10 20 30
+[139:37] 40 respectively. So each of them become
+[139:39] 0.1. Perfect. You can take the log by
+[139:42] default. So I've created some array
+[139:44] again. Here I have got the npe e which
+[139:47] is a constant e in mathematics the
+[139:51] exponent e. So 2.718 value and one value
+[139:55] is one and the other value is 100. So
+[139:57] three values I'll be using for log
+[139:59] calculations. So by default this will
+[140:02] give you the natural logarithm with the
+[140:05] base e. What is that value of e? 2.718.
+[140:08] So the base for this logarithm is this
+[140:11] e. And that is why the value of log for
+[140:15] that e is one. Okay. Log one is always
+[140:18] zero. So that's what I got here. And
+[140:20] this is the log of 100 with the base e.
+[140:24] Now you can change the base to two. In
+[140:26] that case the two base log values are
+[140:30] these. So log of e to the base 2 is 1.44
+[140:34] and log of 100 to the base 2 is 6.64 and
+[140:38] so on. Now here you are changing the
+[140:40] base to log to 10. So again the log of 1
+[140:45] is 0. This is the log of e to the base
+[140:48] 10. And this is the log of 100 to the
+[140:52] base of 10 which is two in this case. So
+[140:54] npe e is same as np.exp with the power
+[140:58] of one. You can use this function to
+[141:01] raise some powers to this e. Okay. So
+[141:04] the values are the same 2.718. So the
+[141:07] exponential functions. So I have the
+[141:09] same array 2 3 4. I am going to use this
+[141:12] array as exponents. Okay. So I'll be
+[141:15] using the function called as power. So
+[141:18] each element of this array will be
+[141:20] raised to the power of 2 in this case.
+[141:22] Okay. So I'll get 2 square which is 4, 3
+[141:25] square which is 9 and 4 squared which is
+[141:27] 16. So let me print this 4 9 and 16.
+[141:31] Perfect. And what are these three
+[141:33] numbers? These are basically the
+[141:34] exponent e raised to the power of these
+[141:38] numbers. Okay. So this is essentially e

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 49
+# Video ID: UsfpzxZNsPo
+
+[105:29] within your variable names using
+[105:32] underscores. So if the width is 10,
+[105:34] height is 20, the area of the rectangle
+[105:38] would be width time height instead of
+[105:41] simply writing xy and z equal to x
+[105:44] multiplied by y. So this is much more
+[105:46] descriptive and much more meaningful. So
+[105:49] later on when you come back to your code
+[105:51] by looking at this piece of code you
+[105:52] instantly know what you are doing what
+[105:54] calculation you are doing where exactly
+[105:56] you are going to use that calculation
+[105:58] function naming conventions. So all the
+[106:00] function names must start with small
+[106:03] case always. So and you should use again
+[106:08] a snake case okay instead of using camel
+[106:10] case. So camel case starts with a
+[106:13] capital alphabet and in between you have
+[106:16] more capital alphabets. That's what we
+[106:18] call as the camel case. So camel case is
+[106:20] reserved for naming classes in Python
+[106:23] and not functions. For functions we
+[106:25] should be using again snake case. So if
+[106:28] you want to use calculate area so this
+[106:30] is also not a very good function name.
+[106:33] Why? Because this is again too short to
+[106:37] understand what kind of calculation is
+[106:39] happening. Right? If you wanted to
+[106:41] calculate area write down calculate area
+[106:43] and this could be simple calculator,
+[106:45] income calculator. It could be MI
+[106:47] calculator. It could be just any other
+[106:49] random calculator. Right? So this is a
+[106:52] better way of writing the function name.
+[106:54] Or if you are calculating the total
+[106:56] price of an item, okay, write down
+[106:58] completely calculate total price and the
+[107:01] function names cannot contain spaces. So
+[107:03] substitute the spaces with underscores.
+[107:06] Again, uh for naming the constants, try
+[107:09] to use uppercase. As you would have
+[107:12] already noticed in one of our first
+[107:13] example, we use the discount rate in
+[107:16] capitals. So if these are defined as
+[107:18] constants in your notebook, try to have
+[107:20] capital letters for those constants. So
+[107:23] the class name should use camel case
+[107:24] instead of snake case or lower case. So
+[107:27] this is bad nomomenclature. So P should
+[107:30] be capital here and we should also avoid

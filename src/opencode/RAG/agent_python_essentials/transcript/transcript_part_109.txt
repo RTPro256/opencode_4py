@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 109
+# Video ID: UsfpzxZNsPo
+
+[235:31] lambda function being applied on a
+[235:33] single column, right? We have already
+[235:35] updated that. So, these are the marks.
+[235:40] So, let me decrease the marks by 10 to
+[235:43] get the original marks because I have
+[235:45] already added it two times. So I've
+[235:49] decreased the marks by 10 to get the
+[235:51] original marks. Now uh here I've written
+[235:54] a custom function which I'm going to
+[235:56] apply. Here I have applied a simple
+[235:58] lambda function. But instead of applying
+[236:01] a simple lambda function, you can also
+[236:02] apply a custom function. So what does
+[236:05] this do? So I'm going to assign the
+[236:07] grades based on the marks. So if the
+[236:09] marks is greater than 85 then I'm going
+[236:12] to return a grade. If the marks is
+[236:14] between 70 and 85 it is going to be b
+[236:16] grade. And if the marks is less than 70
+[236:19] it will be C grade. Okay. So after
+[236:22] applying the function on this column I'm
+[236:25] creating another column called as grade.
+[236:28] So I've got the grades of the students
+[236:30] as well. Now you can also map um values
+[236:35] of a particular column to some other
+[236:37] value. So let's say in this case I'm
+[236:40] mapping males to zero and females to
+[236:42] one. This can be done for uh label
+[236:45] encoding typically used in machine
+[236:47] learning. So I've created a new column
+[236:49] called as gender new in which zeros
+[236:52] represent males and ones represent
+[236:55] females. So how was this done? By simple
+[236:59] mapper. So your mapper is a dictionary
+[237:02] where the original value becomes the key
+[237:04] and the new value becomes the value. So
+[237:06] you can also use pandas to handle dates
+[237:08] and times. Let's see here. Here I've
+[237:11] created a simple data frame uh with some
+[237:13] names and dates. You can see these dates
+[237:16] are actually strings. How do I know?
+[237:18] Because of the data type present in the
+[237:20] info. So the info gives me a object data
+[237:23] type. So I can convert those strings
+[237:27] into actual datetime objects by using
+[237:30] the datetime function. So I'm converting
+[237:32] the strings into a datetime. That's what
+[237:35] the two datetime function does. And
+[237:37] replacing the original column. So after
+[237:39] doing that you can see visually it still

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 146
+# Video ID: UsfpzxZNsPo
+
+[316:36] that is why I did not get the response
+[316:38] here. Okay, I would have got response
+[316:40] like serving flask app main. So let me
+[316:43] stop it. Okay. Make sure that it is
+[316:45] stopped and run this again. Okay. Yeah.
+[316:48] So now it is serving. So I can go to the
+[316:52] one of the URLs here. I have already
+[316:54] given these URLs. You can access by
+[316:56] directly clicking or you can copy paste.
+[316:59] Okay. So first number is 16. The second
+[317:01] number is four. So the division result
+[317:03] is four and the square root of four is
+[317:04] two. Okay. That is good. Now here I'm
+[317:08] getting an error because I have only
+[317:10] provided number one and not the number
+[317:12] two in the request. So the request is
+[317:15] only giving the first number and not the
+[317:17] second number. Since the second number
+[317:19] is missing, I'm getting this error.
+[317:21] Okay, the next request the second number
+[317:23] is zero. If you see which is why the
+[317:25] zero division error is coming up here
+[317:28] and finally uh here the first number is
+[317:31] negative which is why uh this last error
+[317:34] is coming. We cannot calculate the
+[317:36] square root of a negative number. You
+[317:38] can also access all these endpoints via
+[317:40] curl. So let me show you one of them.
+[317:42] Let's say you copy this from here to
+[317:45] here and then go back to your command
+[317:47] prompt and just paste the URL.
+[317:51] Yeah. So here I get the response. So the
+[317:55] entire response is in a HTML format as
+[317:57] you see. Okay. Within the H1 heading.
+[318:00] Perfect. So in the next example I'm
+[318:03] going to demonstrate the post method and
+[318:06] some of its variants. Okay. So here I am
+[318:09] enabling both the get and post method.
+[318:11] So post method is typically used when
+[318:14] the user wants to post a data to the
+[318:16] server either as a HTML uh form or some
+[318:20] JSON payload. Okay. Get method is
+[318:23] typically used when the user wants to
+[318:26] request some data from the server or
+[318:28] downloading some data from the server.
+[318:31] So in this case the form is expecting
+[318:34] message field. Okay. By default if no
+[318:38] message is given by the uh user it will
+[318:41] take no message as the input. Fine. So
+[318:44] here I'm creating a form which will be

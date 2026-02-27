@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 106
+# Video ID: UsfpzxZNsPo
+
+[228:32] DF1 and DF2. I've got two names A and B
+[228:37] uh with marks set as 90 80 and 1817. In
+[228:40] the other one I've got age of these two
+[228:42] students A and C as 17 and 18. So I can
+[228:46] do merge operation. So this is my data
+[228:50] frame on the left side, data frame on
+[228:51] the right side. On on will use a key. On
+[228:56] will use a key. So you can specify the
+[229:01] column which is to be used as a key. So
+[229:05] this is the key. How? So if you are
+[229:08] familiar with SQL, you might be already
+[229:11] knowing inner join, outer join, left
+[229:14] join and right join. If you're not
+[229:16] familiar, uh you can go ahead and read
+[229:19] about these kind of joins on our website
+[229:23] analytics.com.
+[229:24] There are lot of blogs which explain the
+[229:26] concept of SQL joins. Okay. So here I'm
+[229:29] using the inner join which will match
+[229:31] the keys in both the data frames. So
+[229:35] here the keys are AB here the keys are
+[229:38] AC. So which key is common in both A.
+[229:41] And that is the reason I get only A
+[229:43] here. So the key which is common in both
+[229:45] will appear. That is the meaning of
+[229:47] inner join. Okay. Outer join will have
+[229:49] the keys from both the left and the
+[229:51] right data frames. So I'll get uh A B as
+[229:54] well as C.
+[230:00] Yep. So outer join will give you all
+[230:02] three. And if you notice here in the
+[230:05] case of B I don't have the age values
+[230:08] and in the case of C I don't have the uh
+[230:11] marks okay because in your marks data
+[230:13] frame there was no C and in your age
+[230:16] data frame there was no B okay that is
+[230:19] why we have the missing values of marks
+[230:21] for C and missing value of age for B.
+[230:25] Right? A was present in both the data
+[230:28] frames. So both marks and age were
+[230:31] updated accordingly.
+[230:33] You can also do a simple concatenation
+[230:35] of your data frames back to back. Okay.
+[230:38] So in this case I created another data
+[230:40] frame uh DF3 and this is coming from
+[230:44] DF1. This is my DF1 and this is simply
+[230:48] F3. So concatenation means the data
+[230:51] frames will be just concatenated one
+[230:53] below the other. Why one below the
+[230:55] other? Because by default the axis is

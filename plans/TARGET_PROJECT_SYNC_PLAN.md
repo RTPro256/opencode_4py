@@ -189,11 +189,14 @@ Copy updated documentation and plans to target projects:
 # Sync documentation to target project
 opencode sync docs <target_project> --categories plans,docs,rag
 
-# Explicit copy commands for site-packages installation:
+# Complete directory copying for site-packages installation:
 TARGET_ROOT="for_testing/as_dependency/ComfyUI_windows_portable"
 TARGET_SITE_PACKAGES="$TARGET_ROOT/python_embeded/Lib/site-packages/opencode"
 TARGET_DOCS="$TARGET_SITE_PACKAGES/docs"
 TARGET_RAG="$TARGET_SITE_PACKAGES/RAG"
+
+# Copy complete documentation directory (including all subdirectories):
+robocopy "c:/Users/RyanT/Documents/code/ClaudeCode/opencode_4py/docs" "$TARGET_DOCS" /E
 
 # Copy updated documents (for AI context during sessions)
 cp README.md "$TARGET_SITE_PACKAGES/"
@@ -202,10 +205,11 @@ cp MISSION.md "$TARGET_SITE_PACKAGES/"
 # Sync RAG troubleshooting (for AI troubleshooting assistance)
 cp -r RAG/troubleshooting "$TARGET_RAG/"
 
-# Note: Plans are NOT copied to site-packages - they remain in project root
+# Plans are copied to site-packages/opencode/plans/ for consistency with documentation
 # Project-specific plans should be maintained separately in:
-# - $TARGET_ROOT/plans/ (project-specific planning documents)
 # - $TARGET_ROOT/docs/opencode/ (project-specific documentation)
+# - $TARGET_ROOT/docs/opencode/sessions/ (session data)
+# - $TARGET_ROOT/docs/opencode/logs/ (debug logs)
 ```
 
 ### Phase 4: Configuration Synchronization
@@ -256,8 +260,8 @@ After synchronization, verify the target project functions correctly:
 - [ ] Logs write to correct location
 
 ### Documentation
-- [ ] Plans folder contains all required documents
-- [ ] Docs folder contains all required documents
+- [ ] Complete docs/ directory copied (32 files + 2 API docs + 1 archive + 1 sessions)
+- [ ] Complete plans/ directory copied (27 files + 5 archive)
 - [ ] RAG troubleshooting folder is complete
 - [ ] No broken links in copied documents
 
@@ -265,6 +269,12 @@ After synchronization, verify the target project functions correctly:
 - [ ] Run target-specific test suite
 - [ ] Verify no regressions in target functionality
 - [ ] Test integration with target's main features
+
+### Pre-flight Check
+- [ ] Run pre-flight check script successfully
+- [ ] All critical checks pass (Python, dependencies, installation)
+- [ ] GPU detection works correctly
+- [ ] Configuration loads without errors
 ```
 
 ### Automated Verification
@@ -275,6 +285,10 @@ opencode target verify <target_project>
 
 # Run with specific tests
 opencode target verify <target_project> --tests core,integration,docs
+
+# Run pre-flight check
+cd <target_project>
+python_embeded/python.exe check_prerequisites.py
 ```
 
 ---
@@ -380,6 +394,10 @@ opencode sync verify --target <project>
 
 # Rollback if needed
 opencode sync rollback --target <project> --component <component>
+
+# Complete directory sync (new commands)
+opencode sync docs <target_project> --complete
+opencode sync plans <target_project> --complete
 ```
 
 ### TUI Integration
@@ -389,6 +407,8 @@ opencode sync rollback --target <project> --component <component>
 /sync run <target>        - Run synchronization
 /sync verify <target>     - Verify target project
 /sync status              - Show sync status for all targets
+/sync docs <target> --complete - Complete docs directory sync
+/sync plans <target> --complete - Complete plans directory sync
 ```
 
 ---
@@ -448,7 +468,8 @@ opencode target tag --all --version $(git describe --tags)
 - [ ] All target projects receive changes within 24 hours of main project update
 - [ ] Verification suite passes for all synchronized targets
 - [ ] No regressions in target project functionality
-- [ ] Documentation is consistent across all projects
+- [ ] Complete documentation (32 files + 2 API docs + 1 archive + 1 sessions) is consistent across all projects
+- [ ] Complete plans (27 files + 5 archive) are accessible in site-packages/opencode/plans/
 - [ ] RAG troubleshooting is up-to-date in all targets
 
 ---

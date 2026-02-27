@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 23
+# Video ID: UsfpzxZNsPo
+
+[49:10] allow us to repeat task efficiently
+[49:12] without writing tons of repetitive code.
+[49:15] Today we'll learn how to make our code
+[49:17] smarter, more efficient, and much easier
+[49:19] to manage. Let's jump right in. So
+[49:23] what's exactly are looping constructs in
+[49:25] Python? These are tools that allow us to
+[49:27] repeat a block of code as long as a
+[49:30] specific condition is met. Think of it
+[49:33] like an instruction that says keep doing
+[49:35] this until I tell you to stop. This can
+[49:38] help us automate repetitive tasks,
+[49:41] process data more easily, and solve
+[49:43] complex problems with fewer lines of
+[49:45] code. Let me give you a simple scenario.
+[49:48] Imagine Jake wants to print his name 10
+[49:51] times. Now, he could write out print
+[49:53] Jake 10 times, but that's pretty
+[49:56] tedious, right? This is where loops come
+[49:58] in handy. Instead of writing that code
+[50:01] over and over, we could use a loop to do
+[50:03] this for us. Using a loop, we can tell
+[50:06] Python to print Jake's name 10 times
+[50:08] with just a couple of lines of code.
+[50:10] This makes our work faster, easier, and
+[50:13] much more elegant. So, when do we use
+[50:16] loops? Well, there are several
+[50:18] situations where loops come in handy.
+[50:20] First, repetitive tasks like our example
+[50:23] of printing a name multiple times. Next,
+[50:25] processing user input when you want to
+[50:28] keep asking questions until you get a
+[50:30] valid answer. iterating over data
+[50:32] structures like lists or dictionaries,
+[50:35] conditional repetition where you keep
+[50:37] doing something until a condition is
+[50:40] met, and even simulations or games where
+[50:42] repeated actions are a part of some
+[50:44] experience. Loops save us a lot of time,
+[50:47] especially when our task grow.
+[50:51] Let's take a closer look at the types of
+[50:53] loops in Python. In Python, we have two
+[50:55] main types of loops, while loop and for
+[50:58] loops. First, we'll discuss about the
+[51:00] while loop. While loop is used when we
+[51:03] don't know exactly how many times we
+[51:05] need to repeat the task. It keeps going
+[51:08] on until the condition is no longer met.
+[51:11] For example, you might use a while loop
+[51:14] to ask a user for input until they

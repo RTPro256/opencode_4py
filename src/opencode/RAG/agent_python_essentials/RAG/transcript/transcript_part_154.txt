@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 154
+# Video ID: UsfpzxZNsPo
+
+[334:44] the messages as a list. Here we can also
+[334:48] set up the temperature. So higher the
+[334:51] temperature, more is the degree of
+[334:52] randomness in the model's response. And
+[334:54] finally once we are passing all these
+[334:57] three parameters to the uh chat
+[335:00] completion API, we'll get the response
+[335:03] and from the response I'm going to
+[335:05] extract the message and the content of
+[335:07] that message. So this function will
+[335:09] return the final response of the message
+[335:12] with the actual content. Now if the
+[335:14] model name is Germany pro uh we are
+[335:17] going to use the generative model class
+[335:20] uh and initialize and finally pass the
+[335:23] user prompt to that generate content
+[335:26] built-in function of that model and
+[335:28] fetch the response from the uh model and
+[335:32] response. We have the text field. So I'm
+[335:34] going to extract that text from the
+[335:36] response and return in this function
+[335:38] call. If you are mentioning any other
+[335:41] model name uh different from GPT4 or
+[335:45] geminy pro then then this function will
+[335:49] return this error message basically
+[335:51] saying that the LLM is not configured
+[335:53] and the reason for this is each model
+[335:56] from a different vendor will have a
+[335:59] different way of making an API call. So
+[336:04] there is no generic method to make API
+[336:06] calls to all possible models, right? So
+[336:09] we need to be sure which model we are
+[336:12] accessing. So we'll take a couple of
+[336:14] exercises in this notebook. So in the
+[336:16] first exercise, we'll generate some text
+[336:18] with both charg uh Google
+[336:22] get completion function we created
+[336:24] above. This is the user prompt that I'm
+[336:26] passing and by default the model is
+[336:28] configured to use GPT4 anyway. So I
+[336:32] don't need to do anything more. I'll
+[336:34] just execute this. It might take few
+[336:38] seconds to get the response from the
+[336:40] server based on your internet speed and
+[336:42] the load on the server. So write a short
+[336:45] story about a college student. I have
+[336:47] got story about a student named Lena and
+[336:50] uh about her uh college days. Okay. And
+[336:55] a similar response I'm getting from
+[336:58] Germany pro model. Okay. So here the

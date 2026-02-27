@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 152
+# Video ID: UsfpzxZNsPo
+
+[329:54] size, font face, what should be in a
+[329:58] normal weight, bold, italic. So all the
+[330:00] look and feel of the web pages of the
+[330:03] forms and the results are coded within a
+[330:05] CSS file. And this is the raw code of
+[330:08] the HTML files that you can see.
+[330:15] Hello and welcome back. In this module,
+[330:18] we'll do some hands-on using chat GPT,
+[330:21] Google Germany and hugging face APIs.
+[330:23] So, let's get started. So, in the first
+[330:26] video, we'll use JPT and Google Germany
+[330:29] with Python for doing some real world
+[330:32] tasks using their APIs. So, first we
+[330:35] need to install OpenAI. You can
+[330:38] unccommen this line of code and execute.
+[330:40] Similarly, we will need to install the
+[330:43] Google's generative AI package. Let's
+[330:46] see how to create
+[330:49] OpenAI keys which will be needed to
+[330:52] access the chat GPT models. So, we will
+[330:56] navigate to OpenAI
+[331:00] login page.
+[331:02] If you have never created an account,
+[331:04] please create an account.
+[331:08] If you already have an account, we'll go
+[331:11] ahead and do the login.
+[331:14] You might need to enter the verification
+[331:16] code sent to your in inbox.
+[331:20] Upon authentication, it will take you to
+[331:22] the open AI platform page.
+[331:25] You can see the different projects that
+[331:27] you have created. So if you have never
+[331:30] created a project, let it be the default
+[331:32] project right now. So if you see on this
+[331:35] top right side you have the API
+[331:37] reference. So this will give you a quick
+[331:41] idea about how the OpenAI API works.
+[331:45] First about the authentication how we
+[331:48] can make the requests what kind of
+[331:50] endpoints are present for audio chat
+[331:53] embeddings finetunings batch uh requests
+[331:57] file upload and so on. So all these are
+[332:01] present in this API reference page. So
+[332:03] please feel free to explore this
+[332:06] documentation. Then we can navigate to
+[332:09] the dashboard. So from the dashboard on
+[332:12] the left side you can see your API keys.
+[332:15] So if you have never created an API key
+[332:17] this field will appear empty. So I'll go
+[332:22] ahead and create a new secret key by

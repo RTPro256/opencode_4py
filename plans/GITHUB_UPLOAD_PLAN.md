@@ -259,7 +259,88 @@ git diff origin/main --stat
 
 ## Feature: GitHub Update Command
 
-### New CLI Command: `opencode github push`
+### New CLI Commands
+
+The opencode CLI provides several commands for managing GitHub repositories:
+
+#### 1. Push to Single Repository
+
+```bash
+# Push to configured origin remote
+opencode github push -m "Your commit message"
+
+# Push to specific branch
+opencode github push -m "Update" -b main
+```
+
+#### 2. Push to Multiple Repositories (NEW)
+
+```bash
+# Push to all configured repositories
+opencode github push-all -m "Your commit message"
+
+# Push to specific repositories
+opencode github push-all -r "opencode_4py,opencode_comfyui" -m "Update"
+
+# Dry run (preview what would happen)
+opencode github push-all --dry-run
+
+# Skip verification (faster but less safe)
+opencode github push-all -m "Update" --no-verify
+```
+
+#### 3. List Configured Repositories
+
+```bash
+# Show all configured repositories
+opencode github repos
+```
+
+#### 4. Add New Repository
+
+```bash
+# Add a repository to the configuration
+opencode github add-repo my-project https://github.com/RTPro256/my-project.git
+```
+
+#### 5. Sync to Local Target (NEW)
+
+```bash
+# Sync to local target directory (like ComfyUI portable)
+opencode github sync -t for_testing/as_dependency/ComfyUI_windows_portable -m "Sync update"
+
+# Without pushing to remote
+opencode github sync -t path/to/target -m "Sync" --no-push
+```
+
+#### 6. Check Repository Status
+
+```bash
+# Show current git status
+opencode github status
+```
+
+#### 7. Initialize Repository
+
+```bash
+# Initialize git repo with LFS
+opencode github init
+
+# Initialize without LFS
+opencode github init --no-lfs
+```
+
+### Command Options
+
+| Command | Options | Description |
+|---------|---------|-------------|
+| `push` | `-m, --message`, `-b, --branch` | Push to single remote |
+| `push-all` | `-m, --message`, `-r, --repos`, `-b, --branch`, `--verify/--no-verify`, `--dry-run` | Push to multiple repos with verification |
+| `repos` | - | List configured repositories |
+| `add-repo` | `NAME`, `URL`, `-o, --owner` | Add repository to config |
+| `sync` | `-t, --target`, `-m, --message`, `-b, --branch`, `--verify/--no-verify`, `--push/--no-push` | Sync to local target |
+| `status` | - | Show git status |
+| `init` | `-n, --name`, `--lfs/--no-lfs` | Initialize repository |
 
 Create a new CLI command to streamline future updates:
 

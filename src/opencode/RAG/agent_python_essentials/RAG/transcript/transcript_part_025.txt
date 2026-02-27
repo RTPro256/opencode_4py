@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 25
+# Video ID: UsfpzxZNsPo
+
+[53:14] simplify your code. In the next session,
+[53:17] we'll continue building these concepts
+[53:18] to make our programs even more dynamic
+[53:20] and interactive.
+[53:23] So, let's start with opening our
+[53:25] Anaconda prompt. So, from the Anaconda
+[53:29] prompt, let me browse to the directory
+[53:32] where my files are kept.
+[53:36] Okay. And from here, Jupiter notebook.
+[53:42] Okay. So my Jupyter notebook is up and
+[53:46] running. I have my code files here,
+[53:50] module one, and we'll go on to looping
+[53:53] constructs in this video.
+[53:57] Okay, in this coding tutorial, we'll
+[54:00] have a look into how to use the for and
+[54:02] the while loop.
+[54:04] So let's start with the for loop first.
+[54:07] So we would use the for loop when we
+[54:10] want to run a block of code certain
+[54:12] number of times. So you are already
+[54:15] clear that you will be running your
+[54:17] block of code some specific number of
+[54:20] times then for loop is the best choice.
+[54:24] Okay. So here is a simple example for
+[54:28] number in range four. So range is
+[54:30] actually a generator function.
+[54:33] This will create indices from zero to
+[54:38] the stop number minus one. So it will
+[54:40] create index from 0 1 2 and 3. So
+[54:44] essentially this number in the first
+[54:46] iteration will take a value of zero.
+[54:48] Then in the next iteration this number
+[54:50] will take a value of 1 then two and then
+[54:53] three. It will stop one before the stop
+[54:55] index. Okay. So let's print this and
+[54:57] see. So essentially I'm running this for
+[55:00] loop for four times. That's exactly what
+[55:04] this for loop statement says. I want to
+[55:07] run a for loop for four iterations.
+[55:11] So this number will pick up the values
+[55:13] from the range generator.
+[55:16] Okay. Now let's say you do not want to
+[55:18] start from zero. You want to start from
+[55:20] some other number. Let's say in this
+[55:22] case one. Then you can give
+[55:25] uh two arguments to the range function.
+[55:27] The first argument is your starting
+[55:29] point and the second becomes the end
+[55:31] point. As usual again remember that the
+[55:35] number will stop or the iterations will

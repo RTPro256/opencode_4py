@@ -406,6 +406,84 @@ gantt
 
 ---
 
+## Phase 6: Local Model Settings Assessment
+
+### 6.1 Ollama Model Documentation Review
+
+**Objective**: Assess and document optimal settings for local models in `docs/OllamaModels/`.
+
+**Reference**: Model documentation files in `docs/OllamaModels/`
+
+**Files to Analyze**:
+
+| File | Model | Key Features |
+|------|-------|-------------|
+| `deepseek-coder-v2_16b.md` | DeepSeek Coder V2 16B | Code intelligence, 338 languages, 128K context |
+| `deepseek-coder_33b-instruct-q5_K_M.md` | DeepSeek Coder 33B | 2T tokens, 80+ languages, Q5 quantization |
+| `deepseek-coder_33b.md` | DeepSeek Coder 33B | Project-level understanding, FIM training |
+| `deepseek-r1_32b.md` | DeepSeek R1 32B | CoT reasoning, 128K context, MIT license |
+| `glm-4.7-flash_q8_0.md` | GLM-4.7 Flash | MoE 30B-A3B, 200K context, 8-bit quant |
+| `gpt-oss_20b.md` | GPT-Oss 20B | MoE, MXFP4 quant, 128K context |
+| `llama3.1_8b-instruct-q8_0.md` | Llama 3.1 8B | 128K context, GQA, 8 languages |
+| `llama3.2_3b-instruct-q8_0.md` | Llama 3.2 3B | Lightweight, 128K context, 4-8GB VRAM |
+| `llama3.3_70b.md` | Llama 3.3 70B | High reasoning, 128K context |
+| `qwen3-coder-next_q4_K_M.md` | Qwen3 Coder Next | 80B MoE, 256K context, q4 quant |
+| `qwen3-coder_30b.md` | Qwen3 Coder 30B | SWE-bench, 256K context, MoE |
+| `qwen3_32b.md` | Qwen3 32B | Dual-mode reasoning, 100+ languages |
+
+**Tasks**:
+- [ ] Create summary table of model categories (code, reasoning, general)
+- [ ] Document VRAM requirements for each quantization level
+- [ ] Map use cases to optimal models (RAG, coding, reasoning)
+- [ ] Create hardware recommendation matrix
+
+### 6.2 Local Model Sharding Implementation
+
+**Objective**: Implement model sharding for large local models using `core/distributed/`.
+
+**Reference**: 
+- `src/opencode/src/opencode/core/distributed/` - Sharding module
+- `docs/aimodel_shard_INTEGRATION.md` - Integration docs
+
+**Proposed Storage Structure**:
+
+```
+aimodels/
+├── {model_name}/
+│   ├── manifest.json           # Shard metadata
+│   ├── shard_000.pt           # Layer shards
+│   ├── shard_001.pt
+│   └── ...
+└── model_registry.json        # Model index
+```
+
+**Tasks**:
+- [ ] Create `aimodels/` directory structure
+- [ ] Implement CLI commands for model sharding
+- [ ] Add sharding to `local-llm` commands:
+  - `opencode local-llm shard --model <name> --num-shards N`
+  - `opencode local-llm distribute --shards-dir ./aimodels/<model>`
+- [ ] Integrate with existing `core/distributed/` module
+- [ ] Add model registry for tracking sharded models
+- [ ] Document sharding best practices per model size
+
+### 6.3 Model Selection Guidelines
+
+**Objective**: Create decision framework for model selection.
+
+**Decision Matrix**:
+
+| Use Case | Recommended Model | VRAM | Quantization |
+|----------|------------------|------|--------------|
+| Lightweight tasks | Llama 3.2 3B | 4-8GB | Q8_0 |
+| General coding | DeepSeek Coder 16B | 12-16GB | Q5_K_M |
+| Complex coding | Qwen3 Coder 30B | 24GB+ | Q5_K_XL |
+| RAG with context | GLM-4.7 Flash | 32GB | Q8_0 |
+| Reasoning tasks | DeepSeek R1 32B | 20-32GB | Q4_K_M |
+| Multi-language | Qwen3 32B | 24-32GB | Q4_K_M |
+
+---
+
 ## Success Criteria
 
 | Phase | Success Criteria |
@@ -415,6 +493,7 @@ gantt
 | Phase 3 | Feature gaps identified, configuration simplified, onboarding improved |
 | Phase 4 | All error patterns verified, RAG tests passing, offline mode working |
 | Phase 5 | Recommendations document approved, implementation plan created |
+| Phase 6 | Model assessment complete, sharding CLI implemented, aimodels directory created |
 
 ---
 

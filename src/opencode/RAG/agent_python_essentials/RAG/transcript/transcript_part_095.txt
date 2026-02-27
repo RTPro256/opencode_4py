@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 95
+# Video ID: UsfpzxZNsPo
+
+[204:31] So the index instead of 0 to 8 which it
+[204:34] was earlier showing now the index values
+[204:36] are the actual names of the students. So
+[204:39] these are my row indices. Okay. So this
+[204:42] is a data frame which has proper labels
+[204:45] for the rows as well as for the columns.
+[204:47] So these are my column labels and these
+[204:50] are my row labels. Now the indices are
+[204:54] still 0 to the index of the first column
+[204:57] is now 0 1 2 3. The index of the first
+[205:02] row is still zero and going up to 7.
+[205:04] Okay, you can just check. So the index
+[205:07] is always going to start from zero.
+[205:09] Whatsoever be the labels. So earlier
+[205:12] when we created this data frame the row
+[205:14] labels and the indices were same but now
+[205:16] I have changed my row labels. The index
+[205:18] cannot be changed. Index will always be
+[205:20] numeric auto incremented. Okay. So we
+[205:23] can also do sorting. So let me sort this
+[205:26] entire data frame based on the updated
+[205:28] mark. So by default it will be in the
+[205:30] ascending order. What do you know? So
+[205:32] you can do a shift tab tab and it shows
+[205:35] ascending as true. So by default it will
+[205:38] be in the ascending order. Okay. So if
+[205:41] you want to be in descending order so
+[205:44] then you have to make ascending equal to
+[205:47] false. Okay. So now this is in
+[205:49] descending order. 96 93 86 down up to
+[205:54] 69. So this is pretty much in the
+[205:56] descending order. You can also sort
+[205:58] values based on two columns. So whenever
+[206:01] the age values are equal then the
+[206:03] sorting happens based on updated marks.
+[206:06] So if you have a look here again this is
+[206:09] by default ascending order. So here the
+[206:12] age values are same. So then sorting
+[206:15] happens based on the updated marks.
+[206:17] Okay. So whenever the age values are
+[206:19] same sorting happens based on the marks.
+[206:22] So that is two levels of sorting
+[206:25] happening. So the first level is age. In
+[206:27] any case, age will be strictly in
+[206:29] ascending order. Okay. Whenever the age
+[206:31] values are same, then the next level of
+[206:33] sorting happens based on the updated
+[206:35] marks. You can also sort the index. So
+[206:38] this is interesting. Until now the
+[206:40] indices were not sorted. Okay. Now I

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 147
+# Video ID: UsfpzxZNsPo
+
+[318:46] rendered. Okay. So this form uh action
+[318:49] is sub uh here you'll you are creating a
+[318:52] text field and then a submit button a
+[318:55] simple form with a text field here and a
+[318:57] submit button. Okay. So once the button
+[319:00] is submitted then the request.post
+[319:03] method gets accepted. Okay. And in this
+[319:06] case uh this is what is returned. Okay.
+[319:09] So the same message is returned along
+[319:11] with this string. So let's display this
+[319:13] form. Okay. Again I have to stop the
+[319:16] previous. Okay, now it's serving. So I
+[319:20] can access this form here.
+[319:25] So you can see on the top left I've got
+[319:27] a small form and uh uh let me provide
+[319:31] some message here. So hello world this
+[319:35] is flask app
+[319:38] and hit submit. So this is what you
+[319:41] submitted to the server right. Perfect.
+[319:44] So this works and you can also access
+[319:47] via this curl. Okay. So I'm just
+[319:50] stopping it. Now what if you want to
+[319:52] access the same post this form basically
+[319:55] you want to access it via Python code.
+[319:58] Okay. You want to submit a post request
+[320:01] to the server using a Python code. Okay.
+[320:04] You don't want to fill this form.
+[320:06] Essentially you don't want to fill this
+[320:07] form. Okay. You refresh this and it will
+[320:10] again give you the form. So let's say uh
+[320:12] you don't want to fill this form. So
+[320:14] then this is the code that you will
+[320:16] need. Okay. So what I'm going to do is
+[320:18] copy this code. Run this flask cap.
+[320:21] Okay. Run this flask cap. You cannot run
+[320:23] this code in the same notebook because
+[320:26] you cannot run multiple codes in the
+[320:28] same notebook. So I'm going to create a
+[320:30] temporary notebook here where I'll paste
+[320:33] that code just to run it. Okay. So this
+[320:36] code is going to access your flask app
+[320:40] with the post method. So this is the URL
+[320:42] where I'm going to place the request.
+[320:44] Okay. So this is the URL and this is the
+[320:47] message which I was supposed to type in
+[320:50] the front end. Right? So this is let me
+[320:52] just refresh. Okay. So yeah here. So
+[320:56] whatever you want to type here you just
+[320:58] want to submit that from the back end
+[321:00] here. Okay. So the same message you are

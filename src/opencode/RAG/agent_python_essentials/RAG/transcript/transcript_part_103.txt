@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 103
+# Video ID: UsfpzxZNsPo
+
+[222:11] So you can also extract columns dates
+[222:15] months uh week of the year date of the
+[222:20] year month of the year quarter
+[222:22] information. So you can extract all
+[222:24] these information from a datetime
+[222:26] column.
+[222:29] You can also reset the index. So let's
+[222:30] say you want to get your names column
+[222:32] back. Okay, so you have got your names
+[222:34] column back. Okay, in place equal to
+[222:36] true means that resetting of the index
+[222:38] is done permanently. So your data frame
+[222:40] has changed once again permanently. This
+[222:42] has gone back to the original. Now this
+[222:44] time I'm creating couple of nan values
+[222:47] or missing values in my data frame. So
+[222:49] some of the values see the fourth row
+[222:52] essentially the fifth row index four. So
+[222:54] this is the row where it will make a
+[222:56] change and minus one means the last row.
+[222:59] Now the columns 0 1 2. So essentially
+[223:03] and this is the place where it will be
+[223:05] replaced with null value also referred
+[223:08] as nan. Nan is not a number essentially
+[223:10] a null value. So these two are going to
+[223:13] replace these two positions. Okay let's
+[223:16] have a look. Perfect. So this is one nan
+[223:18] here another nan here. Okay, another
+[223:20] thing that you might have noticed is the
+[223:23] original data frame had the age values
+[223:25] as a integer. The data type here was a
+[223:27] integer. The moment we have these
+[223:30] missing values as nan, the data type has
+[223:33] changed. You can see that decimal point
+[223:35] coming up. So this is no longer integer,
+[223:37] it is actually in the float data type
+[223:40] now. Okay, this is in a float data type.
+[223:43] So you can verify that by using the
+[223:45] info.
+[223:48] So your age is no longer a integer. It
+[223:50] is float 64-bit precision. Okay. So you
+[223:54] want to know how many missing values are
+[223:56] there. So these are the positions where
+[223:59] the missing values are present. That is
+[224:01] marked with true. So true shows that
+[224:05] these positions are missing values. So
+[224:08] counting how many missing values by each
+[224:11] column. So name column does not have any
+[224:14] missing value. Gender also does not have
+[224:16] any missing value. Age column has got

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 114
+# Video ID: UsfpzxZNsPo
+
+[246:06] sets for training and inference. Imagine
+[246:09] developing a recommendation system for a
+[246:11] streaming platform. The data for user
+[246:13] preferences and content metadata has to
+[246:16] be pulled from a central repository
+[246:18] which will be a database. Additionally,
+[246:20] logging and monitoring play an important
+[246:22] role in maintaining systems. Databases
+[246:25] are used to store user interaction logs
+[246:28] which can be analyzed to improve
+[246:31] performance and user experience. Tools
+[246:33] for connecting Python to SQL databases.
+[246:36] There are several tools and libraries
+[246:38] available for connecting Python to SQL
+[246:40] databases. For MySQL, popular Python
+[246:43] libraries include MySQL connector Python
+[246:47] and PI MySQL libraries. For Postgress
+[246:50] SQL, there's PsychoPG2 and PG8000
+[246:54] library. For those who prefer OM
+[246:56] framework that abstracts away the raw
+[246:59] SQL code, SQL Alchemy is a powerful
+[247:02] option that supports multiple databases.
+[247:05] OM help in interacting with database
+[247:07] using Python classes and methods instead
+[247:10] of writing raw SQL queries.
+[247:11] Additionally, pandas also integrates
+[247:13] well with SQL functions like pandas.SQL
+[247:16] ReadSQL query make it easy to import
+[247:20] data into a data frame while the
+[247:23] two_SSQL
+[247:25] method lets you write data from a data
+[247:28] frame to a SQL table. Another
+[247:30] interesting concept is in-memory
+[247:33] databases and SQLite is a great example.
+[247:37] An in-memory database resides entirely
+[247:40] in your systems RAM making read and
+[247:42] write operations extremely fast.
+[247:44] However, the data is volatile, meaning
+[247:47] it is lost when the application
+[247:49] terminates. In-memory databases are
+[247:51] perfect for testing and development
+[247:53] because they provide fresh database
+[247:55] state for each test run. They are also
+[247:58] ideal for applications requiring quick
+[248:00] data access like caching or managing
+[248:03] session data that doesn't need long-term
+[248:06] persistence. Creating an in-memory
+[248:08] SQLite database in Python is very
+[248:10] straightforward. By passing memory to
+[248:14] SQLite 3.Connect function, we tell

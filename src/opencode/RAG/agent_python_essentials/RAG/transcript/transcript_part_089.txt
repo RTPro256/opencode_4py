@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 89
+# Video ID: UsfpzxZNsPo
+
+[190:24] here. Okay. So, I have populated all the
+[190:28] five lists with these five keys.
+[190:31] So, let me execute this. I'm passing a
+[190:34] dictionary ultimately this is a
+[190:36] dictionary from here to here it's a
+[190:38] dictionary you can see this curly
+[190:40] bracket so this dictionary is now being
+[190:41] converted into a data frame object okay
+[190:45] so this is my data frame I've got the
+[190:47] names gender age marks and uh subjects
+[190:52] okay so if you want to see the how many
+[190:55] rows and columns are present we can see
+[190:57] df dot shape so I have got eight rows
+[191:00] and five columns and I and have a quick
+[191:03] statistical summary of my data frame.
+[191:06] Okay. So the statistical summary will
+[191:08] only take the numeric columns. I have
+[191:10] got only age and marks as the numeric
+[191:12] columns. Uh the other three columns that
+[191:15] is the name, gender and subject. These
+[191:17] are the three categorical columns. So
+[191:19] that is why they are not included in
+[191:21] this summary. Okay. So in this summary
+[191:25] what do I have? I have the count. How
+[191:28] many values are present in that column?
+[191:30] The mean of that entire column. So the
+[191:33] mean of age values is 23.375
+[191:37] years. The mean marks is 78 something.
+[191:41] The standard deviations I have the
+[191:43] minimum age is 21. Maximum age is 25. 50
+[191:48] percentile is the median value. Same
+[191:50] goes here. 64 is the minimum marks.
+[191:53] Maximum is 91. And the median marks is
+[191:56] 77. These are the uh first quartiles.
+[191:59] This is the second quartile which is the
+[192:01] median value and this is the third
+[192:03] quartile and this is the fourth quartile
+[192:05] also the maximum value. If you want you
+[192:08] can round these values as well to let's
+[192:10] say two decimal points for easy
+[192:13] visibility.
+[192:14] Similarly if you want to have the
+[192:17] statistical summary of the categorical
+[192:19] columns you can use describe
+[192:24] and include the object category. Okay.
+[192:28] So I have eight unique values in the
+[192:31] name, two unique values in gender and
+[192:33] three unique subjects. So the topmost uh
+[192:36] anyway for name it doesn't matter
+[192:38] because all the names are anyway unique.

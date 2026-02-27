@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 108
+# Video ID: UsfpzxZNsPo
+
+[233:19] functions you can apply on this values.
+[233:22] So the aggregation function is always
+[233:24] applied on the values and you can
+[233:27] provide index. So here goes the index.
+[233:30] So here goes the index and the
+[233:32] aggregation functions are applied on the
+[233:34] values here. So you can also apply
+[233:36] multiple aggregation functions if you
+[233:38] want. Yeah, you can see. So this is the
+[233:41] mean marks and the minimum marks. So
+[233:43] multiple aggregation functions can be
+[233:45] easily applied. So what is the
+[233:47] difference between pivot tables and
+[233:49] group by then? So group by typically
+[233:50] works for single dimensional summaries
+[233:53] whereas pivot table is more flexible and
+[233:55] ideal for multi-dimensional summaries.
+[233:57] Let's take an example. So here I'm
+[234:00] creating a single dimensional summary
+[234:02] for each gender. I want to get the
+[234:05] average updated marks. So the females uh
+[234:09] updated marks average value is 82.33 and
+[234:14] for males the average is 83.6. Now not
+[234:18] only the average of the marks but let's
+[234:20] say I want to get the average marks of
+[234:24] each gender across the three subjects.
+[234:27] So that is where the pivot table would
+[234:29] be a better choice. So if you see so for
+[234:32] each gender
+[234:34] and each subject so these are the three
+[234:37] subjects. So subject one subject two
+[234:40] subject for each subject I've got my
+[234:43] mean aggregation function here is the
+[234:45] mean. So this is the average marks for
+[234:47] each of the three subjects and these
+[234:49] subjects are uh being put in the
+[234:53] columns. Can you see the columns
+[234:56] are in the subject and index
+[235:00] is present here in the rows. Okay. So
+[235:02] index always refers to the rows columns
+[235:05] anyway in the columns and the values for
+[235:08] which the aggregation function is going
+[235:10] to be applied.
+[235:12] Okay. So this aggregation function is
+[235:14] going to be always applied on the
+[235:16] values. So that is how you can create
+[235:18] more complex summaries by using pivot
+[235:21] tables. Finally, let's have a look into
+[235:24] how can we use apply and map functions.
+[235:27] So, I'm uh so we have already seen the

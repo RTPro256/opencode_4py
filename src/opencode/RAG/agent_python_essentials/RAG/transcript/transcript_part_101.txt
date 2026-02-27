@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 101
+# Video ID: UsfpzxZNsPo
+
+[217:48] provide index. So here goes the index.
+[217:51] So here goes the index and the
+[217:53] aggregation functions are applied on the
+[217:55] values here. So you can also apply
+[217:57] multiple aggregation functions if you
+[217:59] want. Yeah, you can see. So this is the
+[218:02] mean marks and the minimum marks. So
+[218:04] multiple aggregation functions can be
+[218:06] easily applied. So what is the
+[218:08] difference between pivot tables and
+[218:10] group by then? So group by typically
+[218:11] works for single dimensional summaries
+[218:14] whereas pivot table is more flexible and
+[218:16] ideal for multi-dimensional summaries.
+[218:18] Let's take an example. So here I'm
+[218:21] creating a single dimensional summary.
+[218:23] For each gender I want to get the
+[218:26] average updated marks. So the females uh
+[218:30] updated marks average value is 82.33 and
+[218:35] for males the average is 83.6. Now not
+[218:39] only the average of the marks but let's
+[218:41] say I want to get the average marks of
+[218:45] each gender across the three subjects.
+[218:48] So that is where the pivot table would
+[218:50] be a better choice. So if you see so for
+[218:53] each gender
+[218:56] and each subject so these are the three
+[218:58] subjects. So subject one subject two
+[219:01] subject for each subject I've got my
+[219:04] mean aggregation function here is the
+[219:06] mean. So this is the average marks for
+[219:08] each of the three subjects and these
+[219:10] subjects are uh being put in the
+[219:14] columns. Can you see the columns
+[219:17] are in the subject and index
+[219:21] is present here in the rows. Okay. So
+[219:23] index always refers to the rows columns
+[219:26] anyway in the columns and the values for
+[219:29] which the aggregation function is going
+[219:31] to be applied.
+[219:33] Okay. So this aggregation function is
+[219:35] going to be always applied on the
+[219:37] values. So that is how you can create
+[219:39] more complex summaries by using pivot
+[219:42] tables. Finally, let's have a look into
+[219:45] how can we use apply and map functions.
+[219:48] So, I'm uh so we have already seen the
+[219:52] lambda function being applied on a
+[219:54] single column, right? We have already
+[219:56] updated that. So, these are the marks.

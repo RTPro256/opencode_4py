@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 33
+# Video ID: UsfpzxZNsPo
+
+[71:05] to maintain. By the end of this session,
+[71:07] you will be comfortable defining your
+[71:09] own functions, using built-in ones, and
+[71:12] even working with Lambda functions.
+[71:14] Let's get started. So, why are functions
+[71:16] important? Imagine you had to bake
+[71:19] cookies and every time you did it, you
+[71:22] had to measure all the ingredients from
+[71:24] scratch. Instead, wouldn't it be easier
+[71:27] to just have a recipe? Functions are
+[71:29] like recipes in programming. They let
+[71:31] you write code for a specific task once
+[71:34] and then reuse it wherever you want.
+[71:37] This saves you time and also helps to
+[71:40] avoid mistakes. Let's look at a
+[71:41] scenario. Say Anna wants to send a
+[71:44] personalized greeting message to a list
+[71:47] of 50 people. She needs to make sure
+[71:49] that each message is consistent except
+[71:52] for the name of the recipient. One
+[71:54] approach is to write out the message for
+[71:57] each person, but that's a lot of
+[72:00] repetitive work and it's easy to make
+[72:02] mistakes. Instead, we can use a function
+[72:05] to handle this task. By defining a
+[72:07] greeting function, Anna can simply call
+[72:10] the function for each recipient and
+[72:13] personalize the message automatically.
+[72:15] This makes the code much more efficient
+[72:17] and prevents mistakes. Let's break down
+[72:20] what a function is. In Python, a
+[72:22] function is a block of code that
+[72:24] performs a specific task. You define a
+[72:26] function by using the def keyword
+[72:28] followed by a function name, input
+[72:30] parameters, and the code that should run
+[72:34] inside the function. Here's a simple
+[72:36] example. Let's define a function called
+[72:38] greet that takes a name as a parameter
+[72:41] and prints a greeting. In this example,
+[72:44] greet Anna will print hello Anna, how
+[72:48] are you today? Once defined, we can call
+[72:50] this function as many times as we need,
+[72:52] saving us from typing out the greeting
+[72:54] each time. Python offers several types
+[72:57] of functions. For example, built-in
+[72:59] functions like print, length, and sum.
+[73:01] Userdefined functions which you can
+[73:03] create yourself for custom tasks. Lambda
+[73:07] functions which are small oneline

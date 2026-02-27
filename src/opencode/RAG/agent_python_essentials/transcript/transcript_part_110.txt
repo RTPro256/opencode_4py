@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 110
+# Video ID: UsfpzxZNsPo
+
+[237:42] looks very similar to what it is but
+[237:45] here if you see the df.info now it is
+[237:48] actually present in a datetime format.
+[237:50] So you can also extract columns dates
+[237:54] months uh week of the year date of the
+[237:59] year month of the year quarter
+[238:01] information. So you can extract all
+[238:03] these information from a datetime
+[238:05] column. Now that's it for this video on
+[238:07] this extensive coding tutorial on using
+[238:10] pandas for data analysis. Today we are
+[238:13] going to dive into database and SQL
+[238:15] fundamentals. Understanding databases
+[238:18] and how to use SQL is an essential skill
+[238:21] for anyone working with data especially
+[238:23] in the world of AI and machine learning.
+[238:25] In this module, we'll learn about
+[238:26] databases, their types, the role of SQL,
+[238:30] and how these skills fit into AI
+[238:32] workflows. Let's get started. In this
+[238:35] video, we'll cover several key topics.
+[238:37] We'll start by defining what a database
+[238:39] is and explore different types of
+[238:42] databases. We'll discuss about why
+[238:44] databases are essential, especially in
+[238:46] the context of AI. Then we'll introduce
+[238:50] SQL, the structured query language,
+[238:52] which is the standard language for
+[238:54] interacting with relational databases.
+[238:56] We'll go over basic SQL commands. And
+[238:59] finally, we'll see how databases connect
+[239:02] to AI agents. A database is essentially
+[239:04] an organized collection of data. Think
+[239:07] of it as a digital filing system that
+[239:10] allows you to store, retrieve, and
+[239:12] manage data efficiently. Databases are
+[239:15] made up of data, of course, but they
+[239:18] also rely on hardware like servers,
+[239:21] software, the database management
+[239:23] systems, and users who would interact
+[239:26] with the data. This organization allows
+[239:29] for quick access and manipulation of
+[239:32] large amounts of information which is
+[239:34] crucial in many applications including
+[239:36] AI. Think about all the apps and
+[239:39] services you use daily like social
+[239:41] media, banking, shopping, etc. All of
+[239:44] these services rely on databases to
+[239:46] store massive amounts of information
+[239:49] about users, transactions, products and

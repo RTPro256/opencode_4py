@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 9
+# Video ID: UsfpzxZNsPo
+
+[17:24] types like lists and tupils. Each of
+[17:27] these represent a different type of
+[17:29] information that Python can handle. Now,
+[17:31] let's understand how to declare and
+[17:34] assign values to variables. In Python,
+[17:37] you can declare a variable simply by
+[17:39] assigning a value to it with a equal to
+[17:43] operator. Let's say we want to store the
+[17:46] number 50 in a variable named a. We just
+[17:49] write a equal to 50. That's it. No need
+[17:53] for any extra keywords or statements.
+[17:55] Python is very intuitive in this way. If
+[17:58] you want to store a in another variable,
+[18:01] we can do something like B equal to A.
+[18:04] This assigns the value of A to B, making
+[18:07] both variables contain 50. Simple and
+[18:10] effective. Python has a few core data
+[18:14] types that you will be using often.
+[18:17] These include integer for whole numbers,
+[18:20] float for numbers with decimals, string
+[18:23] for text, boolean which represents true
+[18:27] or false, and none which represents a
+[18:30] variable that has no value. We also have
+[18:32] some collections like list, tpples,
+[18:35] dictionaries, and sets which are often
+[18:38] very helpful for grouping related data.
+[18:41] Here you can see strings as well because
+[18:44] strings are considered to be collection
+[18:46] of characters in Python. Understanding
+[18:49] these data types will give you a
+[18:50] powerful toolbox for tackling almost any
+[18:52] coding problem. There are a few simple
+[18:55] rules when it comes to naming variables
+[18:58] in Python. First, variable names are
+[19:01] case sensitive. So small ABC and capital
+[19:06] ABC are considered different variables.
+[19:09] Also, variable names must start with a
+[19:11] letter or a underscore and never with a
+[19:14] number. You can also use numbers in the
+[19:16] name, but they can't be at the
+[19:18] beginning. And avoid using Python's
+[19:21] reserved keywords like if, else, for,
+[19:24] while, def, return. These have special
+[19:28] meanings in the Python language. As an
+[19:30] example, a good variable name might be
+[19:32] student score. While something like 123
+[19:36] score is not allowed. Keeping these
+[19:38] rules in mind will help avoid any errors
+[19:42] as you code. Now it's your turn. Let's
+[19:46] practice what we have learned by

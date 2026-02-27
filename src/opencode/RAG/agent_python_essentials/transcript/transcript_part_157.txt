@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 157
+# Video ID: UsfpzxZNsPo
+
+[341:28] connection because we are going to
+[341:30] access the API calls from hugging face
+[341:33] servers. You will also need the hugging
+[341:36] face account and the API key. So first
+[341:38] let's see how we can create the hugging
+[341:42] face key. So you can go to this link
+[341:45] which will take you to the account page
+[341:47] from where you can get the access
+[341:49] tokens. Okay. On the left side you can
+[341:52] see the access tokens. So I already have
+[341:55] created a couple of keys but let me
+[341:58] create uh a new key. So click on this
+[342:01] button and there will be three options
+[342:04] fine grain, read and write. For most of
+[342:06] the task you will be doing uh on the
+[342:09] hugging face platform you will be
+[342:12] needing the read token type. This way
+[342:15] you will be able to make API calls to
+[342:18] all the publicly available models on
+[342:21] hugging face. all the models which are
+[342:24] available for inference APIs using the
+[342:27] right you will be able to actually
+[342:29] upload your own model to the hugging
+[342:31] phase repository if you want to do that
+[342:33] and in the fine grain you can provide
+[342:36] fine grained access to your repo for
+[342:40] read and write access okay so we'll go
+[342:43] with the read only token type which is
+[342:46] the most common token type you are going
+[342:48] to use in this course so I can provide
+[342:50] some name let's say AI agents
+[342:53] Okay. And then I'll provide so this is
+[342:56] the token and uh this is the token name
+[342:59] you can say and this has a readonly
+[343:01] access to all your organization
+[343:03] resources and we'll be able to make
+[343:06] inference calls on your behalf and
+[343:08] that's exactly what we are looking for.
+[343:11] So I'll go ahead and create token. I'll
+[343:13] be presented with some key here. So
+[343:17] don't forget to copy this and save it
+[343:20] exactly the way we saved the openi
+[343:23] access key and then we'll come back to
+[343:26] the notebook. So here let's execute
+[343:29] this. You will be asked to paste that
+[343:32] key and press enter. So we'll be using
+[343:36] the request library to make uh inference
+[343:38] API calls to the hugging face serverless
+[343:41] APIs. So first we'll need to create
+[343:43] headers just as we did in the last

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 64
+# Video ID: UsfpzxZNsPo
+
+[137:08] printing the original matrix so that I
+[137:09] can do the transpose operation. So what
+[137:11] does the transpose do? So it will
+[137:13] exchange the rows with columns. So
+[137:16] essentially the first row becomes the
+[137:18] first column. The second row becomes the
+[137:20] second column. Third row becomes the
+[137:22] third column. So we had three rows. In
+[137:25] the transposed matrix we'll have three
+[137:27] columns. Okay. Exactly. So you can see
+[137:30] the first column was the first row.
+[137:31] Second column is the second row and the
+[137:35] third column was the third row
+[137:36] originally. Okay. So rows and columns
+[137:38] are just flipped. Let's see the data
+[137:40] types and how we work with data types in
+[137:43] numpy.
+[137:44] So again I'm creating a numpy array with
+[137:46] the numbers 1.2 3.14 and 5.6. You can
+[137:50] see that these are floatingoint numbers.
+[137:53] Okay. And let me just print the data
+[137:55] type. So it says float 64. Essentially
+[137:58] I'm fetching the data type of the
+[138:00] elements present in my array. This as
+[138:03] type method will change the data type.
+[138:07] So my original elements were in float 64
+[138:10] data type and now they are being type
+[138:12] casted to a integer data type. So you
+[138:15] can change the data type. So you are
+[138:17] saying that take this array and change
+[138:20] the data type to in 64 and save it back.
+[138:23] Okay. So you can see that my numbers are
+[138:27] 135. So the floatingoint numbers 1.2
+[138:31] 3.14 and 5.6 has been converted into the
+[138:34] nearest integers. Okay.
+[138:37] Now there are some universal functions
+[138:39] for arithmetic operations. Let's have a
+[138:41] quick look. So you have the functions
+[138:44] for addition, subtraction,
+[138:45] multiplication and division as well. I
+[138:47] have my arrays X and Y. You can use
+[138:49] these functions to carry out these
+[138:51] operations. And you can actually also
+[138:53] carry out these operations directly. But
+[138:55] you have to make sure that these two
+[138:57] arrays which you want to multiply,
+[138:59] divide, subtract and add, they have
+[139:03] exactly the same number of elements.
+[139:05] Okay, these are element wise operations.
+[139:07] So x + y works, x minus y also works and

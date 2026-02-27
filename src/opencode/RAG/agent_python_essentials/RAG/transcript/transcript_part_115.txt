@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 115
+# Video ID: UsfpzxZNsPo
+
+[248:17] SQLite to create a temporary database in
+[248:20] RAM. In the code example, we establish a
+[248:23] connection, create table, insert data,
+[248:26] query it, and finally close the
+[248:28] connection. All operations are performed
+[248:30] in memory and no data is written to the
+[248:32] disk. When to use in-memory databases?
+[248:35] In-memory databases are incredibly
+[248:38] useful in scenarios where speed is
+[248:40] crucial because they operate in RAM.
+[248:43] Read and write operations are much
+[248:44] faster than disk based databases. This
+[248:48] makes them ideal for applications that
+[248:49] need to process data quickly. They're
+[248:52] also excellent for testing and
+[248:53] development. Using an in-memory database
+[248:56] allows developers to run tests without
+[248:58] the need to set up a test database
+[249:00] environment. Each test can start with a
+[249:03] clean slate ensuring test isolation and
+[249:06] repeatability. Limitations of using
+[249:08] in-memory databases. Volatility. Since
+[249:11] the data resides in volatile memory, it
+[249:13] doesn't persist after the application
+[249:15] ends. This means you shouldn't use
+[249:18] in-memory databases for applications
+[249:19] where data persistence is required.
+[249:22] Memory constraints. Additionally, they
+[249:24] are constrained by the available system
+[249:26] memory making them unsuitable for large
+[249:29] data sets. concurrency. They may also
+[249:32] have limitations in handling concurrent
+[249:34] connections which can be a concern for
+[249:36] multi-threaded applications.
+[249:38] Understanding these trade-offs is
+[249:40] essential when deciding whether to use
+[249:43] an in-memory database for your project.
+[249:46] To overcome these limitations of
+[249:47] in-memory databases, we have persistent
+[249:50] databases like MySQL, Postgress SQL,
+[249:53] MongoDB, Reddis, Cassandra, etc.
+[249:57] Connecting to MySQL database. Let's look
+[249:59] at how to connect to a MySQL database
+[250:02] using the MySQL connector Python
+[250:04] library. First, we import the library.
+[250:07] Then we attempt to establish a
+[250:09] connection using
+[250:10] MySQL.Connectctor.connect
+[250:12] function providing the necessary
+[250:14] parameters like host, user, password,

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 133
+# Video ID: UsfpzxZNsPo
+
+[288:19] lightweight and easy for both humans and
+[288:22] machines to read and write. JSON
+[288:24] structures data using key value pairs
+[288:27] much like Python dictionaries. In the
+[288:30] example shown, we have keys like name
+[288:32] and age associated with the respective
+[288:35] values. When working with APIs, you'll
+[288:37] frequently send and receive data in JSON
+[288:39] format. So, understanding it is crucial.
+[288:42] Python makes interacting with API
+[288:43] straightforward. There are several
+[288:45] libraries for API access, but two of the
+[288:48] most commonly used libraries are
+[288:50] requests. This library simplifies making
+[288:53] HTTP requests and handles most of the
+[288:56] complexity for you. URL lib a standard
+[288:59] library for URL handling though it can
+[289:02] be a bit more cumbersome compared to
+[289:04] requests we typically use requests
+[289:07] library because it is userfriendly
+[289:10] concise and supports all HTTP methods
+[289:13] it's perfect for making API calls
+[289:16] managing sessions and even handling
+[289:18] cookies all in just a few lines of code
+[289:20] introduction to this requests library to
+[289:23] get started with the request library you
+[289:25] need to install it using pip install
+[289:27] requests, then you can import it into
+[289:29] your Python script. The library supports
+[289:32] all the HTTP methods you will need and
+[289:35] simplifies tasks like handling query
+[289:38] parameters and payloads. It also
+[289:40] provides response objects that include
+[289:43] status codes and the content returned by
+[289:45] the API. The official documentation is a
+[289:48] great source for learning more about its
+[289:50] features. Making requests. A get request
+[289:53] is used to retrieve data from an API.
+[289:56] Let's look at an example of fetching
+[289:58] public data from an API. You can make a
+[290:01] get request using requests.get
+[290:05] function passing the URL as a parameter.
+[290:08] If you need to include query parameters,
+[290:11] you can pass them as a dictionary using
+[290:13] the params argument. The response object
+[290:16] contains the status code text content
+[290:20] and can be passed as JSON if the
+[290:22] response is in JSON format. The response
+[290:25] object returned by the requests library
+[290:27] provides several useful attributes. You

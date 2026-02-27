@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 47
+# Video ID: UsfpzxZNsPo
+
+[101:03] example here. Um I have created an empty
+[101:07] list okay and I want to store the
+[101:10] squares of numbers in that list. So how
+[101:13] do I do that? So what I have done here
+[101:15] is I'm iterating over a range of 10
+[101:19] numbers from 0 to 9 and for each of
+[101:21] those number I'm storing or appending
+[101:24] the square of that number into that
+[101:27] empty list. So one by one with these
+[101:29] iterations the numbers would be squared
+[101:31] and appended to that empty list. Okay.
+[101:34] So at the end I'll get a list containing
+[101:37] the square of 10 numbers from 0 to 9. So
+[101:40] we can condense these three lines of
+[101:42] code in a single line by using list
+[101:44] comprehensions. So this is my list
+[101:46] comprehension here. So what I'm doing
+[101:49] here is creating a list. You can see
+[101:51] that square bracket means creation of a
+[101:53] list and use the for loop as usual. And
+[101:57] for i in range 10 save the value of the
+[102:01] i square in that list. So you are
+[102:03] creating the list and iterating over
+[102:06] that range of 10 numbers in the same
+[102:08] line of code. So this is what we call as
+[102:10] a pythonic code. So these kind of
+[102:13] pythonic codes are preferred over these
+[102:16] kind of nave for loop codes. Another
+[102:18] example here is let's say you want to
+[102:20] access both the um index as well as the
+[102:25] value of an iterable. Here my iterable
+[102:27] is a list containing three alphabets
+[102:31] here A, B, and C. Okay, this is a list
+[102:33] and I'll be iterating over this list. So
+[102:36] I want to have access to the index which
+[102:38] is 0 1 and two as well as the values. So
+[102:41] this is a for loop. I'm iterating over
+[102:44] that data for item in data. Print the
+[102:46] index comma item. I'm initializing the
+[102:49] index to be zero and then I'm manually
+[102:51] incrementing this index inside the for
+[102:54] loop after accessing that index. So this
+[102:57] is a very nice way of accessing the
+[102:59] index and incrementing it. A better way
+[103:02] is to use the enumerate function. So for
+[103:06] item for index comma item in en in
+[103:08] enumerate data. So what does the
+[103:10] enumerate function do? Enumerate
+[103:11] function will create an index plus it
+[103:14] will give you a way to access the value

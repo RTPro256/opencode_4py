@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 66
+# Video ID: UsfpzxZNsPo
+
+[141:40] to the^ of 2, e to the^ of 3 e cube and
+[141:44] this is the e to the^ of 4. you are
+[141:47] using that array as the exponent okay to
+[141:50] be raised some basic trigonometric
+[141:51] functions sin cos tan so I'm getting the
+[141:54] sign by default these are going to
+[141:57] compute the numbers or values taking
+[142:00] that these angles are in radians
+[142:02] remember that okay so sine of 0 radian
+[142:05] is 0 sine of by2 radians which is 90°
+[142:08] sin 90 is 1 and sine of pi radians
+[142:13] essentially is 180° that is again zero
+[142:16] Okay. So sine values would be 0 1 and 0.
+[142:21] Cos values would be 1 0 1. Okay. And
+[142:27] then we have the tan values as well. You
+[142:29] can see however some of the numbers are
+[142:31] not zeros. That is interesting and that
+[142:34] is because of the loss of precision
+[142:35] during these floating point
+[142:37] calculations. Okay. So this is
+[142:39] practically zero. This is also zero.
+[142:41] Okay. Okay, any number which is close to
+[142:42] 10 ^ of -6 or lower is supposed to be
+[142:45] interpreted as zero. Make sure that okay
+[142:49] so these this is again infinity and this
+[142:52] is again zero. Okay. And similarly we
+[142:54] have the hyperbolic functions. Let's see
+[142:56] how does the rounding functions work.
+[142:58] I'll demonstrate the absolute function
+[143:00] the sign fun signum function and the
+[143:03] rounding functions like round floor seal
+[143:05] and truncate. Okay. So let me create an
+[143:08] array again and I want to get the
+[143:10] absolute values of these numbers. So
+[143:12] this is negative. So in the absolute it
+[143:14] will become positive. This is again
+[143:16] negative. Absolute will become positive.
+[143:18] Yeah. So the absolute values are all
+[143:20] positive. You can see and those numbers
+[143:23] which had negative sign here they are
+[143:25] represented by minus1. All the positive
+[143:28] numbers are represented by + one. Now I
+[143:30] want to do the rounding. So rounding
+[143:34] function works
+[143:36] by rounding these numbers to their
+[143:38] nearest decimal place nearest integer
+[143:42] let's say. So the nearest integer to
+[143:44] this would be minus2. The nearest
+[143:46] integer to this would be zero. The
+[143:49] nearest integer to this would be 1.

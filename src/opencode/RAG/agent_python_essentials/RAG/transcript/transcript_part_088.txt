@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 88
+# Video ID: UsfpzxZNsPo
+
+[188:09] essentially one-dimensional because it
+[188:11] is either a single row or a single
+[188:13] column. Whereas data frame is
+[188:15] two-dimensional because it will have m
+[188:18] number of rows and n number of columns.
+[188:23] So let's see how many rows and columns
+[188:24] this data frame has. So let's see
+[188:29] df do.shape. So this data frame has got
+[188:33] 15,929
+[188:35] rows and 21 columns. You can see all the
+[188:37] 21 columns by scrolling.
+[188:40] Okay. So for our simple analysis in this
+[188:44] notebook, okay, we'll work with a simple
+[188:46] data frame that I'm going to create.
+[188:49] Okay. I'm also going to import numpy and
+[188:52] random module to create some random
+[188:54] numbers here. Okay. So I'm importing
+[188:56] pandas as pd that is the alias that I'm
+[188:59] assigning it to the pandas module
+[189:01] functions. And numpy is being imported
+[189:03] as np that is the alias for numpy. and
+[189:06] I'm importing the random module. Okay,
+[189:08] so I'm fixing the seed for this random.
+[189:11] Okay, this ensures consistency so that
+[189:15] every time you run the code you get the
+[189:17] same data frame. Okay, so I have few
+[189:19] names here and uh their corresponding
+[189:22] genders and I'm going to create some age
+[189:25] values uh eight random numbers between
+[189:28] 21 to 25. You can change this range. I'm
+[189:30] also going to create some marks in these
+[189:33] three subjects. Okay. So total eight
+[189:35] values of subjects, eight values of
+[189:38] marks in the range of 60 to 95. Highest
+[189:41] would be 95, lowest would be 60. And
+[189:44] then those list comprehension. This is a
+[189:47] list comprehension. If you see this is
+[189:48] also a list comprehension. And this is
+[189:50] also so these lists are going to be
+[189:53] provided to this dictionary. So this is
+[189:57] a dictionary that I'm creating. This is
+[189:59] the key and this is the value. So values
+[190:02] are all lists. Okay. So, names is a list
+[190:05] here coming from So, names is a list
+[190:09] coming from here. Genders is again a
+[190:11] list coming from here. Age is another
+[190:14] list coming from here.
+[190:17] Marks is another list which is again
+[190:19] coming from here. And finally, subjects
+[190:22] is also a list which is coming from

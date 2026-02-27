@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 1
+# Video ID: UsfpzxZNsPo
+
+[00:00] Welcome to this Python essentials for
+[00:02] building agents. This course will help
+[00:04] you master the technical stack behind
+[00:07] autonomous intelligence. This course is
+[00:09] designed to take you from the core
+[00:10] syntax of Python through the
+[00:12] complexities of data handling and API
+[00:15] integration culminating in the
+[00:17] deployment of sophisticated large
+[00:19] language models. You'll learn to write
+[00:21] code and to architect systems that can
+[00:24] reason, use tools, and solve real world
+[00:27] problems using both proprietary and
+[00:29] open-source AI. Hi, I'm Prashant Sahu,
+[00:33] and I'm excited to have you here as we
+[00:36] take our first steps into the world of
+[00:38] coding, data, and artificial
+[00:40] intelligence.
+[00:42] In this course, we'll take a hands-on
+[00:44] approach to learning. We'll start with
+[00:46] the fundamentals in the module one where
+[00:49] we will dive into Python basics,
+[00:52] variables, data types, functions and
+[00:54] more. By the end of this module, you'll
+[00:57] be writing clean, efficient Python code
+[01:01] and we'll have a solid foundation for
+[01:03] tackling complex tasks. Next in the
+[01:06] module two, we'll work with files and
+[01:08] databases. We'll explore pandas, one of
+[01:11] the Python's most popular libraries for
+[01:14] data analysis, and get hands-on with
+[01:17] databases and SQL. You'll learn how to
+[01:20] connect Python to databases and manage
+[01:23] data effectively, a crucial skill for
+[01:26] any aspiring AI practitioner. In a
+[01:29] module three, we'll explore APIs, what
+[01:32] they are, why are they essential, and
+[01:35] how to use them in Python. You learn to
+[01:39] connect with external services, work
+[01:41] with JSON data, and handle common
+[01:44] challenges like authentication and rate
+[01:47] limits.
+[01:48] We will introduce you to how APIs power
+[01:52] AI agents and large language models,
+[01:55] which is where things get really
+[01:57] exciting. Finally, in the module 4,
+[02:00] we'll dive into working with language
+[02:02] models, often called as LLMs. You will
+[02:05] learn how to use libraries like OpenAI
+[02:08] and explore open-source tools like

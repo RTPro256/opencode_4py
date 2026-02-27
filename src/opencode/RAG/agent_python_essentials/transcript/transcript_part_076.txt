@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 76
+# Video ID: UsfpzxZNsPo
+
+[162:33] I'll get dark red. And if I decrease a
+[162:37] value to let's say 0.2, you can see
+[162:40] these are light red. So it becomes more
+[162:43] transparent. So lower values will lead
+[162:45] to more transparent markers. So that if
+[162:48] there are markers which are overlapping,
+[162:49] you can still see them. Okay. So you can
+[162:52] customize the opacity, title, label and
+[162:55] those things are same. The new thing
+[162:57] that here is grid. Okay. So grid is your
+[162:59] these vertical and horizontal lines.
+[163:01] These are called as grid. Okay. In the
+[163:03] previous plot also we had the grid.
+[163:05] Okay. If you don't want to display that
+[163:07] grid, you can set it to false and grid
+[163:11] will not be displayed. You can see those
+[163:14] vertical lines and the horizontal lines
+[163:16] which help us to track the values. They
+[163:19] are gone. So you can customize this as
+[163:21] per your choice and use case. So plt.tow
+[163:26] will finally display that plot. Okay. So
+[163:29] that should be the last mattplot lib
+[163:31] function in any block of code which
+[163:33] contains the plots. Okay. So here also
+[163:36] the last function from mattplot liib is
+[163:39] to display the plot. Okay. So first it
+[163:41] creates the plot internally does all
+[163:44] sort of customization and finally
+[163:46] displays it. Okay. So that is the
+[163:48] philosophy that we are going to follow
+[163:50] for all the other plots as well. Okay.
+[163:53] And here in the line plot let's say you
+[163:55] want to also provide markers that is
+[163:58] possible. Okay. So I'm going back to a
+[164:01] solid line. And now let me provide some
+[164:03] markers here. Okay. So here also if you
+[164:05] want you can provide marker. Marker
+[164:08] equal to let's say I want to go with
+[164:11] square markers. Okay. This time I'll
+[164:13] write S here. S for square. Okay. Okay,
+[164:16] let's see what I get. You can see the
+[164:18] square markers at all those X values.
+[164:20] Now I had 100 X values. That's why I get
+[164:23] so many squares here. Okay, these are so
+[164:25] many squares. So S is for square. Here O
+[164:29] is for circles. Okay, so there are other
+[164:32] marker styles. So let's go to Google
+[164:35] once again and search for Matt plot lib
+[164:40] markers. Okay, so you'll get the marker
+[164:43] reference here in the documentation. So

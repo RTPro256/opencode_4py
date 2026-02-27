@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 68
+# Video ID: UsfpzxZNsPo
+
+[146:00] variance is 6.67 67. Similarly, I want
+[146:04] to get the minimum value, the maximum
+[146:06] value, the index of the minimum value
+[146:09] and then the index of the maximum value.
+[146:12] That is the meaning of ar in that is the
+[146:14] argument. Short form of that argument is
+[146:16] arge min and ar max. So that will give
+[146:19] you the index of the minimum and the
+[146:20] maximum values respectively. So zero
+[146:23] that is the very first element here and
+[146:26] 8 is the last element. Anyway again we
+[146:29] can get the median. So median of all the
+[146:32] nine numbers is five and the first
+[146:34] quartile is at three. Okay, you can
+[146:37] change the quartiles here. 025.5 will
+[146:40] give you the median 75 will give me the
+[146:43] third quartile and one will give me the
+[146:45] maximum value. Zero will give me the
+[146:47] minimum value. So these are the five
+[146:49] point summary of any you know data. You
+[146:53] can also do the summation along a
+[146:54] particular axis. Okay. So what does this
+[146:56] mean? If you want to do the summation
+[146:58] along the rows, you you can specify the
+[147:00] axis as one. And if you want to do do
+[147:02] the summation along the columns, then
+[147:06] you can specify the axis as zero. So how
+[147:09] do you want to do the sum? If you want
+[147:10] to do the sum all together of all the
+[147:13] numbers, then you do not have to specify
+[147:15] the access parameter. It will take the
+[147:17] sum of all the elements anyway by
+[147:20] default. But if you want to do the
+[147:21] summing along the rows or the columns,
+[147:24] then you have to provide the access
+[147:25] parameter. Now let's quickly have a look
+[147:27] into the broadcasting concept that
+[147:29] enables to take or to conduct
+[147:32] mathematical operations between arrays
+[147:35] of different shapes following certain
+[147:37] rules. Let's see. So I've got a simple
+[147:39] numpy array as 1 2 3 and I'm going to
+[147:42] add a scalar to that numpy array. Okay.
+[147:45] So what happens is this scalar is
+[147:48] indirectly type casted. it is converted
+[147:50] into another array in the memory behind
+[147:53] the scenes and that gets replicated
+[147:55] three times. So you get an array like 10
+[147:57] 10 10 and that array of 10 10 10 gets
+[148:01] added to each element here. So the

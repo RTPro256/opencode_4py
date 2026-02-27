@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 148
+# Video ID: UsfpzxZNsPo
+
+[321:03] passing it to the server using this data
+[321:05] dictionary. Okay. So you can use the
+[321:09] post method pass the URL and also the
+[321:12] data. Okay. And then collect the
+[321:14] response from the server and extract the
+[321:17] text part from the response. Let's see.
+[321:20] Super. So this is the response that I've
+[321:22] got from the server. And there are many
+[321:24] more things in the response. Let's
+[321:25] quickly have a look. The first one is
+[321:28] headers. So you can check the headers.
+[321:33] Okay. So the response header has the
+[321:36] date and time of the request when it was
+[321:38] given to the server. Okay. The content
+[321:40] type, the character set, the content
+[321:42] length 43 characters essentially and
+[321:45] whether the connection is closed
+[321:47] currently or not. And this is the work
+[321:49] zug server. This is the flask server
+[321:51] essentially. Okay. Otherwise the URL of
+[321:53] the actual server would be displayed
+[321:55] here once the application is hosted on a
+[321:58] real server. Right? Uh you can also see
+[322:02] response
+[322:04] dot tab. You can see the other things
+[322:07] like history and the JSON format of the
+[322:10] response. Let's go for the status. Okay,
+[322:14] this is something status code. So if
+[322:16] everything is successful, they should
+[322:18] return 200. So status code 200 means the
+[322:21] request was successfully fulfilled by
+[322:23] the server without any error. Okay. And
+[322:26] there are many more things you can
+[322:27] explore. Fine. So coming back to the
+[322:29] app, let me stop this. I have created a
+[322:32] small variation of this flask app. So in
+[322:34] this uh this flask endpoint is being
+[322:37] modified to accept JSON data now. Okay.
+[322:40] So I'll not be using the dictionary uh
+[322:43] input. In fact, if you see here, the
+[322:46] main difference is the get from form
+[322:49] data. Instead of getting the form data
+[322:52] as a string, it will get it in the JSON
+[322:55] format. So request.get JSON. Okay. So
+[322:59] this is the field it will be interested
+[323:01] in to extract the message and from there
+[323:05] the response is also JSONified. So here
+[323:08] the response was directly given as a
+[323:11] HTML format but here now I'm JSONifying
+[323:15] the entire response. So the response

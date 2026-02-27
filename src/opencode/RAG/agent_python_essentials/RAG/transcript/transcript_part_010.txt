@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 10
+# Video ID: UsfpzxZNsPo
+
+[19:47] declaring and assigning some variables
+[19:49] in Jupiter notebook. So let us first
+[19:52] start the Jupyter notebook. I will
+[19:54] search for Jupyter notebook.
+[19:58] So run this Jupyter notebook app.
+[20:01] Uh once it is started, it will open in a
+[20:03] new browser window whichever is your
+[20:06] default browser. So you'll have access
+[20:08] to all these folders. This is typically
+[20:10] present within your C uh users. So these
+[20:15] are all the folders which are present
+[20:16] within the C users directory. You can
+[20:19] browse all your files from desktop,
+[20:20] documents, downloads and so on. Now only
+[20:23] problem is my code files which I have
+[20:26] downloaded for this particular uh module
+[20:29] are in the D drive AI agent and code
+[20:33] files. So first we will have to actually
+[20:37] browse and change the directory to this
+[20:40] one.
+[20:42] Okay.
+[20:43] So for this we'll close this and start
+[20:47] with Anaconda prompt. Make sure you are
+[20:50] selecting the Anaconda prompt.
+[20:53] Now this is different from your normal
+[20:55] command prompt. How your Anaconda prompt
+[20:59] will have this base written. normal
+[21:02] command prompt will not have that base.
+[21:04] Okay, close this. Now since my folders
+[21:08] are in D drive, I'll directly go to D
+[21:10] drive first and from there I can
+[21:13] actually start my Jupiter
+[21:16] notebook. If you do not do this, you
+[21:18] will not be able to access D drive
+[21:21] files. You will only be able to access
+[21:23] the files which are present within C
+[21:25] users and whatever the username. Press
+[21:28] enter. And uh this might take some
+[21:31] seconds to open.
+[21:36] Okay. So interface is still the same.
+[21:38] It's just that the
+[21:41] technique that I've used is slightly
+[21:44] different so that I get access to the
+[21:47] actual code files which I have saved in
+[21:50] my desired directory. So you can see uh
+[21:52] these are the folders present within the
+[21:55] D drive. So this is where my AI agent
+[21:58] code files are. Okay. So now you can see
+[22:00] all the Jupyter notebooks for this
+[22:02] particular module. I'll double click on

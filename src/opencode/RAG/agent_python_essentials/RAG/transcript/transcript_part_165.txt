@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 165
+# Video ID: UsfpzxZNsPo
+
+[359:54] file and then other configurations are
+[359:56] there. So the main thing is this model
+[359:58] itself. Can you see the safe tensors
+[360:01] corresponds to the weights of this
+[360:03] model. So essentially what you are
+[360:06] downloading is the model weights which
+[360:08] is corresponding to roughly 4.97 GB.
+[360:11] Okay. So my model has been downloaded to
+[360:14] Google Collab server. You can see almost
+[360:17] 5.5 GB of space is being consumed
+[360:20] already. So let's try out some basic
+[360:23] prompting.
+[360:24] So first I have to create a message. So
+[360:27] setting the user as a role and content
+[360:30] to be the actual prompt. So I am going
+[360:33] to prompt my model to explain what is AI
+[360:36] in three bullet points. So that is the
+[360:38] chat which I'm passing to the apply chat
+[360:42] template function from the tokenizer and
+[360:45] uh this will tokenize
+[360:47] and print the prompt.
+[360:50] Okay. So basically what I'm doing is uh
+[360:56] how this prompt is interpreted by the
+[360:59] model. Okay. So BOS is basically the
+[361:02] beginning of sentence. And these are
+[361:05] special tags you can say which are
+[361:08] passed to the model so that the model
+[361:10] knows what is the system message and
+[361:12] what is the user's actual prompt. Okay.
+[361:15] So these are all like system message you
+[361:17] can say. These are tags, special tags
+[361:19] for that. And within the user, this is
+[361:22] where the actual prompt lies, right?
+[361:26] So let's see the model do device. This
+[361:29] should give me CUDA index zero. So this
+[361:32] is CUDA is referring to the GPU. So
+[361:34] right now my model has been mounted on
+[361:37] the GPU. Uh let's encode this prompt. So
+[361:43] when the prompt gets encoded basically
+[361:45] it will give the token ids and those
+[361:51] token ids are used as input by the model
+[361:54] to generate the outputs right so so the
+[361:58] input and outputs would be token ids
+[362:00] essentially okay now I'm using the
+[362:02] output token ids to decode the actual
+[362:07] English words from these token ids okay
+[362:11] so token ids would be numbers
+[362:12] essentially I am using the decode
+[362:15] function to convert it back into a
+[362:18] English language you can say right so

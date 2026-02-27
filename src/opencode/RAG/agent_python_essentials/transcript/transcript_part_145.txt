@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 145
+# Video ID: UsfpzxZNsPo
+
+[314:32] get method. So get method is enabled by
+[314:34] default even though even though you did
+[314:37] not mention the list of methods here.
+[314:39] Okay. In the next one I'm going to
+[314:41] explicitly mention which methods are
+[314:44] allowed for that endpoint. So here the
+[314:47] get method is the only method which is
+[314:48] allowed for this square root endpoint.
+[314:50] So this square root endpoint is being
+[314:53] programmed here to take two numbers as
+[314:56] the input. I'm going to divide these two
+[314:58] numbers and the resultant number I'm
+[315:01] going to fade it to the square root
+[315:03] function. So I'm going to calculate the
+[315:05] square root of the division result. So
+[315:07] two numbers are going to be taken as a
+[315:09] input. These two numbers would be
+[315:11] divided and the resultant division
+[315:14] result will be used for square root.
+[315:17] that square root will be result that
+[315:19] square root will be returned back to the
+[315:21] user that square root will be returned
+[315:24] back to the user along with the division
+[315:26] result. Okay. So there are two outputs
+[315:28] this time. One is the division result
+[315:30] and the other is the square root. So if
+[315:32] you look into the uh definition more
+[315:34] closely I have enclosed the entire code
+[315:38] within a try accept block. So these two
+[315:41] numbers will be requested from the user
+[315:43] num one and num two. And if either of
+[315:46] the numbers are not provided then it
+[315:48] will throw this error. If the second
+[315:51] number is zero then we'll end up with a
+[315:54] zero division error. Otherwise if
+[315:57] everything is right we'll calculate the
+[315:59] division result. And if one of the
+[316:01] numbers is negative okay either the
+[316:04] numerator or denominator. If one of them
+[316:06] is negative then the square root
+[316:08] operation cannot be uh done because
+[316:10] square root of a negative number is
+[316:12] complex. So that is a bit difficult to
+[316:15] handle here. So I'm just throwing that
+[316:18] error because one of the numbers is
+[316:20] negative. And if all the conditions are
+[316:22] satisfied, then this operation is
+[316:25] conducted. Okay. So let's execute this.
+[316:29] Okay. Now my app is running. Oh, I think
+[316:32] I forgot to stop my previous app. Okay,

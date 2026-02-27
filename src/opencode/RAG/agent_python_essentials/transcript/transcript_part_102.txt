@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 102
+# Video ID: UsfpzxZNsPo
+
+[220:01] So, let me decrease the marks by 10 to
+[220:04] get the original marks because I have
+[220:06] already added it two times. So I've
+[220:10] decreased the marks by 10 to get the
+[220:12] original marks. Now uh here I've written
+[220:15] a custom function which I'm going to
+[220:17] apply. Here I have applied a simple
+[220:19] lambda function. But instead of applying
+[220:22] a simple lambda function, you can also
+[220:23] apply a custom function. So what does
+[220:26] this do? So I'm going to assign the
+[220:28] grades based on the marks. So if the
+[220:30] marks is greater than 85 then I'm going
+[220:33] to return a grade. If the marks is
+[220:35] between 70 and 85 it is going to be b
+[220:37] grade. And if the marks is less than 70
+[220:40] it will be C grade. Okay. So after
+[220:43] applying the function on this column I'm
+[220:46] creating another column called as grade.
+[220:49] So I've got the grades of the students
+[220:51] as well. Now you can also map um values
+[220:56] of a particular column to some other
+[220:58] value. So let's say in this case I'm
+[221:01] mapping males to zero and females to
+[221:03] one. This can be done for uh label
+[221:06] encoding typically used in machine
+[221:08] learning. So I've created a new column
+[221:10] called as gender new in which zeros
+[221:13] represent males and ones represent
+[221:16] females. So how was this done? By simple
+[221:20] mapper. So your mapper is a dictionary
+[221:23] where the original value becomes the key
+[221:25] and the new value becomes the value. So
+[221:27] you can also use pandas to handle dates
+[221:29] and times. Let's see here. Here I've
+[221:32] created a simple data frame uh with some
+[221:34] names and dates. You can see these dates
+[221:37] are actually strings. How do I know?
+[221:39] Because of the data type present in the
+[221:41] info. So the info gives me a object data
+[221:44] type. So I can convert those strings
+[221:48] into actual datetime objects by using
+[221:51] the datetime function. So I'm converting
+[221:53] the strings into a datetime. That's what
+[221:56] the two datetime function does. And
+[221:58] replacing the original column. So after
+[222:00] doing that you can see visually it still
+[222:03] looks very similar to what it is but
+[222:06] here if you see the df.info now it is
+[222:09] actually present in a datetime format.

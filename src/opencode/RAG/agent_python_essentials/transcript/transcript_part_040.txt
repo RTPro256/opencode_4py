@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 40
+# Video ID: UsfpzxZNsPo
+
+[86:05] all these variables in the global name
+[86:07] space by default. So here this name is
+[86:11] accessible to this function and that is
+[86:13] why this function was able to return
+[86:15] that name or you can also do some
+[86:17] computation. So let me multiply that
+[86:21] name by five and or by two and see what
+[86:24] happens. So let me call that function.
+[86:27] You see this is replicated three times.
+[86:32] Multiplication of a string with a
+[86:34] integer means replicate that string
+[86:36] three times essentially. Okay. So this
+[86:39] is the first time, second time and then
+[86:41] the third time. So the string gets
+[86:43] replicated three times. I'm able to
+[86:46] access the
+[86:48] variable which was created out of the
+[86:50] function. And further if you see the
+[86:53] value of that variable didn't change. So
+[86:56] within the function it is computed I
+[86:58] mean it is operated but out of the
+[87:01] function it still remains the same. So
+[87:03] I'm printing the value of the name out
+[87:05] of the function and it still is the
+[87:07] same. So let's say you want to change
+[87:10] the value of this variable within the
+[87:13] function. So this name will be present
+[87:15] in the global name space. So this is
+[87:18] essentially a global variable and I have
+[87:20] created another copy of that name within
+[87:23] the function. Just some time back I
+[87:26] mentioned that each function creates its
+[87:29] own name space. So this is the name
+[87:32] space within the function. I'm creating
+[87:34] this variable. So this variable becomes
+[87:36] local to this function. So essentially
+[87:39] this is this name
+[87:42] is local
+[87:45] to this function. Okay. So this name
+[87:49] goes in the local variable name space.
+[87:52] Okay. This name is in the global
+[87:53] variable name space. Okay. So function
+[87:56] can overwrite. So this function has
+[87:59] overritten uh the name. Okay. And uh it
+[88:03] creates a local variable with the same
+[88:06] name. So this will no longer be
+[88:08] accessible. The function will only
+[88:11] access this and return that. Okay,
+[88:14] perfect. So if you see the value of the
+[88:16] name is already the same as the variable

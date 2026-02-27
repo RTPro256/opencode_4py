@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 77
+# Video ID: UsfpzxZNsPo
+
+[164:45] you can take small circles or points you
+[164:49] can see. So these are the actual styles
+[164:52] that you will provide in the code and
+[164:54] this is how it is actually displayed in
+[164:55] the plots. Okay. So you can have some
+[164:58] numbers as well. Octagon, pentagon,
+[165:01] square. So I used this square just now.
+[165:04] You can also go for pentagon, hexagon,
+[165:06] asterics and so on. Okay. So these are
+[165:09] all you know markers available to us.
+[165:11] Okay. Okay. So let's move on to the next
+[165:13] plot. Okay, so let's see how we can
+[165:15] create bar plots. Bar plots is for
+[165:18] categorical data. Okay, so for numerical
+[165:20] data, you can go with the line charts or
+[165:22] even the scatter plots. But if you have
+[165:24] categorical data in your x-axis, okay,
+[165:27] so ABCD will be there in your x-axis and
+[165:29] their count or frequency is represented
+[165:32] by values here. Okay, so now this ABCD
+[165:35] could represent maybe the occupation of
+[165:39] the customers in your data set. Okay. So
+[165:42] this A can be student, B can be
+[165:45] salaried, C can be retired and D can be
+[165:48] non-employed. And then this is the
+[165:50] actual count of those customers with
+[165:52] those respective occupations. Okay, it
+[165:55] could be as simple as gender also. It
+[165:57] could so A B could be just male female
+[166:00] and then the count of the male females.
+[166:02] Okay, so you can have any number of
+[166:04] categories and their corresponding
+[166:05] frequencies or counts. So that is what
+[166:08] the category and value means here. So
+[166:11] again I'm creating my figure canvas. So
+[166:13] this time I'm going to use the bar
+[166:14] function. Categories that is basically
+[166:16] the x-axis values will be populated by
+[166:19] categories. The y values are going to
+[166:21] come as counts. The values the height of
+[166:24] the bar will be controlled by the
+[166:25] values. Remember that. Okay. And then
+[166:28] what should be the color for these bars?
+[166:30] Let's have a look. So the color for
+[166:32] these bars is definitely green because
+[166:34] that is the color I have provided here.
+[166:36] and then the title label. These are the
+[166:38] same functions which we have seen. Okay.
+[166:41] So these are common functions for any
+[166:44] mattplot lip plot. So what should be

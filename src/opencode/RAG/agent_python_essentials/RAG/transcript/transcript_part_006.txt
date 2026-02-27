@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 6
+# Video ID: UsfpzxZNsPo
+
+[10:57] that. Uh you can also check this to
+[11:00] start with Python 3 as your preferred or
+[11:03] the default kernel. So kernel is the
+[11:05] program which interprets your Python
+[11:07] code and executes it. You can resize
+[11:11] these windows. So this is how your uh
+[11:14] coding window looks like. This is my
+[11:15] coding window. And on the left side I
+[11:17] have again my file browser window. Here
+[11:20] you can type your Python codes. My first
+[11:23] Python program let's say print hello
+[11:25] world. And to execute this you can do a
+[11:29] shift enter or control enter. You can
+[11:31] also click on this button to execute
+[11:34] this cell. Okay. So codes are written in
+[11:37] code cells. This is one code cell
+[11:39] whichever is highlighted in blue uh
+[11:41] boundary. So that's a code cell. You can
+[11:44] see that this is currently in the code
+[11:46] mode. So you can also change the mode of
+[11:48] the cell. So this is currently in the
+[11:50] code. So I'll click on this. This will
+[11:53] execute the cell. So once the cell is
+[11:55] executed, the output of the cell is
+[11:58] displayed just below the cell. So this
+[12:00] is one way you can execute the cell.
+[12:02] Otherwise, if you want to do it from
+[12:04] your keyboard, you can do a shift enter
+[12:06] or control enter. Shift enter will
+[12:08] execute the current cell and advance to
+[12:11] the next cell. Control enter will
+[12:13] execute the current cell and stay there.
+[12:15] Now let's have a look into another
+[12:17] coding environment which does not
+[12:18] require any installation and can be
+[12:20] accessed from anywhere in the world and
+[12:22] that is Google's collab. So that also
+[12:24] opens in another browser window. But you
+[12:27] need to first sign in into your Google
+[12:28] account.
+[12:30] So we'll go to Google and uh search for
+[12:33] Google Collab
+[12:35] and here in the first link click on
+[12:38] that. So assuming that you are already
+[12:40] signed into your Google account this is
+[12:42] the window that should appear. If you
+[12:44] have already previously opened any
+[12:46] Google Collab notebooks that will also
+[12:49] be displayed. So on the left side you
+[12:52] can see there is a menu table of

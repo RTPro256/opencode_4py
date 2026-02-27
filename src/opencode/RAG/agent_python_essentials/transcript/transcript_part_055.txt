@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 55
+# Video ID: UsfpzxZNsPo
+
+[118:02] to flatten your arrays and matrices. And
+[118:04] finally, the transpose function to flip
+[118:06] the axes rows into columns and so on.
+[118:08] There is a dype argument which can be
+[118:11] used to fetch the data type of the
+[118:13] elements present within the numpy array.
+[118:15] Whereas you have the as type function
+[118:18] which is used to change the data type of
+[118:20] the elements within the numpy array. And
+[118:23] that is also called as type casting.
+[118:25] Mastering these basics is a key to
+[118:28] getting the most of NumPy. Broadcasting
+[118:31] is one of the most powerful features in
+[118:32] NumPy. It's it lets you perform
+[118:36] arithmetic operations between arrays of
+[118:38] different shapes by automatically
+[118:40] stretching them along any dimension with
+[118:43] length one or no dimension. So for
+[118:45] example, if you add a scalar, let's say
+[118:48] five to a two-dimensional array, the
+[118:50] numpy effectively replicates that scalar
+[118:53] across the entire shape of the array to
+[118:56] make that operation successful. Let's
+[118:58] consider another quick example here.
+[119:00] Here you have an array A which has a
+[119:03] shape of three and B which has a shape
+[119:06] of 3, 1. Essentially A is
+[119:09] one-dimensional whereas B is two
+[119:11] dimensional with three rows and one
+[119:12] column. So these numbers 10 20 30 are
+[119:15] present in one column. It's essentially
+[119:17] a column vector. Whereas a is
+[119:19] one-dimensional object. So now if you
+[119:21] want to have an operation between them.
+[119:23] Let's consider a plus b. Okay. So you
+[119:26] are adding a one-dimensional numpy array
+[119:29] with a two-dimensional numpy array. So
+[119:31] in this case the numpy will stretch a or
+[119:33] b as needed. So the shapes become
+[119:35] compatible for the operation to be
+[119:37] successful. So the final result is a 3
+[119:40] +3 matrix. So when used correctly,
+[119:42] broadcasting saves a ton of code and can
+[119:45] keep your calculations very efficient.
+[119:48] So it is also important to understand
+[119:50] the rules of matching these shapes from
+[119:52] the trailing dimension so as to avoid
+[119:55] mismatch and errors. Now let's talk
+[119:58] about linear algebra. So many data
+[120:00] science or machine learning algorithms

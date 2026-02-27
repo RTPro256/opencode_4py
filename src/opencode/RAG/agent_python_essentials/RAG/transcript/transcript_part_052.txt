@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 52
+# Video ID: UsfpzxZNsPo
+
+[111:47] used. So this is also acceptable. In
+[111:51] this last demonstration here, we are
+[111:53] going to demonstrate the PEP 257 style
+[111:57] guidelines. So, PEP 257 talks about the
+[112:00] dockstring standards for Python coding.
+[112:03] So, typically
+[112:05] uh the dock strings should describe the
+[112:07] purpose, the input and the output
+[112:10] parameters of that function and what it
+[112:12] returns. So everything that you see just
+[112:16] below the function definition which is
+[112:18] present within these three double quotes
+[112:20] this is called as doc string in short or
+[112:23] documentation string. If you define a
+[112:25] function without the documentation
+[112:27] string it's still usable. You can see
+[112:30] I'm able to create a function which
+[112:32] calculates the volume of a cylinder by
+[112:34] taking the radius and the height of the
+[112:36] cylinder as input and I'm able to call
+[112:39] that function by giving some value for
+[112:41] the radius and the height. However, when
+[112:43] I do a shift tab tab to check the
+[112:47] functions documentation here, you can
+[112:50] see very clearly there is no
+[112:51] documentation string mentioned because
+[112:54] we deleted that documentation string.
+[112:56] Now, let me post it back
+[112:58] uh reinitialize the function and then
+[113:02] use the function. So, the functionality
+[113:04] didn't change at all. However, if you
+[113:06] see now I'm going to do shift tab tab by
+[113:09] placing my cursor within the function.
+[113:11] So this balloon pop-up appears which
+[113:13] talks about the dock string. So this
+[113:16] gives me a clear indication what this
+[113:18] function does in this case calculating
+[113:21] the cylinders uh volume using a radius
+[113:25] and height as the input. What are the
+[113:27] input arguments and their formats and
+[113:29] what the function returns in this case
+[113:31] which is clearly the volume of the
+[113:33] cylinder in the float format. Right? So
+[113:35] this is the appropriate way of uh
+[113:38] defining the functions and further we
+[113:40] are using them. So that's all for this
+[113:42] video. Thank you.
+[113:45] Hello everyone and welcome to this
+[113:47] session on numpy. Numpy is a cornerstone
+[113:50] of Python's data science ecosystem

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 92
+# Video ID: UsfpzxZNsPo
+
+[197:31] outputs. So this is the second row. You
+[197:33] can see Sophia Smith's female 2278 and
+[197:37] Python. And similarly you want to see
+[197:40] the third row. So the third row uh two
+[197:43] this two is basically the index and this
+[197:46] one is actually the label. Okay. So as I
+[197:49] just mentioned by default the labels and
+[197:51] the indices for rows they are same. So
+[197:55] right now there is no difference between
+[197:57] these numbers but Python knows based on
+[198:01] what function you are using. So lock
+[198:04] means it is going to assume that this
+[198:06] number that you are providing is
+[198:07] actually a label and means this number
+[198:10] that you are providing is an index.
+[198:13] Okay. So 0 1 and two. So these are the
+[198:17] so another good thing about the eyelock
+[198:20] function is you can use that eyelock
+[198:22] function to use multiple to fetch
+[198:25] multiple rows and columns. So let's say
+[198:28] I want to fetch the first five rows.
+[198:30] Super colon means start from start and
+[198:33] end one before five. So index 0 1 2 3 4.
+[198:38] This is iO remember. So index location
+[198:41] from 0 to 4. So 0 to 4 I'm getting.
+[198:44] Yeah. So similarly you can also fetch
+[198:47] columns. So DF doilock let's say you
+[198:50] want to fetch all the rows and the first
+[198:54] three columns that can be done. So all
+[198:56] the rows and first three columns. So 0 1
+[199:00] and two because it's a index location.
+[199:03] So it will stop one before three that is
+[199:06] two 0 1 2. So this is 0 1 and two. Okay.
+[199:10] You can also use it with a keyword like
+[199:12] minus one. So df do.log I log. So I want
+[199:16] to fetch the last row. So last row means
+[199:19] minus one. So this is your last row.
+[199:21] Similarly, if you want to fetch the last
+[199:23] column, that can be done. So last column
+[199:25] is DF do.lock. So in that case, all rows
+[199:28] of the last column. So this is all rows
+[199:31] of the last column. You can see the last
+[199:33] column is subject. Okay. So this is my
+[199:36] subject column. You can see the subject
+[199:39] column here. Yeah. So let me just write
+[199:42] it down. So this is the last row and
+[199:45] here fetch the last column.
+[199:50] Okay, you can also add and modify
+[199:52] columns. So right now what I'm going to
+[199:54] do is let me show you the data frame

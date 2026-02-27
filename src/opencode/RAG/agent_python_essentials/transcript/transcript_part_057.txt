@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 57
+# Video ID: UsfpzxZNsPo
+
+[122:11] histogram function np.histogram
+[122:14] that helps you bucket the continuous
+[122:16] data into bins for a basic frequency
+[122:18] distribution. Now these functions while
+[122:21] simple can be incredibly powerful for a
+[122:24] quick look at how your data behaves
+[122:27] before diving deeper with specialized
+[122:29] libraries like pandas or seabon for
+[122:31] visualizations. Finally there are
+[122:33] numpy.random module which is where we
+[122:36] generate random numbers for simulations
+[122:38] randomized algorithms or even test data.
+[122:40] The recommended approach is to create a
+[122:42] random number generator using the
+[122:44] np.random
+[122:46] default RNG function. You can provide a
+[122:49] seed whatever number the default is
+[122:51] anyway 42 and this makes your results
+[122:54] quite reproducible which is critical in
+[122:56] many scientific and data science
+[122:58] context. You can also sample from
+[123:00] various distributions like normal
+[123:02] uniform distribution or binomial
+[123:05] distribution and many more.
+[123:06] Additionally, you have the function
+[123:08] called as shuffle and permutation which
+[123:10] come in handy when you need to shuffle
+[123:12] your data like randomizing the order of
+[123:15] the rows in a data set or even create
+[123:17] per permutations. Whether you are
+[123:19] performing Monte Carlo simulations or
+[123:21] just need a quick sample of your data
+[123:23] for testing, the numpy.random module is
+[123:26] the go-to function of your choice. This
+[123:28] wraps up exploration on NumPai's key
+[123:30] features from array creation to
+[123:32] broadcasting to universal functions,
+[123:34] linear algebra and even random sampling.
+[123:37] Understanding these concepts will help
+[123:38] you to write faster, cleaner code and
+[123:41] give you a strong foundation in Python
+[123:43] based data science.
+[123:46] Hello and welcome back. In this video, I
+[123:48] will demonstrate how do we use the numpy
+[123:52] functions. I'll show you how to create
+[123:54] and manipulate numpy arrays and
+[123:57] matrices. We'll also perform vectorized
+[123:59] arithmetic operations, use some
+[124:02] statistical functions, and we will see
+[124:05] how broadcasting works in numpy. We'll

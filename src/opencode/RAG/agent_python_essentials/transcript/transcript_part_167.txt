@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 167
+# Video ID: UsfpzxZNsPo
+
+[364:35] created this pipeline. I'm just printing
+[364:38] my prompt once again which will be this.
+[364:41] And then let's pass this prompt to the
+[364:44] pipeline and directly generate the
+[364:46] response. Okay, I'm restricting the
+[364:48] maximum tokens to 150 and I'm allowing
+[364:52] bit balanced response. So here is the
+[364:55] response I receive. So this is the
+[364:59] complete response. Okay. And from here I
+[365:01] have to extract the generated text part.
+[365:05] Okay. So let me print the extracted
+[365:08] generated text. So this is how it comes
+[365:10] up. If you want a more more prettier
+[365:13] response output, you can again import
+[365:16] the display and markdown functions from
+[365:18] the ipython.
+[365:20] Use that markdown function to print this
+[365:23] in a markdown format. Okay. Yeah. So
+[365:26] that looks much better. Now let's see
+[365:29] how much GPU has already been used. So
+[365:32] if you see this is 5.4 GB of memory has
+[365:36] already been used. So it uses more than
+[365:38] 5 GB of memory. That's what exactly we
+[365:41] mentioned at the start of the notebook.
+[365:43] Okay. So you can also print the
+[365:45] pipeline. I'll take a few more examples
+[365:48] here. So in this example we are going to
+[365:51] do again zeros short question answering
+[365:53] from the model. So we'll pass a prompt
+[365:56] to a locally loaded LLM and ask it to
+[366:00] perform some of the NLP tasks using
+[366:02] prompting. So the prompt text will be
+[366:05] the user's input. Resto is default
+[366:08] system default. Um fine. So here the
+[366:12] prompt text from the user is can you
+[366:15] explain what is mod gauge. So this goes
+[366:17] as the input. So this input will be
+[366:20] mapped here in the content part and this
+[366:22] entire payload will be given to the
+[366:24] apply chat template function from the
+[366:27] tokenizer. Okay. And let's see this
+[366:31] prompt. So this is the complete prompt
+[366:33] that I get from the tokenizer. And the
+[366:36] tokenized prompt is now given to the
+[366:39] pipeline for generating the output. So
+[366:42] the generated output text is what I will
+[366:46] be printing now.
+[366:48] Okay. So this is the complete response
+[366:50] that I have received. Lot of information
+[366:52] is there. So can we display it in a

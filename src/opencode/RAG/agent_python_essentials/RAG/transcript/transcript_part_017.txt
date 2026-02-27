@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 17
+# Video ID: UsfpzxZNsPo
+
+[35:59] how a program knows what to do based on
+[36:03] different inputs or conditions, well,
+[36:06] this is it. Let's dive right in.
+[36:09] Conditional statements help us make
+[36:11] decisions within our code. Imagine you
+[36:13] are coming home from work. If you are
+[36:15] home on time, you might cook dinner, but
+[36:18] if you are late, you might just order
+[36:20] food. This kind of decision making is
+[36:23] exactly what conditional statements
+[36:26] allow us to model in Python. We use
+[36:28] conditional statements for various
+[36:30] purposes such as making decisions,
+[36:34] controlling the flow of the program,
+[36:36] validating inputs, and even handling
+[36:39] errors gracefully. They form the
+[36:41] backbone of any program that needs to
+[36:44] adapt to different situations. Let's
+[36:46] break down a scenario. Picture this. You
+[36:49] arrive home. That's our event. Now,
+[36:52] there are two possible conditions.
+[36:54] Either you arrive on time or you arrive
+[36:56] late. If you are on time, you decide to
+[36:59] cook dinner. But if you are late, you
+[37:02] decide to order food. This is exactly
+[37:04] what conditional statements in Python
+[37:06] do. We set up conditions and based on
+[37:09] whether they are true or false, we
+[37:11] determine the appropriate action to
+[37:13] take. It's like a flowchart for decision
+[37:16] making. Quite intuitive, right? Python
+[37:18] gives us several types of conditional
+[37:20] statements. The simple if statement
+[37:23] executes code only if a condition is
+[37:25] true. The if else statement to specify
+[37:28] what should happen if the condition is
+[37:30] false. The if l if else statement for
+[37:34] handling multiple conditions in
+[37:35] sequence. And finally the nested if
+[37:38] statements where you have an if
+[37:40] statement inside another if statement.
+[37:42] These different types of conditional
+[37:44] statements allow us to write complex
+[37:46] decision-making logic in our programs.
+[37:48] Here's a quick look at some pseudo codes
+[37:50] to help understand how we write
+[37:52] conditional statements. If our condition
+[37:54] is that the arrival time is greater than
+[37:57] 10 p.m., we decide to order food. If
+[37:59] it's earlier, we cook instead. This

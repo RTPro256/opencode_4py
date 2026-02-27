@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 113
+# Video ID: UsfpzxZNsPo
+
+[244:04] robust datadriven applications that are
+[244:07] backbone of AI and machine learning
+[244:09] projects.
+[244:11] In this video, we'll explore how to
+[244:13] connect Python applications to SQL
+[244:16] databases like MySQL and Postgress SQL.
+[244:20] We'll discuss the advantages and use
+[244:22] cases especially in the context of AI
+[244:25] agents and generative AI applications
+[244:28] and provide code examples to illustrate
+[244:30] the concepts. By the end of this
+[244:31] session, you will have a foundational
+[244:33] understanding of how to integrate
+[244:36] databases into your Python projects,
+[244:38] enabling more dynamic and datadriven AI
+[244:41] solutions. Our agenda for this video
+[244:43] includes understanding the reasons and
+[244:45] benefits of connecting Python to SQL
+[244:47] databases. We'll delve into practical
+[244:50] code examples for connecting to both
+[244:52] MySQL and Postgress SQL databases. We'll
+[244:55] also learn how to execute SQL queries
+[244:57] directly from Python and pandas and
+[245:00] discuss how to manipulate data once it
+[245:02] is imported into Python. Why connect
+[245:04] Python to SQL databases? Connecting
+[245:06] Python to SQL databases offers numerous
+[245:09] advantages. Databases are designed to
+[245:11] efficiently store and retrieve large
+[245:14] amounts of data which is essential for
+[245:16] AI applications that require access to
+[245:20] extensive data sets. They provide
+[245:22] scalability and high performance
+[245:24] ensuring that your application can
+[245:26] handle growth. Realtime data access
+[245:29] allows AI agents to make decisions based
+[245:32] on the most current information.
+[245:34] Additionally, integrating databases with
+[245:37] Python enables seamless data
+[245:39] prep-processing, which is crucial for
+[245:41] training accurate AI models. The use
+[245:43] cases for connecting Python to SQL
+[245:45] databases are vast. For instance, AI
+[245:48] agents needing dynamic data can retrieve
+[245:51] and process customer information on the
+[245:53] fly. Chatboards are a great example.
+[245:56] They need access to updated customer
+[245:58] data to provide helpful responses.
+[246:01] Another use case is generative AI
+[246:03] applications that depend on stored data

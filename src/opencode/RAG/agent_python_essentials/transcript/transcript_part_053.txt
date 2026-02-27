@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 53
+# Video ID: UsfpzxZNsPo
+
+[113:53] providing the nd array object for
+[113:56] efficient array operations and a vast
+[113:59] range of numerical functions. In this
+[114:01] video, we'll explore how it works, why
+[114:03] is it essential for data science, and
+[114:06] key features such as universal
+[114:08] functions, random sampling, and linear
+[114:10] algebra routines. Numpy stands for
+[114:12] numerical Python, and it's built around
+[114:15] the ND array, the N dimensional array
+[114:19] object data structure. So unlike pure
+[114:21] Python list, ND array objects are much
+[114:26] more efficient and support vectorzed
+[114:28] operations, meaning that you can apply
+[114:31] the operations on the entire array
+[114:34] without writing a single loop. And this
+[114:36] makes your code run faster and keeps it
+[114:39] easier to read and maintain. Plus
+[114:42] because numpy is so fundamental other
+[114:44] popular data science libraries like
+[114:46] pandas for tablet data or sci for
+[114:49] scientific computing and even
+[114:51] scikitlearn which is used for machine
+[114:52] learning they heavily use numpy objects
+[114:56] under the hood. Numpai's universal
+[114:58] functions or u funks perform the
+[115:02] elementwise operations across arrays.
+[115:05] For basic arithmetic for example
+[115:08] addition, subtraction, multiplication
+[115:10] and division. It is very
+[115:11] straightforward. We call either the
+[115:13] np.add function or simply write a + b.
+[115:17] We also have exponential and logarithmic
+[115:19] functions that operate element
+[115:21] byelement. Now this level of
+[115:23] vectorization is fast and makes our code
+[115:26] concise and also readable. If you're
+[115:28] dealing with any kind of scientific or
+[115:30] engineering data or trigonometric
+[115:32] functions are likely to come up. Numpai
+[115:34] offers a full suite of trigonometric
+[115:37] functions like s cosine tangent and so
+[115:40] on and their inverse counterparts all of
+[115:43] which work element wise. Now same goes
+[115:45] for the hyperbolic functions as well. So
+[115:48] whether you are modeling waves or
+[115:50] working on signal processing or even
+[115:52] analyzing periodic data, NumPy has got
+[115:55] you covered. Sometimes you need to clean
+[115:57] up your data by rounding values. Maybe

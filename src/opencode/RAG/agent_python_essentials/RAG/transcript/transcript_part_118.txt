@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 118
+# Video ID: UsfpzxZNsPo
+
+[254:32] We'll start with an introduction to file
+[254:34] handling in Python focusing on CSV and
+[254:37] JSON files and then we'll provide code
+[254:40] examples to illustrate how to read and
+[254:43] write these file types. So why do we
+[254:45] need to work with files? Data storage
+[254:47] and exchange is one of the most common
+[254:50] uses. Files particularly in formats like
+[254:54] CSV and JSON makes it easy to store,
+[254:56] share and exchange data between
+[254:58] different systems and applications. CSV
+[255:01] files are used for tabular data while
+[255:03] JSON files are widely used for
+[255:06] structured data exchange between APIs.
+[255:09] Additionally, files are often used in
+[255:11] data prep-processing to prepare data for
+[255:14] AI models and analytics. They provide an
+[255:17] easy readable way to log, store, and
+[255:21] transfer the information needed for our
+[255:23] machine learning workflows. Python
+[255:25] provides built-in modules like CSV and
+[255:27] JSON to handle CSV and JSON files
+[255:30] easily. Additionally, third party
+[255:32] libraries like pandas offer powerful
+[255:35] data manipulation capabilities, making
+[255:38] it easier to pre-process data for AI
+[255:41] applications. CSV files are commonly
+[255:43] used for storing tablet data like
+[255:45] spreadsheets or simple databases.
+[255:48] Python's CSV module allows you to read
+[255:50] these files using the CSV reader
+[255:53] function and write them using CSV.riter
+[255:57] function. The CSV reader function reads
+[256:00] each line of the CSV file and returns it
+[256:03] as a list. Similarly, CSV.writer
+[256:06] function lets you write rows of data
+[256:10] back into a CSV format. This module is
+[256:13] perfect for small to medium-sized data
+[256:16] sets and for those who want to work with
+[256:18] CSVs without needing advanced data
+[256:21] manipulation. However, for large data
+[256:23] sets or when you need advanced data
+[256:26] manipulation, pandas is a better choice.
+[256:28] It allows you to read CSV files into
+[256:30] data frames which are powerful data
+[256:33] structures for data analysis and
+[256:35] pre-processing. Here's an example of how
+[256:38] to read and write CSV files using
+[256:41] pandas. First, we import pandas and use
+[256:45] pdread CSV function to read the data

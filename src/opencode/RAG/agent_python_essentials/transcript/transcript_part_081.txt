@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 81
+# Video ID: UsfpzxZNsPo
+
+[173:02] labels otherwise mattplot will not know
+[173:04] and you will even not be able to figure
+[173:06] out which plot corresponds to what
+[173:08] function. Okay. So I'm using two
+[173:11] functions. Okay, my X values are created
+[173:14] already above and then you can specify
+[173:17] which colors you want and line styles
+[173:19] you want. Okay, fine. Titles, X label, Y
+[173:22] label, legend, everything I have already
+[173:24] explained. Grid and show. Let's have a
+[173:26] look. Yeah, so my sign is in solid line
+[173:29] and cost is in the dash line. Again, if
+[173:32] you want you can set the limits for the
+[173:34] x-axis and the y-axis. So here I have
+[173:37] got the same plot XY and the color being
+[173:39] red and I'm setting the limits. So 0 to
+[173:42] 2 pi. So 2 pi would be so pi is 3.14. So
+[173:46] 2 pi would be 6.28. Okay. So that's the
+[173:49] limit that I'm setting. And for the y
+[173:51] limits you can see these are sign values
+[173:53] and cos values. So by default everyone
+[173:56] knows that sine and cos will have a
+[173:57] limit from minus1 to + one. That's why
+[174:00] the minimum value is minus1 and the
+[174:02] maximum value is + one. You can change
+[174:04] these values. So let's say I want to go
+[174:06] for from minus2 to So let's say I want
+[174:11] to go from minus2 to +2. Okay. So I'm
+[174:14] setting my limits for the y-axis. So now
+[174:16] you can see that this is minus2 and this
+[174:19] is +2. Okay. And if you want to see the
+[174:21] labels -2 and +2 slightly increase it.
+[174:24] Yeah. So now you can see the labels as
+[174:26] well. Okay. So you can provide what
+[174:28] should be the y limits. Again if you
+[174:30] want to go for a narrower x limit that
+[174:32] also you can do. Okay. So here I am
+[174:34] going from 0 to 2 pi. Let's say you want
+[174:36] to only plot from 0 to pi. That can also
+[174:38] be done. Okay. So you'll just change
+[174:42] this number over here. Okay. So at what
+[174:44] points you want to have the tick. So by
+[174:46] default mattplot lip decides that I want
+[174:48] to put the ticks at these many places.
+[174:50] Okay. And then the labels are also
+[174:52] automatically populated. But if you want
+[174:54] you can provide the actual points in the
+[174:57] x-axis where the ticks will be placed
+[175:00] and the corresponding labels. Okay. So
+[175:02] you see now you have ticks only at 0, pi

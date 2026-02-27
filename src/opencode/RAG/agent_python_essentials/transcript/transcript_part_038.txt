@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 38
+# Video ID: UsfpzxZNsPo
+
+[82:01] so now let's have a look into the
+[82:02] keyword arguments. So if you are
+[82:05] defining the keywords then we can define
+[82:08] the input arguments in any order. So now
+[82:10] you are saying larger number take it to
+[82:13] be 16 smaller number take it to be four.
+[82:15] So here I'm providing the larger number
+[82:17] before the smaller number. You can also
+[82:19] provide the smaller number before the
+[82:20] larger number. As long as you are
+[82:22] assigning the values based on the exact
+[82:25] name of the input arguments. Now this
+[82:27] cannot be any variable name. This has to
+[82:30] be the same variable name which the
+[82:32] function expects. Okay. So if you're
+[82:35] defining it as a and b here also you
+[82:38] have to provide it as a and b. Okay. So
+[82:41] you have to remember that. So advantage
+[82:43] of doing this is you can see since
+[82:45] larger number is mapped to 16 whether at
+[82:48] the start or at the end doesn't matter
+[82:50] the difference between the larger number
+[82:52] and the smaller number is still 12.
+[82:54] Okay. So this time a consistent output
+[82:56] is returned even though the sequence in
+[82:59] which the arguments were passed is
+[83:02] different. Okay. Now the problem starts
+[83:05] when you try to mix and match. Here you
+[83:07] have a keyword argument and here is a
+[83:09] positional argument. This will throw you
+[83:12] an error saying that the positional
+[83:14] argument follows a keyword argument. So
+[83:16] if you are passing an input, if you're
+[83:19] providing an input to the function while
+[83:22] calling without mapping it to the exact
+[83:26] input parameter name, that becomes a
+[83:28] positional argument. All the positional
+[83:30] arguments have to be defined before any
+[83:34] of the keyword arguments. So here since
+[83:37] you are passing the value of four by
+[83:39] defining the variable name to which it
+[83:41] has to be mapped, this becomes a keyword
+[83:43] argument. And here 16 is not being
+[83:47] specified which variable to be mapped
+[83:50] to. So this is actually a positional
+[83:52] argument. Simple. So that has to be done
+[83:55] in the other way around. Okay. So here
+[83:58] four is the positional argument and 16
+[84:00] is a keyword argument. And then that's
+[84:02] exactly what this statement says. All

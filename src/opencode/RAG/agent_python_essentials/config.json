@@ -1,0 +1,21 @@
+{
+  "agent": "python_essentials",
+  "description": "Python Essentials for AI Agents - YouTube video transcript",
+  "embedding_model": "nomic-embed-text",
+  "embedding_provider": "ollama",
+  "chunk_size": 512,
+  "chunk_overlap": 50,
+  "top_k": 5,
+  "min_similarity": 0.7,
+  "sources": [
+    "RAG\\agent_python_essentials\\transcript"
+  ],
+  "file_patterns": [
+    "*.py",
+    "*.md",
+    "*.txt"
+  ],
+  "created_at": "2026-02-27T12:11:54.319711",
+  "updated_at": "2026-02-27T12:11:54.383624",
+  "document_count": 173
+}

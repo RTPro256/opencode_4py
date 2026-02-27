@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 28
+# Video ID: UsfpzxZNsPo
+
+[60:13] so these print statement and the
+[60:15] increment doesn't execute. Let's see
+[60:18] nothing happened. I am not getting any
+[60:20] output print here. Okay. Now let me go
+[60:23] back to one and execute this once again.
+[60:26] So the number in the first iteration was
+[60:28] one. It is less than seven. So it
+[60:31] entered the while loop. It prints the
+[60:33] number and then increments it in the
+[60:35] next line. Okay. The number gets
+[60:37] incremented. So it becomes two. So in
+[60:39] the next iteration this is two. Prints
+[60:41] two and then it gets incremented to
+[60:43] three. In the next iteration this is
+[60:44] already three. So three is less than
+[60:46] seven. again true. So it prints three.
+[60:49] Okay. And then increments to four. Four
+[60:52] is already less than seven. So it prints
+[60:54] four and then it gets incremented to
+[60:57] five and then to six and then to seven.
+[60:59] So the moment it is incremented to
+[61:01] seven. Now 7 is not less than seven. So
+[61:05] what happens then? The while loop
+[61:07] condition becomes false and so nothing
+[61:09] gets executed. The while loop exits on
+[61:12] its own gracefully. Yeah. So while loop
+[61:16] will exit on its own as long as this
+[61:18] condition becomes false the moment this
+[61:21] condition becomes false. Okay. So here
+[61:24] I'm incrementing by 22. So this will
+[61:27] jump to two units. So the same thing
+[61:30] it's just that the while loop terminates
+[61:32] a bit faster. Now now let's say you do
+[61:35] not want to continue all the iterations.
+[61:37] Okay you want to jump between the
+[61:39] iterations or you want to skip the
+[61:41] iterations in between. Okay. Or you want
+[61:44] to break out of the while loop or even
+[61:47] the for loop based on some condition.
+[61:50] Okay, you want to break out of the loops
+[61:52] based on some condition or you want to
+[61:54] jump some of the iterations. You don't
+[61:57] want to complete that iteration. You
+[62:00] want to continue to the next iteration
+[62:03] based on some condition. This is what
+[62:05] exactly we are going to see next.
+[62:08] Okay. So some external factors may
+[62:11] influence your programs and when this
+[62:13] occurs you may want the program to exit
+[62:15] the loop completely or skip a part of

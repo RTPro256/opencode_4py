@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 107
+# Video ID: UsfpzxZNsPo
+
+[230:57] again zero. If you change the axis to
+[231:00] one then they will be concatenated side
+[231:03] by side. Okay, remember that. So if you
+[231:05] want this kind of concatenation you have
+[231:08] to make sure that the axis is set to
+[231:10] one. So x equal to0 will give vertical
+[231:14] concatenation. Axis equal to 1 will give
+[231:16] it column wise that is horizontal
+[231:19] concatenation.
+[231:20] So you can see by default axis is set to
+[231:23] zero and that is why it was concatenated
+[231:26] vertically. You can also do group by U
+[231:29] and pivot tables. So let's do a group by
+[231:32] quickly. So I'm grouping all the data
+[231:35] frame columns or values by their subject
+[231:39] in this case. Let's say so subject wise
+[231:42] I want to have the mean of the updated
+[231:44] marks. That's what this code says. So
+[231:47] can you give me subject wise updated
+[231:49] marks mean? So you can also do a sum
+[231:53] function here. So fetch the mean marks.
+[231:58] Okay. So this is correct. So similarly
+[232:00] you can go for the describe function
+[232:03] where not only the mean value but also
+[232:06] the other statistics are visible here.
+[232:09] You can see. So this 96 8578 is already
+[232:13] there in the main column. But alongside
+[232:15] you have the min and max values also. So
+[232:18] subject wise minimum and maximum values
+[232:21] 96 96 that's a single value. That's why
+[232:23] the standard deviation is not a number.
+[232:25] So generative AI is present only once in
+[232:27] the entire data frame which is why the
+[232:29] standard deviation cannot be computed.
+[232:31] So for Python the standard deviation is
+[232:33] 7.2 for statistics 7.14. The minimum
+[232:36] marks obtained for Python is 79, maximum
+[232:39] is 93 and for statistics it is 69 and
+[232:42] 86. Seems as statistics uh paper was a
+[232:46] bit difficult. Okay. So similarly you
+[232:49] can create pivot tables. This is also
+[232:51] similar to contingency tables. Okay. So
+[232:53] here again you can set which column is
+[232:57] to be set as index and which column will
+[233:00] be set as the value. So here I have the
+[233:05] aggregation function. Now your
+[233:06] aggregation function can be uh mean, it
+[233:10] can be minimum, it can be max function,
+[233:13] it can be sum function or any of these.
+[233:16] So or median. So several aggregation

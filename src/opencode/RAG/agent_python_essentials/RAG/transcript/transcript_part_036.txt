@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 36
+# Video ID: UsfpzxZNsPo
+
+[77:33] variable. So the output of the print is
+[77:36] executed and the output is also stored.
+[77:38] So whatever the function returns in this
+[77:41] case it is returning the total that
+[77:43] returned value is stored in the output
+[77:45] variable here. Now in the previous case
+[77:49] the function did not have the return
+[77:50] statement. So the function was not
+[77:52] returning anything. So nothing was saved
+[77:55] here. And now here the output value of
+[77:57] the total is returned. So that returned
+[78:00] value is saved and that is what we are
+[78:02] able to retrieve. Till now we created
+[78:05] two functions which did not need any
+[78:09] input parameter to execute. Now I am
+[78:13] rewriting that function which will take
+[78:16] the name of the user as the input
+[78:18] parameter and use that name to construct
+[78:21] this string and this will be returned by
+[78:25] the function. So let me try with my
+[78:27] name. It says welcome to Python course
+[78:29] prashant. So this string was
+[78:33] concatenated to the original string and
+[78:36] the end you can see there is a white
+[78:37] space. So this is name is essentially a
+[78:40] string and this plus sign is basically
+[78:43] doing a string concatenation. Okay, that
+[78:46] concatenated string is finally returned
+[78:48] by the function. You can actually save
+[78:51] the output and verify. Okay, so output
+[78:56] equal to
+[78:58] welcome
+[79:00] let's say Harry this time.
+[79:04] Let me save.
+[79:06] And uh output is
+[79:10] retrieved here.
+[79:12] Perfect. Now you can also specify the
+[79:16] default values of the input parameters.
+[79:19] Okay. So here in this case the name has
+[79:23] got a default value of. Okay. So you can
+[79:27] see if you provide the name of the input
+[79:30] argument that will overwrite the default
+[79:33] value. The advantage of the default
+[79:35] value is if you forgot to provide any
+[79:38] input parameter to the function while
+[79:41] calling the function the default value
+[79:43] would be used. Okay. So let's see. So it
+[79:46] still says otherwise without providing
+[79:48] the default value this empty function
+[79:51] call would have returned you an error.

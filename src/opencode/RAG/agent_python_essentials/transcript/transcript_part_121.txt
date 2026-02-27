@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 121
+# Video ID: UsfpzxZNsPo
+
+[261:24] recommend you to get some uh basics on
+[261:27] the SQL. So the query string is again
+[261:30] executed and uh it is committed.
+[261:34] Execution means it will execute and uh
+[261:36] insert the data into the table
+[261:39] temporarily and if there is any error,
+[261:42] we can always roll back. Once there is
+[261:45] no error, I can ask it to commit. So
+[261:47] commit is like a permanent operation. So
+[261:52] perfect. So data has been inserted. Now
+[261:55] you can fire some query strings directly
+[261:57] to your table. Okay. Here a simple query
+[262:01] I am passing here is select star from
+[262:04] students. That means I want to select
+[262:06] all the rows from the students table. So
+[262:09] I'm going to use the read_sql function
+[262:12] from pandas. So I'm passing my query
+[262:14] string and the connection object. Let's
+[262:17] see. So after the data is fetged, it is
+[262:21] directly converted into a data frame as
+[262:23] you can see right. So this is the data
+[262:26] which we created in into my students
+[262:29] table. So you can also update some of
+[262:32] the records or delete the records or
+[262:35] filter your records based on all these
+[262:38] SQL query commands. So here update
+[262:41] student set Python marks. So basically
+[262:42] what I'm doing is um there is one
+[262:45] student called as Sophia Smith. I want
+[262:47] to update her marks from 78
+[262:52] to 95. Let's say there was some typo. So
+[262:56] that is the number which I want to
+[262:57] change. Okay. This 78 to 95. So Python
+[263:01] marks equal to 95 where the name is
+[263:04] Sophia Smith. So after changing you
+[263:08] always should be committing your
+[263:12] database once again. Okay, this is a
+[263:14] good so for query commands you don't
+[263:16] need to commit but for change commands
+[263:18] or update commands you should always
+[263:21] commit. So you can verify. So here I am
+[263:25] passing my query. This query is the
+[263:26] original query that is select star from
+[263:29] student. So the same query I'm passing
+[263:31] once again here with the connection
+[263:33] object. Let's see if that has been
+[263:34] changed. You can see that 78 has been
+[263:37] changed to 95.
+[263:39] Once you are done with all the SQL query
+[263:41] operations on your uh in-memory

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 43
+# Video ID: UsfpzxZNsPo
+
+[92:32] manage the growing code base, we turn to
+[92:35] packages. Imagine Redford School decides
+[92:37] to expand its system further. They
+[92:40] create a student management package with
+[92:42] modules for enrollment, attendance, and
+[92:45] profile management. They also have
+[92:48] packages for teacher management, fee
+[92:50] management, and more. Each package
+[92:52] represents a logical area of the system
+[92:55] and each module inside handles specific
+[92:58] tasks related to the area. It's a lot
+[93:01] like how a department store is
+[93:02] organized. You have different sections
+[93:04] for clothing, electronics, and
+[93:06] groceries. In Python, a package is
+[93:08] essentially a folder containing multiple
+[93:10] module files plus an underscore_init_.
+[93:16] py file which tells Python that this
+[93:20] folder should be treated as a package.
+[93:22] Packages can even contain subpackages
+[93:24] which are simply folders within folders
+[93:27] each with their own init py file. For
+[93:31] instance, our school management package
+[93:34] could contain subpackages for student
+[93:36] management, teacher management, and fee
+[93:38] management. This allows us to scale our
+[93:41] codebase in an organized and logical way
+[93:45] making it easy to find and maintain
+[93:47] different parts of our system. So how do
+[93:50] we use packages in our main script? It's
+[93:52] quite simple. You refer to the package
+[93:54] name, subp package name and then the
+[93:57] module or function you want to use. For
+[93:59] example, if you want to use the
+[94:01] enrollment function from the student
+[94:03] management package, you might write
+[94:05] something like from school management
+[94:08] dot student management dot enrollment
+[94:11] import enroll student. Thank you for
+[94:15] joining me on this journey to understand
+[94:16] models and packages in Python. I hope
+[94:19] you now appreciate how important these
+[94:21] tools are for organizing and managing
+[94:24] your code. They help keep your projects
+[94:26] clean, efficient, and scalable, making
+[94:29] your life as a programmer much easier.
+[94:32] Keep practicing. Try creating your own
+[94:34] modules and packages, and I'll see you
+[94:36] in the next session.
+[94:39] In this video, we'll learn about the

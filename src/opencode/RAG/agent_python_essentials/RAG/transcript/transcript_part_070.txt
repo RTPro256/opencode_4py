@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 70
+# Video ID: UsfpzxZNsPo
+
+[150:12] want to generate the random numbers
+[150:14] integers in this case. The lowest value
+[150:17] being zero, highest value being five and
+[150:19] I want to pick five numbers. Okay, so
+[150:22] these are the numbers that I get and
+[150:24] these numbers can also be repetitive.
+[150:26] Okay, so randomly I'm picking five
+[150:28] numbers by replacement. Okay, so I get
+[150:33] this array. Okay, here I'm creating
+[150:36] random numbers which are in the range of
+[150:38] 0 to one. Zero is inclusive, one is
+[150:41] exclusive. Okay, so it's a open interval
+[150:43] on the other side. I'm going to create
+[150:46] five random numbers in that range. So
+[150:49] these are the five random numbers that
+[150:51] you have got. If you want, you can also
+[150:53] round off these random numbers. So let
+[150:56] me round it to two decimal points. So
+[150:58] you can see the random numbers were
+[151:00] generated and also rounded off to two
+[151:03] decimal points. I can also create
+[151:04] normally distributed random numbers.
+[151:06] Location is the mean of the random
+[151:08] numbers. Scale is the standard deviation
+[151:11] and size means how many random numbers
+[151:13] do you want to create. Okay. So size
+[151:16] determines how many numbers you want.
+[151:18] And the mean of these five numbers would
+[151:20] be close to zero. It cannot guarantee
+[151:22] that it will be exactly zero. And the
+[151:24] standard deviation of these five numbers
+[151:26] will be close to one. Here you have your
+[151:28] numbers. Okay. You can also do the
+[151:30] shuffling. So let's say I've got an
+[151:32] array of these five numbers and I want
+[151:34] to shuffle them. So this is the shuffled
+[151:37] array. Here you are not generating
+[151:39] anything but you are generating another
+[151:40] array with the numbers which are
+[151:42] shuffled from the previous array. You
+[151:44] can also create random permutation of
+[151:47] these numbers. Okay. Okay. So in
+[151:49] conclusion in this Jupyter notebook I
+[151:51] have demonstrated how you create
+[151:53] different arrays by using the built-in
+[151:55] numpy functions. We have done enough
+[151:57] examples on indexing, slicing, array
+[151:59] manipulations in terms of shape, reshape
+[152:02] function. We have used also flattening
+[152:04] function like rival arithmetic

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 4
+# Video ID: UsfpzxZNsPo
+
+[06:25] on the 64-bit installer which is 912
+[06:29] mgabytes. So it might take some time for
+[06:31] you to download. So let's wait.
+[06:37] So once we have uh downloaded the
+[06:39] Anaconda installation file, double click
+[06:42] to start the installation. Okay. So I
+[06:44] have double clicked on the installer
+[06:46] file and this is the installation wizard
+[06:48] which will appear. So let's click on
+[06:51] next. Agree to the license agreement and
+[06:54] then it shows you a screen whether to
+[06:57] select the installation just for you or
+[07:00] all the users. go with the just me
+[07:02] option which is the recommended and then
+[07:05] it will uh select a default path based
+[07:07] on the operating system for
+[07:09] installation. Make sure you have enough
+[07:11] space in your C drive. So by default the
+[07:13] installation directory is C users
+[07:16] username and then uh Anaconda 3 and uh
+[07:20] there are some options uh given to you
+[07:23] whether you want to add Anaconda or
+[07:25] Python in your system path. Go with the
+[07:27] default options and just hit install. It
+[07:30] will take some time for you to install
+[07:32] this uh around 2 to 3 minutes. So based
+[07:35] on your systems configuration. So let's
+[07:38] wait. Once it is installed, we'll come
+[07:40] back. Now once the installation is
+[07:43] complete, this is the window that will
+[07:45] appear. Just click next and next and
+[07:49] finish. So it will give you an option to
+[07:51] launch the Anaconda Navigator, which we
+[07:54] will uh leave checked and uncheck this
+[07:57] last option.
+[08:04] Okay, the Anaconda Navigator has been
+[08:06] launched. This is how the window looks.
+[08:08] I'll just
+[08:10] click on uh don't show this again. So,
+[08:14] let us see what all packages have been
+[08:16] installed within Anaconda Navigator. So
+[08:19] whichever says launch all these
+[08:22] softwares have been installed when you
+[08:24] install Anaconda Navigator which means
+[08:27] PyCharm is not installed. If you see
+[08:30] Anaconda toolbox is installed, notebooks
+[08:33] are installed, Jupiter lab is already
+[08:36] installed. Okay, Jupyter notebook is
+[08:39] installed and we'll be using Jupyter Lab
+[08:41] and Jupiter notebooks extensively in

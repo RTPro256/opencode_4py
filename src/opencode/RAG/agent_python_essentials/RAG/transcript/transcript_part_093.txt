@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 93
+# Video ID: UsfpzxZNsPo
+
+[199:56] once again. So this is my data frame.
+[199:59] I'm going to add another column here by
+[200:02] doubling the marks. Okay, let's see. So
+[200:06] I have fetched my marks column and
+[200:08] multiplied that by two and saved the
+[200:10] value in another column name. Now since
+[200:14] this column name does not exist, it will
+[200:16] be created. So you can see the new
+[200:18] column name is double marks and it is
+[200:21] basically the double of the original
+[200:22] marks. You can also use some lambda
+[200:25] functions and apply function to update
+[200:27] the values. So for example, let's say I
+[200:30] want to give five bonus marks to all the
+[200:33] students. Okay. So I have added five
+[200:36] marks into the original marks for each
+[200:40] student. That's what this lambda
+[200:41] function does. So the values of x is
+[200:44] fetched from the marks column because
+[200:47] you are applying that lambda function on
+[200:48] the marks column and each value of x
+[200:51] will be added to five and that resultant
+[200:54] value will be replaced back into the
+[200:58] marks column. You can also rename
+[201:00] columns. So now since I have already
+[201:02] updated my marks, it's good idea to
+[201:04] update the marks column to updated
+[201:06] marks. So now you can see your marks
+[201:08] column is no longer marks. It is updated
+[201:11] marks. And uh let's say you think now
+[201:14] that this double marks column is no
+[201:16] longer needed. You want to drop it or
+[201:18] you want to delete it. So how do I
+[201:20] delete? So you can use the drop method.
+[201:22] Okay. So the drop method can actually be
+[201:25] used to drop both rows and columns.
+[201:28] Okay. So this is the list of labels
+[201:33] either the row labels or column labels
+[201:35] which you want to drop. So if you want
+[201:37] to drop multiple columns then this will
+[201:39] be a list of multiple column labels. So
+[201:42] these are my labels. Okay, these are my
+[201:44] labels. Axis equal to one means
+[201:49] drop columns
+[201:50] and axis equal to zero means drop rows.
+[201:54] So essentially whatever list of labels
+[201:57] you are providing Python will think that
+[202:00] these are the labels for the rows if you
+[202:03] make access equal to zero which is
+[202:04] anyway the default. So if you do not

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 51
+# Video ID: UsfpzxZNsPo
+
+[109:41] here uh the class names which is again a
+[109:44] machine learning model that is my class
+[109:46] name that should again be in the camel
+[109:48] case instead of the snake case which is
+[109:50] the naming mistake again we are doing
+[109:53] here and uh if you see the function
+[109:55] definition that is in the camel case
+[109:57] rather that should have been the snake
+[109:59] case so you cannot interchange them
+[110:02] another very common mistake people do is
+[110:04] trying to overly use the equality
+[110:07] operator okay This is to check uh
+[110:09] equality of something whether a variable
+[110:12] is equal to something or not. So let's
+[110:14] say your variable value is uh 10 and if
+[110:18] you want to check whether that variable
+[110:22] is none or not. Okay. So instead of
+[110:24] using this it's better to use if
+[110:26] variable is none. Okay. Instead of
+[110:29] checking that the variable's value is
+[110:31] none. Check whether the variable itself
+[110:34] is none or not. So this is a better way
+[110:36] of handling. If you want to check
+[110:37] whether it is being compared to none or
+[110:40] not. If it is being compared to some
+[110:42] other number then it is fine. Uh if you
+[110:44] want to check it with respect to let's
+[110:46] say 100 then this code is perfectly
+[110:49] fine. But if you are checking with
+[110:51] respect to none then the better way is
+[110:53] to go with this. Finally we should avoid
+[110:57] inputting any unused modules. So for
+[110:59] example in this code I want to find out
+[111:02] the square root of a given number and
+[111:05] I'm defining a function for that. So
+[111:07] here you can see uh I have imported the
+[111:10] math module, the OS module and the
+[111:13] random module and I'm not using any of
+[111:16] them. So this is not a good way of
+[111:19] writing codes simply importing the
+[111:21] modules which keep occupying the memory.
+[111:23] So a better way is if you can reproduce
+[111:26] the functionality by your own code or by
+[111:30] some custom functions that is the best.
+[111:32] So in this case only this function
+[111:34] remains in the memory instead of all
+[111:36] those redundant modules which we are not
+[111:39] using anyway. So in this case if you
+[111:42] want you can also import the math module
+[111:44] and actually the math module is being

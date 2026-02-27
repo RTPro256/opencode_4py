@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 136
+# Video ID: UsfpzxZNsPo
+
+[294:49] avoid overloading the server. Exceeding
+[294:52] this limit can result in errors or being
+[294:54] temporarily blocked. It also ensures
+[294:56] fair usage among different clients. To
+[295:00] handle rate limits effectively, check
+[295:02] the headers. Many APIs include rate
+[295:04] limit information in the response
+[295:06] headers such as the number of requests
+[295:08] remaining. You can also implement
+[295:10] delays. For this, you use the time
+[295:12] dosleeve function to wait before making
+[295:15] new requests if you are close to the
+[295:17] limit. And finally, you can also use
+[295:19] exponential backoff. Gradually increase
+[295:21] the wait time after each retry if you
+[295:25] encounter rate limit errors. It's
+[295:27] crucial to respect the API's rate limit
+[295:29] and monitor your application's request
+[295:32] rate to avoid service disruptions.
+[295:35] Authentication is essential for securing
+[295:37] APIs and controlling access to
+[295:39] resources. It ensures that only
+[295:41] authorized users can access certain data
+[295:44] or functionalities. Common
+[295:46] authentication methods include API keys,
+[295:49] OOTH 2.0 and beer tokens. Now let's talk
+[295:53] about the authentication types one by
+[295:55] one. Let's start with the API keys. API
+[295:58] keys are simple yet effective methods
+[296:00] for authenticating requests. After
+[296:03] registering with an API provider, you
+[296:05] will receive a unique key that
+[296:08] identifies you. You include this key in
+[296:10] your requests either in the headers or
+[296:12] as a query parameter. For security, it's
+[296:15] better to include it in the headers.
+[296:17] Remember to keep your API keys secure.
+[296:20] Do not hardcode them in your scripts or
+[296:22] share them publicly. Use environment
+[296:25] variables or secure storage mechanisms
+[296:28] to protect them. Now, let's talk about
+[296:30] the OOTH authentication, which is an
+[296:33] open standard for access delegation that
+[296:36] allows third party applications to
+[296:39] access user data without sharing
+[296:41] passwords. Platforms like Google,
+[296:43] Facebook and Twitter use OOTH to provide
+[296:47] secure access. The OOTH flow typically
+[296:49] involves the following steps. First, the
+[296:52] authentication request is generated. The

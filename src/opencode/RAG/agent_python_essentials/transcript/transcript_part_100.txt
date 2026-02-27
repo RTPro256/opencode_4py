@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 100
+# Video ID: UsfpzxZNsPo
+
+[215:28] have to make sure that the axis is set
+[215:30] to one. So x is equal to0 will give
+[215:34] vertical concatenation. xis equal to 1
+[215:37] will give it column wise that is
+[215:39] horizontal concatenation.
+[215:41] So you can see by default access is set
+[215:43] to zero and that is why it was
+[215:46] concatenated vertically. You can also do
+[215:48] group by u and pivot tables. So let's do
+[215:52] a group by quickly. So I'm grouping all
+[215:55] the data frame columns or values by
+[215:59] their subject in this case. Let's say so
+[216:02] subject-wise I want to have the mean of
+[216:04] the updated marks. That's what this code
+[216:07] says. So can you give me subject-wise
+[216:10] updated marks mean? So you can also do a
+[216:14] sum function here. So fetch the mean
+[216:18] marks. Okay. So this is correct. So
+[216:21] similarly you can go for the describe
+[216:23] function where not only the mean value
+[216:26] but also the other statistics are
+[216:29] visible. Here you can see so this 96
+[216:32] 8578 is already there in the main column
+[216:35] but alongside you have the min and max
+[216:38] values also. So subject wise minimum and
+[216:41] maximum values 96 96 that's a single
+[216:43] value that's why the standard deviation
+[216:45] is not a number. So generative AI is
+[216:47] present only once in the entire data
+[216:49] frame which is why the standard
+[216:50] deviation cannot be computed. So for
+[216:52] Python the standard deviation is 7.2 for
+[216:55] statistics 7.14. The minimum marks
+[216:58] obtained for Python is 79, maximum is 93
+[217:01] and for statistics it is 69 and 86. Same
+[217:04] as statistics uh paper was a bit
+[217:07] difficult. Okay. So similarly you can
+[217:10] create pivot tables. This is also
+[217:12] similar to contingency tables. Okay. So
+[217:14] here again you can set which column is
+[217:18] to be set as index and which column will
+[217:21] be set as the values. So here I have the
+[217:26] aggregation function. Now your
+[217:28] aggregation function can be uh mean, it
+[217:31] can be minimum, it can be max function,
+[217:34] it can be sum function or any of these.
+[217:37] So or median. So several aggregation
+[217:40] functions you can apply on this values.
+[217:44] So the aggregation function is always
+[217:45] applied on the values and you can

@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "description": "Registry of sharded local AI models",
+  "models": [],
+  "settings": {
+    "default_shards": 4,
+    "storage_path": "aimodels"
+  }
+}

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 41
+# Video ID: UsfpzxZNsPo
+
+[88:19] outside the function. Okay, so the
+[88:21] function can have right now the readonly
+[88:24] access as in this case you can see it
+[88:26] had a readonly access but let's say you
+[88:29] want to change or update the value of
+[88:32] the global variables. Basically you want
+[88:34] to have a write access also to the
+[88:36] global variables. For that you need to
+[88:39] define that variable which you want to
+[88:41] provide this function as a read write
+[88:43] access. Okay. So that should be defined
+[88:46] within the functions space or the local
+[88:50] uh variable space as a global. So this
+[88:53] global keyword enables this function to
+[88:57] have a read write access to this global
+[89:00] variable. Now, so this name will be
+[89:02] modified by this function. So I'm
+[89:05] modifying the value here. And when I
+[89:07] call that function, you can see the
+[89:09] value of the name has changed. So this
+[89:12] was defined out of the function. And
+[89:14] within the function, the value was
+[89:15] changed. And now I'm accessing the value
+[89:18] of the variable out of the function. And
+[89:20] it still gives me the value which was
+[89:22] defined within the function. So that is
+[89:26] how you can create a global variable
+[89:29] which can be shared by even multiple
+[89:31] functions. So each function can still
+[89:34] share the same value in a readr write
+[89:37] access mode provided that you provide
+[89:40] the variable with a global keyword in
+[89:44] all those functions where you want to
+[89:45] share in a readr mode.
+[89:49] Welcome to this session on modules and
+[89:51] packages in Python. Modules and packages
+[89:53] are incredibly useful tools that help us
+[89:57] keep our code organized, reusable, and
+[89:59] easy to manage. Today, we'll explore
+[90:01] what they are, how to create them, and
+[90:04] why are they important for any
+[90:05] programmer, especially as your projects
+[90:07] grow. Let's dive in. Let's begin by
+[90:10] understanding modules in Python. Simply
+[90:12] put, a module is a file containing
+[90:14] Python code, typically functions and
+[90:16] class definitions, which we can reuse
+[90:19] across different programs. It helps us
+[90:21] organize related code in a logical way.
+[90:24] The file extension for a Python module

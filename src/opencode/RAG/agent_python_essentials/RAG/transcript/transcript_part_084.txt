@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 84
+# Video ID: UsfpzxZNsPo
+
+[179:25] have here. I'm creating an annotation.
+[179:28] Annotation will help to pinpoint a
+[179:31] particular point in the plot and provide
+[179:34] a label to it. Okay, that's the annotate
+[179:36] function. So this is the value that will
+[179:40] come up in the label. So this is the X
+[179:42] and Y coordinate of the arrow. You are
+[179:46] creating an arrow essentially and this
+[179:48] is the label at the end of the arrow you
+[179:50] can say. So and this is the text where
+[179:53] the text starts and then the arrow
+[179:56] properties what color you want and you
+[179:58] want to shrink or expand what length of
+[180:01] that arrow. Some of these customizations
+[180:03] you can look at in the documentation.
+[180:06] Now these are the other regular things.
+[180:08] So you can see that I'm able to
+[180:10] highlight a particular point in the plot
+[180:12] by using this arrow here. So this is the
+[180:15] label which I have provided in the
+[180:17] annotation. Okay. You can also have a
+[180:19] regular text box placed anywhere in the
+[180:22] plot. Okay. So that function is
+[180:23] different. So that is plt.ext function.
+[180:26] Okay. So you can see the background
+[180:28] colors and those things are different.
+[180:30] If you want you can change the ggplot to
+[180:33] let's say seaborn or bmh.
+[180:37] So let's go ahead and look about the
+[180:40] line stylesheets. So matt plot lib style
+[180:46] sheets. Okay. So we have the stylesheets
+[180:48] reference in mattplot lib here. So this
+[180:51] is how we use the ggplot option and
+[180:53] these are the other. So this is the
+[180:55] default. This is what we have been using
+[180:57] until now and then we changed it to
+[180:59] ggplot. So once you have changed the
+[181:01] stylesheet that stylesheet remains
+[181:03] active for the remaining notebook. Okay.
+[181:06] Unless you set it back to the default.
+[181:09] So this is a classic one solarized light
+[181:12] BMH. This is how the plots will look
+[181:13] like in the BMH. You can have dark
+[181:16] background, light background, 538,
+[181:18] ggplot, grayscale and then you have the
+[181:21] seaborn v08 version bright colorlind
+[181:26] dark pallet everything. Okay. So yeah
+[181:30] and so on. So let's come back. Let me
+[181:32] change it to BMH and see how does the
+[181:35] plot change. Yeah. So this has the

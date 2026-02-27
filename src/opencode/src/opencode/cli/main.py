@@ -277,6 +277,10 @@ app.add_typer(index_app, name="index")
 from opencode.cli.commands.llmchecker import app as llm_app
 app.add_typer(llm_app, name="llm")
 
+# Add local-llm subcommand group for local LLM management
+from opencode.cli.commands.local_llm import llm_app as local_llm_app
+app.add_typer(local_llm_app, name="local-llm")
+
 # Add debug subcommand group for simplified troubleshooting
 from opencode.cli.commands.debug_cmd import app as debug_app
 app.add_typer(debug_app, name="debug", help="Simplified troubleshooting commands")

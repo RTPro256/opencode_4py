@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 164
+# Video ID: UsfpzxZNsPo
+
+[357:24] now because we haven't started using
+[357:26] this. Uh you might need to install the
+[357:30] transformers library. So let's go ahead
+[357:32] and do that. Using the see transformers
+[357:35] library has been created by hugging
+[357:37] face. So if you want to use the hugging
+[357:39] face you'll have to install transformers
+[357:42] library. Fine. So I've installed it now
+[357:46] and let's go ahead. you might need
+[357:48] restart the runtime to make sure that
+[357:51] all the installed libraries are ready.
+[357:53] Okay, so let's do that. Click on the
+[357:55] runtime and restart session. Okay, so
+[358:00] click yes. Wait for a few seconds. I
+[358:03] think it is already done. So we can
+[358:06] again check the Nvidia SMI. Okay, this
+[358:10] looks good. Now we can again start by
+[358:14] importing the hugging face API key. So
+[358:19] when I run this code it will ask me to
+[358:21] login. So I am registering this Jupyter
+[358:24] notebook on hugging face. It is asking
+[358:27] me to provide the token. So you have to
+[358:32] paste the hugging face token that we
+[358:33] created some time back. So you can
+[358:36] uncheck this and click login. So login
+[358:40] is successful. So I now have access to
+[358:43] hugging face from this Jupiter notebook
+[358:46] running on collab. So this is the model
+[358:49] ID. You can check the model ID card by
+[358:53] clicking on this link. So this is the
+[358:55] model card. Okay. And how to use this
+[358:57] model? Instructions are given on the top
+[359:00] right using the transformers library. So
+[359:02] some basic code is already given as a
+[359:04] starter code. Okay. So how to use this
+[359:07] as a pipeline and how do you call it? So
+[359:12] everything is there as a starter code.
+[359:15] So we'll go back to our collab and let's
+[359:20] run this. So you can see that this
+[359:24] entire model is now being downloaded
+[359:28] into Google Collab. So the process is
+[359:30] still running. You can see when the
+[359:33] model is being downloaded, it is
+[359:35] downloading lot of other stuff like
+[359:37] tokenizers configuration. This is the
+[359:40] tokenizer model. Now this tokenizer
+[359:42] model is 4.2 MB. The tokenizer dojson
+[359:45] file. So this contains all the tokens
+[359:48] information. Some special token
+[359:51] information if you have in this JSON

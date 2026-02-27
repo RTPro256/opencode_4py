@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 80
+# Video ID: UsfpzxZNsPo
+
+[170:46] here at. So let's see the slice labels
+[170:49] A, B, C and D. And then this is
+[170:52] basically the fraction of your circle
+[170:55] that will be occupied by these labels.
+[170:59] Okay. So 40% of the circle will be
+[171:01] occupied by A. Another 25% by B. C will
+[171:06] occupy 20 20% and the last 15% will be
+[171:10] occupied by D. So make sure that the sum
+[171:12] of this will be equal to 100. Okay. And
+[171:15] there is something interesting here. I
+[171:17] have set an offset for the second bit
+[171:19] and that's why the second
+[171:22] piece appears to be slightly off. Okay.
+[171:26] So that is explode in the exploded view
+[171:29] that is highlighted. Basically if you
+[171:31] want to highlight a particular section
+[171:33] then you can do this explode option as
+[171:37] well. So the main function being used
+[171:39] here is pi. You can provide the slices
+[171:42] basically. Okay. And then the slice
+[171:44] labels
+[171:46] explode options. If all by default all
+[171:49] are zero means you'll get a flat pie
+[171:51] chart. So this explode option gives you
+[171:54] a 3D effect essentially. And then the
+[171:57] label formatting this is done by this.
+[172:00] Okay. And then whether you want the
+[172:02] shadow. So you can see the shadow here.
+[172:05] The shadow is given. So whether you want
+[172:07] to have the shadow effect. So that gives
+[172:09] me a 3D effect kind of thing. And then
+[172:12] starting angle. Okay. 140 or you can
+[172:14] provide 0 90 whatever angle. So from
+[172:16] where your slides slices actually start.
+[172:19] Okay. So see this angle here from here
+[172:23] to here that's 140°. Okay. This angle is
+[172:27] 140°. So that's where the first slice
+[172:29] starts and then the second then the
+[172:31] third and the last one.
+[172:35] Now we have seen how to customize some
+[172:37] of these things. Let's deep dive into
+[172:39] customizing
+[172:41] access limits. text grid lines and
+[172:44] figure size and so on. Okay. So here
+[172:47] I've again created a figure. I'm going
+[172:49] to create two plots here. Plot one and
+[172:52] plot two. You see that I have provided
+[172:54] two different labels sinx and cos x. So
+[172:57] make sure if you have multiple plots
+[172:59] within the same canvas provide different

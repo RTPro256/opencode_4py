@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 104
+# Video ID: UsfpzxZNsPo
+
+[224:18] two missing values and the other two
+[224:20] columns don't have any missing value.
+[224:22] Right? So column- wise how many missing
+[224:24] values are present you can use this code
+[224:26] to get. So now you want to fill the
+[224:30] missing values with the average value of
+[224:33] that column. Let's say uh right now the
+[224:35] missing value is present in the age
+[224:38] column. So you can take the average age
+[224:41] and fill the missing values. So fill na
+[224:43] function fill the nan values that's what
+[224:46] this function does filling the nan
+[224:48] values okay fill na is fill the nan
+[224:51] values in that column so again by
+[224:54] default that is false so you'll have to
+[224:56] make it true so that the filling happens
+[224:58] permanently or replace the original
+[225:01] column either way so after filling
+[225:04] replace the original column that is one
+[225:05] way or you use the in place option so
+[225:08] now you can see this 23.5 and this 23.5
+[225:12] 5 is coming because of the fill na
+[225:15] function. Earlier these were nans. So
+[225:17] you can check the info and if you want
+[225:19] you can convert it back into a integer
+[225:21] format. So you will lose some precision.
+[225:23] So these decimal points will be ignored
+[225:25] then. Okay. Or rounded to the nearest
+[225:28] whole number. So I have type casted it
+[225:30] back to a integer. So it depends on your
+[225:32] use case. You might want to do that. So
+[225:35] here the function used is as type. as
+[225:38] type changes the data type of a column
+[225:40] to a specified data type. So I am type
+[225:43] casting it back to a integer. So you can
+[225:45] type cast it to a integer 8 bit 16 bit
+[225:48] or a 32-bit precision. So based on your
+[225:51] use case okay so I'm creating a few more
+[225:55] missing values after creating a copy of
+[225:58] the data frame. So I'm creating a copy
+[226:00] and from that copy I'm dropping some
+[226:03] more uh values. So creating some more
+[226:06] missing values in the updated marks.
+[226:08] This time you can see this is one, this
+[226:10] is one. Uh other thing that you can do
+[226:14] is instead of filling the missing
+[226:16] values, you might want to drop the rows
+[226:19] which have missing values. So let's say
+[226:20] I want to drop these two rows which have
+[226:23] the missing values. So that can be done

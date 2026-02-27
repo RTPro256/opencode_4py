@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 90
+# Video ID: UsfpzxZNsPo
+
+[192:40] But for the gender I have got the most
+[192:42] frequent value is male with a frequency
+[192:44] of five and the most frequent subject
+[192:47] that I have my data frame is statistics
+[192:50] with a frequency of four. Let's look
+[192:52] into the quick information about this
+[192:54] data frame by using info function. So
+[192:57] info function gives me a quick summary
+[193:00] of the data frame. Eight entries means
+[193:02] eight rows are present. Total five
+[193:04] columns are present. So you also get the
+[193:06] information about the rows and columns
+[193:08] and how many non-null values are present
+[193:09] in each of these columns. You can also
+[193:12] see the data type of each column. So if
+[193:16] you see name is in the object data type,
+[193:19] gender is also the object data type.
+[193:21] Subject is object data type. That's why
+[193:23] I used object here so as to get the
+[193:26] statistical summary. Okay. The other two
+[193:30] are present as integers. So the age and
+[193:32] marks these are present as integers. So
+[193:35] you can actually have a look into the
+[193:37] data type of each of the columns by
+[193:39] using the info function.
+[193:41] Now let's have a look how can we select
+[193:44] and filter data. Okay. Let's say I want
+[193:47] to select only the marks column out of
+[193:50] my data frame. So this is a series. You
+[193:52] remember individual columns of my data
+[193:56] frame are going to be series. Let us
+[194:00] check the data type of the data frame.
+[194:02] First it shows pandas.core.frame
+[194:05] data frame. And if I do the same thing
+[194:08] for my type and df marks you can see the
+[194:11] data type here is series. What
+[194:13] essentially it means is this is
+[194:16] basically a series whereas that entire
+[194:20] data frame this was my data frame and
+[194:22] that's 2D. Now let's do some conditional
+[194:26] indexing. Okay. So you can also
+[194:31] select multiple columns. Okay. So let me
+[194:34] just show you how do we select multiple
+[194:37] columns. Here I've only selected a
+[194:38] single column marks but let's say you
+[194:40] are interested in looking at two
+[194:42] columns. So one is name and the other is
+[194:47] marks. So if you notice what I have
+[194:52] passed is basically a list of column
+[194:54] names. A list of column names. Okay. For

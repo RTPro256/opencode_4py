@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 69
+# Video ID: UsfpzxZNsPo
+
+[148:04] addition operation is still occurring
+[148:06] element wise. So that creation of this
+[148:09] additional array behind the scenes of 10
+[148:11] 10 10 that is exactly what the
+[148:14] broadcasting actually does. If you see
+[148:16] this will create an array of three rows
+[148:18] and one column. So it's essentially a
+[148:21] column vector. All the numbers in one
+[148:22] dimension. Okay. And this is a
+[148:25] one-dimensional array. So this is a 2D
+[148:27] array and this is a 1D array. Okay. And
+[148:30] you want to add a 1D array with a 2D
+[148:32] array. And so again you'll have to use
+[148:35] the concept of broadcasting. So this is
+[148:38] how it works. Let's take a couple of
+[148:40] linear algebra functions which are very
+[148:42] important ones. I create two two
+[148:45] dimensional matrices 1 2 3 4 and 2012. A
+[148:48] and B. I'm going to multiply A and B. So
+[148:50] note that A multiplied by B is not same
+[148:53] as B multiplied by A because matrix
+[148:55] multiplication which is done by using
+[148:58] the add the rate operator that is not
+[149:01] element wise operation. Okay, let me
+[149:03] show this. So these are the values of AB
+[149:07] and the matrix wise multiplication
+[149:08] between A and B. So this is A multiplied
+[149:11] by B. This is the matrix multiplication.
+[149:14] Let's see B multiplied by A. What does
+[149:16] it give? Okay. So B * A is this. A
+[149:20] multiplied by B is this. So that's what
+[149:22] exactly I said. A into B is not same as
+[149:25] B into A because these are not element
+[149:27] wise multiplication. Okay. You can also
+[149:29] do that same operation by using this
+[149:31] function A dot doB. So the result will
+[149:35] be same as what we got before. Okay. So
+[149:38] you can use the dot function. You can
+[149:40] also use the Matt mull function. So, np
+[149:43] dot matt null that is matrix
+[149:47] multiplication a comma b again make sure
+[149:50] the order in which you are passing the
+[149:53] arguments. So this is again a into b. If
+[149:56] you say b comma a then this will be b
+[149:58] multiplied by a. You can use the linear
+[150:00] algebra module to get the inverse and
+[150:02] the determinants. Okay. So this is the
+[150:05] inverse of a and the determinant of a.
+[150:08] I'll use a random module to generate
+[150:10] some numbers and sequences here. So I

@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 141
+# Video ID: UsfpzxZNsPo
+
+[305:34] use. It leverages Python's type hints to
+[305:37] provide automatic data validation,
+[305:39] serialization, and interactive
+[305:41] documentation with asynchronous support
+[305:45] built-in. Fast API enables the
+[305:47] development of high performance
+[305:49] applications. Its focus on developer
+[305:51] experience makes it a popular choice for
+[305:54] creating robust and scalable APIs
+[305:56] quickly. So, comparison between flask
+[305:59] and fast API. Both Flask and Fast API
+[306:02] are powerful frameworks, but they have
+[306:04] different strengths. Flask is simple and
+[306:06] straightforward, making it a good choice
+[306:08] for beginners and small projects.
+[306:10] However, it may require additional
+[306:12] plugins or manual coding for features
+[306:14] like data validation and documentation.
+[306:16] On the other hand, fast API provides a
+[306:19] high performance and modern features
+[306:20] like asynchronous request handling and
+[306:22] automatic documentation generation. It
+[306:26] uses Python type hints extensively which
+[306:28] can enforce data validation and improve
+[306:31] code quality. Finally, while fast API is
+[306:34] slightly steeper in terms of learning
+[306:37] curve due to its reliance on type hints,
+[306:39] it can significantly speed up
+[306:41] development of APIs that require robust
+[306:44] features and scalability. That's all in
+[306:47] this video. See you in the next video
+[306:48] where we'll deep dive into the hands-on
+[306:50] of API creation and accessing these APIs
+[306:53] using Flask framework. So welcome back
+[306:56] to this another coding tutorial on
+[306:58] flask. We'll be creating and accessing
+[307:00] endpoints in this tutorial video. So let
+[307:03] us first start by creating a simple
+[307:05] flask app. So in this case I'm creating
+[307:08] a simple app which will greet the user
+[307:11] hello world. Let's see the structure of
+[307:13] the flask app. First I'm importing the
+[307:16] flask class from the flask library. So
+[307:20] by default if you are using Anaconda or
+[307:22] even Google Collab Flask would come
+[307:25] pre-installed but in case flask is not
+[307:28] installed in your machine you should go
+[307:31] ahead and do pip install flask before
+[307:35] running these codes. Okay. So since I
+[307:38] already have flask we'll go ahead. So

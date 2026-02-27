@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 58
+# Video ID: UsfpzxZNsPo
+
+[124:08] also take some of the functions from
+[124:10] linear algebra and the random modules.
+[124:12] So let's get started. So first we will
+[124:15] need to import numpy. Numpai typically
+[124:18] comes pre-installed in any anaconda
+[124:21] installation whether you are running the
+[124:23] Jupyter notebook in collab numpy comes
+[124:26] pre-installed so you don't have to
+[124:28] really bother about installing numpy so
+[124:31] let's import numpy as an alias np and
+[124:35] for reproducibility especially while
+[124:38] working with random numbers I'm using a
+[124:40] default seed of 42 the numpy version
+[124:42] that I'm running in this notebook is
+[124:44] 1.26.4 four. Okay, let's see some of the
+[124:47] array creation functions. So, we'll be
+[124:50] using the nparray function primarily for
+[124:52] creating the arrays. Along with that, we
+[124:55] can use zeros, ones, arrange, and
+[124:56] lindspace functions. Let's see each one
+[124:59] of them one by one. So, here I've got a
+[125:01] list of numbers 1 2 3 4 5. This is a
+[125:05] normal Python list. I'm going to convert
+[125:07] this normal Python list into a numpy
+[125:09] array. Okay, by using the np array
+[125:12] function. So this is kind of type
+[125:14] casting a Python list into a numpy array
+[125:17] object. We can verify this by using the
+[125:20] type function. You can see the data type
+[125:22] is numpy. ND array. So it's a numpy n
+[125:26] dimensional array object. It's no longer
+[125:28] a list. Right? So now let me create a
+[125:30] two-dimensional array of zeros this
+[125:33] time. Okay. So I'll be using the
+[125:35] np.zeros function where it will have two
+[125:38] rows and three columns all filled with
+[125:40] zeros. So these are the two rows one and
+[125:43] two and three columns. Similarly, I can
+[125:46] create another two-dimensional object by
+[125:50] using the np do once function. So again,
+[125:52] this is going to be two rows and three
+[125:53] columns. Okay, all filled with ones. And
+[125:58] you can also check the dimensionality by
+[126:00] using the function. So let's see array
+[126:05] ones dot shape. So you can see that it
+[126:09] is having two rows and three columns. So
+[126:11] there is another function to check the
+[126:13] dimensionality. So that is n dim. You
+[126:17] can see the dimensionality is displayed
+[126:19] to be two. So you can check the nim

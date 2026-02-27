@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 72
+# Video ID: UsfpzxZNsPo
+
+[154:05] number of numbers that I'm going to
+[154:06] create in this array is 100 and I'm
+[154:10] computing the sign of that x values and
+[154:13] saving it as y. So I have my x and y.
+[154:16] You can see the y values. Let me print
+[154:19] the y values here. So sin 0 is 0 and
+[154:21] sine of 2 pi 2 pi is 360° that is also
+[154:25] close to zero. Right? So this is
+[154:28] supposed to be interpreted as zero.
+[154:30] That's not a number which is a valid
+[154:32] number. I would say sin 2 pi which is
+[154:34] 180° mathematically, analytically any
+[154:37] high school book will give you zero. So
+[154:40] this is actually zero. Okay. So first we
+[154:43] will see some of the basic plot types
+[154:45] here. Uh we'll first start with the line
+[154:49] plots then the scatter plots, bar plots,
+[154:52] histogram, box plots and pie charts. So
+[154:54] let's first start with the line plot.
+[154:56] Okay. So first I'm creating the figure
+[154:59] canvas. You can see on which this figure
+[155:01] will be plotted. I'm setting the aspect
+[155:03] ratio. So kind of 6 in x 4 in kind of
+[155:07] I'm creating a canvas here. So the
+[155:08] aspect ratio of the figure can be set
+[155:10] here 4x4 6x6. These are squarish kind of
+[155:14] shapes and this will be more like a
+[155:16] rectangular shape in which the plot
+[155:19] would be visible. So to create the line
+[155:21] plot I have the plot function. You'll
+[155:23] have to provide the values in the x-axis
+[155:26] then the values in the y-axis. These are
+[155:28] two positional arguments and then you
+[155:30] have all series of keyword arguments. So
+[155:32] what kind of label you want to give to
+[155:34] that plot in the legend? So this label
+[155:36] will come in the legend. What should be
+[155:38] the color of the line? Okay, by default
+[155:40] it will have some sort of a blue color.
+[155:42] But if you want to explicitly mention
+[155:45] the color, we'll see how we can change
+[155:47] the colors. And then the line style. So
+[155:49] line style is a dash here. Dash means
+[155:52] you'll get a solid line. And the width
+[155:54] of the line is given as two pixels here.
+[155:57] Okay. So you can change the line width.
+[155:59] Okay. So default is one. Here the line
+[156:01] style is dash by default anyway. Color
+[156:04] is some sort of a blue not the exact
+[156:06] blue that you'll get to see here. And by

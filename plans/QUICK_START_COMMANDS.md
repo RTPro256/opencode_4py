@@ -154,6 +154,74 @@ Steps:
 
 ---
 
+### 5. Sync Code Changes to GitHub
+
+**Purpose**: Update GitHub locally and remotely (both main project and target repos).
+
+**Prompt**:
+```
+Update GitHub repositories with latest changes.
+
+Reference: plans/GITHUB_UPLOAD_PLAN.md
+
+Steps:
+1. Check configured repositories: opencode github repos
+2. Stage and commit changes: opencode github push-all -m "Your message"
+3. Verify push success for each repository
+4. Report status for all repos
+```
+
+**Example** (push to all repos):
+```
+Update GitHub repositories with latest changes.
+
+Reference: plans/GITHUB_UPLOAD_PLAN.md
+
+Steps:
+1. Check configured repositories: opencode github repos
+2. Push to all repos: opencode github push-all -m "Feature update"
+3. Verify push success for each repository
+4. Report status for all repos
+```
+
+**Example** (push to specific repos):
+```
+Push changes to opencode_4py and opencode_comfyui repositories.
+
+Reference: plans/GITHUB_UPLOAD_PLAN.md
+
+Steps:
+1. Push to specific repos: opencode github push-all -r "opencode_4py,opencode_comfyui" -m "Update"
+2. Verify each push succeeded
+3. Report results
+```
+
+**Example** (sync to local target):
+```
+Sync opencode_4py to local ComfyUI portable project.
+
+Reference: plans/GITHUB_UPLOAD_PLAN.md
+
+Steps:
+1. Sync to local target: opencode github sync -t for_testing/as_dependency/ComfyUI_windows_portable -m "Sync update"
+2. Verify sync completed
+3. Optionally push to remote
+```
+
+**Example** (dry run):
+```
+Preview what would be pushed to GitHub.
+
+Reference: plans/GITHUB_UPLOAD_PLAN.md
+
+Steps:
+1. Dry run: opencode github push-all --dry-run
+2. Review what would happen
+3. Confirm or adjust as needed
+```
+
+---
+
 ## Quick Reference Table
 
 | Command | Source | Target | Reference Plan |
@@ -162,6 +230,7 @@ Steps:
 | **Integrate** | `opencode_4py` | `for_testing/[PROJECT]` | [TARGET_PROJECT_SYNC_PLAN.md](TARGET_PROJECT_SYNC_PLAN.md) |
 | **Sync** | `opencode_4py` (changes) | `for_testing/[PROJECT]` | [TARGET_PROJECT_SYNC_PLAN.md](TARGET_PROJECT_SYNC_PLAN.md) |
 | **Test** | `opencode_4py` (code) | `src/opencode/tests/` | [TESTING_PLAN.md](TESTING_PLAN.md) |
+| **GitHub Push** | `opencode_4py` | GitHub repos | [GITHUB_UPLOAD_PLAN.md](GITHUB_UPLOAD_PLAN.md) |
 | **Review** | `opencode_4py` (all) | Improvement recommendations | [COMPREHENSIVE_PROJECT_REVIEW_PLAN.md](COMPREHENSIVE_PROJECT_REVIEW_PLAN.md) |
 
 ---
@@ -189,6 +258,12 @@ Steps:
 │  ┌──────────────────┐      ┌──────────────────┐                 │
 │  │   opencode_4py   │ ───▶ │  for_testing/    │                 │
 │  │   (changes)      │      │ [PROJECT_NAME]   │                 │
+│  └──────────────────┘      └──────────────────┘                 │
+│                                                                  │
+│  GITHUB PUSH (opencode_4py → GitHub)                           │
+│  ┌──────────────────┐      ┌──────────────────┐                 │
+│  │   opencode_4py   │ ───▶ │  GitHub repos   │                 │
+│  │   (local)        │      │ (multiple)       │                 │
 │  └──────────────────┘      └──────────────────┘                 │
 │                                                                  │
 └─────────────────────────────────────────────────────────────────┘

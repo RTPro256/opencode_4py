@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 166
+# Video ID: UsfpzxZNsPo
+
+[362:21] this is the decoded output from the
+[362:23] tokenizer okay so this is the final
+[362:26] output you can say right so artificial
+[362:29] intelligence is the ability of and so on
+[362:31] so if this looks a bit complicated and
+[362:34] overwhelming that's the reason hugging
+[362:37] phase has provided a pipeline
+[362:40] which you can use much easily. Okay. And
+[362:44] that pipeline is what you can also see
+[362:46] from the model card page. So I'll give
+[362:50] you some examples of how we can use that
+[362:52] pipeline. So pipeline makes it easy. We
+[362:55] don't have to go for the tokenizer input
+[362:57] output decode functions and so on. In
+[362:59] fact, there are auto tokenizers
+[363:01] available for each model which will
+[363:04] handle these tasks easily implicitly.
+[363:07] Okay. So again these parameters we have
+[363:11] already discussed in the previous video.
+[363:13] So temperature controls the creativity
+[363:15] of the model. Value closer to zero means
+[363:18] more deterministic, less creative. Value
+[363:20] closer to one means you are allowing the
+[363:22] model to be more creative which means
+[363:25] more variation in the outputs are
+[363:27] expected when you rerun the same code
+[363:29] many times. Right? So here I am using
+[363:33] model.generate generate function to
+[363:35] actually generate the response and fetch
+[363:38] the output. But again the outputs are in
+[363:41] the format of token ids. Using those
+[363:43] token ids I am decoding and generating
+[363:47] the English text. So that's the same
+[363:50] thing. Okay. So pipelines make it easier
+[363:53] to send the prompts. So you don't need
+[363:54] to encode and decode every time. Uh
+[363:57] that's what the main value proposition
+[364:00] here is. So transformer.pipeline
+[364:02] pipeline here you are using the text
+[364:04] generation endpoint you can say so each
+[364:07] model will have different endpoints for
+[364:08] different different tasks so I'm using
+[364:10] the text generation endpoint I'm passing
+[364:13] the model URL or the inference API URL
+[364:18] and the tokenizer information so here
+[364:21] the tokenizer is what we imported so all
+[364:24] this tokenizer information we are
+[364:26] passing here and just mapping it to CUDA
+[364:30] so basically this model inference task
+[364:32] will be run on CUDA. Okay, so I've

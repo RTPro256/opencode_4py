@@ -1,0 +1,53 @@
+# Python Essentials for AI Agents - Part 46
+# Video ID: UsfpzxZNsPo
+
+[98:54] two lines because anyway it's quite
+[98:56] self-explanatory, right? It is pretty
+[98:59] obvious code. So ideally comments have
+[99:02] to be added in your code when you are
+[99:05] trying to explain why something is being
+[99:08] done. Another example uh you have
+[99:10] written a function here and a good code
+[99:13] would give a quick idea about what that
+[99:16] function is doing. So this is called as
+[99:18] dock string. You can see three double
+[99:21] quotes start and three double quotes
+[99:23] end. So anything in this anything
+[99:26] between this block that is called as
+[99:27] dock string. Okay documentation string
+[99:30] in short as dock string. So ideally in
+[99:34] the dock string you should be able to
+[99:36] provide what that function does and what
+[99:38] kind of input it takes and what
+[99:40] computation it does and what kind of
+[99:42] output it returns. So everything should
+[99:44] be documented in the doxing standard. So
+[99:46] we'll see more details about the docking
+[99:48] in the example in the later part of this
+[99:51] notebook. So currently I've got a
+[99:53] function which at least gives us an idea
+[99:56] about what that function does. Okay. So
+[99:58] let me run this code and show you the
+[100:01] advantage of having this documentation
+[100:03] string. So I am just using calculate
+[100:06] area and uh if you see now I'm pressing
+[100:10] in the keyboard shift tab okay or shift
+[100:13] tab tab shift tab will give you a quick
+[100:16] dock string about that function. So
+[100:18] without this without this dock string no
+[100:21] it's very difficult to figure out what
+[100:23] that function is doing. Okay. So let me
+[100:25] just remove this and uh show you that
+[100:29] function again. So now again I'm doing
+[100:32] shift tab tab. If you see dock string no
+[100:35] dock string is provided and that is
+[100:37] exactly what I was trying to convey. So
+[100:40] it's a good idea to provide the dock
+[100:42] strings so that we get to know what that
+[100:44] function does. Now let's take some more
+[100:46] examples of pythonic guides uh for AI
+[100:50] codes. So in the first example we see
+[100:53] that we should be using list
+[100:55] comprehensions more frequently instead
+[100:58] of using nave simple loops for data
+[101:01] transformations. So let me give an
