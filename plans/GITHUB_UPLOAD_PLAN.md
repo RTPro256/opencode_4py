@@ -146,8 +146,46 @@ Before starting any upload or update, check [GITHUB_REPOSITORIES.md](../docs/GIT
 | Repository | Push Command | Status |
 |------------|--------------|--------|
 | `opencode_4py` | `git push origin main` | Active |
-| `opencode_comfyui` | `git push origin main` | Planned |
+| `comfyui_portable_opencode-4py` | `git push comfyui main --force` | Active |
 | Future repositories | `git push origin main` | As created |
+
+#### Manual Git Commands (without CLI)
+
+To push updates to both repositories manually:
+
+```bash
+# Navigate to the opencode project
+cd src/opencode
+
+# Check current remotes
+git remote -v
+
+# Add the comfyui remote (only needed once)
+git remote add comfyui https://github.com/RTPro256/comfyui_portable_opencode-4py.git
+
+# Stage all changes
+git add -A
+
+# Commit changes
+git commit -m "Your commit message"
+
+# Push to opencode_4py (origin)
+git push origin main
+
+# Push to comfyui_portable_opencode-4py (comfyui remote)
+git push comfyui main --force
+
+# Verify both pushes succeeded
+git remote -v
+```
+
+#### Quick Sync Command
+
+For a quick sync to both repos:
+
+```bash
+cd src/opencode && git add -A && git commit -m "Update" && git push origin main && git push comfyui main --force
+```
 
 #### Workflow
 

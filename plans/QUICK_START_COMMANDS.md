@@ -158,6 +158,43 @@ Steps:
 
 **Purpose**: Update GitHub locally and remotely (both main project and target repos).
 
+**CLI Commands** (manual):
+```bash
+# Navigate to the opencode project
+cd src/opencode
+
+# Add the comfyui remote (only needed once)
+git remote add comfyui https://github.com/RTPro256/comfyui_portable_opencode-4py.git
+
+# Stage and commit changes
+git add -A
+git commit -m "Your commit message"
+
+# Push to opencode_4py
+git push origin main
+
+# Force push to comfyui repo (syncs with opencode_4py)
+git push comfyui main --force
+```
+
+**Using opencode CLI**:
+```bash
+# Check configured repositories
+opencode github repos
+
+# Push to all repos
+opencode github push-all -m "Your message"
+
+# Push to specific repos
+opencode github push-all -r "opencode_4py,comfyui_portable_opencode-4py" -m "Update"
+
+# Sync to local target (like ComfyUI portable)
+opencode github sync -t for_testing/as_dependency/ComfyUI_windows_portable -m "Sync update"
+
+# Dry run (preview what would happen)
+opencode github push-all --dry-run
+```
+
 **Prompt**:
 ```
 Update GitHub repositories with latest changes.
@@ -182,18 +219,6 @@ Steps:
 2. Push to all repos: opencode github push-all -m "Feature update"
 3. Verify push success for each repository
 4. Report status for all repos
-```
-
-**Example** (push to specific repos):
-```
-Push changes to opencode_4py and opencode_comfyui repositories.
-
-Reference: plans/GITHUB_UPLOAD_PLAN.md
-
-Steps:
-1. Push to specific repos: opencode github push-all -r "opencode_4py,opencode_comfyui" -m "Update"
-2. Verify each push succeeded
-3. Report results
 ```
 
 **Example** (sync to local target):
@@ -281,4 +306,12 @@ Steps:
 
 ---
 
-*Last updated: 2026-02-24*
+*Last updated: 2026-02-27*
+
+## Change Log
+
+| Date | Change |
+|------|--------|
+| 2026-02-27 | Added manual git commands for GitHub sync |
+| 2026-02-27 | Updated repository name to comfyui_portable_opencode-4py |
+| 2026-02-24 | Initial creation - Quick Start Commands guide |
