@@ -13,6 +13,13 @@ from typing import Any
 
 import httpx
 
+from opencode.core.defaults import (
+    EXA_API_URL,
+    CODESEARCH_DEFAULT_TOKENS,
+    CODESEARCH_MIN_TOKENS,
+    WEBSEARCH_TIMEOUT,
+)
+
 from opencode.tool.base import PermissionLevel, Tool, ToolResult
 
 
@@ -27,9 +34,9 @@ class CodeSearchTool(Tool):
     - Library tutorials
     """
     
-    API_URL = "https://mcp.exa.ai/mcp"
-    DEFAULT_TOKENS = 5000
-    MIN_TOKENS = 1000
+    API_URL = EXA_API_URL
+    DEFAULT_TOKENS = CODESEARCH_DEFAULT_TOKENS
+    MIN_TOKENS = CODESEARCH_MIN_TOKENS
     MAX_TOKENS = 50000
     
     @property

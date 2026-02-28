@@ -12,6 +12,8 @@ from typing import Any, AsyncIterator, Optional
 
 import httpx
 
+from opencode.core.defaults import LLM_TIMEOUT, LMSTUDIO_BASE_URL
+
 from opencode.provider.base import (
     FinishReason,
     Message,
@@ -39,7 +41,7 @@ class LMStudioProvider(Provider):
     - No API key required (local)
     """
     
-    DEFAULT_URL = "http://localhost:1234"
+    DEFAULT_URL = LMSTUDIO_BASE_URL
     
     MODELS = [
         ModelInfo(
@@ -59,7 +61,7 @@ class LMStudioProvider(Provider):
     def __init__(
         self,
         base_url: str = DEFAULT_URL,
-        timeout: float = 300.0,
+        timeout: float = LLM_TIMEOUT,
     ):
         self._base_url = base_url.rstrip("/")
         self._timeout = timeout

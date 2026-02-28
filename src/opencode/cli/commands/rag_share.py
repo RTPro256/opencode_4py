@@ -16,12 +16,14 @@ import typer
 from rich.console import Console
 from rich.table import Table
 
+from opencode.core.defaults import DEFAULT_COMMUNITY_REPO, GITHUB_API_BASE
+
 app = typer.Typer(name="rag-share", help="RAG sharing commands")
 console = Console()
 
-# Default community RAG repository
-DEFAULT_COMMUNITY_REPO = "RTPro256/opencode_4py"
-GITHUB_API_BASE = "https://api.github.com"
+# Default community RAG repository (uses centralized default)
+DEFAULT_COMMUNITY_REPO = DEFAULT_COMMUNITY_REPO
+GITHUB_API_BASE = GITHUB_API_BASE
 GITHUB_RAW_BASE = "https://raw.githubusercontent.com"
 
 

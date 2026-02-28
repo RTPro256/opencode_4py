@@ -10,6 +10,13 @@ from abc import ABC, abstractmethod
 from typing import Any, Dict, List, Optional
 import asyncio
 
+from opencode.core.defaults import (
+    DEFAULT_EMBEDDING_MODEL,
+    DEFAULT_EMBEDDING_DIMENSIONS,
+    OLLAMA_BASE_URL,
+    EMBEDDING_TIMEOUT,
+)
+
 from .config import RAGConfig
 
 
@@ -55,9 +62,9 @@ class OllamaEmbeddingEngine(EmbeddingEngine):
     
     def __init__(
         self,
-        model: str = "nomic-embed-text",
-        base_url: str = "http://localhost:11434",
-        dimensions: int = 768
+        model: str = DEFAULT_EMBEDDING_MODEL,
+        base_url: str = OLLAMA_BASE_URL,
+        dimensions: int = DEFAULT_EMBEDDING_DIMENSIONS
     ):
         """Initialize Ollama embedding engine.
         

@@ -14,6 +14,14 @@ from typing import Any, Dict, List, Optional
 
 from pydantic import BaseModel, Field
 
+from opencode.core.defaults import (
+    DEFAULT_EMBEDDING_MODEL,
+    DEFAULT_EMBEDDING_DIMENSIONS,
+    DEFAULT_BATCH_SIZE,
+    DEFAULT_EMBEDDING_CACHE_PATH,
+    OLLAMA_BASE_URL,
+)
+
 logger = logging.getLogger(__name__)
 
 
@@ -121,22 +129,22 @@ class LocalEmbeddingConfig(BaseModel):
     """Configuration for local embedding engine."""
     
     model: str = Field(
-        default="nomic-embed-text",
+        default=DEFAULT_EMBEDDING_MODEL,
         description="Ollama model for embeddings"
     )
     
     base_url: str = Field(
-        default="http://localhost:11434",
+        default=OLLAMA_BASE_URL,
         description="Ollama API URL"
     )
     
     dimensions: int = Field(
-        default=768,
+        default=DEFAULT_EMBEDDING_DIMENSIONS,
         description="Embedding dimensions"
     )
     
     batch_size: int = Field(
-        default=32,
+        default=DEFAULT_BATCH_SIZE,
         description="Batch size for embedding"
     )
     
@@ -146,7 +154,7 @@ class LocalEmbeddingConfig(BaseModel):
     )
     
     cache_path: Optional[str] = Field(
-        default="./RAG/.embedding_cache",
+        default=DEFAULT_EMBEDDING_CACHE_PATH,
         description="Path to embedding cache"
     )
 

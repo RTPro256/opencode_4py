@@ -16,6 +16,8 @@ import httpx
 
 logger = logging.getLogger(__name__)
 
+from opencode.core.defaults import LLM_TIMEOUT, OLLAMA_BASE_URL
+
 from opencode.provider.base import (
     FinishReason,
     Message,
@@ -51,7 +53,7 @@ class OllamaProvider(Provider):
     - No API key required (local)
     """
     
-    DEFAULT_URL = "http://localhost:11434"
+    DEFAULT_URL = OLLAMA_BASE_URL
     
     # Common Ollama models with their specifications
     COMMON_MODELS = [
@@ -180,7 +182,7 @@ class OllamaProvider(Provider):
     def __init__(
         self,
         base_url: str = DEFAULT_URL,
-        timeout: float = 300.0,  # Longer timeout for local models
+        timeout: float = LLM_TIMEOUT,  # Uses centralized default from defaults.py
     ):
         """
         Initialize Ollama provider.

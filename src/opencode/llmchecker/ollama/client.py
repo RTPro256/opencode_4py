@@ -12,6 +12,8 @@ from typing import Optional, AsyncGenerator, Any
 
 import httpx
 
+from opencode.core.defaults import get_ollama_url
+
 from .models import (
     OllamaModel,
     OllamaResponse,
@@ -36,13 +38,10 @@ class OllamaClient:
         
         Args:
             base_url: Ollama server URL. Defaults to OLLAMA_HOST env var
-                      or http://localhost:11434.
+                      or centralized default.
         """
-        # Support OLLAMA_HOST environment variable
-        self.base_url = base_url or os.environ.get(
-            "OLLAMA_HOST", 
-            os.environ.get("OLLAMA_URL", "http://localhost:11434")
-        )
+        # Support OLLAMA_HOST environment variable or use centralized default
+        self.base_url = base_url or get_ollama_url()
         
         # Normalize URL
         if not self.base_url.startswith(("http://", "https://")):

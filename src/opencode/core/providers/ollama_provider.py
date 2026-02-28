@@ -16,11 +16,14 @@ import json
 import urllib.request
 import urllib.error
 from typing import Optional
+
+from opencode.core.defaults import OLLAMA_BASE_URL, DEFAULT_OLLAMA_URL
+
 from .base import BaseProvider
 
 
-# Where Ollama listens by default
-OLLAMA_BASE_URL = "http://localhost:11434"
+# Where Ollama listens by default (kept for backwards compatibility)
+OLLAMA_BASE_URL = OLLAMA_BASE_URL
 
 
 class OllamaProvider(BaseProvider):

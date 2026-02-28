@@ -8,6 +8,15 @@ and source validation.
 from typing import List, Optional
 from pydantic import BaseModel, Field
 
+from opencode.core.defaults import (
+    DEFAULT_EMBEDDING_MODEL,
+    DEFAULT_EMBEDDING_DIMENSIONS,
+    DEFAULT_BATCH_SIZE,
+    DEFAULT_TOP_K,
+    DEFAULT_EMBEDDING_CACHE_PATH,
+    DEFAULT_VECTOR_STORE_PATH,
+)
+
 
 class RAGEmbeddingConfig(BaseModel):
     """Configuration for embedding generation."""
@@ -18,17 +27,17 @@ class RAGEmbeddingConfig(BaseModel):
     )
     
     model: str = Field(
-        default="nomic-embed-text",
+        default=DEFAULT_EMBEDDING_MODEL,
         description="Model to use for embeddings"
     )
     
     dimensions: int = Field(
-        default=768,
+        default=DEFAULT_EMBEDDING_DIMENSIONS,
         description="Embedding vector dimensions"
     )
     
     batch_size: int = Field(
-        default=32,
+        default=DEFAULT_BATCH_SIZE,
         description="Batch size for embedding generation"
     )
     
@@ -38,7 +47,7 @@ class RAGEmbeddingConfig(BaseModel):
     )
     
     cache_path: str = Field(
-        default="./RAG/.embedding_cache",
+        default=DEFAULT_EMBEDDING_CACHE_PATH,
         description="Path to embedding cache"
     )
 
@@ -57,7 +66,7 @@ class RAGVectorStoreConfig(BaseModel):
     )
     
     path: str = Field(
-        default="./RAG/.vector_store",
+        default=DEFAULT_VECTOR_STORE_PATH,
         description="Path to store the vector index"
     )
 
@@ -85,7 +94,7 @@ class RAGSearchConfig(BaseModel):
     )
     
     top_k: int = Field(
-        default=5,
+        default=DEFAULT_TOP_K,
         ge=1,
         le=100,
         description="Number of documents to retrieve"

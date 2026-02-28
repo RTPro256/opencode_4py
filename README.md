@@ -86,8 +86,8 @@ opencode/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/opencode-python.git
-cd opencode-python
+git clone https://github.com/RTPro256/opencode_4py.git
+cd opencode_4py
 
 # Create virtual environment
 python -m venv .venv
@@ -101,6 +101,23 @@ pip install -e ".[dev]"
 ```
 
 For detailed installation instructions, see [src/opencode/README.md](src/opencode/README.md#installation).
+
+## Personal Project Configuration
+
+This project is configured with the following personal settings:
+
+| Setting | Value |
+|---------|-------|
+| GitHub Owner | RTPro256 |
+| GitHub Email | ryant.pro256@outlook.com |
+| Project Root | C:/Users/RyanT/Documents/code/ClaudeCode/opencode_4py |
+
+To update these values, edit the `.env` file or set environment variables:
+```bash
+set GITHUB_OWNER=RTPro256
+set GITHUB_EMAIL=ryant.pro256@outlook.com
+set PROJECT_ROOT=C:/Users/RyanT/Documents/code/ClaudeCode/opencode_4py
+```
 
 ## Quick Start
 

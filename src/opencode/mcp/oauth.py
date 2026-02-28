@@ -18,6 +18,8 @@ from typing import Any, Callable, Optional
 
 import httpx
 
+from opencode.core.defaults import OAUTH_REDIRECT_URI
+
 
 class OAuthError(Exception):
     """OAuth authentication error."""
@@ -53,7 +55,7 @@ class OAuthConfig:
     client_id: str
     authorization_url: str
     token_url: str
-    redirect_uri: str = "http://localhost:8080/callback"
+    redirect_uri: str = OAUTH_REDIRECT_URI
     scope: str = ""
     client_secret: Optional[str] = None
     use_pkce: bool = True

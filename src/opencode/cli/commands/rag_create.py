@@ -11,6 +11,8 @@ import typer
 from rich.console import Console
 from rich.panel import Panel
 
+from opencode.core.defaults import DEFAULT_EMBEDDING_MODEL
+
 app = typer.Typer(name="rag-create", help="RAG creation commands")
 console = Console()
 
@@ -19,7 +21,7 @@ console = Console()
 def create_rag(
     agent: str = typer.Argument(..., help="Agent name to create RAG for"),
     sources: List[str] = typer.Option([], "--source", "-s", help="Source directories to index"),
-    embedding_model: str = typer.Option("nomic-embed-text", "--model", "-m", help="Embedding model"),
+    embedding_model: str = typer.Option(DEFAULT_EMBEDDING_MODEL, "--model", "-m", help="Embedding model"),
     vector_store: str = typer.Option("file", "--store", help="Vector store type (memory, file, chroma)"),
     output_dir: str = typer.Option("./RAG", "--output", "-o", help="Output directory"),
 ):

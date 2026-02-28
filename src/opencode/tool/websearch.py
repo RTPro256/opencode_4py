@@ -13,6 +13,13 @@ from typing import Any, Optional
 
 import httpx
 
+from opencode.core.defaults import (
+    EXA_API_URL,
+    EXA_DEFAULT_NUM_RESULTS,
+    EXA_MAX_NUM_RESULTS,
+    WEBSEARCH_TIMEOUT,
+)
+
 from opencode.tool.base import PermissionLevel, Tool, ToolResult
 
 
@@ -26,9 +33,9 @@ class WebSearchTool(Tool):
     - Configurable result count
     """
     
-    API_URL = "https://mcp.exa.ai/mcp"
-    DEFAULT_NUM_RESULTS = 5
-    MAX_NUM_RESULTS = 20
+    API_URL = EXA_API_URL
+    DEFAULT_NUM_RESULTS = EXA_DEFAULT_NUM_RESULTS
+    MAX_NUM_RESULTS = EXA_MAX_NUM_RESULTS
     
     @property
     def name(self) -> str:
