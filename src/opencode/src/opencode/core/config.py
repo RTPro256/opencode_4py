@@ -120,6 +120,12 @@ class TUIConfig(BaseModel):
     show_token_count: bool = True
     show_cost: bool = True
     compact_mode: bool = False
+    # New theme options
+    syntax_theme: str = "monokai"
+    animation_speed: float = 1.0
+    show_shortcuts: bool = True
+    sidebar_width: int = 30
+    font_size: str = "normal"  # small, normal, large
 
 
 class ServerConfig(BaseModel):

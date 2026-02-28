@@ -21,11 +21,20 @@ from opencode.tui.widgets.approval import (
     ApprovalResponse,
     ApprovalStatus,
 )
+from opencode.tui.widgets.progress import (
+    ProgressBarWidget,
+    SpinnerWidget,
+    StatusIndicator,
+)
 
 __all__ = [
     "ChatWidget",
     "SidebarWidget",
     "InputWidget",
+    # Progress
+    "ProgressBarWidget",
+    "SpinnerWidget",
+    "StatusIndicator",
     # Completion
     "CompletionWidget",
     "CompletionManager",

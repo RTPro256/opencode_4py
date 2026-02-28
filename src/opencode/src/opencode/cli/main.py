@@ -289,6 +289,10 @@ app.add_typer(debug_app, name="debug", help="Simplified troubleshooting commands
 from opencode.cli.commands.github import app as github_app
 app.add_typer(github_app, name="github", help="GitHub integration commands")
 
+# Add skills subcommand group for SkillPointer management
+from opencode.cli.commands.skills import app as skills_app
+app.add_typer(skills_app, name="skills", help="Skills management with SkillPointer")
+
 
 if __name__ == "__main__":
     app()

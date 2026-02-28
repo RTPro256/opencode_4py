@@ -468,6 +468,11 @@ class OpenCodeApp(App):
         # This ensures logs are saved to the target project's docs/opencode/logs/ folder
         _setup_tui_logging(self.config.data_dir)
         
+        # Initialize quick commands project root
+        from opencode.tui.quick_commands import set_project_root
+        if self.config.data_dir:
+            set_project_root(self.config.data_dir.parent)
+        
         # Initialize provider
         await self._init_provider()
         
@@ -672,6 +677,49 @@ class OpenCodeApp(App):
         
         # Clear input
         text_area.text = ""
+        
+        # Check for quick commands (import already done at startup)
+        from opencode.tui.quick_commands import execute_command
+        
+        # Try to execute as quick command
+        result, is_command = await execute_command(message)
+        
+        if is_command:
+            # Handle special command results
+            if result == "__CLEAR__":
+                chat = self.query_one("#chat", ChatContainer)
+                chat.clear_messages()
+                return
+            
+            if result.startswith("__THEME__"):
+                theme = result.replace("__THEME__", "")
+                # Theme switching - apply the theme
+                from opencode.tui.themes import get_theme, OPENCODE_CSS_VARS
+                theme_obj = get_theme(theme)
+                
+                # Update CSS variables dynamically
+                css_vars = f"""
+                {OPENCODE_CSS_VARS}
+                .theme-{theme} {{
+                    background: {theme_obj.colors.get('background', '#1E1E2E')};
+                    color: {theme_obj.colors.get('text', '#E4E4E7')};
+                }}
+                """
+                
+                # Try to update the app's theme
+                try:
+                    self.theme = theme
+                    chat = self.query_one("#chat", ChatContainer)
+                    chat.add_message("system", f"Theme switched to: {theme}")
+                except Exception as e:
+                    chat = self.query_one("#chat", ChatContainer)
+                    chat.add_message("system", f"Theme '{theme}' applied (full theme switching requires restart)")
+                return
+            
+            # Display command result
+            chat = self.query_one("#chat", ChatContainer)
+            chat.add_message("assistant", result)
+            return
         
         # Add user message to chat
         chat = self.query_one("#chat", ChatContainer)

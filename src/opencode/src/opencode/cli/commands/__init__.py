@@ -17,6 +17,7 @@ from opencode.cli.commands.rag_manage import app as rag_manage_app
 from opencode.cli.commands.rag_validation import app as rag_validation_app
 from opencode.cli.commands.rag_share import app as rag_share_app
 from opencode.cli.commands.rag_audit import app as rag_audit_app
+from opencode.cli.commands.skills import app as skills_app
 
 __all__ = [
     "run_command",
@@ -26,6 +27,7 @@ __all__ = [
     "rag_app",
     "debug_app",
     "github_app",
+    "skills_app",
     "rag_create_app",
     "rag_query_app",
     "rag_manage_app",
