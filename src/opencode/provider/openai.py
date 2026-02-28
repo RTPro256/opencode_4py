@@ -8,9 +8,12 @@ Supports streaming, function calling, and vision capabilities.
 from __future__ import annotations
 
 import json
+import logging
 from typing import Any, AsyncIterator, Optional
 
 import httpx
+
+logger = logging.getLogger(__name__)
 
 from opencode.provider.base import (
     AuthenticationError,
@@ -404,8 +407,8 @@ class OpenAIProvider(Provider):
         body = {}
         try:
             body = error.response.json()
-        except Exception:
-            pass
+        except Exception as e:
+            logger.debug(f"Failed to parse error response: {e}")
         
         error_type = body.get("error", {}).get("type", "")
         message = body.get("error", {}).get("message", str(error))

@@ -11,9 +11,12 @@ Usage:
 
 import os
 import sys
+import logging
 from typing import Optional
 
 import click
+
+logger = logging.getLogger(__name__)
 
 from opencode.core.providers import (
     MultiAIClient,
@@ -57,8 +60,8 @@ def build_client() -> tuple[MultiAIClient, int]:
                 if ollama.is_running():
                     client.add(name, ollama)
                     registered += 1
-            except Exception:
-                pass
+            except Exception as e:
+                logger.warning(f"Failed to register model: {e}")
 
     return client, registered
 

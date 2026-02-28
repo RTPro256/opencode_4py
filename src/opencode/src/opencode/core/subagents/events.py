@@ -9,6 +9,9 @@ from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional, Callable, Awaitable
 import asyncio
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class SubAgentEventType(str, Enum):
@@ -186,16 +189,16 @@ class SubAgentEventEmitter:
         for handler in self._handlers[event.event_type]:
             try:
                 await handler(event)
-            except Exception:
+            except Exception as e:
                 # Don't let handler errors propagate
-                pass
+                logger.warning(f"Event handler error: {e}")
         
         # Emit to any handlers
         for handler in self._any_handlers:
             try:
                 await handler(event)
-            except Exception:
-                pass
+            except Exception as e:
+                logger.warning(f"Any-event handler error: {e}")
     
     def emit_sync(self, event: SubAgentEvent) -> None:
         """Emit an event synchronously (creates a task).

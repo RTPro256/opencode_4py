@@ -22,6 +22,17 @@ Configuration has been simplified with the addition of configuration presets. Fu
 | CLI arguments | Runtime overrides | Low |
 | Configuration presets | Pre-built configurations | Low |
 
+### Environment Variables
+
+| Variable | Description | Example |
+|----------|-------------|--------|
+| `OPENCODE_LOG_LEVEL` | Set log level (DEBUG, INFO, WARNING, ERROR) | `DEBUG` |
+| `OPENCODE_LOG_FILE` | Set log file path | `/tmp/opencode.log` |
+| `OPENCODE_LOG_MODULES` | Filter logs to specific modules | `ollama,anthropic` |
+| `ANTHROPIC_API_KEY` | Anthropic API key | `sk-...` |
+| `OPENAI_API_KEY` | OpenAI API key | `sk-...` |
+| `OLLAMA_HOST` | Ollama server URL | `http://localhost:11434` |
+
 ### Configuration File Structure
 
 ```toml

@@ -9,9 +9,12 @@ Ollama's OpenAI-compatible API.
 from __future__ import annotations
 
 import json
+import logging
 from typing import Any, AsyncIterator, Optional
 
 import httpx
+
+logger = logging.getLogger(__name__)
 
 from opencode.provider.base import (
     FinishReason,
@@ -215,7 +218,8 @@ class OllamaProvider(Provider):
             response.raise_for_status()
             data = response.json()
             return [model["name"] for model in data.get("models", [])]
-        except Exception:
+        except Exception as e:
+            logger.warning(f"Failed to parse Ollama models: {e}")
             return []
     
     async def complete(
@@ -367,7 +371,8 @@ class OllamaProvider(Provider):
             )
             response.raise_for_status()
             return True
-        except Exception:
+        except Exception as e:
+            logger.warning(f"Failed to pull model {model}: {e}")
             return False
     
     async def is_running(self) -> bool:
@@ -375,7 +380,8 @@ class OllamaProvider(Provider):
         try:
             response = await self._client.get(f"{self._base_url}/api/version")
             return response.status_code == 200
-        except Exception:
+        except Exception as e:
+            logger.warning(f"Failed to check Ollama running status: {e}")
             return False
     
     async def get_version(self) -> Optional[str]:
@@ -385,7 +391,8 @@ class OllamaProvider(Provider):
             response.raise_for_status()
             data = response.json()
             return data.get("version")
-        except Exception:
+        except Exception as e:
+            logger.warning(f"Failed to get Ollama version: {e}")
             return None
     
     async def close(self) -> None:

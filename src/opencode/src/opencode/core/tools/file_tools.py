@@ -5,10 +5,13 @@ Refactored from Roo-Code's file tools.
 """
 
 from dataclasses import dataclass
+import logging
 from pathlib import Path
 from typing import Any, Optional
 
 from .base import BaseTool, ToolResult, ToolCallbacks, ToolRegistry
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass

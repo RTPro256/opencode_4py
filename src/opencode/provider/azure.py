@@ -9,9 +9,12 @@ through Azure's OpenAI-compatible API.
 from __future__ import annotations
 
 import json
+import logging
 from typing import Any, AsyncIterator, Optional
 
 import httpx
+
+logger = logging.getLogger(__name__)
 
 from opencode.provider.base import (
     AuthenticationError,

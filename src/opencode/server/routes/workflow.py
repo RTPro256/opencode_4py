@@ -470,10 +470,12 @@ async def workflow_websocket(websocket: WebSocket, workflow_id: str):
     def event_handler(event: ExecutionEvent) -> None:
         """Handle execution events."""
         try:
-            asyncio.get_event_loop().call_soon_threadsafe(
+            loop = asyncio.get_running_loop()
+            loop.call_soon_threadsafe(
                 queue.put_nowait, event
             )
-        except Exception:
+        except RuntimeError:
+            # Event loop may not be running
             pass
     
     engine.add_event_handler(event_handler)

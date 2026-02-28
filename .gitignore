@@ -1,21 +1,10 @@
-# ===========================================
-# IGNORED: Original Portable Distribution
-# ===========================================
-# These folders contain the original ComfyUI portable distribution
-# that should be obtained separately from https://github.com/Comfy-Org/ComfyUI
-
-# Embedded Python distribution (~38,000 files, too large for git)
-python_embeded/
-
-# ComfyUI application (should be cloned separately)
-ComfyUI/
-
-# ComfyUI manager and extra folders that come with portable
-extra/
-custom_nodes/
-models/
-output/
-temp/
+# These folders contain the original OpenCode portable distribution
+# that should be obtained separately from https://github.com/anomalyco/opencode
+temp_comfyui_repo
+aimodels/*
+for_testing/*
+merge_projects/*
+python_embeded/*
 
 # Cache
 __pycache__/

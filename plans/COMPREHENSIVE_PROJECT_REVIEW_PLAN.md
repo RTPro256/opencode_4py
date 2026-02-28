@@ -36,6 +36,7 @@ Steps:
 - [AGENT_MODEL_ORCHESTRATION.md](../docs/AGENT_MODEL_ORCHESTRATION.md) - Agent architecture
 - [WORKFLOW_ENGINE.md](../docs/WORKFLOW_ENGINE.md) - Workflow and tool patterns
 - [RAG/troubleshooting/](../RAG/troubleshooting/) - Error patterns and solutions
+- [FEATURE_VERIFICATION.md](../docs/FEATURE_VERIFICATION.md) - Feature verification & architecture maps
 
 ---
 

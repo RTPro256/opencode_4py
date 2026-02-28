@@ -114,6 +114,65 @@ cd src/opencode && python -m pytest -m "ollama" -v
 cd src/opencode && python -m pytest --cov=src/opencode --cov-report=html
 ```
 
+---
+
+## Debugging and Logging
+
+OpenCode provides comprehensive logging with module-level filtering for debugging.
+
+### Environment Variables
+
+| Variable | Description | Example |
+|----------|-------------|--------|
+| `OPENCODE_LOG_LEVEL` | Set log level (DEBUG, INFO, WARNING, ERROR, CRITICAL) | `DEBUG` |
+| `OPENCODE_LOG_FILE` | Set log file path | `/tmp/opencode.log` |
+| `OPENCODE_LOG_MODULES` | Filter logs to specific modules (comma-separated) | `ollama,anthropic,skills` |
+
+### Usage Examples
+
+```bash
+# Enable DEBUG for all modules
+OPENCODE_LOG_LEVEL=DEBUG opencode run
+
+# Enable DEBUG for specific modules only
+OPENCODE_LOG_LEVEL=DEBUG OPENCODE_LOG_MODULES=provider.ollama opencode run
+
+# Multiple modules
+OPENCODE_LOG_LEVEL=DEBUG OPENCODE_LOG_MODULES="ollama,anthropic,skills.manager" opencode run
+
+# Save to file with module filter
+OPENCODE_LOG_LEVEL=DEBUG OPENCODE_LOG_MODULES=ollama OPENCODE_LOG_FILE=debug.log opencode run
+```
+
+### In Code
+
+```python
+from opencode.util.log import Logger, LogLevel
+
+# Basic usage
+logger = Logger("myapp")
+logger.info("Starting application")
+logger.error("Failed to process", error=str(e))
+
+# Module filtering
+logger = Logger("myapp", level=LogLevel.DEBUG)
+logger.add_console_handler()
+logger.add_module_filter(["ollama", "anthropic"])  # Only log from these
+```
+
+### Debug CLI Commands
+
+```bash
+# Start debugging session for an issue
+opencode debug "TUI stalls at Thinking"
+
+# With automatic fix
+opencode debug "button not appearing" --fix
+
+# Skip creating debug log
+opencode debug "issue description" --no-log
+```
+
 ### Test Priority Matrix
 
 | Priority | Test Type | Frequency | Automation |

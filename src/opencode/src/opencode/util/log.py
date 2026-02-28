@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import sys
 from contextvars import ContextVar
 from datetime import datetime
@@ -133,11 +134,28 @@ class Logger:
     """
     Enhanced logger with structured logging support.
     
+    Features:
+        - Multiple log levels (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+        - Multiple output formats (TEXT, JSON)
+        - Console and file handlers
+        - Module filtering for targeted debugging
+        - Context-aware logging
+    
     Usage:
+        # Basic usage
         log = Logger("myapp")
         log.info("Starting application")
         log.info("Processing request", request_id="123")
         log.error("Failed to process", error=str(e))
+        
+        # Module filtering - only log from specific modules
+        log = Logger("myapp")
+        log.add_module_filter(["ollama", "anthropic"])  # Only log from these
+        
+        # Environment variables:
+        # OPENCODE_LOG_LEVEL=DEBUG        # Set global log level
+        # OPENCODE_LOG_FILE=/path/to.log  # Set log file
+        # OPENCODE_LOG_MODULES=ollama,anthropic  # Filter specific modules
     """
     
     def __init__(
@@ -151,6 +169,46 @@ class Logger:
         self._logger.setLevel(level.value)
         self._logger.handlers.clear()
         self._format = log_format
+        self._module_filters: Optional[list[str]] = None
+        
+        # Check for environment variable configuration
+        self._load_env_config()
+    
+    def _load_env_config(self) -> None:
+        """Load configuration from environment variables."""
+        log_level = os.environ.get("OPENCODE_LOG_LEVEL", "INFO").upper()
+        if log_level in [l.value for l in LogLevel]:
+            self._logger.setLevel(LogLevel(log_level).value)
+        
+        # Load module filters from environment
+        module_filter = os.environ.get("OPENCODE_LOG_MODULES", "")
+        if module_filter:
+            self._module_filters = [m.strip() for m in module_filter.split(",")]
+    
+    def add_module_filter(self, modules: list[str]) -> None:
+        """
+        Add module filters to only log from specific modules.
+        
+        Args:
+            modules: List of module names (e.g., ["ollama", "anthropic"])
+                    Logs from any logger whose name starts with these prefixes.
+        """
+        self._module_filters = modules
+    
+    def _should_log(self, logger_name: str) -> bool:
+        """
+        Check if the logger should log based on module filters.
+        
+        Args:
+            logger_name: Name of the logger to check
+            
+        Returns:
+            True if logging is allowed, False otherwise
+        """
+        if not self._module_filters:
+            return True  # No filters, log everything
+        
+        return any(logger_name.startswith(f) for f in self._module_filters)
     
     def add_console_handler(
         self,
@@ -182,6 +240,10 @@ class Logger:
     
     def _log(self, level: int, message: str, **kwargs: Any) -> None:
         """Internal logging method."""
+        # Check module filter
+        if not self._should_log(self._logger.name):
+            return
+            
         # Create a record with extra data
         extra = {"data": kwargs} if kwargs else {}
         self._logger.log(level, message, extra=extra)

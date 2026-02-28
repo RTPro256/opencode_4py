@@ -6,6 +6,7 @@ Commands for sharing and downloading community RAG indexes.
 
 import asyncio
 import json
+import logging
 import os
 import urllib.error
 import urllib.request
@@ -15,6 +16,8 @@ from typing import Optional
 import typer
 from rich.console import Console
 from rich.table import Table
+
+logger = logging.getLogger(__name__)
 
 app = typer.Typer(name="rag-share", help="RAG sharing commands")
 console = Console()

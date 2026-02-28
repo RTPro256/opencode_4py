@@ -58,7 +58,7 @@ class TestDocumentChunk:
         )
         
         assert chunk.text == "This is a test chunk."
-        assert chunk.length == 20
+        assert chunk.length == 21  # Length is based on text content
         assert chunk.has_embedding is False
     
     def test_chunk_with_embedding(self):

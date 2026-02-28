@@ -11,6 +11,9 @@ from typing import List, Optional, Dict, Any
 import yaml
 import asyncio
 from datetime import datetime
+import logging
+
+logger = logging.getLogger(__name__)
 
 from .types import (
     SubagentConfig,
@@ -330,9 +333,8 @@ class SubagentManager:
                 config = await self._parse_markdown_file(file_path)
                 if config:
                     configs.append(config)
-            except Exception:
-                # Log error but continue loading other files
-                pass
+            except Exception as e:
+                logger.warning(f"Failed to load subagent from {file_path}: {e}")
         
         return configs
     

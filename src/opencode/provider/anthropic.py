@@ -9,9 +9,12 @@ from __future__ import annotations
 
 import base64
 import json
+import logging
 from typing import Any, AsyncIterator, Optional
 
 import httpx
+
+logger = logging.getLogger(__name__)
 
 from opencode.provider.base import (
     AuthenticationError,
@@ -366,8 +369,9 @@ class AnthropicProvider(Provider):
             )
             response.raise_for_status()
             return response.json().get("input_tokens", 0)
-        except Exception:
+        except Exception as e:
             # Fallback: estimate ~4 characters per token
+            logger.debug(f"Failed to get input tokens: {e}")
             return len(text) // 4
     
     def _handle_error(self, error: httpx.HTTPStatusError) -> ProviderError:
@@ -376,8 +380,8 @@ class AnthropicProvider(Provider):
         body = {}
         try:
             body = error.response.json()
-        except Exception:
-            pass
+        except Exception as e:
+            logger.debug(f"Failed to parse error response: {e}")
         
         error_type = body.get("error", {}).get("type", "")
         message = body.get("error", {}).get("message", str(error))

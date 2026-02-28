@@ -88,7 +88,6 @@ class SkillManager:
             skill: Skill to add
         """
         self._skills[skill.name] = skill
-        self._discovery._skills[skill.name] = skill
     
     def remove_skill(self, name: str) -> bool:
         """

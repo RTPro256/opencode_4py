@@ -11,9 +11,6 @@ from opencode.core.subagents import (
     SubagentRuntimeConfig,
     ValidationResult,
     SubagentError,
-    SubagentNotFoundError,
-    SubagentAlreadyExistsError,
-    SubagentValidationError,
     SubagentValidator,
     SubagentManager,
     BuiltinAgentRegistry,
@@ -26,6 +23,11 @@ from opencode.core.subagents import (
     ToolConfig,
     RunConfig,
     SubagentTerminateMode,
+)
+from opencode.core.subagents.errors import (
+    SubagentNotFoundError,
+    SubagentAlreadyExistsError,
+    SubagentValidationError,
 )
 
 

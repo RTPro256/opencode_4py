@@ -12,8 +12,11 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
 from typing import Any, AsyncIterator, Optional
+import logging
 
 from pydantic import BaseModel, Field
+
+logger = logging.getLogger(__name__)
 
 
 class MessageRole(str, Enum):
@@ -449,7 +452,8 @@ class SessionManager:
                     sessions.append(session)
                     if len(sessions) >= limit:
                         break
-            except Exception:
+            except Exception as e:
+                logger.warning(f"Failed to load session from {session_file}: {e}")
                 continue
         
         return sessions

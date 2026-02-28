@@ -251,4 +251,55 @@ Always include in search prompts:
 
 ---
 
+## Debug Logging for Bug Detection
+
+When investigating bugs, enable detailed logging to capture the issue:
+
+### Environment Variables
+
+| Variable | Description | Example |
+|----------|-------------|--------|
+| `OPENCODE_LOG_LEVEL` | Set log level (DEBUG, INFO, WARNING, ERROR, CRITICAL) | `DEBUG` |
+| `OPENCODE_LOG_FILE` | Set log file path | `/tmp/opencode_debug.log` |
+| `OPENCODE_LOG_MODULES` | Filter logs to specific modules | `ollama,provider,skills` |
+
+### Usage Examples
+
+```bash
+# Enable full debug logging
+OPENCODE_LOG_LEVEL=DEBUG opencode run
+
+# Debug specific module only
+OPENCODE_LOG_LEVEL=DEBUG OPENCODE_LOG_MODULES=ollama opencode run
+
+# Save debug output to file
+OPENCODE_LOG_LEVEL=DEBUG OPENCODE_LOG_FILE=debug.log opencode run
+
+# Debug multiple components
+OPENCODE_LOG_LEVEL=DEBUG OPENCODE_LOG_MODULES="provider,session,skills" opencode run
+```
+
+### Log File Locations
+
+| Type | Location |
+|------|----------|
+| Default | `{project}/docs/opencode/logs/` |
+| Debug | `{config.data_dir}/logs/debug_{timestamp}.log` |
+| TUI | `{data_dir}/logs/opencode_{datetime}.log` |
+
+### Using Debug CLI
+
+```bash
+# Start debugging session
+opencode debug "issue description"
+
+# With automatic fix
+opencode debug "button not appearing" --fix
+
+# Skip log creation
+opencode debug "issue" --no-log
+```
+
+---
+
 *Last updated: 2026-02-25*
