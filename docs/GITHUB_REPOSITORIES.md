@@ -86,96 +86,6 @@ These are repositories for projects in the `for_testing/` directory that may rec
 
 ---
 
-## Integration Repositories
-
-These are combined repositories that integrate opencode_4py with other projects.
-
-
-
-
-
-```bash
-# Sync both Python package and integration files to GitHub
-opencode github sync -t for_testing/as_dependency/ComfyUI_windows_portable -m "Update"
-```
-
-
-
-```bash
-# Stage and commit changes
-git add -A
-git commit -m "Your commit message"
-
-# Push to opencode_4py
-git push origin main
-
-
-
-
-```
-
-#### CLI Commands for Multi-Repo Push
-
-The opencode CLI now supports pushing to multiple repositories:
-
-```bash
-# List configured repositories
-opencode github repos
-
-# Push to all configured repositories (with verification)
-opencode github push-all -m "Your commit message"
-
-
-
-# Dry run to see what would happen
-opencode github push-all --dry-run
-
-# Sync to local target directory (like ComfyUI portable)
-opencode github sync -t for_testing/as_dependency/ComfyUI_windows_portable -m "Sync update"
-
-# Add a new repository to the configuration
-opencode github add-repo my-project https://github.com/RTPro256/my-project.git
-``` |
-
-#### Future Updates
-
-Once the repository is created and initialized, future updates can be pushed using:
-
-
-git commit -m "Your commit message"
-git push origin main
-```
-
-#### Repository Description (suggested)
-
-```
-OpenCode ComfyUI Integration - AI-powered workflow automation combining ComfyUI's 
-node-based interface with opencode_4py's multi-provider AI capabilities. 
-Built for creative AI workflows with privacy-first design.
-```
-
-#### Topics/Tags (suggested)
-
-- `python`
-
-- `stable-diffusion`
-- `ai-assistant`
-- `rag`
-- `integration`
-- `node-editor`
-- `privacy-first`
-- `multi-provider`
-
-#### Integration Components
-
-| Component | Source | Purpose |
-|-----------|--------|---------|
-| ComfyUI Core | `for_testing/as_dependency/ComfyUI_windows_portable/` | Node-based workflow engine |
-| opencode_4py | Core project | AI assistant and RAG capabilities |
-| Integration Layer | New code | Bridge between systems |
-
----
-
 ## Repository Configuration Standards
 
 ### Git LFS Tracking
@@ -183,55 +93,97 @@ Built for creative AI workflows with privacy-first design.
 All repositories should use Git LFS for the following file types:
 
 ```gitattributes
-# Large binary files
-*.dll filter=lfs diff=lfs merge=lfs -text
-*.pyd filter=lfs diff=lfs merge=lfs -text
-*.so filter=lfs diff=lfs merge=lfs -text
-*.dylib filter=lfs diff=lfs merge=lfs -text
 
-# Large media files
-*.png filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
 
-# Large data files
-*.parquet filter=lfs diff=lfs merge=lfs -text
-*.pkl filter=lfs diff=lfs merge=lfs -text
-*.pickle filter=lfs diff=lfs merge=lfs -text
-*.h5 filter=lfs diff=lfs merge=lfs -text
-*.hdf5 filter=lfs diff=lfs merge=lfs -text
 
-# Archive files
-*.zip filter=lfs diff=lfs merge=lfs -text
-*.tar.gz filter=lfs diff=lfs merge=lfs -text
-*.7z filter=lfs diff=lfs merge=lfs -text
-```
 
 ### Line Ending Configuration
 
 ```gitattributes
-# Auto detect text files and normalize to LF in repository
-* text=auto
+# Auto detect text files
 
-# Python files always use LF
-*.py text eol=lf
+## Required Files
 
-# Windows batch files use CRLF
-*.bat text eol=crlf
-*.cmd text eol=crlf
+| File | Purpose |
+|------|---------|
+| `README.md` | Project overview and quick start |
+| `LICENSE` | License information (MIT recommended) |
+| `.gitignore` | Files to exclude from version control |
+| `.gitattributes` | LFS and line ending configuration |
+| `CONTRIBUTING.md` | Contribution guidelines |
+| `SECURITY.md` | Security policy |
 
-# Shell scripts use LF
-*.sh text eol=lf
+---
 
-# Documentation uses LF
-*.md text eol=lf
-*.txt text eol=lf
+## Access and Authentication
+
+### Recommended Authentication Methods
+
+| Method | Use Case | Setup |
+| **SSH Keys** | Development machines | [GitHub SSH Guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) |
+| **Personal Access Token** | CI/CD, scripts | [GitHub PAT Guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) |
+| **GitHub CLI** | Interactive use | `gh auth login` |
+
+### Owner Information
+
+| Property | Value |
+| **Username** | `RTPro256` |
+| **Profile** | `https://github.com/RTPro256` |
+
+---
+
+## Repository Creation Checklist
+
+When creating a new repository:
+
+- [ ] Choose appropriate visibility (Public/Private)
+- [ ] Add repository description
+- [ ] Add relevant topics/tags
+- [ ] Initialize with README (or push existing)
+- [ ] Configure branch protection rules (optional)
+- [ ] Set up GitHub Actions (optional)
+- [ ] Configure Git LFS if needed
+- [ ] Add required files (LICENSE, CONTRIBUTING.md, SECURITY.md)
+
+---
+
+## Future Repositories
+
+The following repositories may be created in the future:
+
+| Repository | Purpose | Priority | Push Command |
+|------------|---------|----------|--------------|
+| `opencode_4py-docs` | Dedicated documentation site | Low | `git push origin main` |
+| `opencode_4py-examples` | Example projects and templates | Medium | `git push origin main` |
+| `opencode_4py-templates` | Project templates | Low | `git push origin main` |
+
+---
+
+## Interactive Upload Workflow
+
+### User Prompt Flow
+
+When initiating a GitHub upload, opencode_4py should prompt the user with:
+
+```
+These are repos that I am aware of and can update:
+
+1. opencode_4py (https://github.com/RTPro256/opencode_4py.git)
+   - Primary project repository
+   - Content: Full project (src, docs, plans, RAG, scripts)
+   - Status: Ready to push
+
+Is there a new repo you want me to update?
+> [Enter repository name or number, or 'new' to create a new one]
 ```
 
-### Required Files
+### Response Options
+
+| User Input | Action |
+|------------|--------|
+| `1` or `opencode_4py` | Execute upload to primary repository |
+| `new` | Prompt for new repository details |
+| `cancel` | Abort operation |
 
 Every repository should include:
 
