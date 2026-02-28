@@ -163,8 +163,7 @@ Steps:
 # Navigate to the opencode project
 cd src/opencode
 
-# Add the comfyui remote (only needed once)
-git remote add comfyui https://github.com/RTPro256/comfyui_portable_opencode-4py.git
+
 
 # Stage and commit changes
 git add -A
