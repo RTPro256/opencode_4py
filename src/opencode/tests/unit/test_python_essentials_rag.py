@@ -20,7 +20,7 @@ class TestPythonEssentialsRAG:
     @pytest.fixture
     def rag_root(self):
         """RAG root directory."""
-        return Path("src/opencode/RAG/agent_python_essentials")
+        return Path("RAG/agent_python_essentials")
 
     @pytest.fixture
     def config_path(self, rag_root):
@@ -247,7 +247,7 @@ class TestNoSkippableContent:
         """Test RAG is not empty."""
         from pathlib import Path
         
-        transcript_dir = Path("src/opencode/RAG/agent_python_essentials/transcript")
+        transcript_dir = Path("RAG/agent_python_essentials/transcript")
         txt_files = list(transcript_dir.glob("*.txt"))
         
         # Should have substantial content
@@ -262,7 +262,7 @@ class TestNoSkippableContent:
         """Test RAG covers Python essentials topics."""
         from pathlib import Path
         
-        transcript_dir = Path("src/opencode/RAG/agent_python_essentials/transcript")
+        transcript_dir = Path("RAG/agent_python_essentials/transcript")
         
         # Search for key Python terms in transcript
         found_topics = set()
@@ -287,7 +287,7 @@ class TestNoSkippableContent:
         """Test RAG has code generation content."""
         from pathlib import Path
         
-        transcript_dir = Path("src/opencode/RAG/agent_python_essentials/transcript")
+        transcript_dir = Path("RAG/agent_python_essentials/transcript")
         
         # Check for code generation related terms
         for txt_file in list(transcript_dir.glob("*.txt"))[:20]:
@@ -304,7 +304,7 @@ class TestNoSkippableContent:
         """Test RAG has troubleshooting content."""
         from pathlib import Path
         
-        transcript_dir = Path("src/opencode/RAG/agent_python_essentials/transcript")
+        transcript_dir = Path("RAG/agent_python_essentials/transcript")
         
         # Check for troubleshooting related terms
         for txt_file in list(transcript_dir.glob("*.txt"))[:20]:

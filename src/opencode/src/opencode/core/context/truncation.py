@@ -86,7 +86,7 @@ class OldestFirstStrategy(BaseTruncationStrategy):
             return items, []
         
         # Sort by age (oldest first - higher age = older)
-        sorted_items = sorted(items, key=lambda x: x.age, reverse=False)
+        sorted_items = sorted(items, key=lambda x: x.age, reverse=True)
         
         kept = []
         removed = []
@@ -225,8 +225,8 @@ class PriorityStrategy(BaseTruncationStrategy):
         if current_tokens <= target_tokens:
             return items, []
         
-        # Sort by priority (lowest first), then by age descending (oldest first)
-        sorted_items = sorted(items, key=lambda x: (x.priority, x.age))
+        # Sort by priority (lowest first), then by age descending (oldest first when equal priority)
+        sorted_items = sorted(items, key=lambda x: (x.priority, -x.age))
         
         kept = []
         removed = []

@@ -170,12 +170,17 @@ class Logger:
         self._logger.handlers.clear()
         self._format = log_format
         self._module_filters: Optional[list[str]] = None
+        self._explicit_level = level  # Track if level was explicitly set
         
-        # Check for environment variable configuration
+        # Check for environment variable configuration (only if no explicit level)
         self._load_env_config()
     
     def _load_env_config(self) -> None:
         """Load configuration from environment variables."""
+        # Only use env var if no explicit level was set
+        if hasattr(self, '_explicit_level') and self._explicit_level != LogLevel.INFO:
+            return  # Skip env override for explicit non-default level
+        
         log_level = os.environ.get("OPENCODE_LOG_LEVEL", "INFO").upper()
         if log_level in [l.value for l in LogLevel]:
             self._logger.setLevel(LogLevel(log_level).value)

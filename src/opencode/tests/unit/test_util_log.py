@@ -299,16 +299,37 @@ class TestLogger:
 
     def test_init(self):
         """Test Logger initialization."""
-        logger = Logger("test_logger")
+        # Clear any environment variable that might affect the test
+        import os
+        from unittest.mock import patch
         
-        assert logger.name == "test_logger"
-        assert logger._logger.level == logging.INFO
+        with patch.dict(os.environ, {"OPENCODE_LOG_LEVEL": "INFO"}, clear=False):
+            # Remove the env var if it exists to test default behavior
+            env_backup = os.environ.pop("OPENCODE_LOG_LEVEL", None)
+            try:
+                logger = Logger("test_logger")
+                
+                assert logger.name == "test_logger"
+                assert logger._logger.level == logging.INFO
+            finally:
+                # Restore the env var
+                if env_backup:
+                    os.environ["OPENCODE_LOG_LEVEL"] = env_backup
 
     def test_init_with_level(self):
         """Test Logger initialization with custom level."""
-        logger = Logger("test_logger", level=LogLevel.DEBUG)
+        import os
+        from unittest.mock import patch
         
-        assert logger._logger.level == logging.DEBUG
+        # Temporarily remove env var to test explicit level parameter
+        env = os.environ.copy()
+        if "OPENCODE_LOG_LEVEL" in env:
+            del env["OPENCODE_LOG_LEVEL"]
+        
+        with patch.dict(os.environ, env, clear=True):
+            logger = Logger("test_logger", level=LogLevel.DEBUG)
+            
+            assert logger._logger.level == logging.DEBUG
 
     def test_init_with_format(self):
         """Test Logger initialization with custom format."""
@@ -482,12 +503,20 @@ class TestInitLogging:
 
     def test_init_logging_with_level(self):
         """Test logging initialization with custom level."""
+        import os
+        from unittest.mock import patch
         import opencode.util.log as log_module
         log_module._default_logger = None
         
-        logger = init_logging(level=LogLevel.DEBUG)
+        # Temporarily remove env var to test explicit level parameter
+        env = os.environ.copy()
+        if "OPENCODE_LOG_LEVEL" in env:
+            del env["OPENCODE_LOG_LEVEL"]
         
-        assert logger._logger.level == logging.DEBUG
+        with patch.dict(os.environ, env, clear=True):
+            logger = init_logging(level=LogLevel.DEBUG)
+            
+            assert logger._logger.level == logging.DEBUG
 
     def test_init_logging_with_format(self):
         """Test logging initialization with custom format."""
