@@ -56,7 +56,7 @@ Steps:
 ```
 Start integration of opencode_4py to [PROJECT_NAME] in for_testing/.
 
-Reference: plans/TARGET_PROJECT_SYNC_PLAN.md
+Reference: plans/archive/TARGET_PROJECT_SYNC_PLAN.md
 
 Steps:
 1. Analyze for_testing/[PROJECT_NAME]/ structure
@@ -71,7 +71,7 @@ Steps:
 ```
 Start integration of opencode_4py to ComfyUI in for_testing/.
 
-Reference: plans/TARGET_PROJECT_SYNC_PLAN.md
+Reference: plans/archive/TARGET_PROJECT_SYNC_PLAN.md
 
 Steps:
 1. Analyze for_testing/ComfyUI/ structure
@@ -92,7 +92,7 @@ Steps:
 ```
 Sync opencode_4py code changes to [PROJECT_NAME] in for_testing/.
 
-Reference: plans/TARGET_PROJECT_SYNC_PLAN.md
+Reference: plans/archive/TARGET_PROJECT_SYNC_PLAN.md
 
 Steps:
 1. Identify recent opencode_4py changes to sync
@@ -107,7 +107,7 @@ Steps:
 ```
 Sync opencode_4py code changes to ComfyUI in for_testing/.
 
-Reference: plans/TARGET_PROJECT_SYNC_PLAN.md
+Reference: plans/archive/TARGET_PROJECT_SYNC_PLAN.md
 
 Steps:
 1. Identify recent opencode_4py changes to sync
@@ -251,8 +251,8 @@ Steps:
 | Command | Source | Target | Reference Plan |
 |---------|--------|--------|----------------|
 | **Merge** | `merge_projects/[PROJECT]` | `opencode_4py` | [MERGE_INTEGRATION_PLAN.md](MERGE_INTEGRATION_PLAN.md) |
-| **Integrate** | `opencode_4py` | `for_testing/[PROJECT]` | [TARGET_PROJECT_SYNC_PLAN.md](TARGET_PROJECT_SYNC_PLAN.md) |
-| **Sync** | `opencode_4py` (changes) | `for_testing/[PROJECT]` | [TARGET_PROJECT_SYNC_PLAN.md](TARGET_PROJECT_SYNC_PLAN.md) |
+| **Integrate** | `opencode_4py` | `for_testing/[PROJECT]` | [TARGET_PROJECT_SYNC_PLAN.md](archive/TARGET_PROJECT_SYNC_PLAN.md) |
+| **Sync** | `opencode_4py` (changes) | `for_testing/[PROJECT]` | [TARGET_PROJECT_SYNC_PLAN.md](archive/TARGET_PROJECT_SYNC_PLAN.md) |
 | **Test** | `opencode_4py` (code) | `src/opencode/tests/` | [TESTING_PLAN.md](TESTING_PLAN.md) |
 | **GitHub Push** | `opencode_4py` | GitHub repos | [GITHUB_UPLOAD_PLAN.md](GITHUB_UPLOAD_PLAN.md) |
 | **Review** | `opencode_4py` (all) | Improvement recommendations | [COMPREHENSIVE_PROJECT_REVIEW_PLAN.md](COMPREHENSIVE_PROJECT_REVIEW_PLAN.md) |
@@ -298,8 +298,8 @@ Steps:
 ## Related Plans
 
 - [MERGE_INTEGRATION_PLAN.md](MERGE_INTEGRATION_PLAN.md) - Detailed merge planning
-- [TARGET_PROJECT_SYNC_PLAN.md](TARGET_PROJECT_SYNC_PLAN.md) - Sync and integration details
-- [FOR_TESTING_PLAN.md](FOR_TESTING_PLAN.md) - Testing infrastructure
+- [TARGET_PROJECT_SYNC_PLAN.md](archive/TARGET_PROJECT_SYNC_PLAN.md) - Sync and integration details
+- [FOR_TESTING_PLAN.md](archive/FOR_TESTING_PLAN.md) - Testing infrastructure
 - [CODE_IMPROVEMENT_PLAN.md](CODE_IMPROVEMENT_PLAN.md) - Code quality standards
 - [TESTING_PLAN.md](TESTING_PLAN.md) - Testing strategy
 
