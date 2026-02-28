@@ -140,52 +140,11 @@ The project includes a `.gitattributes` file that enforces consistent line endin
 
 Before starting any upload or update, check [GITHUB_REPOSITORIES.md](../docs/GITHUB_REPOSITORIES.md) to identify which repositories need to be updated.
 
-#### Repository Push Commands
 
-| Repository | Push Command | Content | Status |
-|------------|--------------|---------|--------|
-| `opencode_4py` | `git push origin main` | Full project (src, docs, plans, RAG, scripts) | Active |
-| `comfyui_portable_opencode-4py` | `git push comfyui main --force` | Python package only (`src/opencode/`) | Active |
 
-> **Important:** These are NOT duplicates! `comfyui_portable_opencode-4py` should only contain the Python package, not the full project.
 
-#### Manual Git Commands (without CLI)
 
-To push updates to both repositories manually:
 
-```bash
-# Navigate to the opencode project
-cd src/opencode
-
-# Check current remotes
-git remote -v
-
-# Add the comfyui remote (only needed once)
-git remote add comfyui https://github.com/RTPro256/comfyui_portable_opencode-4py.git
-
-# Stage all changes
-git add -A
-
-# Commit changes
-git commit -m "Your commit message"
-
-# Push to opencode_4py (origin)
-git push origin main
-
-# Push to comfyui_portable_opencode-4py (comfyui remote)
-git push comfyui main --force
-
-# Verify both pushes succeeded
-git remote -v
-```
-
-#### Quick Sync Command
-
-For a quick sync to both repos:
-
-```bash
-cd src/opencode && git add -A && git commit -m "Update" && git push origin main && git push comfyui main --force
-```
 
 #### Workflow
 
@@ -318,7 +277,7 @@ opencode github push -m "Update" -b main
 opencode github push-all -m "Your commit message"
 
 # Push to specific repositories
-opencode github push-all -r "opencode_4py,opencode_comfyui" -m "Update"
+opencode github push-all -r "opencode_4py" -m "Update"
 
 # Dry run (preview what would happen)
 opencode github push-all --dry-run

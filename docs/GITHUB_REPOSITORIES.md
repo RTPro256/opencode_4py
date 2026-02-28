@@ -82,7 +82,7 @@ These are repositories for projects in the `for_testing/` directory that may rec
 | **Sync Status** | See [TARGET_PROJECT_SYNC_PLAN.md](../plans/TARGET_PROJECT_SYNC_PLAN.md) |
 | **Push Command** | N/A (external upstream) |
 
-> **Note:** ComfyUI is an external project used for testing integration capabilities. It is not owned by RTPro256. Updates should be pushed to the local integration repository (`opencode_comfyui`) rather than the upstream ComfyUI project.
+
 
 ---
 
@@ -90,56 +90,16 @@ These are repositories for projects in the `for_testing/` directory that may rec
 
 These are combined repositories that integrate opencode_4py with other projects.
 
-### comfyui_portable_opencode-4py (Active)
 
-| Property | Value |
-|----------|-------|
-| **Repository Name** | `comfyui_portable_opencode-4py` |
-| **Owner** | `RTPro256` |
-| **Full URL** | `https://github.com/RTPro256/comfyui_portable_opencode-4py.git` |
-| **SSH URL** | `git@github.com:RTPro256/comfyui_portable_opencode-4py.git` |
-| **Visibility** | Public (recommended) |
-| **Git LFS** | Configured |
-| **Default Branch** | `main` |
-| **Status** | Active |
-| **Remote Name** | `comfyui` |
-| **Push Command** | `git push comfyui main --force` |
-| **Content** | Python package only (`src/opencode/`) - pip-installable for ComfyUI users |
 
-> **Important:** This repo should ONLY contain the Python package (`src/opencode/`), NOT the full project. It is meant to be installed via `pip install` by ComfyUI users.
 
-#### What's Being Updated
-
-| Repository | Content | Description |
-|------------|---------|-------------|
-| `opencode_4py` | Full project | Complete project (src, docs, plans, RAG, scripts, etc.) |
-| `comfyui_portable_opencode-4py` | Python package only | Only `src/opencode/` - pip-installable for ComfyUI users |
-
-> **Important:** These are NOT duplicates! `comfyui_portable_opencode-4py` should only contain the Python package, not the full project.
-
-> **Note:** This repository is the integration target for ComfyUI. The local path is `for_testing/as_dependency/ComfyUI_windows_portable/`.
-
-#### Sync Command
 
 ```bash
 # Sync both Python package and integration files to GitHub
 opencode github sync -t for_testing/as_dependency/ComfyUI_windows_portable -m "Update"
 ```
 
-#### Adding the Remote
 
-```bash
-# Navigate to opencode project
-cd src/opencode
-
-# Add the comfyui remote (only needed once)
-git remote add comfyui https://github.com/RTPro256/comfyui_portable_opencode-4py.git
-
-# Verify the remote was added
-git remote -v
-```
-
-#### Manual Git Commands for Multi-Repo Push
 
 ```bash
 # Stage and commit changes
@@ -149,11 +109,9 @@ git commit -m "Your commit message"
 # Push to opencode_4py
 git push origin main
 
-# Push to comfyui_portable_opencode-4py (force sync)
-git push comfyui main --force
 
-# Quick sync (one-liner)
-git add -A && git commit -m "Update" && git push origin main && git push comfyui main --force
+
+
 ```
 
 #### CLI Commands for Multi-Repo Push
@@ -167,8 +125,7 @@ opencode github repos
 # Push to all configured repositories (with verification)
 opencode github push-all -m "Your commit message"
 
-# Push to specific repositories
-opencode github push-all -r "opencode_4py,comfyui_portable_opencode-4py" -m "Update"
+
 
 # Dry run to see what would happen
 opencode github push-all --dry-run
@@ -184,9 +141,7 @@ opencode github add-repo my-project https://github.com/RTPro256/my-project.git
 
 Once the repository is created and initialized, future updates can be pushed using:
 
-```bash
-cd /path/to/opencode_comfyui
-git add .
+
 git commit -m "Your commit message"
 git push origin main
 ```
@@ -202,8 +157,7 @@ Built for creative AI workflows with privacy-first design.
 #### Topics/Tags (suggested)
 
 - `python`
-- `comfyui`
-- `ai-workflow`
+
 - `stable-diffusion`
 - `ai-assistant`
 - `rag`
@@ -352,8 +306,7 @@ These are repos that I am aware of and can update:
    - Content: Full project (src, docs, plans, RAG, scripts)
    - Status: Ready to push
 
-2. comfyui_portable_opencode-4py (https://github.com/RTPro256/comfyui_portable_opencode-4py.git)
-   - ComfyUI + opencode_4py integration
+
    - Content: Python package only (pip-installable)
    - Status: Active
 
@@ -366,7 +319,6 @@ Is there a new repo you want me to update?
 | User Input | Action |
 |------------|--------|
 | `1` or `opencode_4py` | Execute upload to primary repository |
-| `2` or `comfyui_portable_opencode-4py` | Sync with integration repository |
 | `new` | Prompt for new repository details |
 | `cancel` | Abort operation |
 
@@ -442,11 +394,10 @@ Would you like me to attempt automatic recovery? (y/n)
 
 | Date | Change |
 |------|--------|
-| 2026-02-27 | Updated repository name to comfyui_portable_opencode-4py |
-| 2026-02-27 | Added manual git commands for multi-repo push |
+
 | 2026-02-27 | Added quick sync one-liner command |
 | 2026-02-25 | Added push command instructions to all repository sections |
-| 2026-02-25 | Added opencode_comfyui integration repository (planned) |
+
 | 2026-02-25 | Added interactive upload workflow section |
 | 2026-02-25 | Added failure recovery section |
 | 2026-02-25 | Initial creation - reference document for GITHUB_UPLOAD_PLAN.md |
