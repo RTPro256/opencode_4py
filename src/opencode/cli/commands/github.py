@@ -24,11 +24,7 @@ REPOSITORIES = {
         "owner": "RTPro256",
         "name": "opencode_4py",
     },
-    "comfyui_portable_opencode-4py": {
-        "url": "https://github.com/RTPro256/comfyui_portable_opencode-4py.git",
-        "owner": "RTPro256",
-        "name": "comfyui_portable_opencode-4py",
-    },
+
 }
 
 
