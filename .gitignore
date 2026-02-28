@@ -5,6 +5,13 @@ aimodels/*
 for_testing/*
 merge_projects/*
 python_embeded/*
+plans/archive/*
+docs/archive/*
+
+# Project documents - managed separately, ignore changes from git
+# Use the Python summary files in src/opencode/src/opencode/summaries/
+README.md
+MISSION.md
 
 # Cache
 __pycache__/

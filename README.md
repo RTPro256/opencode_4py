@@ -160,6 +160,7 @@ opencode session            # Manage sessions
 opencode mcp                # Manage MCP servers
 opencode rag                # RAG management commands
 opencode debug              # Debug issues with RAG lookup
+opencode github             # GitHub sync and repository management
 opencode upgrade            # Upgrade to latest version
 opencode uninstall          # Uninstall OpenCode
 ```
@@ -253,6 +254,8 @@ mypy src/opencode
 | API Reference | [docs/README.md](docs/README.md#api-reference) |
 | Style Guide | [docs/STYLE_GUIDE.md](docs/STYLE_GUIDE.md) |
 | Tutorial | [docs/TUTORIAL.md](docs/TUTORIAL.md) |
+| Feature Verification | [docs/FEATURE_VERIFICATION.md](docs/FEATURE_VERIFICATION.md) |
+| Bug Detection | [docs/BUG_DETECTION_PROCESS.md](docs/BUG_DETECTION_PROCESS.md) |
 
 ## License
 
