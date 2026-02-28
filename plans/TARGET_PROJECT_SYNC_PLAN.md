@@ -195,7 +195,7 @@ TARGET_DOCS="$TARGET_SITE_PACKAGES/docs"
 TARGET_RAG="$TARGET_SITE_PACKAGES/RAG"
 
 # Copy complete documentation directory (including all subdirectories):
-robocopy "c:/Users/RyanT/Documents/code/ClaudeCode/opencode_4py/docs" "$TARGET_DOCS" /E
+robocopy "c:/path/to/opencode_4py/docs" "$TARGET_DOCS" /E
 
 # Copy updated documents (for AI context during sessions)
 cp README.md "$TARGET_SITE_PACKAGES/"

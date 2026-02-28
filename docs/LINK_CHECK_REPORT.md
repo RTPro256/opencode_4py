@@ -1,7 +1,7 @@
 # Link Check Report
 
 **Generated**: 2026-02-23T19:13:19.213055
-**Root**: c:\Users\RyanT\Documents\code\ClaudeCode\opencode_4py
+**Root**: c:\path\to\opencode_4py
 
 ## [X] Broken Markdown Links
 

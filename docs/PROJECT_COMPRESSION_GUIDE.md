@@ -14,7 +14,7 @@ PowerShell's `Compress-Archive` cmdlet is the built-in way to create zip archive
 
 ```powershell
 # Navigate to the project directory
-cd "C:\Users\RyanT\Documents\code\ClaudeCode\opencode_4py"
+cd "C:\\path\\to\\opencode_4py"
 
 # Create a zip archive of the entire project
 Compress-Archive -Path .\* -DestinationPath .\opencode_4py.zip

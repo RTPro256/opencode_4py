@@ -1,7 +1,7 @@
 # Code Analysis Report
 
 **Generated**: 2026-02-23T19:17:57.954272
-**Root**: c:\Users\RyanT\Documents\code\ClaudeCode\opencode_4py
+**Root**: c:\path\to\opencode_4py
 
 ## Large Files (>500 lines or >20K chars)
 
