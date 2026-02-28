@@ -185,7 +185,7 @@ opencode github repos
 opencode github push-all -m "Your message"
 
 # Push to specific repos
-opencode github push-all -r "opencode_4py,comfyui_portable_opencode-4py" -m "Update"
+opencode github push-all -r "opencode_4py" -m "Update"
 
 # Sync to local target (like ComfyUI portable)
 opencode github sync -t for_testing/as_dependency/ComfyUI_windows_portable -m "Sync update"
@@ -312,5 +312,5 @@ Steps:
 | Date | Change |
 |------|--------|
 | 2026-02-27 | Added manual git commands for GitHub sync |
-| 2026-02-27 | Updated repository name to comfyui_portable_opencode-4py |
+
 | 2026-02-24 | Initial creation - Quick Start Commands guide |
