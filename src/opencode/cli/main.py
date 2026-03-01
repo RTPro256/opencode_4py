@@ -289,6 +289,14 @@ app.add_typer(debug_app, name="debug", help="Simplified troubleshooting commands
 from opencode.cli.commands.github import app as github_app
 app.add_typer(github_app, name="github", help="GitHub integration commands")
 
+# Add memory subcommand group for memory management (beads integration)
+from opencode.cli.commands.memory import app as memory_app
+app.add_typer(memory_app, name="memory", help="Memory management commands")
+
+# Add multiagent subcommand group for multi-agent orchestration (overstory integration)
+from opencode.cli.commands.multiagent import app as multiagent_app
+app.add_typer(multiagent_app, name="multiagent", help="Multi-agent orchestration commands")
+
 
 if __name__ == "__main__":
     app()

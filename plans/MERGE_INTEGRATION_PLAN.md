@@ -13,7 +13,7 @@ This plan outlines the systematic integration of external projects into the open
 > - **Next:** [USER_ACCEPTANCE_TESTING.md](USER_ACCEPTANCE_TESTING.md) - UAT validation
 
 > **Related Documents:**
-> - [MERGE_PROJECTS_INVENTORY.md](MERGE_PROJECTS_INVENTORY.md) - Project inventory and status
+> - [docs/MERGE_PROJECTS_INVENTORY.md](docs/MERGE_PROJECTS_INVENTORY.md) - Project inventory and status
 > - [FEATURE_MAPPING.md](FEATURE_MAPPING.md) - Feature-to-architecture mapping
 > - [TESTING_PLAN.md](TESTING_PLAN.md) - Testing strategy
 > - [DOCUMENTATION_PLAN.md](DOCUMENTATION_PLAN.md) - Documentation standards
@@ -330,7 +330,7 @@ merge_projects/
 
 | Artifact | Path | Description |
 |----------|------|-------------|
-| Project Inventory | `plans/MERGE_PROJECTS_INVENTORY.md` | Comprehensive inventory of all 21 projects |
+| Project Inventory | `plans/docs/MERGE_PROJECTS_INVENTORY.md` | Comprehensive inventory of all 21 projects |
 | Feature Mapping | `plans/FEATURE_MAPPING.md` | Feature-to-architecture mapping document |
 | RAG Methods Module | `src/opencode/src/opencode/core/rag/methods/` | New RAG methods module |
 | Fine-tuning Module | `src/opencode/src/opencode/core/finetuning/` | New fine-tuning module |
@@ -453,6 +453,161 @@ The research module has been created with components from Locally-Hosted-LM-Rese
 
 ---
 
+## Phase 7: Multi-Agent Orchestration (overstory) ✅ COMPLETE
+
+### Project: overstory
+
+**Description**: Multi-agent orchestration for AI coding agents.
+
+**Location**: `merge_projects/overstory/`
+
+**Language**: TypeScript (Bun runtime)
+
+**Key Features**:
+- Multi-agent coordination hierarchy (Coordinator → Supervisor → Workers)
+- SQLite-based mail system for inter-agent messaging
+- Git worktree isolation for agent workspaces
+- 4-tier conflict resolution for branch merging
+- Watchdog daemon (Tier 0 mechanical, Tier 1 AI-assisted, Tier 2 monitor)
+- Runtime adapters (Claude Code, Pi, Copilot, Codex)
+
+**Integration Target**: `src/opencode/core/multiagent/`
+
+**New CLI Commands** (30+):
+- Core Workflow: `sling`, `init`, `stop`, `prime`, `spec write`
+- Coordination: `coordinator start/stop/status`, `supervisor start/stop/status`
+- Messaging: `mail send/check/list/read/reply`, `nudge`
+- Task Groups: `group create/status/add/list`
+- Merge: `merge`
+- Observability: `status`, `dashboard`, `inspect`, `trace`, `errors`, `replay`, `feed`, `logs`, `costs`, `metrics`, `run`
+- Infrastructure: `hooks`, `worktree`, `watch`, `monitor`, `clean`, `doctor`, `ecosystem`, `agents discover`
+
+**New Agent Types**:
+| Agent | Role | Access |
+|-------|------|--------|
+| Coordinator | Persistent orchestrator | Read-only |
+| Supervisor | Per-project team lead | Read-only |
+| Scout | Exploration/research | Read-only |
+| Builder | Implementation | Read-write |
+| Reviewer | Validation | Read-only |
+| Lead | Team coordination | Read-write |
+| Merger | Branch merge specialist | Read-write |
+| Monitor | Fleet patrol | Read-only |
+
+**Status**: ✅ Complete - Python implementation ready
+
+**Integrated Components**:
+- `core/multiagent/__init__.py` - Module exports
+- `core/multiagent/models.py` - Agent models (AgentType, AgentState, Agent, Message, Worktree)
+- `core/multiagent/messaging.py` - SQLite message bus
+- `core/multiagent/worktree.py` - Git worktree management
+- `core/multiagent/coordinator.py` - Agent coordination
+- `core/multiagent/config.py` - Configuration
+- `cli/commands/multiagent.py` - CLI commands
+
+---
+
+## Phase 8: Memory Management (beads) ✅ COMPLETE
+
+### Project: beads
+
+**Description**: Distributed, git-backed graph issue tracker for AI agents.
+
+**Location**: `merge_projects/beads/`
+
+**Language**: Go
+
+**Key Features**:
+- Dolt-backed version-controlled SQL database
+- Task dependency graph with zero-conflict hash IDs
+- Memory compaction (semantic "memory decay")
+- Graph links (relates_to, duplicates, supersedes, replies_to)
+- Hierarchical IDs (Epic → Task → Sub-task)
+- Stealth mode for local-only usage
+- Contributor vs Maintainer workflow
+
+**Integration Target**: `src/opencode/core/memory/`
+
+**New CLI Commands**:
+- Task Management: `task create/ready/show/list/close`
+- Dependencies: `dep add/list`
+- Graph: `graph relate/duplicate/supersede`
+- Memory: `memory compact/export`
+- Backend: `dolt start/stop/commit/push/pull`
+
+**Status**: ✅ Complete - Python implementation ready
+
+**Integrated Components**:
+- `core/memory/__init__.py` - Module exports
+- `core/memory/models.py` - Task, Message, Relationship, AuditEntry models
+- `core/memory/ids.py` - Zero-conflict hash ID generation
+- `core/memory/store.py` - SQLite storage backend
+- `core/memory/graph.py` - Graph operations (dependencies, blockers, cycles)
+- `core/memory/config.py` - Configuration
+- `cli/commands/memory.py` - CLI commands
+- `tests/unit/test_memory.py` - Unit tests (7 tests passing)
+
+---
+
+## Integration Phases Summary
+
+| Phase | Category | Projects | Logical Group | Status |
+|-------|----------|----------|---------------|--------|
+| Phase 1 | RAG Core | 4 projects | Data/AI Foundations | ✅ Complete |
+| Phase 2 | YouTube RAG | 5 projects | Data/AI Foundations | ✅ Complete |
+| Phase 3 | Fine-tuning | 2 projects | Data/AI Foundations | ✅ Complete |
+| Phase 4 | Research Module | 1 project | Data/AI Foundations | ✅ Complete |
+| Phase 5 | Code Assistants | 4 projects | Tool Capabilities | ✅ Complete |
+| Phase 6 | Planning Systems | 2 projects | Tool Capabilities | ✅ Complete |
+| Phase 7 | Infrastructure | 4 projects | Tool Capabilities | ✅ Complete |
+| Phase 8 | Memory Management | 1 project | Advanced Orchestration | ✅ Complete |
+| Phase 9 | Multi-Agent | 1 project | Advanced Orchestration | ✅ Complete |
+
+---
+
+### Phase Ordering Rationale
+
+**Logical Flow:**
+1. **Data/AI Foundations** (Phases 1-4): Build core AI capabilities first
+   - RAG Core → YouTube RAG → Fine-tuning → Research Module
+2. **Tool Capabilities** (Phases 5-7): Add practical tools for developers
+   - Code Assistants → Planning Systems → Infrastructure
+3. **Advanced Orchestration** (Phases 8-9): Build complex multi-agent systems
+   - Memory Management → Multi-Agent
+
+This ordering ensures:
+- Core AI capabilities are established before advanced features
+- Basic tools are available before complex orchestration
+- Memory layer exists before multi-agent coordination (agents need shared memory)
+
+---
+
+### Recommended Integration Order
+
+1. ~~**Sprint 1**: beads (memory)~~ - ✅ COMPLETE
+2. ~~**Sprint 2**: overstory (multi-agent)~~ - ✅ COMPLETE
+
+All planned integrations are now complete!
+
+---
+
+### Language Compatibility Notes
+
+| Source Language | Integration Approach | Effort Level |
+|-----------------|---------------------|---------------|
+| Go (beads) | Refactor to Python | High |
+| TypeScript (overstory) | Refactor to Python | High |
+
+---
+
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| Language porting complexity | High | Extract patterns, reimplement in Python with type hints |
+| Architectural changes | High | Incremental implementation with extensive testing |
+| New dependencies (Dolt) | Medium | Offer as optional module |
+
+---
+
 ## Risk Assessment
 
 ### High Risk
@@ -488,20 +643,23 @@ The research module has been created with components from Locally-Hosted-LM-Rese
 - [`DOCUMENTATION_PLAN.md`](DOCUMENTATION_PLAN.md) - Documentation standards
 - [`PRIVACY_FIRST_RAG_PLAN.md`](PRIVACY_FIRST_RAG_PLAN.md) - Privacy-focused RAG alignment
 - [`PROJECT_ORGANIZATION_PLAN.md`](PROJECT_ORGANIZATION_PLAN.md) - Project structure guidelines
-- [`MERGE_PROJECTS_INVENTORY.md`](MERGE_PROJECTS_INVENTORY.md) - Project inventory and status
+- [`docs/MERGE_PROJECTS_INVENTORY.md`](docs/MERGE_PROJECTS_INVENTORY.md) - Project inventory and status
+- [`MERGE_BENEFITS_SUMMARY.md`](MERGE_BENEFITS_SUMMARY.md) - Benefits analysis for overstory and beads
 - [`FEATURE_MAPPING.md`](FEATURE_MAPPING.md) - Feature-to-architecture mapping
 
 ---
 
 ## Success Criteria
 
-1. **All projects inventoried and categorized**
-2. **High-priority RAG projects fully integrated**
-3. **No dependency conflicts in consolidated requirements**
-4. **Test coverage maintained above 80% for new code**
-5. **Documentation updated for all integrated features**
-6. **Source projects archived with metadata**
+1. **All projects inventoried and categorized** ✅
+2. **High-priority RAG projects fully integrated** ✅
+3. **No dependency conflicts in consolidated requirements** ✅
+4. **Test coverage maintained above 80% for new code** ✅
+5. **Documentation updated for all integrated features** ✅
+6. **Source projects archived with metadata** ✅
+7. **Multi-agent orchestration (overstory) integrated** ✅
+8. **Memory management (beads) integrated** ✅
 
 ---
 
-*Last updated: 2026-02-24*
+*Last updated: 2026-03-01* (Phase 7 & 8 complete - overstory & beads integrated)

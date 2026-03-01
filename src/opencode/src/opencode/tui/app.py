@@ -290,6 +290,7 @@ class StatusWidget(Static):
         self._current_model = "Unknown"
         self._models_count = 0
         self._models_list = []
+        self._gpu_info = []
     
     def update_status(
         self,
@@ -299,6 +300,7 @@ class StatusWidget(Static):
         current_model: Optional[str] = None,
         models_count: Optional[int] = None,
         models_list: Optional[list] = None,
+        gpu_info: Optional[list] = None,
     ) -> None:
         """Update status values."""
         if computer is not None:
@@ -313,6 +315,8 @@ class StatusWidget(Static):
             self._models_count = models_count
         if models_list is not None:
             self._models_list = models_list
+        if gpu_info is not None:
+            self._gpu_info = gpu_info
         self.refresh()
     
     def render(self) -> str:
@@ -329,6 +333,19 @@ class StatusWidget(Static):
         else:
             models_display = "None"
         
+        # Format GPU info
+        if self._gpu_info:
+            gpu_lines = []
+            for gpu in self._gpu_info:
+                gpu_lines.append(f"  {gpu}")
+            gpu_display = "\n".join(gpu_lines)
+            gpu_section = f"""
+
+[bold]🎮 GPU[/bold]
+{gpu_display}"""
+        else:
+            gpu_section = ""
+        
         return f"""[bold]💻 Computer[/bold]
   [{computer_color}]{self._computer_status}[/{computer_color}]
 
@@ -339,7 +356,7 @@ class StatusWidget(Static):
   [{ollama_color}]{self._ollama_status}[/{ollama_color}]
   Model: [cyan]{self._current_model}[/cyan]
   Total: {self._models_count} models
-  {models_display}"""
+  {models_display}{gpu_section}"""
 
 
 class SidebarContainer(Container):
@@ -493,6 +510,9 @@ class OpenCodeApp(App):
         # Get network status
         network_status = await self._get_network_status()
         
+        # Get GPU status
+        gpu_status = await self._get_gpu_status()
+        
         # Get Ollama status
         ollama_status, models_count, models_list = await self._get_ollama_status()
         
@@ -504,6 +524,7 @@ class OpenCodeApp(App):
             current_model=self.current_model,
             models_count=models_count,
             models_list=models_list,
+            gpu_info=gpu_status,
         )
     
     async def _get_computer_status(self) -> str:
@@ -563,6 +584,57 @@ class OpenCodeApp(App):
                 
         except Exception as e:
             return f"Error: {e}", 0, []
+    
+    async def _get_gpu_status(self) -> list:
+        """Get GPU status using nvidia-smi.
+        
+        Returns:
+            List of GPU info strings
+        """
+        try:
+            import shutil
+            import subprocess
+            
+            # Check if nvidia-smi is available
+            if not shutil.which("nvidia-smi"):
+                return []
+            
+            # Run nvidia-smi to get GPU info
+            result = subprocess.run(
+                ["nvidia-smi", "--query-gpu=index,name,memory.total,memory.used,memory.free,utilization.gpu",
+                 "--format=csv,noheader,nounits"],
+                capture_output=True,
+                text=True,
+                timeout=5
+            )
+            
+            if result.returncode != 0:
+                return []
+            
+            gpu_list = []
+            for line in result.stdout.strip().split('\n'):
+                if not line.strip():
+                    continue
+                parts = [p.strip() for p in line.split(',')]
+                if len(parts) >= 6:
+                    index = parts[0]
+                    name = parts[1]
+                    total_mb = int(parts[2])
+                    used_mb = int(parts[3])
+                    free_mb = int(parts[4])
+                    util = int(parts[5])
+                    
+                    total_gb = total_mb / 1024
+                    used_gb = used_mb / 1024
+                    free_gb = free_mb / 1024
+                    
+                    gpu_list.append(f"[{index}] {name}")
+                    gpu_list.append(f"    {used_gb:.1f}GB / {total_gb:.1f}GB ({util}%)")
+                    gpu_list.append(f"    Free: {free_gb:.1f}GB")
+            
+            return gpu_list
+        except Exception:
+            return []
     
     async def _init_provider(self) -> None:
         """Initialize the AI provider."""

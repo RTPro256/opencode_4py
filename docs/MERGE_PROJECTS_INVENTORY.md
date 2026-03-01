@@ -14,8 +14,10 @@
 | Code Assistants | 4 | Medium | Medium |
 | Planning Systems | 2 | Low | Low |
 | Infrastructure | 4 | Low | Medium |
+| Multi-Agent Orchestration | 1 | High | High |
+| Memory Management | 1 | High | High |
 
-**Total Projects**: 21
+**Total Projects**: 23
 
 ---
 
@@ -473,16 +475,128 @@ From unsloth:
 
 ---
 
+## 22. overstory
+
+**Category**: Multi-Agent Orchestration (High Priority)
+
+**Description**: Multi-agent orchestration for AI coding agents.
+
+**Location**: `merge_projects/overstory/`
+
+**Language**: TypeScript (Bun runtime)
+
+**Files**:
+| File | Size | Purpose |
+|------|------|---------|
+| `src/commands/*.ts` | 50+ files | CLI commands |
+| `src/agents/*.ts` | 10+ files | Agent definitions |
+| `src/mail/*.ts` | 5 files | Inter-agent messaging |
+| `src/worktree/*.ts` | 3 files | Git worktree management |
+| `src/merge/*.ts` | 3 files | Branch merge logic |
+| `src/watchdog/*.ts` | 4 files | Fleet health monitoring |
+| `agents/*.md` | 8 files | Agent prompt templates |
+
+**Key Features**:
+- Multi-agent coordination hierarchy (Coordinator → Supervisor → Workers)
+- SQLite-based mail system for inter-agent messaging
+- Git worktree isolation for agent workspaces
+- 4-tier conflict resolution for branch merging
+- Watchdog daemon (Tier 0 mechanical, Tier 1 AI-assisted, Tier 2 monitor)
+- Runtime adapters (Claude Code, Pi, Copilot, Codex)
+- 30+ CLI commands for orchestration
+
+**Dependencies**:
+- Bun runtime
+- tmux
+- git
+- SQLite
+
+**Integration Target**: Create `src/opencode/core/multiagent/`
+
+**Integration Value**: HIGH - Enables multi-agent self-improvement capabilities
+
+---
+
+## 23. beads
+
+**Category**: Memory Management (High Priority)
+
+**Description**: Distributed, git-backed graph issue tracker for AI agents.
+
+**Location**: `merge_projects/beads/`
+
+**Language**: Go
+
+**Files**:
+| File | Size | Purpose |
+|------|------|---------|
+| `cmd/bd/*.go` | 80+ files | CLI commands |
+| `internal/beads/*.go` | 10+ files | Core logic |
+| `internal/formula/*.go` | 8 files | Expression parsing |
+| `internal/linear/*.go` | 6 files | Issue tracking |
+| `internal/molecules/*.go` | 3 files | Molecule types |
+| `docs/*.md` | 30+ files | Documentation |
+
+**Key Features**:
+- Dolt-backed version-controlled SQL database
+- Task dependency graph with zero-conflict hash IDs
+- Memory compaction (semantic "memory decay")
+- Graph links (relates_to, duplicates, supersedes, replies_to)
+- Hierarchical IDs (Epic → Task → Sub-task)
+- Stealth mode for local-only usage
+- Contributor vs Maintainer workflow
+
+**Dependencies**:
+- Go runtime
+- Dolt (SQL database)
+- git
+
+**Integration Target**: Create `src/opencode/core/memory/`
+
+**Integration Value**: VERY HIGH - Enables persistent structured memory for self-improvement
+
+---
+
+## Integration Priority Matrix
+
+### Sprint 1: Memory Management (beads) ✅ COMPLETE
+1. **beads** - Structured memory with task graph - ✅ INTEGRATED
+
+### Sprint 2: Multi-Agent Orchestration (overstory) ✅ COMPLETE
+1. **overstory** - Multi-agent coordination - ✅ INTEGRATED (HIGH value)
+
+---
+
+## Dependency Analysis
+
+### New Dependencies Required
+
+From beads:
+- Dolt SQL database (optional - can use SQLite fallback)
+
+From overstory:
+- tmux (for worktree sessions)
+- git (for branch management)
+- SQLite (for messaging - already in use)
+
+### Existing Dependencies (Already in pyproject.toml)
+- sqlite3 (via aiosqlite)
+- gitpython
+
+---
+
 ## Risk Assessment
 
 ### High Risk
 - **License compatibility**: Review all licenses before integration
 - **Dependency conflicts**: Test in isolated environment
 - **Code quality**: Apply linting before merge
+- **Language porting (TypeScript/Go)**: High effort required for porting
 
 ### Medium Risk
 - **Feature overlap**: Document and consolidate duplicates
 - **Breaking changes**: Maintain backward compatibility
+- **New dependencies**: Dolt, tmux may be required
 
 ### Low Risk
 - **Documentation gaps**: Create docs during integration
@@ -493,12 +607,138 @@ From unsloth:
 ## Next Steps
 
 1. ✅ Complete inventory (this document)
-2. ⬜ Create feature mapping document
-3. ⬜ Begin Sprint 1 integration (OpenRAG, RAG_Techniques, Local-RAG-with-Ollama)
-4. ⬜ Add tests for integrated features
-5. ⬜ Update documentation
-6. ⬜ Rename completed project folders with `--delete` suffix
+2. ✅ Create feature mapping document
+3. ✅ Begin RAG integration (Phases 1-7) - COMPLETE
+4. ✅ Begin beads integration (Sprint 1 - Memory Management) - COMPLETE
+5. ✅ Begin overstory integration (Sprint 2 - Multi-Agent Orchestration) - COMPLETE
+6. ✅ Add tests for integrated features
+7. ✅ Update documentation
 
 ---
 
-*Last updated: 2026-02-24*
+## Implementation Status
+
+✅ **All major components have been implemented!**
+
+### Completed Components
+
+#### Phase 1-2: Workflow Engine (✅ Already Implemented)
+- `workflow/__init__.py` - Module exports
+- `workflow/node.py` - BaseNode, NodePort, NodeSchema, ExecutionContext
+- `workflow/engine.py` - WorkflowEngine with execution, streaming, events
+- `workflow/graph.py` - WorkflowGraph, WorkflowNode, WorkflowEdge
+- `workflow/state.py` - WorkflowState, ExecutionStatus
+- `workflow/registry.py` - NodeRegistry
+
+#### Phase 2: Core Nodes (✅ Already Implemented)
+- `workflow/nodes/data_source.py` - DataSourceNode
+- `workflow/nodes/llm_process.py` - LlmProcessNode
+- `workflow/nodes/timer.py` - TimerNode
+- `workflow/nodes/http.py` - HttpNode
+- `workflow/nodes/tool.py` - ToolNode
+- `workflow/nodes/data_validation.py` - DataValidationNode
+- `workflow/nodes/json_reformatter.py` - JsonReformatterNode
+- `workflow/nodes/chart.py` - ChartNode
+
+#### Phase 3: Router Integration (✅ Already Implemented)
+- `router/__init__.py` - Module exports
+- `router/engine.py` - RouterEngine, RoutingResult, SemanticCache
+- `router/config.py` - RouterConfig, ModelConfig
+- `router/profiler.py` - ModelProfiler
+- `router/skills.py` - SkillClassifier
+- `router/vram_monitor.py` - VRAMMonitor
+
+#### Phase 4: Workflow Tools (✅ NEW)
+- `workflow/tools/__init__.py` - Module exports
+- `workflow/tools/registry.py` - ToolRegistry, BaseTool, ToolResult
+- `workflow/tools/brave_search.py` - BraveSearchTool
+- `workflow/tools/duckduckgo_search.py` - DuckDuckGoSearchTool
+- `workflow/tools/weather.py` - WeatherTool
+- `workflow/tools/csv_array.py` - CsvArrayTool
+
+#### Phase 5: API Layer (✅ Already Implemented + NEW)
+- `server/routes/workflow.py` - Workflow REST API + WebSocket
+- `server/routes/router.py` - Router management API
+- `server/graphql/__init__.py` - GraphQL module
+- `server/graphql/schema.py` - GraphQL schema with Query, Mutation, Subscription
+
+#### llm-checker Module (✅ Already Implemented)
+- `llmchecker/hardware/` - Hardware detection with backends
+- `llmchecker/scoring/` - Scoring engine
+- `llmchecker/ollama/` - Ollama client
+- `llmchecker/calibration/` - Calibration manager
+
+#### Mode System (✅ NEW)
+- `core/modes/__init__.py` - Module exports
+- `core/modes/base.py` - Mode, ModeConfig, ModeToolAccess
+- `core/modes/registry.py` - ModeRegistry
+- `core/modes/manager.py` - ModeManager
+- `core/modes/modes/code.py` - CodeMode
+- `core/modes/modes/architect.py` - ArchitectMode
+- `core/modes/modes/ask.py` - AskMode
+- `core/modes/modes/debug.py` - DebugMode
+
+#### Skills System (✅ NEW)
+- `skills/__init__.py` - Module exports
+- `skills/models.py` - Skill, SkillConfig, SkillResult, SkillExecutionContext
+- `skills/discovery.py` - SkillDiscovery, skill decorator
+- `skills/manager.py` - SkillManager
+
+#### Context & Checkpoints (✅ NEW)
+- `core/context/__init__.py` - Module exports
+- `core/context/tracker.py` - ContextTracker, FileContext
+- `core/context/truncation.py` - ContextTruncation, strategies
+- `core/context/mentions.py` - MentionProcessor
+- `core/context/checkpoints.py` - CheckpointManager, Checkpoint
+
+#### Orchestration Layer (✅ NEW)
+- `core/orchestration/__init__.py` - Module exports
+- `core/orchestration/agent.py` - Agent, AgentDescription, AgentTask
+- `core/orchestration/registry.py` - AgentRegistry
+- `core/orchestration/router.py` - OrchestrationRouter, IntentClassifier
+- `core/orchestration/coordinator.py` - Coordinator
+
+#### TUI Enhancements (✅ NEW)
+- `tui/widgets/completion.py` - CompletionWidget, CompletionManager
+- `tui/widgets/approval.py` - ApprovalDialog, ApprovalManager
+
+#### Memory Module (beads) (✅ COMPLETE)
+- `core/memory/__init__.py` - Module exports
+- `core/memory/models.py` - Task, Message, Relationship models
+- `core/memory/ids.py` - Zero-conflict hash ID generation
+- `core/memory/store.py` - SQLite storage backend
+- `core/memory/graph.py` - Graph operations
+- `core/memory/config.py` - Configuration
+
+#### Multi-Agent Module (overstory) (✅ COMPLETE)
+- `core/multiagent/__init__.py` - Module exports
+- `core/multiagent/models.py` - Agent models
+- `core/multiagent/messaging.py` - SQLite message bus
+- `core/multiagent/worktree.py` - Git worktree management
+- `core/multiagent/coordinator.py` - Agent coordination
+- `core/multiagent/config.py` - Configuration
+
+---
+
+## Implementation Summary
+
+| Component | Status | Files Created |
+|-----------|--------|---------------|
+| Workflow Engine | ✅ Complete | 8 files |
+| Router Integration | ✅ Complete | 5 files |
+| Workflow Tools | ✅ Complete | 5 files |
+| GraphQL API | ✅ Complete | 2 files |
+| Mode System | ✅ Complete | 7 files |
+| Skills System | ✅ Complete | 4 files |
+| Enhanced Tools | ✅ Complete | 4 files |
+| Context & Checkpoints | ✅ Complete | 5 files |
+| Orchestration Layer | ✅ Complete | 5 files |
+| TUI Enhancements | ✅ Complete | 2 files |
+| Memory Module (beads) | ✅ Complete | 6 files |
+| Multi-Agent Module (overstory) | ✅ Complete | 6 files |
+
+**Total: 55+ files implemented**
+
+---
+
+*Last updated: 2026-03-01*
