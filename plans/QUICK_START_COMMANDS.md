@@ -246,6 +246,44 @@ Steps:
 
 ---
 
+### 6. Manage Git Repositories (GitTool)
+
+**Purpose**: Use the AI-assisted GitTool for repository operations within OpenCode.
+
+**Using GitTool in OpenCode**:
+```python
+# List known repositories
+await git(operation="repos")
+
+# Add a new repository to known list
+await git(operation="add-repo", repo_name="my-project", remote_url="https://github.com/user/my-project.git")
+
+# Push to a named repository
+await git(operation="push-to", repo_name="opencode_4py", branch="main")
+
+# List git remotes
+await git(operation="remotes")
+
+# Configure a remote
+await git(operation="set-remote", remote_name="origin", remote_url="https://github.com/user/repo.git")
+```
+
+**Prompt Examples**:
+```
+List all known GitHub repositories.
+```
+```
+Add a new repository 'my-project' to the known repositories list.
+```
+```
+Push the current changes to the opencode_4py repository on GitHub.
+```
+```
+Show me the current git remotes configured.
+```
+
+---
+
 ## Quick Reference Table
 
 | Command | Source | Target | Reference Plan |

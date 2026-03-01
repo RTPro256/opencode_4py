@@ -416,6 +416,7 @@ class OpenCodeApp(App):
         Binding("ctrl+o", "open_session", "Open Session"),
         Binding("ctrl+q", "quit", "Quit"),
         Binding("ctrl+m", "toggle_model", "Change Model"),
+        Binding("ctrl+shift+m", "toggle_mode", "Change Mode"),
         Binding("ctrl+t", "toggle_logging", "Debug Logs"),
         Binding("ctrl+l", "view_logs", "View Logs"),
         Binding("f1", "help", "Help"),
@@ -429,6 +430,7 @@ class OpenCodeApp(App):
     # Reactive state
     current_session_id: reactive[Optional[str]] = reactive(None)
     current_model: reactive[str] = reactive("")  # Will be set from config in __init__
+    current_mode: reactive[str] = reactive("code")  # Current mode (code, ask, architect, debug, etc.)
     is_processing: reactive[bool] = reactive(False)
     logging_enabled: reactive[bool] = reactive(False)
     _cancelled: bool = False  # Flag for cancellation during streaming
@@ -459,6 +461,7 @@ class OpenCodeApp(App):
         self._streaming_task: Optional[asyncio.Task] = None
         # Set current_model from config
         self.current_model = config.default_model
+        self.current_mode = "code"  # Default mode
     
     def watch_is_processing(self, processing: bool) -> None:
         """Update UI when processing state changes."""
@@ -938,6 +941,26 @@ class OpenCodeApp(App):
         
         # Model is passed to complete() at call time, no need to set on provider
         self.notify(f"Model: {self.current_model}")
+    
+    def action_toggle_mode(self) -> None:
+        """Toggle between available modes."""
+        from opencode.core.modes.manager import ModeManager
+        
+        # Get available modes
+        mode_manager = ModeManager()
+        modes = mode_manager.list_modes()
+        
+        if not modes:
+            self.notify("No modes available")
+            return
+        
+        # Cycle through modes
+        current_idx = modes.index(self.current_mode) if self.current_mode in modes else 0
+        next_idx = (current_idx + 1) % len(modes)
+        self.current_mode = modes[next_idx]
+        
+        # Notify user
+        self.notify(f"Mode: {self.current_mode}")
     
     def action_toggle_tools(self) -> None:
         """Toggle tools panel."""

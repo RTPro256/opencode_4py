@@ -211,6 +211,7 @@ The ComfyUI integration analysis is complete. See the status file for:
 
 | Plan/Status | Location |
 |-------------|----------|
+| Project Index | `../PROJECT_INDEX.md` |
 | Integration Plan (Archived) | `plans/archive/PROJECT_INTEGRATION_PLAN.md` |
 | ComfyUI Integration Status | `plans/INTEGRATION_STATUS.md` |
 | Implementation Status | `docs/IMPLEMENTATION_STATUS.md` |

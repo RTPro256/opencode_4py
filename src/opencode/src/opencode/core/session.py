@@ -7,10 +7,12 @@ message history, tool calls, and metadata.
 
 from __future__ import annotations
 
+import os
 import uuid
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
+from pathlib import Path
 from typing import Any, AsyncIterator, Optional
 import logging
 
@@ -175,6 +177,29 @@ class Session:
     _is_running: bool = False
     _pending_tool_calls: dict[str, ToolCall] = field(default_factory=dict)
     
+    # Project-specific index files to look for (in order of priority)
+    # These are checked in order - first match wins for context
+    PROJECT_INDEX_FILES = [
+        # Project-specific indexes
+        "COMFYUI_INDEX.md",
+        "OPENCODE_4PY_README.md",
+        "PROJECT_INDEX.md",
+        # Generic indexes
+        "INDEX.md",
+        "README.md",
+        ".claude/index.md",
+        ".opencode/index.md",
+    ]
+    
+    # Project root detection markers
+    PROJECT_ROOT_MARKERS = [
+        "ComfyUI_windows_portable",
+        "opencode.toml",
+        "pyproject.toml",
+        "package.json",
+        ".git",
+    ]
+    
     @classmethod
     def create(
         cls,
@@ -186,7 +211,7 @@ class Session:
     ) -> "Session":
         """Create a new session."""
         now = datetime.now()
-        return cls(
+        session = cls(
             id=str(uuid.uuid4()),
             project_id=project_id,
             title=title or f"New session - {now.isoformat()}",
@@ -196,6 +221,84 @@ class Session:
             model=model,
             agent=agent,
         )
+        
+        # Load project-specific self-knowledge into session
+        session._load_project_context(directory)
+        
+        return session
+    
+    def _load_project_context(self, directory: str) -> None:
+        """
+        Load project-specific self-knowledge documents into session context.
+        
+        Looks for index files like COMFYUI_INDEX.md, PROJECT_INDEX.md, etc.
+        in the project root and adds them as system messages for the AI to reference.
+        
+        This is generic - works for ANY project with index files, not just ComfyUI.
+        """
+        session_dir = Path(directory)
+        
+        # If directory doesn't exist, try to find project root
+        if not session_dir.exists():
+            session_dir = Path.cwd()
+        
+        # Detect project root by looking for common markers
+        project_root = self._find_project_root(session_dir)
+        
+        if not project_root or not project_root.exists():
+            logger.debug("No project root found for context loading")
+            return
+        
+        context_parts = []
+        found_files = []
+        
+        # Check each potential index file
+        for index_file in self.PROJECT_INDEX_FILES:
+            index_path = project_root / index_file
+            if index_path.exists():
+                try:
+                    content = index_path.read_text(encoding='utf-8', errors='ignore')
+                    # Get first 2000 chars to avoid overwhelming context
+                    context_parts.append(f"\n\n=== {index_file} ===\n{content[:2000]}")
+                    found_files.append(index_file)
+                except Exception as e:
+                    logger.warning(f"Failed to read {index_file}: {e}")
+        
+        if context_parts:
+            context_text = (
+                "Project Context - Reference these documents for project-specific information:\n"
+                f"Found context files: {', '.join(found_files)}\n"
+                + "\n".join(context_parts)
+            )
+            # Add as system message
+            system_msg = Message.system(context_text)
+            self.messages.append(system_msg)
+            logger.info(f"Loaded project context from: {found_files}")
+    
+    def _find_project_root(self, start_path: Path) -> Optional[Path]:
+        """
+        Find the project root by looking for common project markers.
+        
+        Generic method that works for any project type.
+        """
+        # Check if starting path is the root
+        for marker in self.PROJECT_ROOT_MARKERS:
+            if (start_path / marker).exists():
+                return start_path
+        
+        # Check parent directories (max 5 levels up)
+        current = start_path
+        for _ in range(5):
+            for marker in self.PROJECT_ROOT_MARKERS:
+                if (current / marker).exists():
+                    return current
+            parent = current.parent
+            if parent == current:  # Reached root
+                break
+            current = parent
+        
+        # Fall back to starting path
+        return start_path if start_path.exists() else None
     
     def add_message(self, message: Message) -> None:
         """Add a message to the session."""

@@ -164,10 +164,10 @@ Starting TUI...
 
 ## Next Steps
 
-1. Create `debug.py` command module
-2. Add `debug` and `troubleshoot` commands to CLI
-3. Add TUI slash command integration
-4. Add automatic logging enablement
-5. Add RAG query integration
-6. Add fix application logic
-7. Add new error document creation flow
+- [x] Create `debug.py` command module
+- [x] Add `debug` and `troubleshoot` commands to CLI
+- [x] Add TUI slash command integration
+- [x] Add automatic logging enablement
+- [x] Add RAG query integration
+- [x] Add fix application logic
+- [ ] Add new error document creation flow (optional enhancement)

@@ -1,4 +1,4 @@
-h# OpenCode Python - Plans Index
+# OpenCode Python - Plans Index
 
 > **Navigation Hub** - Quick access to all OpenCode planning documents
 
@@ -11,6 +11,7 @@ h# OpenCode Python - Plans Index
 | [README.md](../README.md) | Project overview and quick start |
 | [TODO.md](../TODO.md) | Task tracking and pending work |
 | [CHANGELOG.md](../CHANGELOG.md) | Version history and changes |
+| [PROJECT_INDEX.md](../PROJECT_INDEX.md) | Project structure and key files |
 | [DOCS_INDEX.md](../docs/DOCS_INDEX.md) | Documentation navigation |
 
 ---
@@ -41,7 +42,7 @@ h# OpenCode Python - Plans Index
 | Plan | Description | Status |
 |------|-------------|--------|
 | [MERGE_INTEGRATION_PLAN.md](MERGE_INTEGRATION_PLAN.md) | Integrate external projects from merge_projects/ | Active |
-| [GITHUB_UPLOAD_PLAN.md](GITHUB_UPLOAD_PLAN.md) | GitHub upload with Git LFS | In Progress |
+| [GITHUB_UPLOAD_PLAN.md](GITHUB_UPLOAD_PLAN.md) | GitHub upload with Git LFS + GitTool | Complete |
 | [GITHUB_REPOSITORIES.md](../docs/GITHUB_REPOSITORIES.md) | Repository reference and configuration | Reference |
 | [TARGET_PROJECT_SYNC_PLAN.md](TARGET_PROJECT_SYNC_PLAN.md) | Sync changes to target projects | Active |
 | [FOR_TESTING_PLAN.md](FOR_TESTING_PLAN.md) | Testing infrastructure setup | Active |
@@ -85,8 +86,8 @@ Located in [`archive/`](archive/):
 | Status | Count | Plans |
 |--------|-------|-------|
 | Active | 14 | FEATURE_GENERATION_PLAN, CODE_IMPROVEMENT_PLAN, TESTING_PLAN, USER_ACCEPTANCE_TESTING, DOCUMENTATION_PLAN, PRIVACY_FIRST_RAG_PLAN, PROJECT_REVIEW_FINDINGS, TARGET_PROJECT_SYNC_PLAN, FOR_TESTING_PLAN, INTEGRATION_STATUS, SIMPLIFIED_TROUBLESHOOTING_UX_PLAN, FOR_TESTING_UPDATE_PLAN, MERGE_INTEGRATION_PLAN, QUICK_START_COMMANDS |
-| Complete | 2 | PROJECT_ORGANIZATION_PLAN, COMPREHENSIVE_PROJECT_REVIEW_PLAN |
-| In Progress | 1 | GITHUB_UPLOAD_PLAN |
+| Complete | 3 | PROJECT_ORGANIZATION_PLAN, COMPREHENSIVE_PROJECT_REVIEW_PLAN, GITHUB_UPLOAD_PLAN |
+| Complete | 3 | PROJECT_ORGANIZATION_PLAN, COMPREHENSIVE_PROJECT_REVIEW_PLAN, GITHUB_UPLOAD_PLAN |
 | Archived | 4 | MIGRATION_PLAN, PROJECT_INTEGRATION_PLAN, MULTI_MODEL_IMPLEMENTATION_PLAN, INTEGRATION_POSTMORTEM |
 
 ### By Priority

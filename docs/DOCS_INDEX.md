@@ -14,6 +14,7 @@
 | [CONTRIBUTING.md](../CONTRIBUTING.md) | Contribution guidelines |
 | [SECURITY.md](../SECURITY.md) | Security policy |
 | [PLAN_INDEX.md](../plans/PLAN_INDEX.md) | All plans and project tracking |
+| [PROJECT_INDEX.md](../PROJECT_INDEX.md) | Project structure and key files |
 | [QUICK_START_COMMANDS.md](../plans/QUICK_START_COMMANDS.md) | Merge/integrate/sync workflows |
 
 ---

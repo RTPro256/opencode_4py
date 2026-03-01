@@ -256,6 +256,32 @@ git diff origin/main --stat
 
 ## Feature: GitHub Update Command
 
+### GitTool Operations (NEW)
+
+The GitTool provides AI-assisted git operations that can be used within the OpenCode AI assistant:
+
+```python
+# List known repositories from config
+await git(operation="repos")
+
+# Add a new repository to known list
+await git(operation="add-repo", repo_name="my-project", remote_url="https://github.com/user/my-project.git")
+
+# Remove a repository from known list
+await git(operation="remove-repo", repo_name="old-project")
+
+# Push to a specific named repository
+await git(operation="push-to", repo_name="opencode_4py", branch="main")
+
+# List git remotes
+await git(operation="remotes")
+
+# Configure a remote URL
+await git(operation="set-remote", remote_name="origin", remote_url="https://github.com/user/repo.git")
+```
+
+The repository configuration is stored in `config/github_repos.json` and is automatically managed by the GitTool.
+
 ### New CLI Commands
 
 The opencode CLI provides several commands for managing GitHub repositories:

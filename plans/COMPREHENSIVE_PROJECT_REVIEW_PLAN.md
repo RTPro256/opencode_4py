@@ -1,6 +1,6 @@
 # Comprehensive Project Review Plan
 
-> **Objective**: Systematically review the OpenCode Python project to identify improvement opportunities in documentation, code organization, UI/UX, and RAG implementation while avoiding previously documented errors.
+> **Objective**: Systematically review the OpenCode Python project to identify improvement opportunities in documentation, code organization, UI/UX, file sizes, and RAG implementation while avoiding previously documented errors.
 
 > **Navigation:**
 > - **Previous:** [PROJECT_REVIEW_FINDINGS.md](PROJECT_REVIEW_FINDINGS.md) - Review findings
@@ -23,13 +23,17 @@ Start comprehensive project review of opencode_4py.
 Reference: plans/COMPREHENSIVE_PROJECT_REVIEW_PLAN.md
 
 Steps:
-1. Review documentation structure and identify overlaps
+1. Review documentation structure and identify overlaps and update DOCUMENTATION_PLAN.md
 2. Analyze large files for refactoring opportunities
-3. Review agents and tools system (core/orchestration/, core/tools/)
-4. Check TUI feature completeness
-5. Verify RAG error prevention patterns
-6. Generate improvement recommendations
-7. Update DOCS_INDEX.md and PLAN_INDEX.md
+3. Review agents, commands, and tools system (core/orchestration/, core/tools/)
+4. Check TUI feature completeness and update SIMPLIFIED_TROUBLESHOOTING_UX_PLAN.md.
+5. Verify RAG error prevention patterns and update PRIVACY_FIRST_RAG_PLAN.md.
+6. Generate improvement recommendations and update CODE_IMPROVEMENT_PLAN.md.
+7. Update DOCS_INDEX.md, PLAN_INDEX.md, PROJECT_INDEX.md.
+8. Review PLAN_INDEX.md and update PLAN_EXECUTION_GUIDE.md.
+9. Update PROJECT_ORGANIZATION_PLAN.md.
+10. Review DOCS_INDEX.md to associated docs with plans.
+11. Make recommendations for moving docs and plans to their archives.
 ```
 
 **Key References**:

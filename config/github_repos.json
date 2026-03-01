@@ -1,0 +1,12 @@
+{
+  "repositories": {
+    "opencode_4py": {
+      "url": "https://github.com/RTPro256/opencode_4py.git",
+      "owner": "RTPro256",
+      "name": "opencode_4py",
+      "description": "Primary project repository - AI assistant with RAG capabilities"
+    }
+  },
+  "default_remote": "origin",
+  "default_branch": "main"
+}

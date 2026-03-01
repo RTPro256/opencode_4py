@@ -114,10 +114,43 @@ opencode run --provider openai
 | `Ctrl+S` | Save session |
 | `Ctrl+O` | Open session |
 | `Ctrl+M` | Toggle model |
+| `Ctrl+Shift+M` | Toggle mode |
 | `Ctrl+Q` | Quit |
 | `Ctrl+T` | Toggle debug logging |
 | `F1` | Help |
 | `Escape` | Cancel/Stop |
+
+### Quick Commands (Slash Commands)
+
+In the TUI, you can type these slash commands in the chat input:
+
+| Command | Description |
+|---------|-------------|
+| `/help` | Show this help |
+| `/index` | Show PROJECT_INDEX.md summary |
+| `/plans` | Show PLAN_INDEX.md summary |
+| `/docs` | Show DOCS_INDEX.md summary |
+| `/files` | Show all Python files with summaries |
+| `/tools` | Show all available tools |
+| `/agents` | Show all available subagents |
+| `/mode` | Show/change current mode |
+| `/status` | Show system status |
+| `/clear` | Clear chat history |
+| `/theme` | Toggle theme (dark/light/catppuccin/nord) |
+
+### Modes vs Agents
+
+OpenCode has two distinct concepts:
+
+**Modes** define session-wide behavior:
+- `Architect` - Planning and architecture design
+- `Ask` - Question answering mode
+- `Code` - Code writing/editing (default)
+- `Debug` - Debugging and troubleshooting
+- `Review` - Code review
+- `Orchestrator` - Task orchestration
+
+**Agents** (Subagents) are specialized task-specific workers you can invoke dynamically during conversation. They are different from modes - agents handle specific subtasks while modes control overall AI behavior.
 
 ---
 

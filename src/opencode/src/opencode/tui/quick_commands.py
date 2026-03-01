@@ -40,6 +40,7 @@ QUICK_COMMANDS = [
     QuickCommand("files", "Show all Python files with summaries"),
     QuickCommand("tools", "Show all available tools"),
     QuickCommand("agents", "Show all agents"),
+    QuickCommand("mode", "Show/change current mode"),
     QuickCommand("status", "Show system status"),
     QuickCommand("clear", "Clear the chat"),
     QuickCommand("theme", "Toggle theme (dark/light/catppuccin/nord)"),
@@ -318,6 +319,43 @@ async def execute_agents_command() -> str:
     return "\n".join(result)
 
 
+async def execute_mode_command(mode: str = "") -> str:
+    """
+    Execute /mode command - show or change current mode.
+    
+    Args:
+        mode: Optional mode name to switch to
+    """
+    from opencode.core.modes.manager import ModeManager
+    
+    manager = ModeManager()
+    modes = manager.list_modes()
+    current_mode = manager.get_current_mode_name()
+    
+    if not mode:
+        # Show current mode and available modes
+        result = ["## 🎯 Current Mode\n"]
+        result.append(f"**Current:** {current_mode}\n")
+        result.append("\n### Available Modes:\n")
+        for m in modes:
+            marker = "👉" if m == current_mode else "  "
+            result.append(f"{marker} {m}")
+        result.append("\nUse `/mode <name>` to switch (e.g., /mode code)")
+        result.append("Or press Ctrl+Shift+M in TUI to cycle through modes")
+        return "\n".join(result)
+    
+    # Try to switch mode
+    mode_lower = mode.lower()
+    for m in modes:
+        if m.lower() == mode_lower:
+            success = manager.set_mode(m)
+            if success:
+                return f"__MODE__{m}"
+            return f"Failed to switch to mode: {m}"
+    
+    return f"Unknown mode: {mode}. Available: {', '.join(modes)}"
+
+
 async def execute_help_command() -> str:
     """Execute /help command - show all quick commands."""
     result = ["## ⚡ Quick Commands\n"]
@@ -404,6 +442,8 @@ async def execute_command(command: str) -> tuple[str, bool]:
         return await execute_tools_command(), True
     elif cmd.name == "agents":
         return await execute_agents_command(), True
+    elif cmd.name == "mode":
+        return await execute_mode_command(args), True
     elif cmd.name == "status":
         return await execute_status_command(), True
     elif cmd.name == "clear":

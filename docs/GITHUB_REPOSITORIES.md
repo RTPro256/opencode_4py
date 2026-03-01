@@ -30,6 +30,36 @@ This document serves as the central reference for all GitHub repositories associ
 | **Push Command** | `git push origin main` |
 | **Content** | Full project (src, docs, plans, RAG, scripts, etc.) |
 
+#### Using the GitTool
+
+The GitTool provides AI-assisted git operations. Here's how to use it:
+
+```python
+# List known repositories
+await git(operation="repos")
+
+# Add a new repository to known list
+await git(operation="add-repo", repo_name="my-project", remote_url="https://github.com/user/my-project.git")
+
+# Push to a named repository
+await git(operation="push-to", repo_name="opencode_4py", branch="main")
+
+# List git remotes
+await git(operation="remotes")
+
+# Configure a remote
+await git(operation="set-remote", remote_name="origin", remote_url="https://github.com/user/repo.git")
+```
+
+Or use the CLI command:
+```bash
+opencode github push -m "Your commit message"
+```
+
+#### Repository Configuration File
+
+Known repositories are stored in `config/github_repos.json`. The GitTool automatically manages this file when using `add-repo` or `remove-repo` operations.
+
 #### Future Updates
 
 To push future updates to this repository:
